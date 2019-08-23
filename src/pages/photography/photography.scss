@@ -1,3 +1,75 @@
 page-photography {
+  
+   ion-icon{
+       color: cadetblue;
+   }
+.c1{
+  
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    text-align: center;
+   
+    
+}
+.img1{
+    position:relative;
+    left:10px;
+    width:75px;
+    height:75px;
+    background-image: url(../assets/imgs/image4.jpg);
+    background-size: cover;
+    display:block;
+    border-radius: 50%;
+
+   }
+   .img2{
+    position:relative;
+    left:10px;
+    width:75px;
+    height:75px;
+    background-image: url(../assets/imgs/image5.jpg);
+    background-size: cover;
+    display:block;
+    border-radius: 50%;
+
+   }
+   .img3{
+    position:relative;
+    left:10px;
+    width:75px;
+    height:75px;
+    background-image: url(../assets/imgs/image1.jpg);
+    background-size: cover;
+    display:block;
+    border-radius: 50%;
+
+   }
+.p1{
+    position: relative;
+    font-size: 20px;
+    left: 20px;
+    bottom:65px;
+    visibility: visible;
+}
+.c2{
+    
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    text-align: center;
+   
+   
+}
+.c3{
+    
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    text-align: center;
+   
+   
+}
+
 
 }

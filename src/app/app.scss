@@ -14,3 +14,64 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+ion-icon {
+    &[class*="custom-"] {
+      mask-size: contain;
+      mask-position: 50% 50%;
+      mask-repeat: no-repeat;
+      background: currentColor;
+      width: 1em;
+      height: 1em;
+    }
+  
+    &[class*="custom-backarrow"] {
+      mask-image: url(../assets/icon/Backwardarrow.svg);
+    }
+    &[class*="custom-calendar"] {
+      mask-image: url(../assets/icon/Calendar.svg);
+    }
+    &[class*="custom-hammer"] {
+      mask-image: url(../assets/icon/Hammer.svg);
+    }
+    &[class*="custom-places"] {
+        mask-image: url(../assets/icon/Places.svg);
+      }
+      &[class*="custom-union"] {
+        mask-image: url(../assets/icon/Union42.svg);
+      }
+      &[class*="custom-Downarrow"] {
+        mask-image: url(../assets/icon/Dowwnarrow.svg);
+      }
+  
+  }
+  ion-icon {
+    &[class*="images-"] {
+      mask-size: contain;
+      mask-position: 50% 50%;
+      mask-repeat: no-repeat;
+      background: currentColor;
+      width: 1em;
+      height: 1em;
+    }
+  
+    &[class*="images-backarrow"] {
+      mask-image: url(../assets/imgs/image1.jpg);
+    }
+    &[class*="images-calendar"] {
+      mask-image: url(../assets/imgs/image2.png);
+    }
+    &[class*="images-hammer"] {
+      mask-image: url(../assets/imgs/image3.jpg);
+    }
+    &[class*="images-places"] {
+        mask-image: url(../assets/imgs/image4.jpg);
+      }
+      &[class*="images-union"] {
+        mask-image: url(../assets/imgs/image5.jpg);
+      }
+      &[class*="images-last"] {
+        mask-image: url(../assets/imgs/image6.jpg);
+      }
+  
+  }
+  

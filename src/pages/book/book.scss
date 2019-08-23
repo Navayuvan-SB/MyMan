@@ -1,3 +1,91 @@
 page-book {
-
+    ion-icon{
+        color: cadetblue;
+    }
+    .d1{
+            
+            height:80px;
+           
+        .i1{
+            position:relative;
+            left:10px;
+            width:90px;
+            height:90px;
+            background-image: url(../assets/imgs/image4.jpg);
+            background-size: cover;
+            display:block;
+            border-radius: 50%;
+           
+            
+        }
+        .l0{
+            position:relative;
+            font-size:20px;
+            bottom: 70px;
+            left:120px;
+        }
+   
+}
+    .b1{
+        width: 100%;
+    }
+    .b2{
+        width: 45%;
+        left:1px;
+    }
+    .b3{
+        width:45%;
+        left:170px;
+        bottom:94px;
+    }
+    
+    .d2{
+     
+    .l1{
+        position:relative;
+        font-size: 20px;
+        top:18px;
+        left:10px;
+    }
+    .l2{
+        font-size: 20px;
+        position: relative;
+        bottom:93px;
+        left: 180px;
+    }
+    .l3{
+        font-size: 20px;
+        position: relative;
+        left:10px;
+        bottom:77px;
+    }
+    .b4{
+        bottom:90px;
+    }
+}
+.d3{
+    background-color: cadetblue;
+    height: 75px;
+    .l4{
+        position:relative;
+        color:white;
+        font-size: 15px;
+        top:18px;
+        left:45px;
+    }
+    .l5{
+        position:relative;
+        color:white;
+        top:8px;
+        left:40px;
+        font-size: 10px;
+    }
+    .b5{
+        background-color: white;
+        color: cadetblue;
+        width:35%;
+        bottom:40px;
+        left:180px
+    }
+}
 }

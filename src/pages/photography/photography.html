@@ -6,10 +6,51 @@
 -->
 <ion-header>
   <ion-navbar>
-    <ion-title>photography</ion-title>
+    <ion-title  style="text-align: center;" ><h4 style="color:cadetblue">Photography</h4></ion-title>
+    <ion-buttons left>
+      <button ion-button icon-only >
+        <ion-icon name="custom-backarrow"></ion-icon>
+      </button>
+  </ion-buttons>
+  <ion-buttons right>
+      <button ion-button icon-only >
+        <ion-icon name="custom-hammer"></ion-icon>
+        
+      </button>
+  </ion-buttons>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-
+<ion-content padding> 
+  <ion-card type="button" style=" border: 1px solid black; border-radius: 20px;" >
+      <div class="c1">
+      <ion-card-content>
+          <ion-avatar class="img1" style=" border: 1px solid black;">
+           <!--image-->
+            </ion-avatar>
+          <ion-label class="p1" style="color:black;"><b>Pack 1</b></ion-label>
+        </ion-card-content>
+      
+      </div>
+  </ion-card><br>
+  <ion-card type="button" style=" border: 1px solid black; border-radius: 20px;" >
+    <div class="c2">
+      <ion-card-content>
+          <ion-avatar class="img2" style=" border: 1px solid black;">
+           <!--image-->
+            </ion-avatar>
+        <ion-label class="p1" style="color:black;"><b>Pack 2</b></ion-label>
+      </ion-card-content>
+      </div>
+  </ion-card><br>
+  <ion-card type="button" style=" border: 1px solid black; border-radius: 20px;" >
+    <div class="c3">
+      <ion-card-content>
+          <ion-avatar class="img3" style=" border: 1px solid black;">
+           <!--image-->
+            </ion-avatar>
+        <ion-label class="p1" style="color:black;"><b>Pack 3</b></ion-label>
+      </ion-card-content>
+      </div>
+  </ion-card>
 </ion-content>
