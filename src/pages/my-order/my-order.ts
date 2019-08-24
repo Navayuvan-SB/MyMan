@@ -21,5 +21,8 @@ export class MyOrderPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad MyOrderPage');
   }
+  clicked(){
+    console.log('profile page clicked')
+  }
 
 }
