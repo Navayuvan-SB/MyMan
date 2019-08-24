@@ -4,8 +4,6 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 
-
-
 import { MyOrderPage } from '../pages/my-order/my-order';
 @Component({
   templateUrl: 'app.html'
