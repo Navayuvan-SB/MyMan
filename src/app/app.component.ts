@@ -10,7 +10,7 @@ import { MyOrderPage } from '../pages/my-order/my-order';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = BookPage;
+  rootPage:any = PhotographyPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {

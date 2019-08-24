@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { MyOrderPage } from '../my-order/my-order';
+import { BookPage } from '../book/book';
 
 /**
  * Generated class for the PhotographyPage page.
@@ -25,19 +26,19 @@ export class PhotographyPage {
 order(){
   this.navCtrl.push(MyOrderPage);
 }
-card1click(){
+public card1click(){
   this.card= "pack1";
-  this.navCtrl.push(MyOrderPage);
-  console.log(this.card,'clicked');
+  this.navCtrl.push(BookPage,{ item:this.card });
+ 
 }
 card2click(){
   this.card= "pack2";
-  this.navCtrl.push(MyOrderPage);
-  console.log(this.card,'clicked');
+  this.navCtrl.push(BookPage,{ item:this.card });
+ 
 }
 card3click(){
   this.card= "pack3";
-  this.navCtrl.push(MyOrderPage);
-  console.log(this.card,'clicked');
+  this.navCtrl.push(BookPage, { item:this.card });
+ 
 }
 }
