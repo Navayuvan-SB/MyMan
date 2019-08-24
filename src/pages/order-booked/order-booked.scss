@@ -10,11 +10,11 @@ page-order-booked {
     .wrapper p {
         bottom: 0%;
         color: black;
-        font-size: 23px;
+        font-size: 25px;
         text-align: center;
-        padding-top: 90px !important;
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-top: 70px !important;
+        padding-left: 50px;
+        padding-right: 50px;
         position: absolute;
         font-weight: bolder !important;
     }
@@ -31,13 +31,13 @@ page-order-booked {
 
 
     ion-avatar{
-        height: 86px !important;
-        width: 86px !important;
+        height: 90px !important;
+        width: 90px !important;
         display: inline-block;
         border-radius: 50%;
         overflow: hidden;
-        margin-top: 22px !important; 
-        margin-left: 7px;
+        margin-top: 18px !important; 
+        margin-left: 7px !important;
         border: 1px solid rgb(48, 49, 49);
     }
 
@@ -55,9 +55,10 @@ page-order-booked {
     ion-card{
         border-radius: 20px !important; 
         height: 130px !important; 
-        margin-left: 0px !important;
-        width: 330px !important;
-        margin-top: 90px !important; 
+        margin-left: 10px !important;
+        //width: 330px !important;
+        margin-right: 40px !important;
+        margin-top: 100px !important; 
         border: 1px solid rgb(48, 49, 49);
     }
 
@@ -65,11 +66,13 @@ page-order-booked {
     h2{
         font-weight: bolder !important;
         line-height: 1.6 !important;
+        margin-left: 12px !important;
     }
 
 
     p{
         line-height: 1.6 !important;
+        margin-left: 12px !important;
     }
 
 }

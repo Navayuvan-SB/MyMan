@@ -4,12 +4,13 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 
-import { MyOrderPage } from '../pages/my-order/my-order';
+
+import { OrderBookedPage } from '../pages/order-booked/order-booked';
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = MyOrderPage;
+  rootPage:any = OrderBookedPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
