@@ -44,34 +44,4 @@ ion-icon {
       }
   
   }
-  ion-icon {
-    &[class*="images-"] {
-      mask-size: contain;
-      mask-position: 50% 50%;
-      mask-repeat: no-repeat;
-      background: currentColor;
-      width: 1em;
-      height: 1em;
-    }
-  
-    &[class*="images-backarrow"] {
-      mask-image: url(../assets/imgs/image1.jpg);
-    }
-    &[class*="images-calendar"] {
-      mask-image: url(../assets/imgs/image2.png);
-    }
-    &[class*="images-hammer"] {
-      mask-image: url(../assets/imgs/image3.jpg);
-    }
-    &[class*="images-places"] {
-        mask-image: url(../assets/imgs/image4.jpg);
-      }
-      &[class*="images-union"] {
-        mask-image: url(../assets/imgs/image5.jpg);
-      }
-      &[class*="images-last"] {
-        mask-image: url(../assets/imgs/image6.jpg);
-      }
-  
-  }
-  
+ 

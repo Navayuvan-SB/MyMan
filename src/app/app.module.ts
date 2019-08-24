@@ -7,13 +7,15 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { PhotographyPage } from '../pages/photography/photography';
 import { BookPage } from '../pages/book/book';
+import { MyOrderPage } from '../pages/my-order/my-order';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     PhotographyPage,
-    BookPage
+    BookPage,
+    MyOrderPage
   ],
   imports: [
     BrowserModule,
@@ -24,7 +26,8 @@ import { BookPage } from '../pages/book/book';
     MyApp,
     HomePage,
     PhotographyPage,
-    BookPage
+    BookPage,
+    MyOrderPage
   ],
   providers: [
     StatusBar,

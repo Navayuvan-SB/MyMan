@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { MyOrderPage } from '../my-order/my-order';
 
 /**
  * Generated class for the BookPage page.
@@ -21,5 +22,10 @@ export class BookPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad BookPage');
   }
-
+  order(){
+    this.navCtrl.push(MyOrderPage);
+  }
+  check(){
+    console.log('checkout clicked');
+  }
 }
