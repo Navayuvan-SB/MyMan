@@ -5,11 +5,29 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-  <ion-navbar>
-    <ion-title>login</ion-title>
-  </ion-navbar>
-</ion-header>
-
-<ion-content padding>
-
-</ion-content>
+    <ion-navbar class="toolbar-background" >
+        <ion-title class="toolbar-title.toolbar-title-md">Login</ion-title>
+    </ion-navbar>
+  </ion-header>
+  <ion-content padding>
+  <ion-card type="label" class="l1" >
+    <ion-item>
+      <ion-label  position="floating">Phone Number</ion-label>
+      <ion-input type="Number" value=""></ion-input>
+    </ion-item>
+    </ion-card>
+    <ion-card type="label" class="l2" >
+    <ion-item>
+       <ion-label position="floating
+">Password</ion-label>
+       <ion-input type="password"></ion-input>
+    </ion-item>
+    </ion-card>
+    
+        <ion-buttons type="submit" >
+        <button  ion-button  round full  >SIGNUP</button>
+        </ion-buttons>
+    <br>
+      <p text-center >  New user?  <a routerLink='/Signup'> Signup</a>
+      </p>
+  </ion-content>

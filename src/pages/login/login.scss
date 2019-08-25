@@ -1,3 +1,20 @@
 page-login {
-
+    .toolbar-title.toolbar-title-md{ padding-left:55px; text-align: center; color: white; font-size: 25px;}
+    .toolbar-background {background-color: #18A0A0; }
+    .l1{
+        margin-top: 50px;
+        width: 100%;
+        height: 40px;
+        border-radius:  50px 50px 50px 50px;
+    }
+    .l2{
+    
+        width: 100%;
+        height: 40px;
+        border-radius:  50px 50px 50px 50px;
+    }
+    
+    ion-buttons{
+        color: rgb(23, 167, 167);
+    }
 }
