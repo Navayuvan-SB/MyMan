@@ -1,47 +1,78 @@
 page-signup {
-    .toolbar-title.toolbar-title-md{ padding-left:55px; text-align: center; color: white; font-size: 25px;}
+    .toolbar-title.toolbar-title-md{ padding-left:30x; text-align: center; color: white; font-size-top: 20.5px;}
     .toolbar-background {background-color: #18A0A0; }
    ion-icon{
        color: #18A0A0;
    }
 ion-avatar{
-    height: 100px ;
-    width: 100px;
+    height: 110px ;
+    width: 110px;
     border-radius: 50%;
     overflow: hidden;
     align-items: center;
     margin-top: 50px;
     margin-left: 110px;
+    margin-bottom: 20px;
    align-content: center;
 
     
 }
 .l1{
-    margin-top: 25px;
-    width: 95%;
-    height: 40px;
-   
-    border-radius:  50px 50px 50px 50px;
+    border-radius: 30px !important;
+     padding-left: 30px !important;
+     font-size: 0.9em;
+     margin-top: 10px;
+     margin-bottom: 10px;
+     border: 1px solid black;
+     box-shadow: none !important;
+     margin-left: 20px;
+    width: 290px;
+    height: 0.5px;
 }
 .l2{
-    margin-top: 25px;
-    width: 95%;
-    height: 40px;
-    
-    border-radius:  50px 50px 50px 50px;
+    height: 0.5px;
+    border-radius: 30px !important;
+     padding-left: 30px !important;
+     font-size: 0.9em;
+     margin-top: 10px;
+     margin-bottom: 10px;
+     border: 1px solid black;
+     box-shadow: none !important;
+     margin-left: 20px;
+    width: 290px;
 }
 .l3{
-    margin-top: 25px;
-    width:95%;
-    height: 40px;
-    
-    border-radius:  50px 50px 50px 50px;
+    height: 0.5px;
+    margin-left: 20px;
+    width: 290px;
+    border-radius: 30px !important;
+     padding-left: 30px !important;
+     font-size: 0.9em;
+     margin-top: 10px;
+     margin-bottom: 10px;
+     border: 1px solid black;
+     box-shadow: none !important;
 }
 .l4{
-    margin-top: 25px;
-    width: 95%;
-    height: 40px;
-    margin-bottom: 25;
-    border-radius:  50px 50px 50px 50px;
+    position: relative;
+    height: 10px;
+    margin-left: 20px;
+    width: 290px;
+    border-radius: 30px !important;
+     padding-left: 30px !important;
+     font-size: 0.9em;
+     margin-top: 10px;
+     margin-bottom: 10px;
+     border: 1px solid black;
+      
+     box-shadow: none !important;
+    
+}
+ion-buttons{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top:40px;
+    margin-bottom: 40px;
+    color: #18A0A0;
 }
 }
