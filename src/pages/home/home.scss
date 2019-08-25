@@ -14,7 +14,7 @@ page-home {
     align-items: center;
     display: inline-block;
     
-}
+    }
 
     .a2{
         border-radius: 50%;
@@ -30,12 +30,12 @@ page-home {
         display: inline-block;
         
     }
-    .p{
+    .p1{
         position:relative;
-        left:10px;
         width:100px;
         height:100px;
         background-image: url(../assets/imgs/p.jpg);
+        margin: auto;
         background-size: cover;
         display:block;
         border-radius: 50%;
@@ -43,22 +43,22 @@ page-home {
     }
     .h{
         position:relative;
-        left:10px;
         width:100px;
         height:100px;
-        background-image: url(../assets/imgs/h.jpg);
+        margin: auto;
         background-size: cover;
         display:block;
         border-radius: 50%;
+        background-image: url(../assets/imgs/h.jpg);
     }
     .g{
         position:relative;
-        left:10px;
-        width: 100px;
+        width:100px;
         height:100px;
-        background-image: url(../assets/imgs/g.jpg);
+        margin: auto;
         background-size: cover;
         display:block;
         border-radius: 50%;
-}
+        background-image: url(../assets/imgs/g.jpg);
+    }
 }
