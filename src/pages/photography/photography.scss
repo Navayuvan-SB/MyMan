@@ -1,3 +1,59 @@
 page-photography {
+    .toolbar-title.toolbar-title-md{text-align: center; color: #18A0A0; font-size: 25px;}
+    .hamri8{ padding-right: 13px;}
+   ion-icon{
+       color: #18A0A0;
+   }
+    .gap{
+        padding-bottom: 10px;
+    }
+    .img1{
+    position:relative;
+    left:10px;
+    width:75px;
+    height:75px;
+    background-image: url(../assets/imgs/image4.jpg);
+    background-size: cover;
+    display:block;
+    border-radius: 50%;
+   }
+
+   .img2{
+    position:relative;
+    left:10px;
+    width:75px;
+    height:75px;
+    background-image: url(../assets/imgs/image5.jpg);
+    background-size: cover;
+    display:block;
+    border-radius: 50%;
+   }
+
+   .img3{
+    position:relative;
+    left:10px;
+    width:75px;
+    height:75px;
+    background-image: url(../assets/imgs/image1.jpg);
+    background-size: cover;
+    display:block;
+    border-radius: 50%;
+   }
+
+    .p1{
+    position: relative;
+    font-size: 20px;
+    left: 20px;
+    bottom:65px;
+    visibility: visible;
+   }
+
+   .c1{
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    text-align: center;
+    
+   }
 
 }

@@ -33,6 +33,24 @@ ion-icon {
     &[class*="custom-Union"] {
       mask-image: url(../assets/icon/Union.svg);
     }
+    &[class*="custom-backarrow"] {
+      mask-image: url(../assets/icon/Backwardarrow.svg);
+    }
+    &[class*="custom-calendar"] {
+      mask-image: url(../assets/icon/Calendar.svg);
+    }
+    &[class*="custom-hammer"] {
+      mask-image: url(../assets/icon/Hammer.svg);
+    }
+    &[class*="custom-places"] {
+        mask-image: url(../assets/icon/Places.svg);
+      }
+      &[class*="custom-union"] {
+        mask-image: url(../assets/icon/Union42.svg);
+      }
+      &[class*="custom-Downarrow"] {
+        mask-image: url(../assets/icon/Dowwnarrow.svg);
+      }
   
   }
  

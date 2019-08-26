@@ -1,3 +1,69 @@
 page-book {
+    .toolbar-title.toolbar-title-md{text-align: center; color:#18A0A0; font-size: 25px;}
+     .hamri8{ padding-right: 13px;}
+    ion-icon{
+        color: #18A0A0;
+    }
+    
+    .d1{
+         font-size: 18px;
+         height: 550px;
+              ion-row{
+                      margin:2%;
+              }  
+              .l1{
+                      padding-top: 11%;
+                      padding-left:7%;
+                }
+       
+               .i1{
+                      position:relative;
+                      left:10px;
+                      width:90px;
+                      height:90px;
+                      background-image: url(../assets/imgs/image4.jpg);
+                      background-size: cover;
+                      display:block;
+                      border-radius: 50%;          
+               }
+               .b1{
+                      padding-left: 130px;
+                      width: 100%;
+                }
+                  .b3{
+                      padding-left: 25px;
+                      width: 100%;
+                }
+     
+    }
+    .icon1{
+          margin-left: 85%;
+    }
+    
+   .d2{
 
+        background-color:  #18A0A0;
+        height: 75px;
+               .l4{
+                      position:relative;
+                      color:white;
+                      font-size: 15px;
+                      top:18px;
+                      left:45px;
+                } 
+               .l5{
+                      position:relative;
+                      color:white;
+                      top:8px;
+                      left:40px;
+                      font-size: 10px;
+                }
+               .b5{
+                      background-color: white;
+                      color: #18A0A0;
+                      width:35%;
+                      bottom:40px;
+                      left:180px;
+                }
+   }
 }

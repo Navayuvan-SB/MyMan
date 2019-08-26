@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, Item } from 'ionic-angular';
+import { MyOrderPage } from '../my-order/my-order';
 
 /**
  * Generated class for the BookPage page.
@@ -14,12 +15,19 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'book.html',
 })
 export class BookPage {
-
+  value: any;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.value= navParams.get('item');
+    console.log(this.value,'clicked');
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad BookPage');
   }
-
+  order(){
+    this.navCtrl.push(MyOrderPage);
+  }
+  check(){
+    console.log('checkout clicked');
+  }
 }
