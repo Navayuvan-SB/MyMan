@@ -1,40 +1,41 @@
 page-login {
-    .toolbar-title.toolbar-title-md{ padding-left:10px; text-align: center; color: white; font-size: 25px;}
-    .toolbar-background {background-color: #18A0A0; }
+    .toolbar-title{ 
+         color: white;
+         font-size: 25px;
+         text-align: center;
+    }
+    .toolbar-background {
+        background-color: #18A0A0;
+    }
     .l1{
         position: relative;
-        height: 10px;
-        margin-left: 20px;
-        width: 290px;
         border-radius: 30px !important;
-         padding-left: 30px !important;
-         font-size: 0.9em;
-         margin-top: 100px;
-         margin-bottom: 10px;
-         border: 1px solid black;
-         border-bottom:1px solid black; 
-         box-shadow: none !important;
+        font-size: 0.9em;
+        border: 1px solid grey;
+        width: 90%;
+        margin: auto;
+        margin-top: 40%;
     }
     .l2{
         position: relative;
-        height: 10px;
-        margin-left: 20px;
-        width: 290px;
         border-radius: 30px !important;
-         padding-left: 30px !important;
-         font-size: 0.9em;
-         margin-top: 10px;
-         margin-bottom: 10px;
-         border: 1px solid black;
-         
-         box-shadow: none !important;
-    
+        font-size: 0.9em;
+        border: 1px solid grey;
+        width: 90%;
+        margin: auto;
+        margin-top: 10%;
+    }
+
+    .button{
+        background: #18A0A0;
+        width: 90%;
+        margin: auto;
+        margin-top: 25%;
+    }
+
+    .navSignUp{
+        margin-top: 20%;
     }
     
-    ion-buttons{
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-top:50px;
-        margin-bottom: 50px;
-    }
+
 }

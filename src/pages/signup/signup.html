@@ -6,7 +6,7 @@
 -->
 <ion-header>
   <ion-navbar class="toolbar-background">
-      <ion-title class="toolbar-title.toolbar-title-md">Signup</ion-title>
+      <p class="toolbar-title">Signup</p>
   </ion-navbar>
 </ion-header>
 
@@ -35,10 +35,10 @@
   </ion-item>
   
       <ion-buttons type="submit">
-      <button  ion-button  round full>SIGNUP</button>
+      <button  ion-button  round full class="button" (click)="signUp()">SIGNUP</button>
       </ion-buttons>
     
-    <p text-center >  Already an user?  <a routerLink='/Login'> Login</a>
+    <p text-center class="navLogin">  Already an user?  <a (click)="navToLogin()"> Login</a>
     </p>
   </ion-list>
 </ion-content>
