@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, Item } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 import { MyOrderPage } from '../my-order/my-order';
 import { OrderBookedPage } from '../order-booked/order-booked';
 
@@ -9,8 +9,6 @@ import { OrderBookedPage } from '../order-booked/order-booked';
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-
-@IonicPage()
 @Component({
   selector: 'page-book',
   templateUrl: 'book.html',
