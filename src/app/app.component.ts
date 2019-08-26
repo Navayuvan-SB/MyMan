@@ -7,6 +7,8 @@ import { SignupPage } from '../pages/signup/signup';
 import { LoginPage } from '../pages/login/login';
 import { PhotographyPage } from '../pages/photography/photography';
 import { BookPage } from '../pages/book/book';
+
+
 import { MyOrderPage } from '../pages/my-order/my-order';
 @Component({
   templateUrl: 'app.html'
@@ -14,6 +16,7 @@ import { MyOrderPage } from '../pages/my-order/my-order';
 export class MyApp {
   
   rootPage:any = LoginPage;
+
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.

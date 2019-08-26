@@ -1,6 +1,6 @@
 page-book {
-    .toolbar-title.toolbar-title-md{text-align: center; color:#18A0A0; font-size: 25px;}
-     .hamri8{ padding-right: 13px;}
+      .toolbar-title.toolbar-title-md{ color: #18A0A0; font-size: 25px; font-weight: 400; text-align: center ;}
+      .hamri8{ padding-right: 13px;}
     ion-icon{
         color: #18A0A0;
     }
@@ -63,7 +63,7 @@ page-book {
                       color: #18A0A0;
                       width:35%;
                       bottom:40px;
-                      left:180px;
+                      margin-left: 60%;
                 }
    }
 }

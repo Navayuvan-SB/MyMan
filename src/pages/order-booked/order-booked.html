@@ -5,11 +5,100 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-  <ion-navbar>
-    <ion-title>order-booked</ion-title>
+  <ion-navbar> 
+    <ion-title class="toolbar-title.toolbar-title-md">Order Booked</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
 
+
+<ion-content padding>
+    
+    <div class="wrapper">   
+       <img src="../../assets/imgs/deco.png"  style="margin-top: 40px"/>
+       <p>Order Sucessfully Placed</p>
+    </div>
+
+
+
+  <ion-grid style="margin-top: 80px">
+
+      <ion-row>
+          <ion-col align-items-center col-5>
+            <div class="bold">Odered by</div>
+          </ion-col>
+          <ion-col align-items-center col-1>
+            <div class="bold">:</div>
+          </ion-col>
+          <ion-col align-items-start col-4>
+              <div>George Willams</div>
+            </ion-col>
+      </ion-row>
+
+
+      <ion-row>
+          <ion-col align-items-center col-5>
+              <div class="bold">Function Name</div>
+          </ion-col>
+          <ion-col align-items-center col-1>
+              <div class="bold">:</div>
+          </ion-col>
+          <ion-col align-items-start col-4>
+              <div>Marriage</div>
+          </ion-col>
+      </ion-row>
+
+      <ion-row>
+          <ion-col align-items-center col-5>
+              <div class="bold">Function Date and Time</div>
+          </ion-col>
+          <ion-col align-items-center col-1>
+              <div class="bold">:</div>
+          </ion-col>
+          <ion-col align-items-start col-6>
+              <div>2 Sept 2019 10:30 AM</div>
+          </ion-col>
+      </ion-row>
+
+                 
+      <ion-row>
+          <ion-col align-items-center col-5>
+              <div class="bold">Transaction ID</div>
+          </ion-col>
+          <ion-col align-items-center col-1>
+              <div class="bold">:</div>
+          </ion-col>
+          <ion-col align-items-start col-6>
+              <div>126hdh89asd123d12</div>
+          </ion-col>
+      </ion-row>
+
+
+      <ion-row>
+          <ion-col align-items-center col-5>
+              <div class="bold">Transaction Time</div>
+          </ion-col>
+          <ion-col align-items-center col-1>
+              <div class="bold">:</div>
+          </ion-col>
+          <ion-col align-items-start col-6>
+              <div>24 Aug 2019 10:30 AM</div>
+          </ion-col>
+      </ion-row>
+
+</ion-grid>
+
+
+
+  <ion-card>
+      <ion-item>
+        <ion-avatar item-start>
+          <img src= "../../assets/imgs/camera1.jpg">
+        </ion-avatar>
+        <h2>Photographer Name</h2>
+        <p>City</p>
+        <p>Phone Number</p>
+      </ion-item>
+  </ion-card>
+    
 </ion-content>

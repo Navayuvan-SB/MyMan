@@ -10,6 +10,7 @@ import { LoginPage } from '../pages/login/login';
 import { PhotographyPage } from '../pages/photography/photography';
 import { BookPage } from '../pages/book/book';
 import { MyOrderPage } from '../pages/my-order/my-order';
+import { OrderBookedPage } from '../pages/order-booked/order-booked';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { MyOrderPage } from '../pages/my-order/my-order';
     LoginPage, 
     PhotographyPage,
     BookPage,
-    MyOrderPage
+    MyOrderPage,
+    OrderBookedPage
   ],
   imports: [
     BrowserModule,
@@ -33,7 +35,8 @@ import { MyOrderPage } from '../pages/my-order/my-order';
     LoginPage,
     PhotographyPage,
     BookPage,
-    MyOrderPage
+    MyOrderPage,
+    OrderBookedPage
   ],
   providers: [
     StatusBar,
