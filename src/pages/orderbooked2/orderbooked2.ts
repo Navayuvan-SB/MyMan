@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { Orderbooked2Page } from '../orderbooked2/orderbooked2';
 
 /**
- * Generated class for the MyOrderPage page.
+ * Generated class for the Orderbooked2Page page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,22 +10,16 @@ import { Orderbooked2Page } from '../orderbooked2/orderbooked2';
 
 @IonicPage()
 @Component({
-  selector: 'page-my-order',
-  templateUrl: 'my-order.html',
+  selector: 'page-orderbooked2',
+  templateUrl: 'orderbooked2.html',
 })
-export class MyOrderPage {
+export class Orderbooked2Page {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad MyOrderPage');
-  }
-  clicked(){
-    console.log('profile page clicked');
-  }
-  cardclick(){
-    this.navCtrl.push(Orderbooked2Page);
+    console.log('ionViewDidLoad Orderbooked2Page');
   }
 
 }

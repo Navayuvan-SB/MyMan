@@ -9,7 +9,10 @@ import { PhotographyPage } from '../pages/photography/photography';
 import { BookPage } from '../pages/book/book';
 
 
-import { MyOrderPage } from '../pages/my-order/my-order';
+
+
+import { Orderbooked2Page } from '../pages/orderbooked2/orderbooked2';
+import { ProfilePage } from '../pages/profile/profile';
 @Component({
   templateUrl: 'app.html'
 })
