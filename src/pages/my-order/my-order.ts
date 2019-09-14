@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Orderbooked2Page } from '../orderbooked2/orderbooked2';
+import { ProfilePage } from '../profile/profile';
 
 /**
  * Generated class for the MyOrderPage page.
@@ -23,7 +24,7 @@ export class MyOrderPage {
     console.log('ionViewDidLoad MyOrderPage');
   }
   clicked(){
-    console.log('profile page clicked');
+    this.navCtrl.push(ProfilePage);
   }
   cardclick(){
     this.navCtrl.push(Orderbooked2Page);
