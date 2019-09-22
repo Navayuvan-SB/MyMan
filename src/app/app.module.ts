@@ -11,7 +11,8 @@ import { PhotographyPage } from '../pages/photography/photography';
 import { BookPage } from '../pages/book/book';
 import { MyOrderPage } from '../pages/my-order/my-order';
 import { OrderBookedPage } from '../pages/order-booked/order-booked';
-
+import { Orderbooked2Page } from '../pages/orderbooked2/orderbooked2';
+import { ProfilePage } from '../pages/profile/profile';
 @NgModule({
   declarations: [
     MyApp,
@@ -21,7 +22,9 @@ import { OrderBookedPage } from '../pages/order-booked/order-booked';
     PhotographyPage,
     BookPage,
     MyOrderPage,
-    OrderBookedPage
+    OrderBookedPage,
+    Orderbooked2Page,
+    ProfilePage
   ],
   imports: [
     BrowserModule,
@@ -36,7 +39,9 @@ import { OrderBookedPage } from '../pages/order-booked/order-booked';
     PhotographyPage,
     BookPage,
     MyOrderPage,
-    OrderBookedPage
+    OrderBookedPage,
+    Orderbooked2Page,
+    ProfilePage 
   ],
   providers: [
     StatusBar,
