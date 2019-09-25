@@ -1,5 +1,5 @@
 page-signup {
-    .toolbar-title.toolbar-title-md{ color: #18A0A0; font-size: 25px; font-weight: 400; text-align: center ;}
+    .toolbar-title.toolbar-title-md{ color: white; font-size: 25px; font-weight: 400; text-align: center ;}
     .toolbar-background {
         background-color: #18A0A0; 
     }
@@ -60,5 +60,12 @@ page-signup {
 
     .navLogin{
         margin-top: 15%;
+    }
+
+
+    .warning-on-input{
+        width: 90%;
+        margin: auto;
+        margin-top: 1%;
     }
 }

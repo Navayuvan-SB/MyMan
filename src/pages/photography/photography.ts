@@ -14,29 +14,40 @@ import { BookPage } from '../book/book';
   templateUrl: 'photography.html',
 })
 export class PhotographyPage {
-  card: string;
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+
+  card      : string;
+  activities: any;
+  constructor(public navCtrl      : NavController,
+              public navParams    : NavParams,) {
+
+                // fetch("/assets/data/photography_pack_details.json")
+                //       .then(response => response.json())
+                //       .then(json => {
+                //         this.activities = json;
+                //         console.log(json);
+                //       });
+                this.fetchFromDb();
+              }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad PhotographyPage');
   }
-order(){
-  this.navCtrl.push(MyOrderPage);
-}
-public card1click(){
-  this.card= "pack1";
-  this.navCtrl.push(BookPage,{ item:this.card });
- 
-}
-card2click(){
-  this.card= "pack2";
-  this.navCtrl.push(BookPage,{ item:this.card });
- 
-}
-card3click(){
-  this.card= "pack3";
-  this.navCtrl.push(BookPage, { item:this.card });
- 
-}
+  order(){
+    this.navCtrl.push(MyOrderPage);
+  }
+  public card1click(){
+    this.card= "pack1";
+    this.navCtrl.push(BookPage,{ item:this.card });
+  
+  }
+  card2click(){
+    this.card= "pack2";
+    this.navCtrl.push(BookPage,{ item:this.card });
+  
+  }
+  card3click(){
+    this.card= "pack3";
+    this.navCtrl.push(BookPage, { item:this.card });
+  
+  }
 }

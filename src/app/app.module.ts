@@ -13,6 +13,21 @@ import { MyOrderPage } from '../pages/my-order/my-order';
 import { OrderBookedPage } from '../pages/order-booked/order-booked';
 import { Orderbooked2Page } from '../pages/orderbooked2/orderbooked2';
 import { ProfilePage } from '../pages/profile/profile';
+
+// Firebase Services
+import { FirebaseServices } from '../services/fireBaseService';
+
+
+// Angularfire2 for firebase functions
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireAuth } from 'angularfire2/auth';
+import { AngularFireDatabase } from 'angularfire2/database';
+
+// firebase credentials
+import { firebaseConfig } from '../credentials/firebase-credential'
+
+
+
 @NgModule({
   declarations: [
     MyApp,
@@ -28,7 +43,8 @@ import { ProfilePage } from '../pages/profile/profile';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    AngularFireModule.initializeApp(firebaseConfig.config)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -46,6 +62,9 @@ import { ProfilePage } from '../pages/profile/profile';
   providers: [
     StatusBar,
     SplashScreen,
+    FirebaseServices,
+    AngularFireAuth,
+    AngularFireDatabase,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
