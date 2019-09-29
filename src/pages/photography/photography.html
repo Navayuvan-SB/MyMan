@@ -17,15 +17,16 @@
 
 <ion-content padding> 
     <ion-grid>
-        <ion-row>
+
+        <ion-row *ngFor="let pack of packs">
            <ion-col>
-                <ion-card (click)="card1click()" type="button" style=" border: 1px solid black; border-radius: 20px;" >
+                <ion-card (click)="packClicked(pack)" type="button" style=" border: 1px solid black; border-radius: 20px;" >
                      <div class="c1" >
                           <ion-card-content>
                                   <ion-avatar class="img1" style=" border: 1px solid black;">
                                            <!--image-->
                                   </ion-avatar>
-                                   <ion-label class="p1" style="color:black;"><b>Pack 1</b></ion-label>
+                                   <ion-label class="p1" style="color:black;"><b>Pack {{ pack.id }}</b></ion-label>
                           </ion-card-content>
                      </div>
                </ion-card>
@@ -33,34 +34,35 @@
         </ion-row>
     
     
-        <ion-row>
+        <!-- <ion-row>
            <ion-col>
                <ion-card (click)="card2click()" type="button" style=" border: 1px solid black; border-radius: 20px;" >
                      <div class="c1">
                            <ion-card-content>
                                    <ion-avatar class="img2" style=" border: 1px solid black;">
-                                         <!--image-->
-                                   </ion-avatar>
+                                         image-->
+                                   <!-- </ion-avatar>
                                    <ion-label class="p1" style="color:black;"><b>Pack 2</b></ion-label>
                            </ion-card-content>
                      </div>
         
                 </ion-card>
             </ion-col>
-        </ion-row>
+        </ion-row> 
+
         <ion-row>
              <ion-col>
                   <ion-card (click)="card3click()" type="button" style=" border: 1px solid black; border-radius: 20px;" >
                         <div class="c1">
                                <ion-card-content>
-                                    <ion-avatar class="img3" style=" border: 1px solid black;">
+                                    <ion-avatar class="img3" style=" border: 1px solid black;"> -->
                                            <!--image-->
-                                    </ion-avatar>
+                                    <!-- </ion-avatar>
                                     <ion-label class="p1" style="color:black;"><b>Pack 3</b></ion-label>
                                </ion-card-content>
                         </div>
                    </ion-card>
              </ion-col>
-      </ion-row>
+      </ion-row> -->
     </ion-grid>
 </ion-content>

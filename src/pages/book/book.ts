@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams, AlertController } from 'ionic-angular';
 import { MyOrderPage } from '../my-order/my-order';
 import { OrderBookedPage } from '../order-booked/order-booked';
 
@@ -14,10 +14,23 @@ import { OrderBookedPage } from '../order-booked/order-booked';
   templateUrl: 'book.html',
 })
 export class BookPage {
-  value: any;
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.value= navParams.get('item');
-    console.log(this.value,'clicked');
+  
+  source    : any;
+  pack      : any;
+
+  // selected function
+  selectedFunction  : string = "";
+  fromTime          : string = "";
+  toTime            : string = "";
+
+  constructor(public navCtrl      : NavController, 
+              public navParams    : NavParams,
+              public alertCtrl    : AlertController) {
+    
+    // get the value from source page
+    this.source = navParams.get('payload');
+    this.pack   = this.source.data;
+
   }
 
   ionViewDidLoad() {
@@ -28,5 +41,31 @@ export class BookPage {
   }
   checkout(){
     this.navCtrl.push(OrderBookedPage);
+  }
+
+
+  // function dropdown
+  functionType(){
+
+    let alert = this.alertCtrl.create();
+    alert.setTitle('Functions');
+
+    this.pack.function.forEach(element => {
+      alert.addInput({
+        type: 'radio',
+        label: element.name,
+        value: element.name,
+        checked: false
+      });
+    });
+
+    alert.addButton('Cancel');
+    alert.addButton({
+      text: 'OK',
+      handler: data => {
+        this.selectedFunction = data;
+      }
+    });
+    alert.present();
   }
 }

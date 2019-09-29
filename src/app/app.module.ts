@@ -28,6 +28,7 @@ import { firebaseConfig } from '../credentials/firebase-credential'
 
 
 
+
 @NgModule({
   declarations: [
     MyApp,
@@ -66,6 +67,7 @@ import { firebaseConfig } from '../credentials/firebase-credential'
     AngularFireAuth,
     AngularFireDatabase,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
+    
   ]
 })
 export class AppModule {}

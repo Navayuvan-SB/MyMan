@@ -27,7 +27,7 @@ page-book {
                       border-radius: 50%;          
                }
                .b1{
-                      padding-left: 130px;
+                      padding-left: 0px;
                       width: 100%;
                 }
                   .b3{
@@ -37,7 +37,7 @@ page-book {
      
     }
     .icon1{
-          margin-left: 85%;
+          margin-left: 80%;
     }
     
    .d2{
@@ -65,5 +65,18 @@ page-book {
                       bottom:28px;
                       margin-left: 60%;
                 }
+   }
+
+   .fullWidth {
+      width:100%; 
+      height:100%;
+   }
+
+   .btnText{
+      margin-top:1.5%;
+   }
+
+   .datetime{
+      padding-bottom:20%; 
    }
 }

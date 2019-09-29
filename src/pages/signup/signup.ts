@@ -6,18 +6,11 @@ import { FirebaseServices } from '../../services/fireBaseService';
 import { MustMatch } from '../../validators/must-match';
 import { AngularFireAuth } from 'angularfire2/auth';
 
-
-/**
- * Generated class for the SignupPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 @Component({
   selector: 'page-signup',
   templateUrl: 'signup.html',
 })
-export class SignupPage {
+export class SignupPage { 
 
   credentialForm : FormGroup;
 

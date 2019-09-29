@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams, LoadingController, ToastController } from 'ionic-angular';
 import { MyOrderPage } from '../my-order/my-order';
 import { BookPage } from '../book/book';
+import { FirebaseServices } from '../../services/fireBaseService';
 
 /**
  * Generated class for the PhotographyPage page.
@@ -16,16 +17,27 @@ import { BookPage } from '../book/book';
 export class PhotographyPage {
 
   card      : string;
-  activities: any;
+  packs     : any;
+  loading   : any;
+  toast     : any;
   constructor(public navCtrl      : NavController,
-              public navParams    : NavParams,) {
+              public navParams    : NavParams,
+              public fbService    : FirebaseServices,
+              public loadingCtrl  : LoadingController,
+              public toastCtrl    : ToastController) {
 
-                // fetch("/assets/data/photography_pack_details.json")
-                //       .then(response => response.json())
-                //       .then(json => {
-                //         this.activities = json;
-                //         console.log(json);
-                //       });
+                // loading instance
+                this.loading = this.loadingCtrl.create({
+                  content: 'please wait'
+                });
+
+                // toast instance
+                this.toast = this.toastCtrl.create({
+                  message   : 'Some error has occured. Please try agian',
+                  duration  : 2000,
+                  position  : 'bottom'
+                });
+
                 this.fetchFromDb();
               }
 
@@ -35,19 +47,62 @@ export class PhotographyPage {
   order(){
     this.navCtrl.push(MyOrderPage);
   }
-  public card1click(){
-    this.card= "pack1";
-    this.navCtrl.push(BookPage,{ item:this.card });
+
   
-  }
-  card2click(){
-    this.card= "pack2";
-    this.navCtrl.push(BookPage,{ item:this.card });
+  // card1click(){
+  //   this.card= "pack1";
+  //   this.navCtrl.push(BookPage,{ item:this.card });
   
-  }
-  card3click(){
-    this.card= "pack3";
-    this.navCtrl.push(BookPage, { item:this.card });
+  // }
+
+
+  // card2click(){
+  //   this.card= "pack2";
+  //   this.navCtrl.push(BookPage,{ item:this.card });
   
+  // }
+
+
+  // card3click(){
+  //   this.card= "pack3";
+  //   this.navCtrl.push(BookPage, { item:this.card });
+  
+  // }
+
+
+  // fetch from Firebase Database
+  fetchFromDb(){
+
+    // start loading component 
+    this.loading.present();
+    this.fbService.readOnce('packs')
+        .then((response) => {
+
+          // terminate loading component 
+          this.loading.dismiss();
+          this.packs = response.val();
+        })
+        .catch((error) => {
+
+          // terminate loading component
+          this.loading.dismiss();
+
+          // show toast message
+          this.toast.present();
+          
+        });
   }
+
+  // pack clicked
+  packClicked(pack){
+
+    let payload = {
+      source  : 'photography',
+      data    : pack
+    };
+    
+    this.navCtrl.push(BookPage,{ payload: payload });
+
+  }
+
 }

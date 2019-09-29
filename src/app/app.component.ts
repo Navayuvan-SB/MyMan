@@ -23,17 +23,17 @@ export class MyApp {
   constructor(platform      : Platform, 
               statusBar     : StatusBar,
               splashScreen  : SplashScreen,
-              angularFire   : AngularFireAuth) { 
+              angularFire   : AngularFireAuth,
+              af            : AngularFireModule) { 
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
 
       // check if the user is signed in
-      if(angularFire.auth.currentUser != null){ 
-        this.rootPage = HomePage;
-      }else{
-        this.rootPage = LoginPage;
-      }
+
+      angularFire.authState.subscribe(user => {
+        this.rootPage = user ? HomePage : LoginPage;
+      });
 
       statusBar.styleBlackOpaque();
       splashScreen.hide();
