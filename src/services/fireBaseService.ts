@@ -209,7 +209,7 @@ export class FirebaseServices {
 
                if (orderByMethod == this.orderByChild){
                   this.fbDatabase.database.ref(parent)
-                        .orderByChild(orderByChild)
+                        .orderByChild(orderByChild) 
                         .endAt(limit)
                         .once("value")
                         .then(function(snapshot){

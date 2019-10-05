@@ -26,7 +26,11 @@ import { AngularFireDatabase } from 'angularfire2/database';
 // firebase credentials
 import { firebaseConfig } from '../credentials/firebase-credential'
 
+// myman service
+import { MyManService } from '../services/myManService';
 
+import { Network } from '@ionic-native/network';
+import { Geolocation } from '@ionic-native/geolocation';
 
 
 @NgModule({
@@ -58,7 +62,7 @@ import { firebaseConfig } from '../credentials/firebase-credential'
     MyOrderPage,
     OrderBookedPage,
     Orderbooked2Page,
-    ProfilePage 
+    ProfilePage
   ],
   providers: [
     StatusBar,
@@ -66,8 +70,8 @@ import { firebaseConfig } from '../credentials/firebase-credential'
     FirebaseServices,
     AngularFireAuth,
     AngularFireDatabase,
+    MyManService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
-    
   ]
 })
 export class AppModule {}

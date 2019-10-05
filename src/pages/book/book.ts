@@ -1,14 +1,9 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams, AlertController } from 'ionic-angular';
+import { NavController, NavParams, AlertController, ModalController } from 'ionic-angular';
 import { MyOrderPage } from '../my-order/my-order';
 import { OrderBookedPage } from '../order-booked/order-booked';
+import { MyManService } from '../../services/myManService';
 
-/**
- * Generated class for the BookPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 @Component({
   selector: 'page-book',
   templateUrl: 'book.html',
@@ -20,12 +15,15 @@ export class BookPage {
 
   // selected function
   selectedFunction  : string = "";
+  selectedItem      : any;
   fromTime          : string = "";
   toTime            : string = "";
 
   constructor(public navCtrl      : NavController, 
               public navParams    : NavParams,
-              public alertCtrl    : AlertController) {
+              public alertCtrl    : AlertController,
+              public modalCtrl    : ModalController,
+              public mmnService   : MyManService) {
     
     // get the value from source page
     this.source = navParams.get('payload');
@@ -40,7 +38,10 @@ export class BookPage {
     this.navCtrl.push(MyOrderPage);
   }
   checkout(){
-    this.navCtrl.push(OrderBookedPage);
+
+
+
+    // this.navCtrl.push(OrderBookedPage);
   }
 
 
@@ -54,7 +55,7 @@ export class BookPage {
       alert.addInput({
         type: 'radio',
         label: element.name,
-        value: element.name,
+        value: element,
         checked: false
       });
     });
@@ -63,9 +64,28 @@ export class BookPage {
     alert.addButton({
       text: 'OK',
       handler: data => {
-        this.selectedFunction = data;
+        this.selectedFunction = data.name;
+        this.selectedItem     = data;
       }
     });
     alert.present();
+  }
+
+  //update EST
+  updateEstimatedAmount(){
+    // call amount estimation function
+    
+    if (this.fromTime != ""){
+      this.mmnService.updateETA(this.fromTime, this.toTime, this.selectedItem)
+                    .then((response) => {
+                      console.log(response);
+                    })
+    }
+
+  }
+
+  // location clicked
+  location(){
+    console.log("Location clicked");
   }
 }

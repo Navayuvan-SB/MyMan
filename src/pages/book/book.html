@@ -33,7 +33,9 @@
                   </ion-row>
                   <ion-row (click)="functionType()">
                         <ion-col>
-                             <button class="b1" style=" border: 1px solid black;" ion-button round outline icon-end >
+                             <button class="b1" 
+                                          (ngModelChange)="updateEstimatedAmount()"
+                                          style=" border: 1px solid black;" ion-button round outline icon-end >
                                  <ion-row class="fullWidth">
                                     <ion-col col-9 class="btnText">
                                           {{ selectedFunction }}
@@ -50,12 +52,14 @@
                         <ion-col col-6><b>To</b></ion-col>
                   </ion-row>
                   <ion-row>
-                        <ion-col col-6 (click)="picker.open()">
+                        <ion-col col-6 (click)="picker.open()"
+                                       (ngModelChange)="updateEstimatedAmount()">
                               <button class="b3" style=" border: 1px solid black;" ion-button round outline icon-end >
                                     <ion-row class="fullWidth">
                                           <ion-col col-9 class="fullWidth">
                                                 <ion-datetime #picker
-                                                            pickerFormat="DD MM YYYY hh:mm A"
+                                                            (ngModelChange)="updateEstimatedAmount()"
+                                                            pickerFormat="DD MM YYYY"
                                                             [(ngModel)]="fromTime">
                                                 </ion-datetime>
                                           </ion-col>
@@ -68,9 +72,10 @@
                         <ion-col col-6 (click)="picker1.open()">
                               <button class="b3" style=" border: 1px solid black;" ion-button round outline icon-end >
                                     <ion-row class="fullWidth">
-                                          <ion-col col-9 class="fullWidth datetime">
+                                          <ion-col col-9 class="fullWidth">
                                                 <ion-datetime #picker1 
-                                                            pickerFormat="DD MMMM YYYY hh:mm A"
+                                                            (ngModelChange)="updateEstimatedAmount()"
+                                                            pickerFormat="DD MM YYYY"
                                                             [(ngModel)]="toTime">
                                                 </ion-datetime>
                                           </ion-col>
@@ -87,8 +92,10 @@
                         <ion-col col-12><b>Address or Location</b></ion-col>
                  </ion-row>
                  <ion-row>
-                        <ion-col col-12>
-                              <button class="b1" style=" border: 1px solid black;" ion-button icon-end round outline>
+                        <ion-col col-12 (click)="location()">
+                              <button class="b1" 
+                                          (ngModelChange)="updateEstimatedAmount()"
+                                          style=" border: 1px solid black;" ion-button icon-end round outline>
                                     <ion-row class="fullWidth">
                                           <ion-col col-9 class="btnText">
                                                          

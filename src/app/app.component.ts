@@ -19,7 +19,7 @@ import { AngularFireAuth } from 'angularfire2/auth';
 })
 export class MyApp {
   
-  rootPage:any;
+  rootPage : any;
   constructor(platform      : Platform, 
               statusBar     : StatusBar,
               splashScreen  : SplashScreen,

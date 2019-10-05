@@ -50,7 +50,7 @@ export class LoginPage {
   }
 
   signIn(){
-
+ 
     // loading instance
     let loading = this.loadingCtrl.create({
       content: 'please wait, logging in'
@@ -58,7 +58,6 @@ export class LoginPage {
 
     // toast instance
     let toast = this.toastCtrl.create({
-      message   : 'Some error has occured. Please try agian',
       duration  : 2000,
       position  : 'bottom'
     });
@@ -76,7 +75,7 @@ export class LoginPage {
                 loading.dismiss();
                 this.navCtrl.push(HomePage);
               })
-              .catch((error) => {
+              .catch((error) => { 
                 // toast.present();
                 loading.dismiss();
                 if (error.message == "The password is invalid or the user does not have a password."){
@@ -86,7 +85,7 @@ export class LoginPage {
                   toast.setMessage("Some error has occured. Please try again");
                   toast.present();
                 }
-
+  
               });
           
         })
