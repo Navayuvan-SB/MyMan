@@ -85,7 +85,7 @@ export class LoginPage {
                   toast.setMessage("Some error has occured. Please try again");
                   toast.present();
                 }
-  
+   
               });
           
         })

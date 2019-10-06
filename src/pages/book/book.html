@@ -33,13 +33,12 @@
                   </ion-row>
                   <ion-row (click)="functionType()">
                         <ion-col>
-                             <button class="b1" 
-                                          (ngModelChange)="updateEstimatedAmount()"
+                             <button class="b1"
                                           style=" border: 1px solid black;" ion-button round outline icon-end >
                                  <ion-row class="fullWidth">
                                     <ion-col col-9 class="btnText">
                                           {{ selectedFunction }}
-                                    </ion-col>    
+                                    </ion-col>   
                                     <ion-col col-3>
                                           <ion-icon class="icon1" name="custom-Downarrow"></ion-icon>
                                     </ion-col>  
@@ -47,20 +46,27 @@
                              </button>
                         </ion-col>
                   </ion-row>
+                  <ion-row *ngIf="selectedFunction == 'Others'">
+                        <ion-item class="l2">
+                        <!-- <ion-label stacked>Password</ion-label> -->
+                              <ion-input type="text" 
+                                          placeholder="type your function"
+                                          [(ngModel)]="otherFunctionName"></ion-input>
+                        </ion-item>
+                  </ion-row>
                   <ion-row>
                         <ion-col col-6><b>From</b></ion-col>
                         <ion-col col-6><b>To</b></ion-col>
                   </ion-row>
                   <ion-row>
-                        <ion-col col-6 (click)="picker.open()"
-                                       (ngModelChange)="updateEstimatedAmount()">
+                        <ion-col col-6 (click)="picker.open()">
                               <button class="b3" style=" border: 1px solid black;" ion-button round outline icon-end >
                                     <ion-row class="fullWidth">
                                           <ion-col col-9 class="fullWidth">
                                                 <ion-datetime #picker
-                                                            (ngModelChange)="updateEstimatedAmount()"
                                                             pickerFormat="DD MM YYYY"
-                                                            [(ngModel)]="fromTime">
+                                                            [(ngModel)]="fromTime"
+                                                            (ngModelChange)="updateEstimatedAmount()">
                                                 </ion-datetime>
                                           </ion-col>
                                           <ion-col col-3>
@@ -74,9 +80,9 @@
                                     <ion-row class="fullWidth">
                                           <ion-col col-9 class="fullWidth">
                                                 <ion-datetime #picker1 
-                                                            (ngModelChange)="updateEstimatedAmount()"
                                                             pickerFormat="DD MM YYYY"
-                                                            [(ngModel)]="toTime">
+                                                            [(ngModel)]="toTime"
+                                                            (ngModelChange)="updateEstimatedAmount()" >
                                                 </ion-datetime>
                                           </ion-col>
                                           <ion-col col-3>
@@ -113,7 +119,7 @@
 
 <ion-footer no-border>
       <div class="d2">
-            <ion-label class="l4">INR xxxxxx</ion-label>
+            <ion-label class="l4">INR {{ estimatedAmount }}</ion-label>
             <ion-label class="l5">Estimated Amount</ion-label>
                   <button (click)="checkout()" class="b5"  ion-button round outline>
                               CHECK OUT   

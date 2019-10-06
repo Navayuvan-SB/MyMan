@@ -1,5 +1,6 @@
 import { FirebaseServices } from './fireBaseService';
 import { Injectable } from '@angular/core';
+import { rejects } from 'assert';
 
 @Injectable()
 export class MyManService{
@@ -30,35 +31,46 @@ export class MyManService{
     }
 
     // update the Estimated amount of Booking
-    updateETA(fromTime  : string, toTime    : string, pack  : string){
+    updateETA(fromTime  : string, 
+              toTime    : string, 
+              pack      : string){
 
-        return new Promise((resolve) => {
-            console.log(fromTime);
-            console.log(toTime);
-            console.log(pack);
+        return new Promise((resolve, reject) => {
+            
+            console.log({ fromTime, toTime, pack });
 
             let ETA = 0
 
             let cost = Number(pack.cost);
 
-            let sTime = new Date(fromTime).getDate();
-            let eTime = new Date(toTime).getDate();
+            let sTime = new Date(fromTime);
+            let eTime = new Date(toTime);
 
-            let difference = eTime - sTime;
+            const utc1 = Date.UTC(sTime.getFullYear(), sTime.getMonth(), sTime.getDate());
+            const utc2 = Date.UTC(eTime.getFullYear(), eTime.getMonth(), eTime.getDate());
 
-            if(difference <= 0){
+            let difference = Math.floor((utc2 - utc1) / (1000 * 60 * 60 * 24));;
 
-                ETA = 1 * cost * 100000;
+            
+            if(difference < 0){
+                ETA = 0;
+                reject(ETA)
 
-            }else{
+            }
+            else if (difference == 0){
 
-                ETA = (difference+1) * cost * 100000;
+                ETA = 1 * cost;
+
+            }
+            else{
+
+                ETA = (difference + 1) * cost;
 
             }
 
             resolve(ETA);
 
-        })        
+        })  
     }
 
 }
