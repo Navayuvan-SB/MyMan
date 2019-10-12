@@ -12,6 +12,21 @@
     </ion-avatar>
 
 <form [formGroup]="credentialForm"> 
+
+
+  <ion-item class="l4">
+    <!-- <ion-label   position="floating"> Confirm Password</ion-label> -->
+    <ion-input type="text" 
+                placeholder="Name"
+                formControlName="name"></ion-input>
+  </ion-item>
+
+  <ion-item 
+      class="warning-on-input"
+      *ngIf="!credentialForm.controls.name.valid  && (credentialForm.controls.name.dirty || submitAttempt) && !credentialForm.controls.name.valid">
+    <p>Enter your name</p>
+  </ion-item>
+
   <ion-item class="l1">
     <!-- <ion-label  position="floating">Phone Number</ion-label> -->
     <ion-input type="Number" 
@@ -64,11 +79,11 @@
     <p>Password and Conform password must be same</p>
   </ion-item>
   
-    <ion-buttons type="submit">
-    <button  ion-button  round full class="button" 
-              (click)="signUp()"
-              [disabled]="!credentialForm.valid">SIGNUP</button>
-    </ion-buttons>
+  <ion-buttons type="submit">
+  <button  ion-button  round full class="button" 
+            (click)="signUp()"
+            [disabled]="!credentialForm.valid">SIGNUP</button>
+  </ion-buttons>
     
     <p text-center class="navLogin">  Already an user?  <a (click)="navToLogin()"> Login</a>
     </p>

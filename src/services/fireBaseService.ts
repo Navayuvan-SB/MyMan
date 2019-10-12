@@ -21,7 +21,7 @@ export class FirebaseServices {
    constructor(public fbAuth        : AngularFireAuth,
                public fbDatabase    : AngularFireDatabase){ }
 
-
+   
    // get the nodes under the parent as json object
    readOnce(parent: string){
 
@@ -39,7 +39,19 @@ export class FirebaseServices {
       });
    }
 
- 
+   // push in database
+   pushInDatabase(parent: string, data: any){
+
+      return new Promise((resolve, reject) => {
+         this.fbDatabase.database.ref(parent)
+            .push(data)
+            .then((response) => {
+               resolve(response);
+            });
+      })
+   }
+
+
    // write data to database
    writeInDatabase(parent: string, data: any){
 

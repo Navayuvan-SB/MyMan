@@ -31,27 +31,37 @@
     <ion-card class="card1">
       <ion-item>
         <h2>Function Name</h2>
-        <p>Navayuvan Marriage</p>
+        <p>{{ item.function }}</p>
         <h2>Function Date and Time</h2>
-        <p>2 August 2019 10:30 AM</p>
+        <p>{{ item.fromDate }}</p>
         <h2>Event Start</h2>
-        <p>2 August 2019 10:30 AM</p>
+        <p>{{ item.fromDate }}</p>
         <h2>Event End</h2>
-        <p>2 August 2019 10:30 AM</p>
+        <p>{{ item.toDate }}</p>
       </ion-item>
     </ion-card>
      
   <ion-card class="card2">
     <ion-item>
       <h2>Function Name</h2>
-      <p>Function</p>
+      <p>{{ item.function }}</p>
       <h2>Function Date and Time</h2>
-      <p>2 August 2019 10:30 AM</p>
+      <p>{{ item.fromDate }}</p>
     </ion-item>
   </ion-card>
 
   <ion-card class="card3">
-    <ion-item>
+
+    <ion-item *ngIf="status == 0">
+      <ion-avatar item-start>
+        <img src= "../../assets/imgs/camera1.jpg">
+      </ion-avatar>
+      <h2> </h2>
+      <h2>Photographer status</h2>
+      <p> <ion-badge color="secondary">Pending</ion-badge> </p>
+    </ion-item>
+
+    <ion-item *ngIf="status != 0">
       <ion-avatar item-start>
         <img src= "../../assets/imgs/camera1.jpg">
       </ion-avatar>

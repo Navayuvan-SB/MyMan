@@ -85,7 +85,6 @@ export class LoginPage {
                   toast.setMessage("Some error has occured. Please try again");
                   toast.present();
                 }
-   
               });
           
         })
@@ -94,7 +93,7 @@ export class LoginPage {
           toast.setMessage("Some error has occured. Please try again");
           toast.present();
         })
-    // this.navCtrl.push(HomePage);
+    // this.navCtrl.push(HomePage); 
   }
-
+  
 }

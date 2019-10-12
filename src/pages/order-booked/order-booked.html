@@ -30,7 +30,7 @@
             <div class="bold">:</div>
           </ion-col>
           <ion-col align-items-start col-4>
-              <div>George Willams</div>
+              <div>{{ name }}</div>
             </ion-col>
       </ion-row>
 
@@ -43,7 +43,7 @@
               <div class="bold">:</div>
           </ion-col>
           <ion-col align-items-start col-4>
-              <div>Marriage</div>
+              <div>{{ functionType }}</div>
           </ion-col>
       </ion-row>
 
@@ -55,7 +55,7 @@
               <div class="bold">:</div>
           </ion-col>
           <ion-col align-items-start col-6>
-              <div>2 Sept 2019 10:30 AM</div>
+              <div>{{ fromDate }}</div>
           </ion-col>
       </ion-row>
 
@@ -81,7 +81,7 @@
               <div class="bold">:</div>
           </ion-col>
           <ion-col align-items-start col-6>
-              <div>24 Aug 2019 10:30 AM</div>
+              <div>{{ nowDate | date }}</div>
           </ion-col>
       </ion-row>
 
@@ -94,10 +94,11 @@
         <ion-avatar item-start>
           <img src= "../../assets/imgs/camera1.jpg">
         </ion-avatar>
-        <h2>Photographer Name</h2>
-        <p>City</p>
-        <p>Phone Number</p>
+        <h2> </h2>
+        <h2>Photographer status</h2>
+        <p> <ion-badge color="secondary">Pending</ion-badge> </p>
       </ion-item>
+
   </ion-card>
     
 </ion-content>

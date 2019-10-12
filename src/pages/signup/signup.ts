@@ -45,6 +45,11 @@ export class SignupPage {
                                         Validators.compose([
                                           Validators.minLength(8),
                                           Validators.required
+                                        ])],
+                  name              : ['',
+                                        Validators.compose([
+                                          Validators.required,
+                                          Validators.minLength(4)
                                         ])]
                 },{
 
@@ -70,6 +75,7 @@ export class SignupPage {
     let email       = this.credentialForm.controls['email'].value
     let password    = this.credentialForm.controls['password'].value
     let phoneNumber = this.credentialForm.controls['phoneNumber'].value
+    let name        = this.credentialForm.controls['name'].value
 
     // loading instance
     let loading = this.loadingCtrl.create({
@@ -90,7 +96,7 @@ export class SignupPage {
       buttons     : [{
         text   : 'Okay',
         handler : data => {
-          this.navCtrl.push(LoginPage);           
+          //         
         }
       }]
     });
@@ -102,7 +108,8 @@ export class SignupPage {
           let uid = response.uid;
           let node = {
               'email'         : email,
-              'phoneNumber'   : phoneNumber
+              'phoneNumber'   : phoneNumber,
+              'name'          : name
            }
           this.fbService.writeInDatabase('users/' + uid, node)
               .then((response) => {

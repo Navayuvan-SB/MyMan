@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { AngularFireAuth } from 'angularfire2/auth';
+import { FirebaseServices } from '../../services/fireBaseService';
 
 /**
  * Generated class for the OrderBookedPage page.
@@ -13,8 +15,43 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class OrderBookedPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+  source          : any;
+  name            : string;
+  nowDate         : any;
+  fromDate        : any;
+  functionType    : any;
+
+  constructor(public navCtrl        : NavController, 
+              public navParams      : NavParams,
+              public fbAuth         : AngularFireAuth,
+              public fbService      : FirebaseServices) {
+
+                this.source = navParams.get('payload');
+                var today = new Date();
+                var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+                var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+                this.nowDate = date+' '+time;
+
+                this.fromDate = this.source.fromDate;
+                this.functionType = this.source.function;
+
+                let user = this.fbAuth.auth.currentUser;
+                // console.log(user.uid);
+
+                this.fbService.readOnce('users/' + user.uid)
+                    .then((response) => {
+                      let details = response.val();
+                      this.name = details.name;
+                      this.source.userId = details.email;
+                      this.source.bookedDate = this.nowDate;
+                      this.source.userName   = this.name;
+                      this.fbService.pushInDatabase('requests',this.source);
+                    })
+                    .catch((error) => {
+                      // console.log(error);
+                    })
+
+              }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad OrderBookedPage');

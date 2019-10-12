@@ -4,6 +4,7 @@ import { MyOrderPage } from '../my-order/my-order';
 import { OrderBookedPage } from '../order-booked/order-booked';
 import { MyManService } from '../../services/myManService';
 import { FirebaseServices } from '../../services/fireBaseService';
+import { timingSafeEqual } from 'crypto';
 
 @Component({
   selector: 'page-book',
@@ -43,7 +44,7 @@ export class BookPage {
     // toast instance
     this.toast = this.toastCtrl.create({
       duration  : 4000,
-      position  : 'top'
+      position  : 'bottom'
     });
 
     
@@ -73,16 +74,23 @@ export class BookPage {
   }
   checkout(){
 
-    let payload = {
-      pack      : this.pack,
-      cost      : this.estimatedAmount,
-      fromDate  : this.fromTime,
-      toDate    : this.toTime,
-      function  : this.selectedFunction,
-      location  : this.locationBooked    
+    if (this.fromTime != "" && this.toTime != "" && this.functions != ""){
+      let payload = {
+        pack      : this.pack,
+        cost      : this.estimatedAmount,
+        fromDate  : this.fromTime,
+        toDate    : this.toTime,
+        function  : this.selectedFunction,
+        location  : this.locationBooked,
+        status    : 0
+      }
+  
+      this.navCtrl.push(OrderBookedPage, { payload: payload });
     }
-
-    this.navCtrl.push(OrderBookedPage, { payload: payload });
+    else{
+      this.toast.setMessage("Choose the fields correctly..!");
+      this.toast.present();
+    }
     
   }
 
