@@ -48,27 +48,6 @@ export class PhotographyPage {
     this.navCtrl.push(MyOrderPage);
   }
 
-  
-  // card1click(){
-  //   this.card= "pack1";
-  //   this.navCtrl.push(BookPage,{ item:this.card });
-  
-  // }
-
-
-  // card2click(){
-  //   this.card= "pack2";
-  //   this.navCtrl.push(BookPage,{ item:this.card });
-  
-  // }
-
-
-  // card3click(){
-  //   this.card= "pack3";
-  //   this.navCtrl.push(BookPage, { item:this.card });
-  
-  // }
-
 
   // fetch from Firebase Database
   fetchFromDb(){
@@ -80,7 +59,7 @@ export class PhotographyPage {
 
           // terminate loading component 
           this.loading.dismiss();
-          this.packs = response.val();
+          this.packs = response;
         })
         .catch((error) => {
 

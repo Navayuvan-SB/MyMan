@@ -33,7 +33,7 @@ export class MyManService{
     // update the Estimated amount of Booking
     updateETA(fromTime  : string, 
               toTime    : string, 
-              pack      : string){
+              pack      : any){
 
         return new Promise((resolve, reject) => {
             

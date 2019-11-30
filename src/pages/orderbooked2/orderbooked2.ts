@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
+import { FirebaseServices } from '../../services/fireBaseService';
+import { AngularFireAuth } from 'angularfire2/auth';
 
-@IonicPage()
 @Component({
   selector: 'page-orderbooked2',
   templateUrl: 'orderbooked2.html',

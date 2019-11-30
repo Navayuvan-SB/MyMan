@@ -4,7 +4,6 @@ import { MyOrderPage } from '../my-order/my-order';
 import { OrderBookedPage } from '../order-booked/order-booked';
 import { MyManService } from '../../services/myManService';
 import { FirebaseServices } from '../../services/fireBaseService';
-import { timingSafeEqual } from 'crypto';
 
 @Component({
   selector: 'page-book',
@@ -16,15 +15,21 @@ export class BookPage {
   pack      : any;
   functions : any;
 
-  // selected function
+  // input fields
   selectedFunction  : string = "";
   fromTime          : string = "";
   toTime            : string = "";
-  otherFunctionName : string = "";
+  locationBooked    : string = "";
+
+  // Estimated amount
   estimatedAmount   : number = 0;
-  locationBooked          : string = "";
+
+  // instance for loading and toast
   loading           : any;
   toast             : any;
+
+  // status flag for checkout
+  checkoutSatus     : boolean = false;
 
   constructor(public navCtrl      : NavController, 
               public navParams    : NavParams,
@@ -43,7 +48,7 @@ export class BookPage {
 
     // toast instance
     this.toast = this.toastCtrl.create({
-      duration  : 4000,
+      duration  : 2500,
       position  : 'bottom'
     });
 
@@ -52,10 +57,13 @@ export class BookPage {
     this.source = navParams.get('payload');
     this.pack   = this.source.data;
 
+    
     // get the functions details
     this.fbService.readOnce('functions')
                   .then((response) => {
-                    this.functions = response.val();
+
+                    this.functions = response;
+                    
                   })
                   .catch((error) => {
 
@@ -72,20 +80,23 @@ export class BookPage {
   order(){
     this.navCtrl.push(MyOrderPage);
   }
+
+  // checkout method
   checkout(){
 
-    if (this.fromTime != "" && this.toTime != "" && this.functions != ""){
-      let payload = {
-        pack      : this.pack,
-        cost      : this.estimatedAmount,
-        fromDate  : this.fromTime,
-        toDate    : this.toTime,
-        function  : this.selectedFunction,
-        location  : this.locationBooked,
-        status    : 0
-      }
-  
-      this.navCtrl.push(OrderBookedPage, { payload: payload });
+    if (this.checkoutSatus){
+
+        let payload = {
+          pack      : this.pack,
+          cost      : this.estimatedAmount,
+          fromDate  : this.fromTime,
+          toDate    : this.toTime,
+          function  : this.selectedFunction,
+          location  : this.locationBooked,
+          status    : 0
+        }
+    
+        this.navCtrl.push(OrderBookedPage, { payload: payload });
     }
     else{
       this.toast.setMessage("Choose the fields correctly..!");
@@ -122,9 +133,11 @@ export class BookPage {
 
   //update EST
   updateEstimatedAmount(){
+
     // call amount estimation function
-    
-    if (this.fromTime != "" && this.toTime != ""){
+    if (this.fromTime != "" && this.toTime != "" && this.selectedFunction != ""){
+
+      this.checkoutSatus = true;
       this.mmnService.updateETA(this.fromTime, this.toTime, this.pack)
                     .then((response) => {
 
@@ -139,6 +152,9 @@ export class BookPage {
 
                     });
 
+    }
+    else{
+      this.checkoutSatus = false;
     }
 
   }

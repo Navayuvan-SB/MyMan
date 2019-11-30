@@ -40,9 +40,10 @@ export class OrderBookedPage {
 
                 this.fbService.readOnce('users/' + user.uid)
                     .then((response) => {
-                      let details = response.val();
-                      this.name = details.name;
-                      this.source.userId = details.email;
+
+                      let details = Object.entries(response);
+                      this.source.userId = details[0][1];
+                      this.name          = details[1][1];
                       this.source.bookedDate = this.nowDate;
                       this.source.userName   = this.name;
                       this.fbService.pushInDatabase('requests',this.source);

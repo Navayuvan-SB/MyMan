@@ -60,15 +60,15 @@ export class LoginPage {
     let toast = this.toastCtrl.create({
       duration  : 2000,
       position  : 'bottom'
-    });
+    }); 
 
     var phoneNumber = this.credentialForm.controls['phoneNumber'].value;
     var password = this.credentialForm.controls['password'].value;
-
+  
     loading.present();
     this.fbService.filterData(this.fbService.equalTo,'users',null,this.fbService.orderByChild,'phoneNumber', phoneNumber)
         .then((response) => {
-          let obj = Object.entries(response.val());
+          let obj = Object.entries(response);
           let email = obj[0][1].email;
           this.fbService.login(email, password)
               .then((response) => {

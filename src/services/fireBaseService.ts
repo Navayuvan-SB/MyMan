@@ -30,7 +30,7 @@ export class FirebaseServices {
          this.fbDatabase.database.ref(parent)
             .once("value")
             .then(function(snapshot) {
-               resolve(snapshot);
+               resolve(snapshot.val());
             })
             .catch(function(error){
                reject('Something is wrong');
@@ -45,8 +45,8 @@ export class FirebaseServices {
       return new Promise((resolve, reject) => {
          this.fbDatabase.database.ref(parent)
             .push(data)
-            .then((response) => {
-               resolve(response);
+            .then((snapshot) => {
+               resolve(snapshot);
             });
       })
    }
@@ -109,8 +109,8 @@ export class FirebaseServices {
             this.fbDatabase.database.ref(parent)
                 .orderByChild(child)
                 .once("value")
-                .then((snapshop) => {
-                   resolve(snapshop);
+                .then((snapshot) => {
+                   resolve(snapshot.val());
                 })
                 .catch((error) => {
                    reject(error);
@@ -121,8 +121,12 @@ export class FirebaseServices {
             this.fbDatabase.database.ref(parent)
                 .orderByKey()
                 .once("value")
-                .then((snapshop) => {
-                   resolve(snapshop);
+                .then((snapshot) => {
+                  let result = Array();
+                  snapshot.val().forEach(element => {
+                     result.push(element);
+                  });
+                  resolve(result);
                 })
                 .catch((error) => {
                    reject(error);
@@ -133,8 +137,12 @@ export class FirebaseServices {
             this.fbDatabase.database.ref(parent)
                 .orderByValue()
                 .once("value")
-                .then((snapshop) => {
-                   resolve(snapshop);
+                .then((snapshot) => {
+                  let result = Array();
+                  snapshot.val().forEach(element => {
+                     result.push(element);
+                  });
+                  resolve(result);
                 })
                 .catch((error) => {
                    reject(error);
@@ -181,7 +189,11 @@ export class FirebaseServices {
                         .startAt(limit)
                         .once("value")
                         .then(function(snapshot){
-                           resolve(snapshot);
+                           let result = Array();
+                           snapshot.forEach(element => {
+                              result.push(element.val());
+                           });
+                           resolve(result);
                         })
                         .catch(function(error){
                            reject(error);
@@ -193,7 +205,11 @@ export class FirebaseServices {
                         .startAt(limit)
                         .once("value")
                         .then(function(snapshot){
-                           resolve(snapshot);
+                           let result = Array();
+                           snapshot.forEach(element => {
+                              result.push(element.val());
+                           });
+                           resolve(result);
                         })
                         .catch(function(error){
                            reject(error);
@@ -205,7 +221,11 @@ export class FirebaseServices {
                         .startAt(limit)
                         .once("value")
                         .then(function(snapshot){
-                           resolve(snapshot);
+                           let result = Array();
+                           snapshot.forEach(element => {
+                              result.push(element.val());
+                           });
+                           resolve(result);
                         })
                         .catch(function(error){
                            reject(error);
@@ -225,7 +245,11 @@ export class FirebaseServices {
                         .endAt(limit)
                         .once("value")
                         .then(function(snapshot){
-                           resolve(snapshot);
+                           let result = Array();
+                           snapshot.forEach(element => {
+                              result.push(element.val());
+                           });
+                           resolve(result);
                         })
                         .catch(function(error){
                            reject(error);
@@ -237,7 +261,11 @@ export class FirebaseServices {
                         .endAt(limit)
                         .once("value")
                         .then(function(snapshot){
-                           resolve(snapshot);
+                           let result = Array();
+                           snapshot.forEach(element => {
+                              result.push(element.val());
+                           });
+                           resolve(result);
                         })
                         .catch(function(error){
                            reject(error);
@@ -249,7 +277,11 @@ export class FirebaseServices {
                         .endAt(limit)
                         .once("value")
                         .then(function(snapshot){
-                           resolve(snapshot);
+                           let result = Array();
+                           snapshot.forEach(element => {
+                              result.push(element.val());
+                           });
+                           resolve(result);
                         })
                         .catch(function(error){
                            reject(error);
@@ -269,7 +301,11 @@ export class FirebaseServices {
                         .equalTo(equalToString)
                         .once("value")
                         .then(function(snapshot){
-                           resolve(snapshot);
+                           let result = Array();
+                           snapshot.forEach(element => {
+                              result.push(element.val());
+                           });
+                           resolve(result);
                         })
                         .catch(function(error){
                            reject(error);
@@ -281,7 +317,11 @@ export class FirebaseServices {
                         .equalTo(equalToString)
                         .once("value")
                         .then(function(snapshot){
-                           resolve(snapshot);
+                           let result = Array();
+                           snapshot.forEach(element => {
+                              result.push(element.val());
+                           });
+                           resolve(result);
                         })
                         .catch(function(error){
                            reject(error);
@@ -293,7 +333,11 @@ export class FirebaseServices {
                         .equalTo(equalToString)
                         .once("value")
                         .then(function(snapshot){
-                           resolve(snapshot);
+                           let result = Array();
+                           snapshot.forEach(element => {
+                              result.push(element.val());
+                           });
+                           resolve(result);
                         })
                         .catch(function(error){
                            reject(error);
@@ -328,7 +372,7 @@ export class FirebaseServices {
 
          this.fbAuth.auth.createUserWithEmailAndPassword(username, password)
                .then((response) => {
-                  resolve(response);
+                  resolve(response.uid);
                })
                .catch((error) => {
                   reject(error);

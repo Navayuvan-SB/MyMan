@@ -105,12 +105,13 @@ export class SignupPage {
     this.fbService.signUp(email, password)
         .then((response) => {
 
-          let uid = response.uid;
+          let uid = response;
           let node = {
               'email'         : email,
               'phoneNumber'   : phoneNumber,
               'name'          : name
            }
+
           this.fbService.writeInDatabase('users/' + uid, node)
               .then((response) => {
 

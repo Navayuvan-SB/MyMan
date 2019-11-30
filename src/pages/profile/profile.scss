@@ -1,27 +1,29 @@
 page-profile {
-    .toolbar-title.toolbar-title-md{ color: white; font-size: 25px; font-weight: 400; text-align: center ;}
+
+    .toolbar-title.toolbar-title-md{
+        color: white; 
+        font-size: 25px; 
+        font-weight: 400; 
+        text-align: center;
+        margin-left: var(--header-profile);
+    }
     .toolbar-background {
-        background-color: #18A0A0; 
+        background-color: var(--teal);
     }
-    .hammer{ 
-        padding-right: 13px;
+    .hammer{
+        margin: 5px;
     }
-    .Del{ 
-        padding-right: 13px;
+    .Del{
+        margin: 5px;
     }
     .resize-icon{
         height: 65%;
         widows: 65%;
     }
-   ion-icon{
+    ion-icon{
        color: white;
- 
- 
-   }
-
- 
-   
-   .round-border {
+    }
+    .round-border {
        border: 1px solid black;
        border-radius: 30px !important;
        font-size: 1.0em;
@@ -29,15 +31,11 @@ page-profile {
        margin-top:10px;
        margin-left: 10px;
        height: 10%;
-    
-   }
-   .l1{
-       
+    }
+    .l1{
        font-size: 20px;
        margin-left: 5%;
-    
-   }
-   
+    }
     .icon1{
         color: #18A0A0; 
         height: 10px;
@@ -50,7 +48,11 @@ page-profile {
            height: 50%; 
             justify-content: center; 
         }
-
+        .warning-on-input{
+            width: 90%;
+            margin: auto;
+            margin-top: 1%;
+        }
         ion-avatar{
             height: 90px !important;
             width: 90px !important;
@@ -94,10 +96,14 @@ page-profile {
             margin-left: 12px !important;
         }
         .button{
-            background: #18A0A0;
+            background: var(--teal);
             width: 90%;
             margin: auto;
-            margin-top: 60%;
+            margin-top: 50%;
+            margin-bottom: 10%;
+        }
+
+        ion-fab{
             margin-bottom: 10%;
         }
         
