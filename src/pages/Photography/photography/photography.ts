@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams, LoadingController, ToastController } from 'ionic-angular';
-import { MyOrderPage } from '../my-order/my-order';
+import { MyOrderPage } from '../../Common/my-order/my-order';
 import { BookPage } from '../book/book';
-import { FirebaseServices } from '../../services/fireBaseService';
+import { FirebaseServices } from '../../../services/fireBaseService';
 
 /**
  * Generated class for the PhotographyPage page.

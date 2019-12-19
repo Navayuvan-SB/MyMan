@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, NavParams, LoadingController, ToastController } from 'ionic-angular';
 import { Orderbooked2Page } from '../orderbooked2/orderbooked2';
 import { ProfilePage } from '../profile/profile';
-import { FirebaseServices } from '../../services/fireBaseService';
+import { FirebaseServices } from '../../../services/fireBaseService';
 import { AngularFireAuth } from 'angularfire2/auth';
 
 

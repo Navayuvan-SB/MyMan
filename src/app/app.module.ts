@@ -4,15 +4,15 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
-import { SignupPage } from '../pages/signup/signup';
-import { LoginPage } from '../pages/login/login';
-import { PhotographyPage } from '../pages/photography/photography';
-import { BookPage } from '../pages/book/book';
-import { MyOrderPage } from '../pages/my-order/my-order';
-import { OrderBookedPage } from '../pages/order-booked/order-booked';
-import { Orderbooked2Page } from '../pages/orderbooked2/orderbooked2';
-import { ProfilePage } from '../pages/profile/profile';
+import { HomePage } from '../pages/Common/home/home';
+import { SignupPage } from '../pages/Common/signup/signup';
+import { LoginPage } from '../pages/Common/login/login';
+import { PhotographyPage } from '../pages/Photography/photography/photography';
+import { BookPage } from '../pages/Photography/book/book';
+import { MyOrderPage } from '../pages/Common/my-order/my-order';
+import { OrderBookedPage } from '../pages/Photography/order-booked/order-booked';
+import { Orderbooked2Page } from '../pages/Common/orderbooked2/orderbooked2';
+import { ProfilePage } from '../pages/Common/profile/profile';
 
 // Firebase Services
 import { FirebaseServices } from '../services/fireBaseService';

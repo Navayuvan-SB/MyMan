@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { NavController, NavParams, LoadingController, ToastController, AlertController } from 'ionic-angular';
 import { LoginPage } from '../login/login';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { FirebaseServices } from '../../services/fireBaseService';
-import { MustMatch } from '../../validators/must-match';
+import { FirebaseServices } from '../../../services/fireBaseService';
+import { MustMatch } from '../../../validators/must-match';
 import { AngularFireAuth } from 'angularfire2/auth';
 
 @Component({
@@ -44,6 +44,7 @@ export class SignupPage {
                   confirmPassword  :  ['',
                                         Validators.compose([
                                           Validators.minLength(8),
+                                          Validators.maxLength(10),
                                           Validators.required
                                         ])],
                   name              : ['',

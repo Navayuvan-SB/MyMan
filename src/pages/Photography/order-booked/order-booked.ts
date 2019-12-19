@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { AngularFireAuth } from 'angularfire2/auth';
-import { FirebaseServices } from '../../services/fireBaseService';
+import { FirebaseServices } from '../../../services/fireBaseService';
 
 /**
  * Generated class for the OrderBookedPage page.

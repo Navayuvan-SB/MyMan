@@ -3,7 +3,7 @@ import { NavController, NavParams, ToastController, LoadingController } from 'io
 import { SignupPage } from '../signup/signup';
 import { HomePage } from '../home/home';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { FirebaseServices } from '../../services/fireBaseService';
+import { FirebaseServices } from '../../../services/fireBaseService';
 
 /**
  * Generated class for the LoginPage page.
@@ -19,8 +19,8 @@ export class LoginPage {
 
   credentialForm  : FormGroup
 
-  constructor(public navCtrl      : NavController, 
-              public navParams    : NavParams,
+  constructor(public navCtrl      : NavController,
+              public navParams    : NavParams, 
               public formBuilder  : FormBuilder,
               public fbService    : FirebaseServices,
               public toastCtrl    : ToastController,
@@ -37,7 +37,7 @@ export class LoginPage {
                                     Validators.required,
                                     Validators.minLength(8)
                   ])]
-                })
+                });
               }
 
   ionViewDidLoad() {
@@ -86,14 +86,12 @@ export class LoginPage {
                   toast.present();
                 }
               });
-          
         })
         .catch((error) =>{
           loading.dismiss();
           toast.setMessage("Some error has occured. Please try again");
           toast.present();
         })
-    // this.navCtrl.push(HomePage); 
   }
   
 }

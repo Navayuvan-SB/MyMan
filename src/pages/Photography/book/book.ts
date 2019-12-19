@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams, AlertController, ModalController, LoadingController, ToastController } from 'ionic-angular';
-import { MyOrderPage } from '../my-order/my-order';
+import { MyOrderPage } from '../../Common/my-order/my-order';
 import { OrderBookedPage } from '../order-booked/order-booked';
-import { MyManService } from '../../services/myManService';
-import { FirebaseServices } from '../../services/fireBaseService';
+import { MyManService } from '../../../services/myManService';
+import { FirebaseServices } from '../../../services/fireBaseService';
 
 @Component({
   selector: 'page-book',

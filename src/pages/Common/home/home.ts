@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { NavController, ToastController } from 'ionic-angular';
-import { PhotographyPage } from '../photography/photography';
+import { PhotographyPage } from '../../Photography/photography/photography';
 import { ProfilePage } from '../profile/profile';
 import { MyOrderPage } from '../my-order/my-order';
 import { AngularFireAuth } from 'angularfire2/auth';
-import { FirebaseServices } from '../../services/fireBaseService';
+import { FirebaseServices } from '../../../services/fireBaseService';
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
