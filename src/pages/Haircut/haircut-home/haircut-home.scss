@@ -1,3 +1,98 @@
 page-haircut-home {
+    // ##### toolbar styling #####
+
+    .toolbar-title.toolbar-title-md{ color: #18A0A0; font-size: 23px; font-weight: 400; text-align: center; margin-left: 13%;}
+    
+    .toolbar-background {
+        background-color: white;
+    }
+
+    .hammer{ 
+        padding-right: 13px;
+    }
+
+    .Back-Arrow{ 
+        padding-left: 9px;
+    }
+
+    .Union{ 
+        padding-right: 13px;
+    }
+
+    .resize-icon{
+        height: 60%;
+        widows: 60%;
+    }
+
+    // ##### common for all icon #####
+    ion-icon{
+       color: #18A0A0;
+
+   }
+
+   // ####### search bar item area #######
+   .searchbar {
+    border: 1px solid #a9a9a9;
+    width:100%;
+    margin: 0;
+    margin-bottom: 8%;
+
+    }
+    .search{
+        color:  #a9a9a9;
+    }
+   
+    // ###### total area for a card ######
+   .card-area{
+    
+    width: 99%;
+    height: 130px;
+    margin: 0;
+    text-align: center;
+    
+   }
+   .card-position{
+       margin-top:3%;
+   }
+  
+   // ####### card image
+   .image{
+    position:relative;
+    top: -34px;
+    left:-21px;
+    width:133px;
+    height:144px;
+    background-image: url(../assets/imgs/image2.png);
+    background-size: cover;
+    display:block;
+    //border-radius: 50%;
+   }
+  
+   // ###### all label font size ######
+   .first-last-label{
+    font-size: 16px;
+   }
+
+   .mid-all-label{
+    font-size: 13px;
+   }
+
+   // ##### all label position ########
+   .Ist-label-pos{
+    margin-top: -8%;
+    text-align: start;
+    margin-left: 30px;
+   }
+
+   .other-label-pos{
+    margin-top: -5%;
+    text-align: start;
+    margin-left: 30px;
+   }
+
+   // ####### Location icon position ########
+   .pin-icon{
+     margin-top: 250%;
+   }
 
 }
