@@ -1,3 +1,41 @@
 page-haircut-conformation {
+    .toolbar-title.toolbar-title-md{ 
+        color: #18A0A0; 
+        font-size: large; 
+        font-weight: 400; 
+        text-align: center; 
+        // margin-right: 15%;
+    } 
+    .toolbar-background { 
+        background-color: White !important;
+    }
+    ion-grid{
+        margin-top: 160px;
+        margin-left : 3% !important
+    }
+    ion-icon{
+        color: #18A0A0;
+    }
+    ion-row{
+        margin-top: 10px !important
+    }
+    .bold{
+        font-weight: bolder;
+    }
+    ion-card{
+        height: 50px !important;
+        padding-top: 5px;
+        padding-bottom: 5px; 
+        margin-left: 4.5% !important;
+        margin-top: 250px !important; 
+        background-color: #18A0A0 !important ;
+    }
+    p{
+        text-align: center;
+        color: white !important;
+        font-size: smaller !important;
+       
+    }
+
 
 }

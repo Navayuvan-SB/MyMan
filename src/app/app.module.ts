@@ -13,6 +13,9 @@ import { MyOrderPage } from '../pages/Common/my-order/my-order';
 import { OrderBookedPage } from '../pages/Photography/order-booked/order-booked';
 import { Orderbooked2Page } from '../pages/Common/orderbooked2/orderbooked2';
 import { ProfilePage } from '../pages/Common/profile/profile';
+import { HaircutConformationPage } from '../pages/Haircut/haircut-conformation/haircut-conformation';
+import { HaircutBookPage } from '../pages/Haircut/haircut-book/haircut-book';
+import { HaircutHomePage } from '../pages/Haircut/haircut-home/haircut-home';
 
 // Firebase Services
 import { FirebaseServices } from '../services/fireBaseService';
@@ -33,6 +36,8 @@ import { Network } from '@ionic-native/network';
 import { Geolocation } from '@ionic-native/geolocation';
 
 
+
+
 @NgModule({
   declarations: [
     MyApp,
@@ -44,7 +49,10 @@ import { Geolocation } from '@ionic-native/geolocation';
     MyOrderPage,
     OrderBookedPage,
     Orderbooked2Page,
-    ProfilePage
+    ProfilePage,
+    HaircutHomePage,
+    HaircutBookPage,
+    HaircutConformationPage
   ],
   imports: [
     BrowserModule,
@@ -62,7 +70,10 @@ import { Geolocation } from '@ionic-native/geolocation';
     MyOrderPage,
     OrderBookedPage,
     Orderbooked2Page,
-    ProfilePage
+    ProfilePage,
+    HaircutHomePage,
+    HaircutBookPage,
+    HaircutConformationPage
   ],
   providers: [
     StatusBar,

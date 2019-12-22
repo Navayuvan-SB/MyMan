@@ -12,6 +12,9 @@ import * as firebase from 'firebase/app';
 import { HomePage } from '../pages/Common/home/home';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuth } from 'angularfire2/auth';
+import { HaircutHomePage } from '../pages/Haircut/haircut-home/haircut-home';
+import { HaircutBookPage } from '../pages/Haircut/haircut-book/haircut-book';
+import { HaircutConformationPage } from '../pages/Haircut/haircut-conformation/haircut-conformation';
 
 
 @Component({
@@ -21,7 +24,7 @@ export class MyApp {
 
   @ViewChild(Nav) nav: Nav;
   
-  rootPage : any;
+  rootPage = HaircutConformationPage;
   pages: Array<{title: string, component: any}>;
   constructor(public platform      : Platform, 
               public statusBar     : StatusBar,
@@ -44,9 +47,9 @@ export class MyApp {
 
       // check if the user is signed in
 
-      this.angularFire.authState.subscribe(user => {
-        this.rootPage = user ? HomePage : LoginPage;
-      });
+      // this.angularFire.authState.subscribe(user => {
+      //   this.rootPage = user ? HomePage : LoginPage;
+      // });
 
       
     });
@@ -55,37 +58,37 @@ export class MyApp {
     this.splashScreen.hide();
   }
 
-  openPage(page) {
-    // Reset the content nav to have just this page
-    // we wouldn't want the back button to show in this scenario
-    this.nav.setRoot(page.component);
-  }
+  // openPage(page) {
+  //   // Reset the content nav to have just this page
+  //   // we wouldn't want the back button to show in this scenario
+  //   this.nav.setRoot(page.component);
+  // }
 
 
 
-  logout(){
-    // logout the user and navigate to Login page
+  // logout(){
+  //   // logout the user and navigate to Login page
 
-    let alert = this.alertCtrl.create({
-      title: 'Oops..!',
-      message: 'Do you want to logout?',
-      buttons: [
-        {
-          text: 'Yes',
-          handler: () => {
-            this.angularFire.auth.signOut();
-            this.nav.setRoot(LoginPage);     
-          }
-        },
-        {
-          text: 'No',
-          handler: () => {
-            //
-          }
-        }
-      ]
-    });
+  //   let alert = this.alertCtrl.create({
+  //     title: 'Oops..!',
+  //     message: 'Do you want to logout?',
+  //     buttons: [
+  //       {
+  //         text: 'Yes',
+  //         handler: () => {
+  //           this.angularFire.auth.signOut();
+  //           this.nav.setRoot(LoginPage);     
+  //         }
+  //       },
+  //       {
+  //         text: 'No',
+  //         handler: () => {
+  //           //
+  //         }
+  //       }
+  //     ]
+  //   });
 
-    alert.present();
-  }
+  //   alert.present();
+  // }
 }
