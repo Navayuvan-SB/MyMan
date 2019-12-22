@@ -1,4 +1,6 @@
 page-haircut-conformation {
+
+    //=============================================ion-header=========================================
     .toolbar-title.toolbar-title-md{ 
         color: #18A0A0; 
         font-size: large; 
@@ -9,12 +11,16 @@ page-haircut-conformation {
     .toolbar-background { 
         background-color: White !important;
     }
+    ion-icon{
+        color: #18A0A0;
+    }
+
+
+
+    //==============================================ion-content - ion-grid==============================
     ion-grid{
         margin-top: 160px;
         margin-left : 3% !important
-    }
-    ion-icon{
-        color: #18A0A0;
     }
     ion-row{
         margin-top: 10px !important
@@ -22,6 +28,10 @@ page-haircut-conformation {
     .bold{
         font-weight: bolder;
     }
+
+
+
+    //===============================================ion-content - ion-card===============================
     ion-card{
         height: 50px !important;
         padding-top: 5px;
