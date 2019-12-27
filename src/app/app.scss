@@ -53,6 +53,9 @@ ion-icon {
       &[class*="custom-Downarrow"] {
         mask-image: url(../assets/icon/Dowwnarrow.svg);
       }
+      &[class*="custom-MaskGroup"] {
+        mask-image: url(../assets/icon/MaskGroup.svg);
+      }
   
   }
 
