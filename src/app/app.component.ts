@@ -15,6 +15,7 @@ import { AngularFireAuth } from 'angularfire2/auth';
 import { HaircutHomePage } from '../pages/Haircut/haircut-home/haircut-home';
 import { HaircutBookPage } from '../pages/Haircut/haircut-book/haircut-book';
 import { HaircutConformationPage } from '../pages/Haircut/haircut-conformation/haircut-conformation';
+import { HaircutPopupPage } from '../pages/Haircut/haircut-popup/haircut-popup';
 
 
 @Component({
