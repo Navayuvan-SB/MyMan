@@ -12,19 +12,19 @@
 
     <ion-buttons left class="backArrow">
       <button ion-button icon-only (click)="prePage()">
-        <ion-icon name="custom-backarrow"></ion-icon>
+        <ion-icon name="custom-backarrow" class="headerIcons"></ion-icon>
       </button>
     </ion-buttons>
 
     <ion-buttons right class="contactInfo">
       <button ion-button icon-only>
-        <ion-icon name="custom-Union"></ion-icon>
+        <ion-icon name="custom-Union" class="headerIcons"></ion-icon>
       </button>
     </ion-buttons>
 
     <ion-buttons right class="hamri8">
       <button ion-button icon-only (click)="order()">
-        <ion-icon name="custom-hammer"></ion-icon>
+        <ion-icon name="custom-hammer" class="headerIcons"></ion-icon>
       </button>
     </ion-buttons>
 
@@ -41,7 +41,7 @@
       <ion-img src="assets/imgs/camera.jpg"></ion-img>
     </ion-row>
 
-    <!-- Details -->
+    <!-- Shop Details -->
     <ion-row>
       <div>
         <p class="shopName"><b>Selected Shop Name</b></p>
@@ -53,26 +53,24 @@
     <!-- Timings -->
     <ion-row>
       <ion-col col-4>
-        <ion-item class="roundedCorners red" >
-          <p  class="textSize">12:30 PM </p>
-          <div>
-          <ion-icon name="custom-MaskGroup" class="leftMask"></ion-icon>
-          <ion-icon name="custom-MaskGroup"></ion-icon>
-          </div>
+        <ion-item class="roundedCorners red">
+          <p class="textSize">12:30 PM </p>
+                <ion-icon name="custom-gySeat" class="leftMask"></ion-icon>
+          <ion-icon  name="custom-gySeat" class="rightMask"></ion-icon>
         </ion-item>     
       </ion-col>
       <ion-col col-4>
           <ion-item class="roundedCorners yellow" >
               <p class="textSize">1:00 PM</p>
-            <ion-icon name="custom-MaskGroup"></ion-icon>
-            <ion-icon name="custom-MaskGroup"></ion-icon>
+              <ion-icon name="custom-gnSeat" class="leftMask"></ion-icon>
+              <ion-icon  name="custom-gySeat" class="rightMask"></ion-icon>
           </ion-item>
         </ion-col>
         <ion-col col-4>
             <ion-item class="roundedCorners green" >
-                <p  class="textSize">1:30 PM</p>
-              <ion-icon name="custom-MaskGroup"></ion-icon>
-              <ion-icon name="custom-MaskGroup"></ion-icon>
+                <p class="textSize">1:30 PM</p>
+                <ion-icon name="custom-gnSeat" class="leftMask"></ion-icon>
+                <ion-icon  name="custom-gnSeat" class="rightMask"></ion-icon>
             </ion-item>
           </ion-col>
       

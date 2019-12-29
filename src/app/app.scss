@@ -53,9 +53,13 @@ ion-icon {
       &[class*="custom-Downarrow"] {
         mask-image: url(../assets/icon/Dowwnarrow.svg);
       }
-      &[class*="custom-MaskGroup"] {
-        mask-image: url(../assets/icon/MaskGroup.svg);
+      &[class*="custom-gySeat"] {
+        mask-image: url(../assets/icon/greySeat.svg);
       }
+      &[class*="custom-gnSeat"] {
+        mask-image: url(../assets/icon/greenSeat.svg);
+      }
+  
   
   }
 
