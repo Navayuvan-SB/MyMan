@@ -52,26 +52,46 @@
 
     <!-- Timings -->
     <ion-row>
-      <ion-col col-4>
-        <ion-item class="roundedCorners red">
+      <ion-col col-4 (click)="popup()">
+        <div class="roundedCorners red">
           <p class="textSize">12:30 PM </p>
-                <ion-icon name="custom-gySeat" class="leftMask"></ion-icon>
-          <ion-icon  name="custom-gySeat" class="rightMask"></ion-icon>
-        </ion-item>     
+              <ion-row class = "marginAdjusts">
+                <ion-col col-5>
+                <ion-icon name="custom-gySeat" class="greyIcon"></ion-icon>
+                </ion-col>
+                <ion-col col-5>
+                <ion-icon  name="custom-gySeat" class="greyIcon"></ion-icon>
+                </ion-col>
+              </ion-row>
+            </div>     
       </ion-col>
-      <ion-col col-4>
-          <ion-item class="roundedCorners yellow" >
-              <p class="textSize">1:00 PM</p>
-              <ion-icon name="custom-gnSeat" class="leftMask"></ion-icon>
-              <ion-icon  name="custom-gySeat" class="rightMask"></ion-icon>
-          </ion-item>
+
+      <ion-col col-4 (click)="popup()">
+          <div class="roundedCorners yellow">
+            <p class="textSize">12:30 PM </p>
+                <ion-row class = "marginAdjusts">
+                  <ion-col col-5>
+                  <ion-icon name="custom-gnSeat" class="greenIcon"></ion-icon>
+                  </ion-col>
+                  <ion-col col-5>
+                  <ion-icon  name="custom-gySeat" class="greyIcon"></ion-icon>
+                  </ion-col>
+                </ion-row>
+              </div>     
         </ion-col>
-        <ion-col col-4>
-            <ion-item class="roundedCorners green" >
-                <p class="textSize">1:30 PM</p>
-                <ion-icon name="custom-gnSeat" class="leftMask"></ion-icon>
-                <ion-icon  name="custom-gnSeat" class="rightMask"></ion-icon>
-            </ion-item>
+       
+        <ion-col col-4 (click)="popup()">
+            <div class="roundedCorners green">
+              <p class="textSize">12:30 PM </p>
+                  <ion-row class = "marginAdjusts">
+                    <ion-col col-5>
+                    <ion-icon name="custom-gnSeat" class="greenIcon"></ion-icon>
+                    </ion-col>
+                    <ion-col col-5>
+                    <ion-icon  name="custom-gnSeat" class="greenIcon"></ion-icon>
+                    </ion-col>
+                  </ion-row>
+                </div>     
           </ion-col>
       
     </ion-row> 

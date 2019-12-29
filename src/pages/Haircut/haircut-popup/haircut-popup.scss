@@ -4,26 +4,34 @@ page-haircut-popup {
                                  ion-content
     ==================================================================*/
     
-    ion-content{
-        margin-top: -7%;
-    }
-
     h1{
-        text-align: center !important;
         font-size: small !important;
     }
 
     p{
         font-size: x-small;
         font-weight: lighter;
-        text-align: center;
         margin-top: -4%;
     }
 
     .con-grid{
-        margin-top: -25%; 
-        margin-left: 5%; 
+        margin-top: -10%; 
         margin-bottom: -40%
+    }
+    .seatCenter{
+        margin-left: 8%;
+        margin-top: -20%;
+    }
+
+    .firsticon{
+        color: green;
+        font-size: 75px;
+        mask-position: 5% 5% !important;
+    }
+
+    .secicon{
+        font-size: 75px;
+        mask-position: 5% 5% !important;
     }
 
     /*==================================================================
@@ -39,7 +47,7 @@ page-haircut-popup {
     
     }
 
-    .borderIn{
+    .borderRight{
         border-right:1px solid #707070;
     }
   

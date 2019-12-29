@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, PopoverController } from 'ionic-angular';
-import { HaircutPopupPage } from '../haircut-popup/haircut-popup';
+
 
 
 /**
@@ -22,11 +22,6 @@ export class HaircutConformationPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad HaircutConformationPage');
-  }
-
-  popup(){
-    const popover = this.popoverCtrl.create(HaircutPopupPage);
-    popover.present();
   }
 
 }

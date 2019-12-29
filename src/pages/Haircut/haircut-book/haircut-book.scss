@@ -56,28 +56,30 @@ page-haircut-book {
 
    
     .roundedCorners{
-
-
         position: relative;
         border-radius: 15px !important;
         width: 100%;
         height: 80%;
-        // margin: auto;
-    }
+        //margin: auto;
+        -webkit-border-radius: 15px !important;
+        -moz-border-radius: 15px !important;
+        -ms-border-radius: 15px !important;
+        -o-border-radius: 15px !important;
+}
 
     .red{
        
-        border: 5px solid #FF0000;
+        border: 4px solid #FF0000;
     }
 
     .yellow{
        
-        border: 5px solid #F6FF00;
+        border: 4px solid #F6FF00;
     }
 
     .green{
 
-        border: 5px solid #35AE59;
+        border: 4px solid #35AE59;
     }
 
     .textSize{
@@ -86,15 +88,25 @@ page-haircut-book {
         text-align: center;
         font-family: Segoe UI;
         font: bold;
+        margin-top: 5px;
+        margin-bottom: -15px;
     }
 
-    .leftMask{
-        font-size: 25px;
+    .marginAdjusts{
+        margin-left: 8px !important;
     }
 
-    .rightMask{
-        font-size: 25px;
+    .greenIcon{
+        color: green ;
+        font-size: 55px;
+        mask-position: 5% 5% !important;
     }
+
+    .greyIcon{
+        font-size: 55px;
+        mask-position: 5% 5% !important;
+    }
+
 
 
     }
