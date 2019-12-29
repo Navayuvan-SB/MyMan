@@ -1,3 +1,102 @@
 page-haircut-book {
 
-}
+    .toolbar-background {
+        background-color: #ffffff;
+    }
+      
+    .toolbar-title.toolbar-title-md{
+         color: #18A0A0;
+         font-size: 25px; 
+         font-weight: 400; 
+         text-align: center;
+    }
+
+    .hamri8{ 
+        padding-right: 13px;
+    }
+
+    .contactInfo{ 
+        padding-right: 13px;
+    }
+
+    .backArrow{ 
+        padding-left: 13px;
+    }
+
+    .headerIcons{
+       color: #18A0A0;
+    }
+
+    ion-img{
+        margin-top: 10px;
+        margin-left: 8px;
+            width: 95% !important;
+            height: 160px;
+            border: 1px solid #020202;
+            background: transparent;
+    }
+
+    .shopName{
+        margin-right: 20px;
+        margin-top: 30px;
+        margin-left: 80px;
+        font-size: large;
+
+    }
+
+    .shopDetails{
+        margin-left: 120px;
+        font-size: medium;
+    }
+
+    .time{
+        margin-left: 10px;
+        font-size: large;
+    }
+
+   
+    .roundedCorners{
+
+
+        position: relative;
+        border-radius: 15px !important;
+        width: 100%;
+        height: 80%;
+        // margin: auto;
+    }
+
+    .red{
+       
+        border: 5px solid #FF0000;
+    }
+
+    .yellow{
+       
+        border: 5px solid #F6FF00;
+    }
+
+    .green{
+
+        border: 5px solid #35AE59;
+    }
+
+    .textSize{
+        font-size: 10px; 
+        color: black;
+        text-align: center;
+        font-family: Segoe UI;
+        font: bold;
+    }
+
+    .leftMask{
+        font-size: 25px;
+    }
+
+    .rightMask{
+        font-size: 25px;
+    }
+
+
+    }
+
+
