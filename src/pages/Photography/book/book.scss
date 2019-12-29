@@ -1,91 +1,129 @@
 page-book {
-      .toolbar-title.toolbar-title-md{ color: #18A0A0; font-size: 25px; font-weight: 400; text-align: center ;}
-      .hamri8{ padding-right: 13px;}
-    ion-icon{
-        color: #18A0A0;
+  .toolbar-title.toolbar-title-md {
+    color: #18A0A0;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .hamri8 {
+    padding-right: 13px;
+  }
+
+  ion-icon {
+    color: #18A0A0;
+  }
+
+  .d1 {
+    font-size: 18px;
+    height: 550px;
+
+    ion-row {
+      margin: 2%;
     }
-    
-    .d1{
-         font-size: 18px;
-         height: 550px;
-              ion-row{
-                      margin:2%;
-              }  
-              .l1{
-                      padding-top: 11%;
-                      padding-left:7%;
-                }
-       
-               .i1{
-                      position:relative;
-                      left:10px;
-                      width:90px;
-                      height:90px;
-                      background-image: url(../assets/imgs/image4.jpg);
-                      background-size: cover;
-                      display:block;
-                      border-radius: 50%;          
-               }
-               .b1{
-                      padding-left: 0px;
-                      width: 100%;
-                }
-            .b3{
-                  padding-left: 25px;
-                  width: 100%;
-            }
-     
+
+    .l1 {
+      padding-top: 11%;
+      padding-left: 7%;
     }
-    .icon1{
-          margin-left: 80%;
+
+    .i1 {
+      position: relative;
+      left: 10px;
+      width: 90px;
+      height: 90px;
+      background-image: url(../assets/imgs/image4.jpg);
+      background-size: cover;
+      display: block;
+      border-radius: 50%;
     }
-    
-   .d2{
 
-        background-color:  #18A0A0;
-        height: 100%;
-               .l4{
-                      position:relative;
-                      color:white;
-                      font-size: 15px;
-                      top:30px;
-                      left:45px;
-                } 
-               .l5{
-                      position:relative;
-                      color:white;
-                      top:20px;
-                      left:40px;
-                      font-size: 10px;
-                }
-               .b5{
-                      background-color: white;
-                      color: #18A0A0;
-                      width:35%;
-                      bottom:28px;
-                      margin-left: 60%;
-                }
-   }
+    .b1 {
+      padding-left: 0px;
+      width: 100%;
+      border: 1px solid #000;
+      border-radius: 30px;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      -ms-border-radius: 30px;
+      -o-border-radius: 30px;
+      height: 40px !important;
+    }
 
-   .fullWidth {
-      width:100%; 
-      height:100%;
-   }
+    .b3 {
+      padding-left: 25px;
+      width: 100%;
+    }
 
-   .btnText{
-      margin-top:1.5%;
-   }
+  }
 
-   .datetime{
-      margin-top: -10px; 
-   }
+  .icon1 {
+    margin-left: 80%;
+  }
 
-   .l2{
-      border-radius: 30px !important;
-      font-size: 0.9em;
-      height: 0px;
-      width: 98.2%;
-      margin: auto;
-      border: 1px solid black;
-   }
+  .d2 {
+
+    background-color: #18A0A0;
+    height: 100%;
+
+    .l4 {
+      position: relative;
+      color: white;
+      font-size: 15px;
+      top: 30px;
+      left: 45px;
+    }
+
+    .l5 {
+      position: relative;
+      color: white;
+      top: 20px;
+      left: 40px;
+      font-size: 10px;
+    }
+
+    .b5 {
+      background-color: white;
+      color: #18A0A0;
+      width: 35%;
+      bottom: 28px;
+      margin-left: 60%;
+    }
+  }
+
+  .fullWidth {
+    width: 100%;
+    height: 100%;
+  }
+
+  .btnText {
+    margin-top: 1.5%;
+  }
+
+  .datetime {
+    margin-top: -10px;
+  }
+
+  .l2 {
+    border-radius: 30px !important;
+    font-size: 0.9em;
+    height: 0px;
+    width: 98.2%;
+    margin: auto;
+    border: 1px solid black;
+  }
+
+  #function-type {
+        margin: 0 auto;
+        width:95%;
+  }
+
+  #function-type ion-label {
+    margin: 3px 0 0 20px;
+  }
+
+  #function-type ion-icon {
+    margin: 3px 0 0 10px;
+  }
+
 }

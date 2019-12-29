@@ -10,35 +10,35 @@ import { FirebaseServices } from '../../../services/fireBaseService';
   templateUrl: 'book.html',
 })
 export class BookPage {
-  
-  source    : any;
-  pack      : any;
-  functions : any;
+
+  source: any;
+  pack: any;
+  functions: any;
 
   // input fields
-  selectedFunction  : string = "";
-  fromTime          : string = "";
-  toTime            : string = "";
-  locationBooked    : string = "";
+  selectedFunction: string = "";
+  fromTime: string = "";
+  toTime: string = "";
+  locationBooked: string = "";
 
   // Estimated amount
-  estimatedAmount   : number = 0;
+  estimatedAmount: number = 0;
 
   // instance for loading and toast
-  loading           : any;
-  toast             : any;
+  loading: any;
+  toast: any;
 
   // status flag for checkout
-  checkoutSatus     : boolean = false;
+  checkoutSatus: boolean = false;
 
-  constructor(public navCtrl      : NavController, 
-              public navParams    : NavParams,
-              public alertCtrl    : AlertController,
-              public modalCtrl    : ModalController,
-              public mmnService   : MyManService,
-              public fbService    : FirebaseServices,
-              public loadingCtrl  : LoadingController,
-              public toastCtrl    : ToastController) {
+  constructor(public navCtrl: NavController,
+    public navParams: NavParams,
+    public alertCtrl: AlertController,
+    public modalCtrl: ModalController,
+    public mmnService: MyManService,
+    public fbService: FirebaseServices,
+    public loadingCtrl: LoadingController,
+    public toastCtrl: ToastController) {
 
     // loading instance
     this.loading = this.loadingCtrl.create({
@@ -48,66 +48,66 @@ export class BookPage {
 
     // toast instance
     this.toast = this.toastCtrl.create({
-      duration  : 2500,
-      position  : 'bottom'
+      duration: 2500,
+      position: 'bottom'
     });
 
-    
+
     // get the value from source page
     this.source = navParams.get('payload');
-    this.pack   = this.source.data;
+    this.pack = this.source.data;
 
-    
+
     // get the functions details
     this.fbService.readOnce('functions')
-                  .then((response) => {
+      .then((response) => {
 
-                    this.functions = response;
-                    
-                  })
-                  .catch((error) => {
+        this.functions = response;
 
-                    // handle error
-                    this.toast.setMessage("Network connection error..!");
-                    this.toast.present();
-                  })
+      })
+      .catch((error) => {
+
+        // handle error
+        this.toast.setMessage("Network connection error..!");
+        this.toast.present();
+      })
 
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad BookPage');
   }
-  order(){
+  order() {
     this.navCtrl.push(MyOrderPage);
   }
 
   // checkout method
-  checkout(){
+  checkout() {
 
-    if (this.checkoutSatus){
+    if (this.checkoutSatus) {
 
-        let payload = {
-          pack      : this.pack,
-          cost      : this.estimatedAmount,
-          fromDate  : this.fromTime,
-          toDate    : this.toTime,
-          function  : this.selectedFunction,
-          location  : this.locationBooked,
-          status    : 0
-        }
-    
-        this.navCtrl.push(OrderBookedPage, { payload: payload });
+      let payload = {
+        pack: this.pack,
+        cost: this.estimatedAmount,
+        fromDate: this.fromTime,
+        toDate: this.toTime,
+        function: this.selectedFunction,
+        location: this.locationBooked,
+        status: 0
+      }
+
+      this.navCtrl.push(OrderBookedPage, { payload: payload });
     }
-    else{
+    else {
       this.toast.setMessage("Choose the fields correctly..!");
       this.toast.present();
     }
-    
+
   }
 
 
   // function dropdown
-  functionType(){
+  functionType() {
 
     let alert = this.alertCtrl.create();
     alert.setTitle('Functions');
@@ -132,35 +132,36 @@ export class BookPage {
   }
 
   //update EST
-  updateEstimatedAmount(){
+  updateEstimatedAmount() {
 
     // call amount estimation function
-    if (this.fromTime != "" && this.toTime != "" && this.selectedFunction != ""){
+    if (this.fromTime != "" && this.toTime != "" && this.selectedFunction != "") {
 
       this.checkoutSatus = true;
       this.mmnService.updateETA(this.fromTime, this.toTime, this.pack)
-                    .then((response) => {
+        .then((response) => {
 
-                      this.estimatedAmount = Number(response);
+          this.estimatedAmount = Number(response);
 
-                    })
-                    .catch((error) => {
+        })
+        .catch((error) => {
 
-                      this.estimatedAmount = Number(error);
-                      this.toast.setMessage("From and To date incorrect");
-                      this.toast.present();
+          this.estimatedAmount = Number(error);
+          this.toast.setMessage("From and To date incorrect");
+          this.toast.present();
 
-                    });
+        });
 
     }
-    else{
+    else {
       this.checkoutSatus = false;
     }
 
   }
 
   // location clicked
-  location(){
+  location() {
     console.log("Location clicked");
   }
+  
 }
