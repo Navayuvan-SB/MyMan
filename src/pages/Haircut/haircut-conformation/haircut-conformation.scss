@@ -8,7 +8,7 @@ page-haircut-conformation {
         color: #18A0A0; 
         font-size: large; 
         font-weight: 400; 
-        text-align: center; 
+        text-align: center !important; 
         // margin-right: 15%;
     } 
     .toolbar-background { 
@@ -25,10 +25,12 @@ page-haircut-conformation {
     ========================================= */
     ion-grid{
         margin-top: 160px;
-        margin-left : 3% !important
     }
+    div{
+        margin-left: 5%
+   }
     ion-row{
-        margin-top: 10px !important
+        margin-top: 10px !important;
     }
     .bold{
         font-weight: bolder;
@@ -43,9 +45,9 @@ page-haircut-conformation {
         height: 50px !important;
         padding-top: 5px;
         padding-bottom: 5px; 
-        margin-left: 4.5% !important;
         margin-top: 250px !important; 
         background-color: #18A0A0 !important ;
+        text-align: center;
     }
     p{
         text-align: center;

@@ -42,20 +42,22 @@
     </ion-row>
 
     <!-- Shop Details -->
-    <ion-row>
+    <ion-row justify-content-center>
       <div>
         <p class="shopName"><b>Selected Shop Name</b></p>
         <p class="shopDetails">01-Jan-2019</p>
-        <p class="time"><b>Time</b></p>
       </div>
+    </ion-row>
+    <ion-row>
+        <p class="time"><b>Time</b></p>
     </ion-row>
 
     <!-- Timings -->
     <ion-row>
       <ion-col col-4 (click)="popup()">
         <div class="roundedCorners red">
-          <p class="textSize">12:30 PM </p>
-              <ion-row class = "marginAdjusts">
+            <p class="textSize">12:30 PM </p>
+              <ion-row justify-content-center>
                 <ion-col col-5>
                 <ion-icon name="custom-gySeat" class="greyIcon"></ion-icon>
                 </ion-col>
@@ -69,7 +71,7 @@
       <ion-col col-4 (click)="popup()">
           <div class="roundedCorners yellow">
             <p class="textSize">12:30 PM </p>
-                <ion-row class = "marginAdjusts">
+                <ion-row justify-content-center>
                   <ion-col col-5>
                   <ion-icon name="custom-gnSeat" class="greenIcon"></ion-icon>
                   </ion-col>
@@ -83,7 +85,7 @@
         <ion-col col-4 (click)="popup()">
             <div class="roundedCorners green">
               <p class="textSize">12:30 PM </p>
-                  <ion-row class = "marginAdjusts">
+                  <ion-row justify-content-center>
                     <ion-col col-5>
                     <ion-icon name="custom-gnSeat" class="greenIcon"></ion-icon>
                     </ion-col>
