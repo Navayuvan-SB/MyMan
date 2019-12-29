@@ -16,6 +16,7 @@ import { HaircutHomePage } from '../pages/Haircut/haircut-home/haircut-home';
 import { HaircutBookPage } from '../pages/Haircut/haircut-book/haircut-book';
 import { HaircutConformationPage } from '../pages/Haircut/haircut-conformation/haircut-conformation';
 import { HaircutPopupPage } from '../pages/Haircut/haircut-popup/haircut-popup';
+import { OrderBookedPage } from '../pages/Photography/order-booked/order-booked';
 
 
 @Component({
@@ -25,7 +26,7 @@ export class MyApp {
 
   @ViewChild(Nav) nav: Nav;
   
-  rootPage = HaircutConformationPage;
+  rootPage = HaircutConformationPage ;
   pages: Array<{title: string, component: any}>;
   constructor(public platform      : Platform, 
               public statusBar     : StatusBar,
