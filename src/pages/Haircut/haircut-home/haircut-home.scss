@@ -36,10 +36,6 @@ page-haircut-home {
     width:100%;
     margin: 0;
     margin-bottom: 8%;
-
-    }
-    .search{
-        color:  #a9a9a9;
     }
    
     // ###### total area for a card ######
@@ -49,6 +45,7 @@ page-haircut-home {
     height: 130px;
     margin: 0;
     text-align: center;
+    box-shadow: none !important;
     
    }
    .card-position{
@@ -58,10 +55,10 @@ page-haircut-home {
    // ####### card image
    .image{
     position:relative;
-    top: -34px;
-    left:-21px;
+    top: -31px;
+    left:-22px;
     width:133px;
-    height:144px;
+    height:150px;
     background-image: url(../assets/imgs/image2.png);
     background-size: cover;
     display:block;
@@ -81,18 +78,20 @@ page-haircut-home {
    .Ist-label-pos{
     margin-top: -8%;
     text-align: start;
-    margin-left: 30px;
+    margin-left: 35px;
    }
 
    .other-label-pos{
     margin-top: -5%;
     text-align: start;
-    margin-left: 30px;
+    margin-left: 35px;
    }
 
    // ####### Location icon position ########
    .pin-icon{
-     margin-top: 250%;
+     margin-top: 240%;
+     font-size:20px;
+     
    }
 
 }
