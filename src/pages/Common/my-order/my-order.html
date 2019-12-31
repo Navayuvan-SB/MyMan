@@ -14,8 +14,9 @@
 <ion-content padding>
   
     <h1>Photography</h1>
+    <p *ngIf="photographyFlag" class="alert">Sorry, No orders found for Photography..!</p>
     <ion-card
-    *ngFor="let request of requests" 
+    *ngFor="let request of photographyOrders" 
     (click)="cardclick(request)">
           <ion-item>
             <ion-avatar item-start>
@@ -28,36 +29,20 @@
           </ion-item>
     </ion-card>
 
-
-
-    <!-- <h1 >Haircut</h1>
-    <ion-card>
+    <h1>Haircut</h1>
+    <p *ngIf="haircutFlag" class="alert">Sorry, No orders found for Haircut..!</p>
+    <ion-card
+    *ngFor="let request of haircutOrders" 
+    (click)="cardclick(request)">
           <ion-item>
             <ion-avatar item-start>
               <img src= "../../assets/imgs/camera1.jpg">
             </ion-avatar>
 
-            <h2>Pack 2</h2>
-            <p>Ordered :  2 Aug 2019 10:30 AM</p>
-            <p>Delivery : 10 August 2019</p>
+            <h2>Pack {{ request.pack.id }}</h2>
+            <p>Ordered :  {{ request.bookedDate }}</p>
+            <p>Function : {{ request.fromDate }}</p>
           </ion-item>
     </ion-card>
-
-
-
-    <h1>Grocery</h1>
-    <ion-card>
-          <ion-item>
-            <ion-avatar item-start>
-              <img src= "../../assets/imgs/shop.jpg">
-            </ion-avatar>
-                  
-            <h2>Pack 3</h2>
-            <p>Ordered :  2 Aug 2019 10:30 AM</p>
-            <p>Delivery : 10 August 2019</p>
-          </ion-item>
-    </ion-card> -->
-
-
 
 </ion-content>

@@ -93,7 +93,7 @@ export class SignupPage {
     // alert instance
     let alert = this.alterCtrl.create({
       title       : 'Hurray..!',
-      subTitle    : 'Your account has been created. Please login to continue',
+      subTitle    : 'Your account has been created.',
       buttons     : [{
         text   : 'Okay',
         handler : data => {

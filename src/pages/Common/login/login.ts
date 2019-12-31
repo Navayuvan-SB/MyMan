@@ -70,6 +70,7 @@ export class LoginPage {
         .then((response) => {
           let obj = Object.entries(response);
           let email = obj[0][1].email;
+
           this.fbService.login(email, password)
               .then((response) => {
                 loading.dismiss();
@@ -89,7 +90,7 @@ export class LoginPage {
         })
         .catch((error) =>{
           loading.dismiss();
-          toast.setMessage("Some error has occured. Please try again");
+          toast.setMessage("Oops...! Phone number not found, Please signin to continue");
           toast.present();
         })
   }

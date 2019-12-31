@@ -1,26 +1,30 @@
 <ion-header>
-  <ion-navbar  class="toolbar-background"  >
+  <ion-navbar class="toolbar-background">
     <ion-title class="toolbar-title.toolbar-title-md">Profile</ion-title>
-    
+
     <ion-buttons right class="hammer" *ngIf="editStatus == 0">
-        <button ion-button icon-only (click) = "order()">
-          <ion-icon name="custom-hammer" class="resize-icon"></ion-icon></button>
+      <button ion-button icon-only (click)="order()">
+        <ion-icon name="custom-hammer" class="resize-icon"></ion-icon>
+      </button>
     </ion-buttons>
 
     <ion-buttons right class="Del" *ngIf="editStatus == 0">
-        <button ion-button icon-only >
-          <ion-icon name="trash"></ion-icon></button>
+      <button ion-button icon-only>
+        <ion-icon name="trash"></ion-icon>
+      </button>
     </ion-buttons>
 
     <ion-buttons right class="Del" *ngIf="editStatus == 1">
-      <button ion-button icon-only (click) = "editFired(0)" [disabled]="!editFormIcon">
-      <ion-icon name="checkmark"></ion-icon></button>
+      <button ion-button icon-only (click)="editFired(0)" [disabled]="!editFormIcon">
+        <ion-icon name="checkmark"></ion-icon>
+      </button>
     </ion-buttons>
 
     <ion-buttons right class="Del" *ngIf="editStatus == 0">
-        <button ion-button icon-only (click) = "editFired(1)">
-        <ion-icon name="create"></ion-icon></button>
-      </ion-buttons>
+      <button ion-button icon-only (click)="editFired(1)">
+        <ion-icon name="create"></ion-icon>
+      </button>
+    </ion-buttons>
 
   </ion-navbar>
 </ion-header>
@@ -28,83 +32,80 @@
 <ion-content padding>
 
   <form [formGroup]="editForm">
-  <ion-grid>
+    <ion-grid>
 
-      <ion-row > 
-          <ion-col col-12 class="l1" ><b>Name</b></ion-col>
-        </ion-row>
-        <ion-row>
-              <ion-col>
-                  <ion-item class="round-border">                      
-                      <ion-input type="text" formControlName="name" (ngModelChange)="editIconUpdate()"
-                                  placeholder="Name" [disabled]="editStatus == 0"></ion-input> 
-                  </ion-item>
-      
-                  <ion-item 
-                      class="warning-on-input"
-                      *ngIf="!editForm.controls.name.valid  && (editForm.controls.name.dirty || submitAttempt)">
-                    <p>Please enter your full name</p>
-                  </ion-item>
-              </ion-col>
-        </ion-row>
-      
-    <ion-row > 
-     <ion-col col-12 class="l1" ><b>Phone Number</b></ion-col>
-     </ion-row>
-     <ion-row>
-       <ion-col>
-        <ion-item class="round-border">      
-        <ion-input type="text" formControlName="phoneNumber" (ngModelChange)="editIconUpdate()"
-                    placeholder='Phone Number' [disabled]="editStatus == 0"></ion-input>                              
-       </ion-item>
-
-       <ion-item 
-            class="warning-on-input"
-            *ngIf="!editForm.controls.phoneNumber.valid  && (editForm.controls.phoneNumber.dirty || submitAttempt)">
-          <p>Please enter a valid Phone Number</p>
-        </ion-item>
-</ion-col>
-</ion-row>
-<ion-row > 
-    <ion-col col-12 class="l1" ><b>Mail</b></ion-col>
-  </ion-row>
-  <ion-row>
+      <ion-row>
+        <ion-col col-12 class="l1"><b>Name</b></ion-col>
+      </ion-row>
+      <ion-row>
         <ion-col>
-            <ion-item class="round-border">                      
-                <ion-input type="text" formControlName="email" (ngModelChange)="editIconUpdate()"
-                            placeholder="Mail" [disabled]="editStatus == 0"></ion-input> 
-            </ion-item>
+          <ion-item class="round-border">
+            <ion-input type="text" formControlName="name" (ngModelChange)="editIconUpdate()" placeholder="Name"
+              [disabled]="editStatus == 0"></ion-input>
+          </ion-item>
 
-            <ion-item 
-                class="warning-on-input"
-                *ngIf="!editForm.controls.email.valid  && (editForm.controls.email.dirty || submitAttempt)">
-              <p>Please enter a valid Email</p>
-            </ion-item>
+          <ion-item class="warning-on-input"
+            *ngIf="!editForm.controls.name.valid  && (editForm.controls.name.dirty || submitAttempt)">
+            <p>Please enter your full name</p>
+          </ion-item>
         </ion-col>
-  </ion-row>
-<ion-row > 
-  <ion-col col-12 class="l1" ><b>Recent Orders</b></ion-col>
-</ion-row>
-<ion-row>
-  <ion-col>
-<ion-card (click)="cardclick()">
-  <ion-item>
-    <ion-avatar item-start>
-      <img src= "../../assets/imgs/camera1.jpg">
-    </ion-avatar>
-    <h2>Pack {{ packId }}</h2>
-    <p>Ordered : {{ bookedDate }}</p>
-  </ion-item>
-</ion-card>
-</ion-col>
-</ion-row>
-</ion-grid>
+      </ion-row>
+
+      <ion-row>
+        <ion-col col-12 class="l1"><b>Phone Number</b></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-item class="round-border">
+            <ion-input type="text" formControlName="phoneNumber" (ngModelChange)="editIconUpdate()"
+              placeholder='Phone Number' [disabled]="editStatus == 0"></ion-input>
+          </ion-item>
+
+          <ion-item class="warning-on-input"
+            *ngIf="!editForm.controls.phoneNumber.valid  && (editForm.controls.phoneNumber.dirty || submitAttempt)">
+            <p>Please enter a valid Phone Number</p>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-12 class="l1"><b>Mail</b></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-item class="round-border">
+            <ion-input type="text" formControlName="email" (ngModelChange)="editIconUpdate()" placeholder="Mail"
+              [disabled]="editStatus == 0"></ion-input>
+          </ion-item>
+
+          <ion-item class="warning-on-input"
+            *ngIf="!editForm.controls.email.valid  && (editForm.controls.email.dirty || submitAttempt)">
+            <p>Please enter a valid Email</p>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-12 class="l1"><b>Recent Orders</b></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-card (click)="cardclick()">
+            <ion-item>
+              <ion-avatar item-start>
+                <img src="../../assets/imgs/camera1.jpg">
+              </ion-avatar>
+              <h2>Pack {{ packId }}</h2>
+              <p>Ordered : {{ bookedDate }}</p>
+            </ion-item>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
 
 
 
-<ion-buttons type="password" >
-  <button  ion-button  round full class="button" [disabled]="editStatus == 0">Change Password</button>
-  </ion-buttons>  
-  
-</form>
+    <ion-buttons type="password" (click)="changePassword()">
+      <button ion-button round full class="button" [disabled]="editStatus == 0">Change Password</button>
+    </ion-buttons>
+
+  </form>
 </ion-content>
