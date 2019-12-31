@@ -5,6 +5,7 @@ import { ProfilePage } from '../profile/profile';
 import { MyOrderPage } from '../my-order/my-order';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { FirebaseServices } from '../../../services/fireBaseService';
+import { HaircutHomePage } from '../../Haircut/haircut-home/haircut-home';
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -53,4 +54,10 @@ export class HomePage {
   order(){
     this.navCtrl.push(MyOrderPage);
   }
+
+  // nav to haircut page
+  navToHaircut() {
+    this.navCtrl.push(HaircutHomePage);
+  }
+  
 }

@@ -24,24 +24,28 @@ import { OrderBookedPage } from '../pages/Photography/order-booked/order-booked'
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
-  
-  rootPage : any ;
-  pages: Array<{title: string, component: any}>;
-  constructor(public platform      : Platform, 
-              public statusBar     : StatusBar,
-              public splashScreen  : SplashScreen,
-              public angularFire   : AngularFireAuth,
-              public af            : AngularFireModule,
-              public alertCtrl     : AlertController) { 
-    
+
+  rootPage: any;
+  pages: Array<{ title: string, component: any }>;
+
+  constructor(public platform: Platform,
+    public statusBar: StatusBar,
+    public splashScreen: SplashScreen,
+    public angularFire: AngularFireAuth,
+    public af: AngularFireModule,
+    public alertCtrl: AlertController) {
+
     this.initialiseApp();
-    
+
   }
 
-  initialiseApp(){
+  initialiseApp() {
+
     this.pages = [
-      { title: 'Home', component: LoginPage }
+      { title: '', component: '' },
+      { title: 'Home', component: LoginPage },
     ];
+
     this.platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
@@ -52,7 +56,7 @@ export class MyApp {
         this.rootPage = user ? HomePage : LoginPage;
       });
 
-      
+
     });
 
     this.statusBar.styleBlackOpaque();
@@ -67,7 +71,7 @@ export class MyApp {
 
 
 
-  logout(){
+  logout() {
     // logout the user and navigate to Login page
 
     let alert = this.alertCtrl.create({
@@ -78,7 +82,7 @@ export class MyApp {
           text: 'Yes',
           handler: () => {
             this.angularFire.auth.signOut();
-            this.nav.setRoot(LoginPage);     
+            this.nav.setRoot(LoginPage);
           }
         },
         {
