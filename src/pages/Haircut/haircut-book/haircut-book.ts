@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams, PopoverController } from 'ionic-an
 import { HaircutPopupPage } from '../haircut-popup/haircut-popup';
 import { c } from '@angular/core/src/render3';
 import { FirebaseServices } from '../../../services/fireBaseService';
+import { AngularFireAuth } from 'angularfire2/auth';
 /**
  * Generated class for the HaircutBookPage page.
  *
@@ -31,7 +32,8 @@ export class HaircutBookPage {
   constructor(public navCtrl: NavController,
     public navParams: NavParams,
     public popoverCtrl: PopoverController,
-    public fbService: FirebaseServices) {
+    public fbService: FirebaseServices,
+    public afAuth: AngularFireAuth) {
 
     this.selectedShop = this.navParams.get('data');
 
@@ -183,7 +185,48 @@ export class HaircutBookPage {
         console.log('Updated Failed...!');
       });
     
+    // appointmentId
 
+    var d = new Date();
+    var n = d.getMilliseconds(); 
+
+    let appointmentId = 'MMN' + this.selectedShop.id + 'U' + n +
+                        this.afAuth.auth.currentUser.uid + dataToBook.time + this.toDate;
+    
+    // get the userName
+    let userName = '';
+    this.fbService.readOnce('users/' + this.afAuth.auth.currentUser.uid)
+    .then((response) => {
+      userName = response['name'];
+    })
+
+    // data to update in request
+    let dataToRequest = {
+      'appointmentId': appointmentId,
+      'cost': 0,
+      'date': this.toDate,
+      'userId': this.afAuth.auth.currentUser.uid,
+      'seats': {
+        'first': dataToBook.first,
+        'second': dataToBook.second
+      },
+      'service': 'haircut',
+      'shopId': 'MMN' + this.selectedShop.id,
+      'status': 0,
+      'time': dataToBook.time,
+      'transactionId': 0,
+      'userName': userName
+    }
+
+    // update in request set
+    this.fbService.writeInDatabase('requests' + appointmentId, dataToRequest)
+    .then((response) => {
+      console.log('Data written in requests successfully...!');
+    })
+    .catch((error) => {
+      console.log('Data written in requests FAILED...!');
+    });
+    
   }
 
 }
