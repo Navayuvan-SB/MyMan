@@ -4,12 +4,159 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
+
+<!-- Title display -->
+
 <ion-header>
-  <ion-navbar>
-    <ion-title>haircutHome</ion-title>
-  </ion-navbar>
+      <ion-navbar hideBackButton >
+
+              <ion-title class="toolbar-title.toolbar-title-md">Haircut</ion-title>
+
+                    <!-- <ion-buttons left class="Back-Arrow">
+                               <button ion-button icon-only>
+                                          <ion-icon name="arrow-back" class="resize-icon"></ion-icon></button>
+                               </ion-buttons> -->
+
+                    <ion-buttons right class="Union">
+                               <button ion-button icon-only >
+                                          <ion-icon name="custom-Union" class="resize-icon"></ion-icon></button>
+                               </ion-buttons>
+
+                    <ion-buttons right class="hammer">
+                               <button ion-button icon-only>
+                                          <ion-icon name="custom-hammer" class="resize-icon"></ion-icon></button>
+                    </ion-buttons>
+   
+       </ion-navbar>
 </ion-header>
 
+
 <ion-content padding>
+
+  <!-- Search display -->
+
+  <ion-grid>
+      <ion-row row-12>
+          <ion-col>
+              <ion-item  class="searchbar ">
+                     <ion-icon class="icon-display"  name="search" item-start></ion-icon>
+                    <ion-input placeholder="Search"></ion-input>
+                          
+              </ion-item>
+          </ion-col>
+      </ion-row>
+  </ion-grid>
+
+  <!-- First card display -->
+
+  <ion-grid>
+
+    <!-- Card area -->
+
+    <ion-card class= "card-area" type="button" style=" border: 1.3px solid #a9a9a9;">
+          <ion-card-content>
+                 <ion-row>
+                       <!-- Card picture -->
+
+                       <ion-col col-4>
+
+                               <ion-avatar class="image" style=" border: 1px solid #a9a9a9;">
+                               </ion-avatar>
+                       </ion-col>
+
+                       <!-- Card content -->
+
+                       <ion-col col-7>
+                               <ion-label class="Ist-label-pos first-last-label"><b>Shop1</b></ion-label>
+                               <ion-label class="other-label-pos mid-all-label">Street name</ion-label>
+                               <ion-label class="other-label-pos mid-all-label">City name</ion-label>
+                               <ion-label class="other-label-pos mid-all-label">State name</ion-label>
+                               <ion-label class="other-label-pos first-last-label">Offer: 10%</ion-label>
+                       </ion-col>
+
+                       <!-- location pin display -->
+
+                       <ion-col col-1>
+                               <ion-icon name="pin" class="pin-icon"></ion-icon>
+                       </ion-col>
+
+                  </ion-row>
+          </ion-card-content>
+    </ion-card>
+  </ion-grid>
+
+  <!-- Second card display -->
+
+  <ion-grid class="card-position">
+
+    <!-- Card area -->
+
+          <ion-card class= "card-area" type="button" style=" border: 1.3px solid #a9a9a9;">
+                    <ion-card-content>
+                          <ion-row>
+                            <!-- Card picture -->
+
+                            <ion-col col-4> 
+                                   <ion-avatar class="image" style=" border: 1px solid #a9a9a9;">
+                                   </ion-avatar>
+                            </ion-col>
+
+                            <!-- Card content -->
+
+                            <ion-col col-7>
+                                   <ion-label class="Ist-label-pos first-last-label"><b>Shop2</b></ion-label>
+                                   <ion-label class="other-label-pos mid-all-label">Street name</ion-label>
+                                   <ion-label class="other-label-pos mid-all-label">City name</ion-label>
+                                   <ion-label class="other-label-pos mid-all-label">State name</ion-label>
+                                   <ion-label class="other-label-pos first-last-label">Offer: 20%</ion-label>
+                            </ion-col>
+
+                            <!-- location pin display -->
+
+                            <ion-col col-1>
+                                   <ion-icon name="pin" class="resize-icon pin-icon"></ion-icon>
+                            </ion-col>
+
+                          </ion-row>
+                    </ion-card-content>
+          </ion-card>
+  </ion-grid>
+
+ <!-- Third card display -->
+
+  <ion-grid class="card-position">
+
+    <!-- Card area -->
+
+        <ion-card class= "card-area" type="button" style=" border: 1.3px solid #a9a9a9;">
+                  <ion-card-content>
+                        <ion-row>
+                          <!-- Card picture -->
+
+                          <ion-col col-4> 
+                                 <ion-avatar class="image" style=" border: 1px solid #a9a9a9;">
+                                 </ion-avatar>
+                          </ion-col>
+
+                          <!-- Card content -->
+
+                          <ion-col col-7>
+                                 <ion-label class="Ist-label-pos first-last-label"><b>Shop3</b></ion-label>
+                                 <ion-label class="other-label-pos mid-all-label">Street name</ion-label>
+                                 <ion-label class="other-label-pos mid-all-label">City name</ion-label>
+                                 <ion-label class="other-label-pos mid-all-label">State name</ion-label>
+                                 <ion-label class="other-label-pos first-last-label">Offer: 30%</ion-label>
+                          </ion-col>
+
+                          <!-- location pin display -->
+
+                          <ion-col col-1>
+                                 <ion-icon name="pin" class="resize-icon pin-icon"></ion-icon>
+                          </ion-col>
+
+                        </ion-row>
+                  </ion-card-content>
+        </ion-card>
+  </ion-grid>
 
 </ion-content>
