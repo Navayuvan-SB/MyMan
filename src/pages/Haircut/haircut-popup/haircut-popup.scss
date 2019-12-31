@@ -1,0 +1,68 @@
+page-haircut-popup {
+
+    /*================================================================
+                                 ion-content
+    ==================================================================*/
+    
+    h1{
+        font-size: small !important;
+    }
+
+    p{
+        font-size: x-small;
+        font-weight: lighter;
+        margin-top: -4%;
+    }
+
+    .con-grid{
+        margin-top: -10%; 
+        margin-bottom: -40%
+    }
+    .seatCenter{
+        margin-left: 8%;
+        margin-top: -20%;
+    }
+
+    .greenIcon{
+        color: #35AE59;
+        font-size: 75px;
+        mask-position: 5% 5% !important;
+    }
+
+    .greyIcon{
+        font-size: 75px;
+        mask-position: 5% 5% !important;
+    }
+
+    /*==================================================================
+                                ion-footer
+    ===================================================================*/
+
+    .footer-grid{
+        padding-top: -20%;
+    }
+
+    .borderTop{
+        border-top :1px solid #707070;
+    
+    }
+
+    .borderRight{
+        border-right:1px solid #707070;
+    }
+  
+    .center{
+        text-align: center;
+    }
+
+    .green{
+        color: #35AE59;
+    
+    }
+
+    .red{
+        color:#FF0000;
+    }
+  
+}
+    

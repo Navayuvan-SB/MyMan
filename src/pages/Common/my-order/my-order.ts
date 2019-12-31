@@ -12,75 +12,107 @@ import { AngularFireAuth } from 'angularfire2/auth';
 })
 export class MyOrderPage {
 
-  requests : any;
+  // seperated orders list
+  photographyOrders: any;
+  haircutOrders: any;
 
-  constructor(public navCtrl      : NavController, 
-              public navParams    : NavParams,
-              public fbService    : FirebaseServices,
-              public afAuth       : AngularFireAuth,
-              public loadingCtrl  : LoadingController,
-              public toastCtrl    : ToastController) {
+  // flags for user display
+  haircutFlag : Boolean = false;
+  photographyFlag : Boolean = false;
 
-                let user = this.afAuth.auth.currentUser;
+  constructor(public navCtrl: NavController,
+    public navParams: NavParams,
+    public fbService: FirebaseServices,
+    public afAuth: AngularFireAuth,
+    public loadingCtrl: LoadingController,
+    public toastCtrl: ToastController) {
 
-                let loading = this.loadingCtrl.create({
-                  content: 'please wait'
-                });
+    let user = this.afAuth.auth.currentUser;
 
-                loading.present();
-                this.fbService.filterData(this.fbService.equalTo,
-                                          'requests',
-                                          null,
-                                          this.fbService.orderByChild,
-                                          'userId',
-                                          user.email)
-                              .then((response) => {
-                                loading.dismiss();
-                                let obj = Object.entries(response);
-                                let arr = Array();
-                                obj.forEach(element => {
-                                  arr.push(element[1]);
-                                });
-                                this.requests = arr;
-                                console.log(arr);
-                              });
+    let loading = this.loadingCtrl.create({
+      content: 'please wait'
+    });
+
+    loading.present();
+    this.fbService.filterData(this.fbService.equalTo,
+      'requests',
+      null,
+      this.fbService.orderByChild,
+      'userId',
+      user.email)
+      .then((response) => {
+        loading.dismiss();
+        let obj = Object.entries(response);
+
+        // arrays for seperated services
+        let haircut = Array();
+        let photography = Array();
+        obj.forEach(element => {
+          
+          // Check the service
+          if (element[1]['service'] == 'haircut') {
+            haircut.push(element[1]);
+          }
+          else if (element[1]['service'] == 'photography') {
+            photography.push(element[1]);
+          }
+
+        });
+        
+        // Presence of haircut orders
+        if (haircut.length == 0) {
+          this.haircutFlag = true;
+        }
+        else {
+          this.haircutOrders = haircut;
+        }
+
+        // Presence if photography orders
+        if (photography.length == 0) {
+          this.photographyFlag = true;
+        }
+        else {
+          this.photographyOrders = photography;
+        }
+
+      });
 
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad MyOrderPage');
   }
-  clicked(){
+  clicked() {
 
     let toast = this.toastCtrl.create({
-      duration  : 2000,
-      message   : "Check your internet connection",
-      position  : 'bottom'
+      duration: 2000,
+      message: "Check your internet connection",
+      position: 'bottom'
     });
 
     let user = this.afAuth.auth.currentUser;
     this.fbService.readOnce('users/' + user.uid)
-                              .then((response) => {
-                                let details = Object.entries(response);
-                                let emailId = details[0][1];
-                                let phone = details[2][1];
-                                let fullName = details[1][1];
+      .then((response) => {
+        let details = Object.entries(response);
+        let emailId = details[0][1];
+        let phone = details[2][1];
+        let fullName = details[1][1];
 
-                                let payload = {
-                                  email         : emailId,
-                                  phoneNumber   : phone,
-                                  name          : fullName
-                                }
-                                this.navCtrl.push(ProfilePage, {'payload' : payload});
+        let payload = {
+          email: emailId,
+          phoneNumber: phone,
+          name: fullName
+        }
+        this.navCtrl.push(ProfilePage, { 'payload': payload });
 
-                              })
-                              .catch((error) => {
-                                toast.present();
-                              });
+      })
+      .catch((error) => {
+        toast.present();
+      });
   }
-  cardclick(item){
+  cardclick(item) {
 
-    this.navCtrl.push(Orderbooked2Page, {'payload' : item});
+    this.navCtrl.push(Orderbooked2Page, { 'payload': item });
 
   }
 

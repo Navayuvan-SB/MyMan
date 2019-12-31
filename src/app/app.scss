@@ -15,7 +15,6 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 
-
 ion-icon {
     &[class*="custom-"] {
       mask-size: contain;
@@ -53,7 +52,13 @@ ion-icon {
       &[class*="custom-Downarrow"] {
         mask-image: url(../assets/icon/Dowwnarrow.svg);
       }
-  
+      &[class*="custom-gySeat"] {
+        mask-image: url(../assets/icon/greySeat.svg);
+      }
+      &[class*="custom-gnSeat"] {
+        mask-image: url(../assets/icon/greenSeat.svg);
+      }
+      
   }
 
 .button-logout{

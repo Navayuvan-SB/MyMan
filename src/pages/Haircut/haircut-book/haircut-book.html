@@ -4,12 +4,101 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
+
+<!-- Header -->
 <ion-header>
   <ion-navbar>
-    <ion-title>haircutBook</ion-title>
+    <ion-title class="toolbar-title.toolbar-title-md ">Book</ion-title>
+
+    <ion-buttons left class="backArrow">
+      <button ion-button icon-only (click)="prePage()">
+        <ion-icon name="custom-backarrow" class="headerIcons"></ion-icon>
+      </button>
+    </ion-buttons>
+
+    <ion-buttons right class="contactInfo">
+      <button ion-button icon-only>
+        <ion-icon name="custom-Union" class="headerIcons"></ion-icon>
+      </button>
+    </ion-buttons>
+
+    <ion-buttons right class="hamri8">
+      <button ion-button icon-only (click)="order()">
+        <ion-icon name="custom-hammer" class="headerIcons"></ion-icon>
+      </button>
+    </ion-buttons>
+
   </ion-navbar>
 </ion-header>
 
+<!-- content -->
 <ion-content padding>
 
-</ion-content>
+  <ion-grid>
+
+    <!-- image -->
+    <ion-row>
+      <ion-img src="assets/imgs/camera.jpg"></ion-img>
+    </ion-row>
+
+    <!-- Shop Details -->
+    <ion-row justify-content-center>
+      <div>
+        <p class="shopName"><b>Selected Shop Name</b></p>
+        <p class="shopDetails">01-Jan-2019</p>
+      </div>
+    </ion-row>
+    <ion-row>
+        <p class="time"><b>Time</b></p>
+    </ion-row>
+
+    <!-- Timings -->
+    <ion-row>
+      <ion-col col-4 (click)="popup()">
+        <div class="roundedCorners red">
+            <p class="textSize">12:30 PM </p>
+              <ion-row justify-content-center>
+                <ion-col col-5>
+                <ion-icon name="custom-gySeat" class="greyIcon"></ion-icon>
+                </ion-col>
+                <ion-col col-5>
+                <ion-icon  name="custom-gySeat" class="greyIcon"></ion-icon>
+                </ion-col>
+              </ion-row>
+            </div>     
+      </ion-col>
+
+      <ion-col col-4 (click)="popup()">
+          <div class="roundedCorners yellow">
+            <p class="textSize">12:30 PM </p>
+                <ion-row justify-content-center>
+                  <ion-col col-5>
+                  <ion-icon name="custom-gnSeat" class="greenIcon"></ion-icon>
+                  </ion-col>
+                  <ion-col col-5>
+                  <ion-icon  name="custom-gySeat" class="greyIcon"></ion-icon>
+                  </ion-col>
+                </ion-row>
+              </div>     
+        </ion-col>
+       
+        <ion-col col-4 (click)="popup()">
+            <div class="roundedCorners green">
+              <p class="textSize">12:30 PM </p>
+                  <ion-row justify-content-center>
+                    <ion-col col-5>
+                    <ion-icon name="custom-gnSeat" class="greenIcon"></ion-icon>
+                    </ion-col>
+                    <ion-col col-5>
+                    <ion-icon  name="custom-gnSeat" class="greenIcon"></ion-icon>
+                    </ion-col>
+                  </ion-row>
+                </div>     
+          </ion-col>
+      
+    </ion-row> 
+
+  </ion-grid>
+
+
+</ion-content> 

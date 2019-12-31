@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams, AlertController } from 'ionic-angular';
+import { NavController, NavParams, AlertController, ToastController, Toast } from 'ionic-angular';
 import { MyOrderPage } from '../my-order/my-order';
 import { Orderbooked2Page } from '../orderbooked2/orderbooked2';
 import { AngularFireAuth } from 'angularfire2/auth';
@@ -31,6 +31,7 @@ export class ProfilePage {
     public afAuth: AngularFireAuth,
     public fbService: FirebaseServices,
     public formBuilder: FormBuilder,
+    public toastCtrl: ToastController,
     public alertCtrl: AlertController,
     public afApp: AngularFireModule) {
 
@@ -111,9 +112,45 @@ export class ProfilePage {
           text: 'Done',
           handler: data => {
 
+            console.log(this.afAuth.auth.currentUser['email']);
+            this.fbService.login(this.afAuth.auth.currentUser['email'], data.password)
+              .then((response) => {
 
-            var user = this.afAuth.auth.currentUser;
+                // Updating the edited details
+                let email = 'users/' + (this.afAuth.auth.currentUser.uid) + '/email';
+                let phoneNumber = 'users/' + (this.afAuth.auth.currentUser.uid) + '/phoneNumber';
+                let name = 'users/' + (this.afAuth.auth.currentUser.uid) + '/name';
+                let data = {};
+                this.afAuth.auth.currentUser.updateEmail(this.editForm.controls['email'].value);
+                data[email] = this.editForm.controls['email'].value;
+                data[phoneNumber] = this.editForm.controls['phoneNumber'].value;
+                data[name] = this.editForm.controls['name'].value;
 
+                // updating in database
+                this.fbService.updateField(data);
+
+                document.documentElement.style.setProperty(`--teal`, '#18A0A0');
+                document.documentElement.style.setProperty(`--header-profile`, '20%');
+
+                let alert = this.alertCtrl.create({
+                  message: 'Hurray..! The profile details are updated'
+                });
+
+                alert.present();
+
+              })
+              .catch((error) => {
+
+                // displaying error toast
+                let alert = this.alertCtrl.create({
+                  message: 'Password is incorrect. Please enter the correct password'
+                })
+                alert.present();
+
+                document.documentElement.style.setProperty(`--teal`, '#18A0A0');
+                document.documentElement.style.setProperty(`--header-profile`, '20%');
+
+              })
 
           }
         }
@@ -126,21 +163,129 @@ export class ProfilePage {
       document.documentElement.style.setProperty(`--header-profile`, '0%');
     } else {
 
-      prompt.present();
-      let email = 'users/' + (this.afAuth.auth.currentUser.uid) + '/email';
-      let phoneNumber = 'users/' + (this.afAuth.auth.currentUser.uid) + '/phoneNumber';
-      let name = 'users/' + (this.afAuth.auth.currentUser.uid) + '/name';
-      let data = {};
-      this.afAuth.auth.currentUser.updateEmail(email);
-      data[email] = this.editForm.controls['email'].value;
-      data[phoneNumber] = this.editForm.controls['phoneNumber'].value;
-      data[name] = this.editForm.controls['name'].value;
+      let email = this.editForm.controls['email'].value;
+      let name = this.editForm.controls['name'].value;
+      let phoneNumber = this.editForm.controls['phoneNumber'].value;
 
-      // updating in database
-      this.fbService.updateField(data);
-      document.documentElement.style.setProperty(`--teal`, '#18A0A0');
-      document.documentElement.style.setProperty(`--header-profile`, '20%');
+      if (email != this.navParams.get('payload').email ||
+        name != this.navParams.get('payload').name ||
+        phoneNumber != this.navParams.get('payload').phoneNumber) {
+        prompt.present();
+      }
+      else {
+
+        // Toast for notifying user about the unedited details
+        let toast = this.toastCtrl.create({
+          message: 'Seems like you didn\'t changed anything',
+          duration: 3000,
+          position: 'bottom'
+        });
+
+        toast.present();
+
+        document.documentElement.style.setProperty(`--teal`, '#18A0A0');
+        document.documentElement.style.setProperty(`--header-profile`, '20%');
+      }
+
     }
+  }
+
+  // Change Password
+  changePassword() {
+
+    let alertPrompt = this.alertCtrl.create({
+      title: 'New Password',
+      message: "Please enter the new password",
+      inputs: [
+        {
+          name: 'oldPassword',
+          placeholder: 'Old password'
+        },
+        {
+          name: 'newPassword',
+          placeholder: 'New password'
+        }
+      ],
+      buttons: [
+        {
+          text: 'Done',
+          handler: data => {
+            // Local scoped user crdentials
+            let user = this.afAuth.auth.currentUser
+
+            // Reauthenticate to check if the old 
+            // password entered is correct.
+
+            this.fbService.login(user['email'], data.oldPassword)
+
+              //if login is successful
+              .then((response) => {
+
+                //update password if login is successful
+                //checking new password characters length for 6
+                if (data.newPassword.length >= 6) {
+
+                  user.updatePassword(data.newPassword)
+
+                    //if update password is successful
+                    .then((response) => {
+
+                      // Display the alert message
+                      let alert = this.alertCtrl.create({
+                        title: 'Updated',
+                        message: 'Password updated successfully...!'
+                      });
+
+                      alert.present();
+
+                    })
+                    .catch(function (error) {
+
+                      // Display the alert message
+                      let alert = this.alertCtrl.create({
+                        title: 'Failed',
+                        message: 'Some problem occured...Please try again later...!'
+                      });
+
+                      alert.present();
+                    });
+                }
+                else {
+
+                  // Display the alert message
+                  let alert = this.alertCtrl.create({
+                    title: 'Failed',
+                    message: 'Password should be minimum of 6 characters'
+                  });
+
+                  alert.present();
+
+                }
+              })
+              .catch((error) => {
+
+                console.log(error);
+                // Display the alert message
+                let alert = this.alertCtrl.create({
+                  title: 'Failed',
+                  message: 'Enter the correct old password'
+                });
+
+                alert.present();
+              });
+
+          }
+        },
+        {
+          text: 'cancel',
+          handler: data => {
+
+          }
+        }
+      ]
+    });
+
+    alertPrompt.present();
   }
 
 }

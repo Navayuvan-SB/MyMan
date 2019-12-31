@@ -16,6 +16,7 @@ import { ProfilePage } from '../pages/Common/profile/profile';
 import { HaircutConformationPage } from '../pages/Haircut/haircut-conformation/haircut-conformation';
 import { HaircutBookPage } from '../pages/Haircut/haircut-book/haircut-book';
 import { HaircutHomePage } from '../pages/Haircut/haircut-home/haircut-home';
+import { HaircutPopupPage } from '../pages/Haircut/haircut-popup/haircut-popup';
 
 // Firebase Services
 import { FirebaseServices } from '../services/fireBaseService';
@@ -38,6 +39,7 @@ import { Geolocation } from '@ionic-native/geolocation';
 
 
 
+
 @NgModule({
   declarations: [
     MyApp,
@@ -52,7 +54,8 @@ import { Geolocation } from '@ionic-native/geolocation';
     ProfilePage,
     HaircutHomePage,
     HaircutBookPage,
-    HaircutConformationPage
+    HaircutConformationPage,
+    HaircutPopupPage
   ],
   imports: [
     BrowserModule,
@@ -73,7 +76,8 @@ import { Geolocation } from '@ionic-native/geolocation';
     ProfilePage,
     HaircutHomePage,
     HaircutBookPage,
-    HaircutConformationPage
+    HaircutConformationPage,
+    HaircutPopupPage
   ],
   providers: [
     StatusBar,
