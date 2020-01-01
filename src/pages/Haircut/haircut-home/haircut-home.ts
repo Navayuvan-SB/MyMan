@@ -1,7 +1,10 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
 import { FirebaseServices } from '../../../services/fireBaseService';
 import { HaircutBookPage } from '../haircut-book/haircut-book';
+import { ProfilePage } from '../../Common/profile/profile';
+import { MyOrderPage } from '../../Common/my-order/my-order';
+import { AngularFireAuth } from 'angularfire2/auth';
 
 @IonicPage()
 @Component({
@@ -20,31 +23,33 @@ export class HaircutHomePage {
 
   constructor(public navCtrl: NavController,
     public navParams: NavParams,
-    public fbService: FirebaseServices) {
+    public fbService: FirebaseServices,
+    public afAuth: AngularFireAuth,
+    public toastCtrl: ToastController) {
 
-      // read the shops list from db
+    // read the shops list from db
     this.fbService.readOnce('haircut/shops')
-    .then((response) => {
+      .then((response) => {
 
-      let obj = Object.entries(response);
-      this.loadedShopArray = [];
+        let obj = Object.entries(response);
+        this.loadedShopArray = [];
 
-      obj.forEach((shop) => {
+        obj.forEach((shop) => {
 
-        if (shop[1]['city'] == this.location) {
-          this.loadedShopArray.push(shop[1]);
-        }
+          if (shop[1]['city'] == this.location) {
+            this.loadedShopArray.push(shop[1]);
+          }
+
+        });
+
+        this.initializeItems();
+
+      })
+      .catch((error) => {
 
       });
 
-      this.initializeItems();
 
-    })
-    .catch((error) => {
-
-    });
-
-    
 
   }
 
@@ -83,7 +88,43 @@ export class HaircutHomePage {
     }
 
     this.navCtrl.push(HaircutBookPage, payload);
-    
+
+  }
+
+  // nav to profile
+  navToProfile() {
+    let toast = this.toastCtrl.create({
+      duration: 2000,
+      message: "Check your internet connection",
+      position: 'bottom'
+    });
+
+    let user = this.afAuth.auth.currentUser;
+    this.fbService.readOnce('users/' + user.uid)
+      .then((response) => {
+        let details = Object.entries(response);
+        let emailId = details[0][1];
+        let phone = details[2][1];
+        let fullName = details[1][1];
+
+        let payload = {
+          email: emailId,
+          phoneNumber: phone,
+          name: fullName
+        }
+
+        this.navCtrl.push(ProfilePage, { 'payload': payload });
+
+      })
+      .catch((error) => {
+        toast.present();
+      });
+  }
+
+
+  // nav to my order page
+  navToMyOrders() {
+    this.navCtrl.push(MyOrderPage);
   }
 
 }

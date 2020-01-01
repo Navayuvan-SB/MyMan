@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, PopoverController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, PopoverController, ViewController } from 'ionic-angular';
 
 
 
@@ -17,11 +17,35 @@ import { IonicPage, NavController, NavParams, PopoverController } from 'ionic-an
 })
 export class HaircutConformationPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public popoverCtrl: PopoverController) {
+  // booking details
+  bookedDetails: any;
+
+  // No of seats
+  numberOfSeats: any;
+  
+  constructor(public navCtrl: NavController, public navParams: NavParams,
+    public viewCtrl: ViewController) {
+
+    // get the details from the source page
+    this.bookedDetails = this.navParams.get('payload');
+
+    // Updating the number of seats count
+    if (this.bookedDetails.seats['first'] == 1 && this.bookedDetails.seats['second'] == 1) {
+      this.numberOfSeats = 2;
+    }
+    else {
+      this.numberOfSeats = 1;
+    }
+
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad HaircutConformationPage');
+  }
+
+  // dismiss the view
+  dismiss() {
+    this.viewCtrl.dismiss();
   }
 
 }

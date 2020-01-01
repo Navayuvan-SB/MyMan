@@ -13,12 +13,18 @@ page-haircut-conformation {
     // margin-right: 15%;
   }
 
+  ion-title {
+    margin-right: -40px;
+  }
+
   .toolbar-background {
     background-color: White !important;
   }
 
   ion-icon {
     color: #18A0A0;
+    zoom: 1.5;
+    margin-right: 10px;
   }
 
 
@@ -84,12 +90,12 @@ page-haircut-conformation {
   /* =========================================
                  ion-content - ion-card
     ========================================== */
-    ion-footer {
-        width: 100%;
-    }
+  ion-footer {
+    width: 100%;
+  }
 
   ion-card {
-      position: relative;
+    position: relative;
     height: 60px !important;
     width: 400px !important;
     align-content: center !important;

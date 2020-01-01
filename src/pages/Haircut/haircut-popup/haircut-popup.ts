@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angular';
 import { HaircutBookPage } from '../haircut-book/haircut-book';
 
 /**
@@ -23,20 +23,30 @@ export class HaircutPopupPage {
   // timeSlot
   timeSlot: any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,
+    public viewCtrl: ViewController) {
 
     this.timeSlot = this.navParams.get('data');
+    console.log(this.timeSlot);
 
     if (this.timeSlot.first == 1) {
 
       this.firstSeatFlag = 3;
       document.documentElement.style.setProperty(`--seat-color-first`, '#adadad');
+    } else {
+
+      this.firstSeatFlag = 0;
+      document.documentElement.style.setProperty(`--seat-color-first`, '#808080');
     }
 
     if (this.timeSlot.second == 1) {
 
       this.secondSeatFlag = 3;
       document.documentElement.style.setProperty(`--seat-color-second`, '#adadad');
+    } else {
+
+      this.secondSeatFlag = 0;
+      document.documentElement.style.setProperty(`--seat-color-second`, '#808080');
     }
 
   }
@@ -77,13 +87,7 @@ export class HaircutPopupPage {
   // Cancel clicked
   cancelled() {
 
-    //terminating previous pages
-    let currentIndex = this.navCtrl.getActive().index;
-    this.navCtrl.push(HaircutBookPage, { data: this.navParams.get('selectedShop') })
-      .then(() => {
-        this.navCtrl.remove(currentIndex);
-      });
-
+    this.viewCtrl.dismiss();
   }
 
   // Ok clicked
@@ -109,11 +113,13 @@ export class HaircutPopupPage {
       this.timeSlot.status = 0;
     }
 
-    //terminating previous pages
-    let currentIndex = this.navCtrl.getActive().index;
-    this.navCtrl.push(HaircutBookPage, { dataToBook: this.timeSlot, data: this.navParams.get('selectedShop') }).then(() => {
-      this.navCtrl.remove(currentIndex);
-    });
+    if (this.firstSeatFlag != 0 || this.secondSeatFlag != 0) {
+
+      this.viewCtrl.dismiss(this.timeSlot);
+    }
+    else {
+      this.viewCtrl.dismiss();
+    }
 
   }
 

@@ -1,9 +1,14 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, PopoverController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, PopoverController, AlertController, ModalController, ToastController } from 'ionic-angular';
 import { HaircutPopupPage } from '../haircut-popup/haircut-popup';
 import { c } from '@angular/core/src/render3';
 import { FirebaseServices } from '../../../services/fireBaseService';
 import { AngularFireAuth } from 'angularfire2/auth';
+import { sha256, sha224 } from 'js-sha256';
+import { HaircutConformationPage } from '../haircut-conformation/haircut-conformation';
+import { ProfilePage } from '../../Common/profile/profile';
+import { MyOrderPage } from '../../Common/my-order/my-order';
+
 /**
  * Generated class for the HaircutBookPage page.
  *
@@ -33,9 +38,15 @@ export class HaircutBookPage {
     public navParams: NavParams,
     public popoverCtrl: PopoverController,
     public fbService: FirebaseServices,
-    public afAuth: AngularFireAuth) {
+    public afAuth: AngularFireAuth,
+    public alertCtrl: AlertController,
+    public modalCtrl: ModalController,
+    public toastCtrl: ToastController) {
 
     this.selectedShop = this.navParams.get('data');
+    this.timeSlots = this.navParams.get('data')['timeSlots'];
+
+    this.rawTimeSlots = this.timeSlots;
 
     // get the current date
     var today = new Date();
@@ -44,28 +55,17 @@ export class HaircutBookPage {
     var yyyy = today.getFullYear();
     this.toDate = dd + '-' + this.convertMonth(mm) + '-' + yyyy;
 
-    // get the time slots from database
-    this.rawTimeSlots = this.selectedShop.timeSlots;
-
     // get the current time
-    let hr, mn;
     var today = new Date();
     var h = today.getHours();
-    if (h < 10) hr = "0" + h;
     var m = today.getMinutes();
-    if (m < 10) mn = "0" + m;
-    var timeNow = hr + ":" + mn + ":" + '00';
+    var timeNow = h + ":" + m + ":" + '00';
 
+    timeNow = "12:8:00"
     // filter the slots based on current time
-    this.timeSlots = this.rawTimeSlots.filter((element) => {
+    this.timeSlots = this.timeSlots.filter((element) => {
       return (timeNow < this.convertTime(element.time))
     });
-
-    let dataToBook = this.navParams.get('dataToBook');
-
-    if (dataToBook != undefined) {
-      this.bookAppointment(dataToBook)
-    }
 
   }
 
@@ -74,12 +74,15 @@ export class HaircutBookPage {
   }
 
   popup(times) {
-    const popover = this.popoverCtrl.create(HaircutPopupPage, { data: times, selectedShop: this.selectedShop });
+    const popover = this.popoverCtrl.create(HaircutPopupPage, { data: times });
 
-    //for terminating previous pages
-    let currentindex = this.navCtrl.getActive().index;
-    popover.onDidDismiss(() => {
-      this.navCtrl.remove(currentindex - 1);
+    popover.onDidDismiss((data) => {
+
+      console.log(data);
+      if (data != undefined) {
+        this.bookAppointment(data);
+      }
+
     });
 
     popover.present();
@@ -179,54 +182,135 @@ export class HaircutBookPage {
 
     this.fbService.updateField(data)
       .then((response) => {
-        console.log('Updated Successfully...!');
+
+        // appointmentId
+        var d = new Date();
+        var n = d.getMilliseconds();
+
+        let appointmentId = 'MMN' + this.selectedShop.id + 'U' + n +
+          this.afAuth.auth.currentUser.uid + dataToBook.time + this.toDate;
+
+        // Hash using sha256
+        appointmentId = sha256(appointmentId);
+
+        // data to update in request
+        let dataToRequest = {
+          'appointmentId': appointmentId,
+          'cost': 0,
+          'date': this.toDate,
+          'userId': this.afAuth.auth.currentUser.uid,
+          'seats': {
+            'first': dataToBook.first,
+            'second': dataToBook.second
+          },
+          'service': 'Haircut',
+          'shopId': this.selectedShop.id,
+          'status': 0,
+          'time': dataToBook.time,
+          'transactionId': 0,
+          'userName': '',
+          'shopName': this.selectedShop.shopName
+        }
+
+        // get the userName
+        this.fbService.readOnce('users/' + this.afAuth.auth.currentUser.uid)
+          .then((response) => {
+            dataToRequest.userName = response['name'];
+
+            // update in request set
+            this.fbService.writeInDatabase('requests/' + appointmentId, dataToRequest)
+              .then((response) => {
+
+                let modal = this.modalCtrl.create(HaircutConformationPage, { payload: dataToRequest });
+                modal.present();
+
+              })
+              .catch((error) => {
+
+                // alert message
+                var alert = this.alertCtrl.create({
+                  title: 'Failed',
+                  message: 'Something seems to be wrong, please try again later',
+                  buttons: [
+                    {
+                      text: 'Okay'
+                    }
+                  ]
+                });
+
+                alert.present();
+              });
+          })
+          .catch((error) => {
+
+            // alert message
+            var alert = this.alertCtrl.create({
+              title: 'Failed',
+              message: 'Something seems to be wrong, please try again later',
+              buttons: [
+                {
+                  text: 'Okay'
+                }
+              ]
+            });
+
+            alert.present();
+          })
       })
       .catch((error) => {
-        console.log('Updated Failed...!');
+
+        // alert message
+        var alert = this.alertCtrl.create({
+          title: 'Failed',
+          message: 'Something seems to be wrong, please try again later',
+          buttons: [
+            {
+              text: 'Okay'
+            }
+          ]
+        });
+
+        alert.present();
+
       });
-    
-    // appointmentId
 
-    var d = new Date();
-    var n = d.getMilliseconds(); 
 
-    let appointmentId = 'MMN' + this.selectedShop.id + 'U' + n +
-                        this.afAuth.auth.currentUser.uid + dataToBook.time + this.toDate;
-    
-    // get the userName
-    let userName = '';
-    this.fbService.readOnce('users/' + this.afAuth.auth.currentUser.uid)
-    .then((response) => {
-      userName = response['name'];
-    })
+  }
 
-    // data to update in request
-    let dataToRequest = {
-      'appointmentId': appointmentId,
-      'cost': 0,
-      'date': this.toDate,
-      'userId': this.afAuth.auth.currentUser.uid,
-      'seats': {
-        'first': dataToBook.first,
-        'second': dataToBook.second
-      },
-      'service': 'haircut',
-      'shopId': 'MMN' + this.selectedShop.id,
-      'status': 0,
-      'time': dataToBook.time,
-      'transactionId': 0,
-      'userName': userName
-    }
-
-    // update in request set
-    this.fbService.writeInDatabase('requests' + appointmentId, dataToRequest)
-    .then((response) => {
-      console.log('Data written in requests successfully...!');
-    })
-    .catch((error) => {
-      console.log('Data written in requests FAILED...!');
+  // nav to profile
+  navToProfile() {
+    let toast = this.toastCtrl.create({
+      duration: 2000,
+      message: "Check your internet connection",
+      position: 'bottom'
     });
-    
+
+    let user = this.afAuth.auth.currentUser;
+    this.fbService.readOnce('users/' + user.uid)
+      .then((response) => {
+        let details = Object.entries(response);
+        let emailId = details[0][1];
+        let phone = details[2][1];
+        let fullName = details[1][1];
+
+        let payload = {
+          email: emailId,
+          phoneNumber: phone,
+          name: fullName
+        }
+
+        this.navCtrl.push(ProfilePage, { 'payload': payload });
+
+      })
+      .catch((error) => {
+        toast.present();
+      });
+
+  }
+
+  // nav to my order page
+  navToMyOrders() {
+    this.navCtrl.push(MyOrderPage);
   }
 
 }

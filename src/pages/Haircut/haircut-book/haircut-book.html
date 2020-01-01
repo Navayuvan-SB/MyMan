@@ -10,21 +10,15 @@
   <ion-navbar>
     <ion-title class="toolbar-title.toolbar-title-md ">Book</ion-title>
 
-    <!-- <ion-buttons left class="backArrow">
-      <button ion-button icon-only (click)="prePage()">
-        <ion-icon name="custom-backarrow" class="headerIcons"></ion-icon>
-      </button>
-    </ion-buttons> -->
-
-    <ion-buttons right class="contactInfo">
+    <ion-buttons right class="Union" (click)="navToProfile()">
       <button ion-button icon-only>
-        <ion-icon name="custom-Union" class="headerIcons"></ion-icon>
+        <ion-icon name="custom-Union" class="resize-icon"></ion-icon>
       </button>
     </ion-buttons>
 
-    <ion-buttons right class="hamri8">
-      <button ion-button icon-only (click)="order()">
-        <ion-icon name="custom-hammer" class="headerIcons"></ion-icon>
+    <ion-buttons right class="hammer" (click)="navToMyOrders()">
+      <button ion-button icon-only>
+        <ion-icon name="custom-hammer" class="resize-icon"></ion-icon>
       </button>
     </ion-buttons>
 

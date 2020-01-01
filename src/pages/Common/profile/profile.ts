@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { NavController, NavParams, AlertController, ToastController, Toast } from 'ionic-angular';
+import { Component, ViewChild } from '@angular/core';
+import { NavController, Navbar, NavParams, AlertController, ToastController, Toast } from 'ionic-angular';
 import { MyOrderPage } from '../my-order/my-order';
 import { Orderbooked2Page } from '../orderbooked2/orderbooked2';
 import { AngularFireAuth } from 'angularfire2/auth';
@@ -23,7 +23,7 @@ export class ProfilePage {
 
   // latest Request, packId and Booked date
   latestReq: any;
-  packId: "";
+  service: "";
   bookedDate: "";
 
   constructor(public navCtrl: NavController,
@@ -55,7 +55,7 @@ export class ProfilePage {
 
     this.fbService.filterData(this.fbService.equalTo,
       'requests', null, this.fbService.orderByChild,
-      'userId', this.navParams.get('payload').email)
+      'userId', this.navParams.get('payload').uid)
       .then((response) => {
 
         let result = Object.entries(response);
@@ -63,9 +63,9 @@ export class ProfilePage {
 
         // append items to array
         this.latestReq = result[result.length - 1][1];
-
-        this.packId = this.latestReq.pack.id;
-        this.bookedDate = this.latestReq.bookedDate;
+        
+        this.service = this.latestReq['service'];
+        this.bookedDate = this.latestReq['date'];
 
       })
       .catch((error) => {

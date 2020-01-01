@@ -51,6 +51,7 @@ export class HomePage {
                                 toast.present();
                               });
   }
+  
   order(){
     this.navCtrl.push(MyOrderPage);
   }

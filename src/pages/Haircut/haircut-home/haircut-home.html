@@ -12,13 +12,13 @@
 
     <ion-title class="toolbar-title.toolbar-title-md">Haircut</ion-title>
 
-    <ion-buttons right class="Union">
+    <ion-buttons right class="Union" (click)="navToProfile()">
       <button ion-button icon-only>
         <ion-icon name="custom-Union" class="resize-icon"></ion-icon>
       </button>
     </ion-buttons>
 
-    <ion-buttons right class="hammer">
+    <ion-buttons right class="hammer" (click)="navToMyOrders()">
       <button ion-button icon-only>
         <ion-icon name="custom-hammer" class="resize-icon"></ion-icon>
       </button>

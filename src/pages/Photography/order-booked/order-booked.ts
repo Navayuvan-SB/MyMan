@@ -46,7 +46,7 @@ export class OrderBookedPage {
                       this.name          = details[1][1];
                       this.source.bookedDate = this.nowDate;
                       this.source.userName   = this.name;
-                      this.source.service = 'haircut';
+                      this.source.service = 'Photography';
                       this.fbService.pushInDatabase('requests',this.source);
                     })
                     .catch((error) => {

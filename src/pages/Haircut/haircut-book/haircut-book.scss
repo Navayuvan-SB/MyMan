@@ -11,20 +11,27 @@ page-haircut-book {
     text-align: center;
   }
 
-  .hamri8 {
+  .hammer {
     padding-right: 13px;
   }
 
-  .contactInfo {
+  .Back-Arrow {
+    padding-left: 9px;
+  }
+
+  .Union {
     padding-right: 13px;
   }
 
-  .backArrow {
-    padding-left: 13px;
+  .resize-icon {
+    height: 60%;
+    widows: 60%;
   }
 
-  .headerIcons {
+  // ##### common for all icon #####
+  ion-icon {
     color: #18A0A0;
+
   }
 
   ion-img {
