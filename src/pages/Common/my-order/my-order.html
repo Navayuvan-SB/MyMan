@@ -1,48 +1,64 @@
 <ion-header>
-  <ion-navbar> 
+  <ion-navbar>
     <ion-title class="toolbar-title.toolbar-title-md">My Order</ion-title>
     <ion-buttons right class="paddingright">
-        <button ion-button icon-only (click)="clicked()">
-          <ion-icon name="person" class="ion-md-person"></ion-icon>
-        </button>
+      <button ion-button icon-only (click)="clicked()">
+        <ion-icon name="person" class="ion-md-person"></ion-icon>
+      </button>
     </ion-buttons>
   </ion-navbar>
-  </ion-header>
+</ion-header>
 
 
 
 <ion-content padding>
-  
-    <h1>Photography</h1>
-    <p *ngIf="photographyFlag" class="alert">Sorry, No orders found for Photography..!</p>
-    <ion-card
-    *ngFor="let request of photographyOrders" 
-    (click)="cardclick(request)">
-          <ion-item>
-            <ion-avatar item-start>
-              <img src= "../../assets/imgs/camera1.jpg">
-            </ion-avatar>
 
-            <h2>Pack {{ request.pack.id }}</h2>
-            <p>Ordered :  {{ request.bookedDate }}</p>
-            <p>Function : {{ request.fromDate }}</p>
-          </ion-item>
+  <h1>Photography</h1>
+  <p *ngIf="photographyFlag" class="alert">Sorry, No orders found for Photography..!</p>
+  <div *ngIf="!photographyFlag" >
+    <ion-card *ngFor="let request of photographyOrders" (click)="cardclick(request)">
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="../../assets/imgs/camera1.jpg">
+        </ion-avatar>
+
+        <h2>Pack {{ request.pack.id }}</h2>
+        <p>Ordered : {{ request.bookedDate }}</p>
+        <p>Function : {{ request.fromDate }}</p>
+      </ion-item>
     </ion-card>
 
-    <h1>Haircut</h1>
-    <p *ngIf="haircutFlag" class="alert">Sorry, No orders found for Haircut..!</p>
-    <ion-card
-    *ngFor="let request of haircutOrders" 
-    (click)="cardclick(request)">
-          <ion-item>
-            <ion-avatar item-start>
-              <img src= "../../assets/imgs/camera1.jpg">
-            </ion-avatar>
+    <div text-center id="expand-flag" (click)="alterView('photography', true)" *ngIf="!photographyExpanded">
+      <ion-label>Show more</ion-label>
+    </div>
 
-            <h2>Pack {{ request.pack.id }}</h2>
-            <p>Ordered :  {{ request.bookedDate }}</p>
-            <p>Function : {{ request.fromDate }}</p>
-          </ion-item>
+    <div text-center id="expand-flag" (click)="alterView('photography', false)" *ngIf="photographyExpanded">
+      <ion-label>Show less</ion-label>
+    </div>
+  </div>
+
+  <h1>Haircut</h1>
+  <p *ngIf="haircutFlag" class="alert">Sorry, No orders found for Haircut..!</p>
+  <div *ngIf="!haircutFlag" class="parent">
+    <ion-card *ngFor="let request of haircutOrders" (click)="cardclick(request)">
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="../../assets/imgs/camera1.jpg">
+        </ion-avatar>
+
+        <h2>Date : {{ request.date }}</h2>
+        <p>Time : {{ request.time }}</p>
+        <p *ngIf="request.seats.first == 1 && request.seats.second == 1">Seats : 2</p>
+        <p *ngIf="!(request.seats.first == 1 && request.seats.second == 1)">Seats : 1</p>
+      </ion-item>
     </ion-card>
 
+    <div text-center id="expand-flag" (click)="alterView('haircut', true)" *ngIf="!haircutExpanded">
+      <ion-label>Show more</ion-label>
+    </div>
+
+    <div text-center id="expand-flag" (click)="alterView('haircut', false)" *ngIf="haircutExpanded">
+      <ion-label>Show less</ion-label>
+    </div>
+  </div>
 </ion-content>

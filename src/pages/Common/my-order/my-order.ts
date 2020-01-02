@@ -13,12 +13,21 @@ import { AngularFireAuth } from 'angularfire2/auth';
 export class MyOrderPage {
 
   // seperated orders list
-  photographyOrders: any;
-  haircutOrders: any;
+  photographyOrders: any = [];
+  haircutOrders: any = [];
 
   // flags for user display
   haircutFlag : Boolean = false;
   photographyFlag : Boolean = false;
+
+  // Raw Requests
+  rawPhotographyOrders: any = [];
+  rawHaircutOrders: any = [];
+
+  // Expanded flags
+  haircutExpanded: Boolean = false;
+  photographyExpanded: Boolean = false;
+
 
   constructor(public navCtrl: NavController,
     public navParams: NavParams,
@@ -39,7 +48,7 @@ export class MyOrderPage {
       null,
       this.fbService.orderByChild,
       'userId',
-      user.email)
+      user.uid)
       .then((response) => {
         loading.dismiss();
         let obj = Object.entries(response);
@@ -47,8 +56,9 @@ export class MyOrderPage {
         // arrays for seperated services
         let haircut = Array();
         let photography = Array();
+
         obj.forEach(element => {
-          
+
           // Check the service
           if (element[1]['service'] == 'haircut') {
             haircut.push(element[1]);
@@ -64,7 +74,7 @@ export class MyOrderPage {
           this.haircutFlag = true;
         }
         else {
-          this.haircutOrders = haircut;
+          this.rawHaircutOrders = haircut;
         }
 
         // Presence if photography orders
@@ -72,8 +82,10 @@ export class MyOrderPage {
           this.photographyFlag = true;
         }
         else {
-          this.photographyOrders = photography;
+          this.rawPhotographyOrders = photography;
         }
+
+        this.limitRequests();
 
       });
 
@@ -82,6 +94,8 @@ export class MyOrderPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad MyOrderPage');
   }
+
+  // Nav to profile page
   clicked() {
 
     let toast = this.toastCtrl.create({
@@ -110,10 +124,48 @@ export class MyOrderPage {
         toast.present();
       });
   }
+
+  // Request clicked
   cardclick(item) {
 
     this.navCtrl.push(Orderbooked2Page, { 'payload': item });
 
+  }
+
+  // expand & shrink requests
+  alterView(service, flag) {
+
+    // check the service
+    if (service == 'haircut') {
+      this.haircutExpanded = flag
+    }
+
+    else if (service == 'photography') {
+      this.photographyExpanded = flag;
+    }
+
+    this.limitRequests();
+
+  }
+
+  limitRequests() {
+
+    // check the expanded flag and assign the array of requests
+    if (this.haircutExpanded) {
+
+      this.haircutOrders = this.rawHaircutOrders
+    } else {
+
+      this.haircutOrders = this.rawHaircutOrders.slice(0, 3);
+    }
+
+    if (this.photographyExpanded) {
+
+      this.photographyOrders = this.rawPhotographyOrders;
+    } else {
+
+      this.photographyOrders = this.rawPhotographyOrders.slice(0, 3)
+    }
   }
 
 }
