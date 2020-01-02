@@ -60,12 +60,12 @@ export class ProfilePage {
 
         let result = Object.entries(response);
 
-
         // append items to array
         this.latestReq = result[result.length - 1][1];
-        
+
         this.service = this.latestReq['service'];
         this.bookedDate = this.latestReq['date'];
+
 
       })
       .catch((error) => {
@@ -288,4 +288,69 @@ export class ProfilePage {
     alertPrompt.present();
   }
 
+  // delete the user 
+  deleteUser() {
+
+    // user & uid
+    let user = this.afAuth.auth.currentUser;
+
+    let alert = this.alertCtrl.create({
+      title: 'Conformation',
+      message: 'Enter your password to delete the account',
+      inputs: [
+        {
+          name: 'password',
+          placeholder: 'placeholder'
+        }
+      ],
+      buttons: [
+        {
+          text: 'Delete',
+          handler: data => {
+
+            // check the user password
+            this.fbService.login(user['email'], data.password)
+              .then((response) => {
+
+                // delete the user 
+                user.delete()
+                  .then((response) => {
+
+                    // display alert message
+                    let resultAlert = this.alertCtrl.create({
+                      title: 'Account deleted',
+                      message: 'Your account has been deleted successfully..! We miss you..!'
+                    });
+                    resultAlert.present();
+                    // logout from the app
+                    this.afAuth.auth.signOut();
+
+                  })
+                  .catch((error) => {
+
+                    // display alert message
+                    let resultAlert = this.alertCtrl.create({
+                      title: 'Error',
+                      message: 'Something is wrong, please try again later'
+                    });
+                    resultAlert.present();
+                  });
+              })
+              .catch((error) => {
+
+                // display alert message
+                let resultAlert = this.alertCtrl.create({
+                  title: 'Error',
+                  message: 'Enter the correct password'
+                });
+                resultAlert.present();
+
+              });
+          }
+        }
+      ]
+    });
+
+    alert.present();
+  }
 }

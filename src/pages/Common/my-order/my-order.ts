@@ -60,10 +60,10 @@ export class MyOrderPage {
         obj.forEach(element => {
 
           // Check the service
-          if (element[1]['service'] == 'haircut') {
+          if (element[1]['service'] == 'Haircut') {
             haircut.push(element[1]);
           }
-          else if (element[1]['service'] == 'photography') {
+          else if (element[1]['service'] == 'Photography') {
             photography.push(element[1]);
           }
 

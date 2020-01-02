@@ -15,7 +15,7 @@
     </ion-buttons>
 
     <ion-buttons right class="Del" *ngIf="editStatus == 0">
-      <button ion-button icon-only>
+      <button ion-button icon-only (click)="deleteUser()">
         <ion-icon name="trash"></ion-icon>
       </button>
     </ion-buttons>
