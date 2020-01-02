@@ -1,6 +1,12 @@
 <ion-header>
-  <ion-navbar class="toolbar-background">
+  <ion-navbar class="toolbar-background" hideBackButton>
     <ion-title class="toolbar-title.toolbar-title-md">Profile</ion-title>
+
+    <ion-buttons left>
+      <button ion-button icon-only (click)="navCtrl.pop()" class="back-btn">
+        <ion-icon name="arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
 
     <ion-buttons right class="hammer" *ngIf="editStatus == 0">
       <button ion-button icon-only (click)="order()">

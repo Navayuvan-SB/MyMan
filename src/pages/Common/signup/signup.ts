@@ -110,7 +110,8 @@ export class SignupPage {
           let node = {
               'email'         : email,
               'phoneNumber'   : phoneNumber,
-              'name'          : name
+              'name'          : name,
+              'type'          : 'user'
            }
 
           this.fbService.writeInDatabase('users/' + uid, node)

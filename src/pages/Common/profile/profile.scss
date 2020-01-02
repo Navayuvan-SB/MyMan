@@ -8,6 +8,12 @@ page-profile {
     margin-left: var(--header-profile);
   }
 
+  ion-buttons button[icon-only].back-btn {
+    margin: 0 6px;
+    min-width: 36px;
+  }
+
+
   .toolbar-background {
     background-color: var(--teal);
   }

@@ -6,7 +6,6 @@ import { ProfilePage } from '../../Common/profile/profile';
 import { MyOrderPage } from '../../Common/my-order/my-order';
 import { AngularFireAuth } from 'angularfire2/auth';
 
-@IonicPage()
 @Component({
   selector: 'page-haircut-home',
   templateUrl: 'haircut-home.html',

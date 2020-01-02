@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, PopoverController, AlertController, ModalController, ToastController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, PopoverController, AlertController, ModalController, ToastController, LoadingController } from 'ionic-angular';
 import { HaircutPopupPage } from '../haircut-popup/haircut-popup';
 import { c } from '@angular/core/src/render3';
 import { FirebaseServices } from '../../../services/fireBaseService';
@@ -8,6 +8,7 @@ import { sha256, sha224 } from 'js-sha256';
 import { HaircutConformationPage } from '../haircut-conformation/haircut-conformation';
 import { ProfilePage } from '../../Common/profile/profile';
 import { MyOrderPage } from '../../Common/my-order/my-order';
+import { load } from 'google-maps';
 
 /**
  * Generated class for the HaircutBookPage page.
@@ -15,8 +16,6 @@ import { MyOrderPage } from '../../Common/my-order/my-order';
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-
-@IonicPage()
 @Component({
   selector: 'page-haircut-book',
   templateUrl: 'haircut-book.html',
@@ -41,7 +40,8 @@ export class HaircutBookPage {
     public afAuth: AngularFireAuth,
     public alertCtrl: AlertController,
     public modalCtrl: ModalController,
-    public toastCtrl: ToastController) {
+    public toastCtrl: ToastController,
+    public loadingCtrl: LoadingController) {
 
     this.selectedShop = this.navParams.get('data');
     this.timeSlots = this.navParams.get('data')['timeSlots'];
@@ -160,6 +160,13 @@ export class HaircutBookPage {
   // book the seat 
   bookAppointment(dataToBook) {
 
+    // loading instance
+    let loading = this.loadingCtrl.create({
+      content: 'Please wait...'
+    });
+
+    loading.present();
+
     let dataToUpdate = this.rawTimeSlots.map(element => {
 
       if (element.time == dataToBook.time) {
@@ -221,11 +228,17 @@ export class HaircutBookPage {
             this.fbService.writeInDatabase('requests/' + appointmentId, dataToRequest)
               .then((response) => {
 
+                // dismiss loading
+                loading.dismiss();
+
                 let modal = this.modalCtrl.create(HaircutConformationPage, { payload: dataToRequest });
                 modal.present();
 
               })
               .catch((error) => {
+
+                // dismiss loading
+                loading.dismiss();
 
                 // alert message
                 var alert = this.alertCtrl.create({
@@ -243,6 +256,9 @@ export class HaircutBookPage {
           })
           .catch((error) => {
 
+            // dismiss loading
+            loading.dismiss();
+
             // alert message
             var alert = this.alertCtrl.create({
               title: 'Failed',
@@ -259,6 +275,9 @@ export class HaircutBookPage {
       })
       .catch((error) => {
 
+        // dismiss loading
+        loading.dismiss();
+        
         // alert message
         var alert = this.alertCtrl.create({
           title: 'Failed',

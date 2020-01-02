@@ -8,8 +8,6 @@ import { HaircutBookPage } from '../haircut-book/haircut-book';
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-
-@IonicPage()
 @Component({
   selector: 'page-haircut-popup',
   templateUrl: 'haircut-popup.html',

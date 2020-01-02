@@ -79,30 +79,23 @@ page-haircut-conformation {
     margin-left: 16% !important;
   }
 
-  // div{
-  //     position: relative;
-  //     // text-align: center;
-
-  // }
-
 
 
   /* =========================================
                  ion-content - ion-card
     ========================================== */
-  ion-footer {
+
+  ion-footer div {
     width: 100%;
   }
 
   ion-card {
-    position: relative;
     height: 60px !important;
-    width: 400px !important;
+    width: 300px !important;
     align-content: center !important;
     padding-top: 7px;
-    left: calc(50% - 200px);
     padding-bottom: 6px;
-    margin: 0;
+    margin: 20px auto !important;
     background-color: #18A0A0 !important;
   }
 

@@ -17,7 +17,7 @@
       </button>
     </ion-buttons>
   </ion-toolbar>
-  
+
 </ion-header>
 
 
@@ -25,7 +25,7 @@
 
 
   <ion-grid>
-    
+
     <!-- row1 for shop name and has 3cols -->
     <ion-row>
       <ion-col col-5>
@@ -75,7 +75,7 @@
       </ion-col>
       <ion-col col-6>
         <div class="marginLeft-light">{{ numberOfSeats }}</div>
-        
+
       </ion-col>
     </ion-row>
 
@@ -85,15 +85,13 @@
 </ion-content>
 
 <ion-footer no-border>
+
   <!-- card to navigate history page -->
   <div text-center>
-
-  
-  <ion-card>
-    <p class="reduceTop">No cancellation allowed</p>
-    <p class="reduceTop1">Click to see order history</p>
-  </ion-card>
-
-</div>
+    <ion-card (click)="navToMyOrders()">
+      <p class="reduceTop">No cancellation allowed</p>
+      <p class="reduceTop1">Click to see order history</p>
+    </ion-card>
+  </div>
 
 </ion-footer>

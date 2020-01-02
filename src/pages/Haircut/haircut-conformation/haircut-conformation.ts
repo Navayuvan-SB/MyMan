@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, PopoverController, ViewController } from 'ionic-angular';
+import { MyOrderPage } from '../../Common/my-order/my-order';
 
 
 
@@ -9,8 +10,6 @@ import { IonicPage, NavController, NavParams, PopoverController, ViewController 
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-
-@IonicPage()
 @Component({
   selector: 'page-haircut-conformation',
   templateUrl: 'haircut-conformation.html',
@@ -46,6 +45,11 @@ export class HaircutConformationPage {
   // dismiss the view
   dismiss() {
     this.viewCtrl.dismiss();
+  }
+
+  // nav to my orders
+  navToMyOrders() {
+    this.navCtrl.push(MyOrderPage);
   }
 
 }
