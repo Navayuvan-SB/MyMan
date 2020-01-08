@@ -1,1 +1,2636 @@
-webpackJsonp([0],{178:function(l,n){function u(l){return Promise.resolve().then(function(){throw new Error("Cannot find module '"+l+"'.")})}u.keys=function(){return[]},u.resolve=u,l.exports=u,u.id=178},201:function(l,n){function u(l){return Promise.resolve().then(function(){throw new Error("Cannot find module '"+l+"'.")})}u.keys=function(){return[]},u.resolve=u,l.exports=u,u.id=201},266:function(l,n,u){"use strict";function a(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,7,"button",[["class","item item-block"],["ion-item",""],["menuClose",""]],null,[[null,"click"]],function(l,n,u){var a=!0,t=l.component;if("click"===n){a=!1!==nl._11(l,6).close()&&a}if("click"===n){a=!1!==t.openPage(l.context.$implicit)&&a}return a},Tl.b,Tl.a)),nl.Y(1,1097728,null,3,Nl.a,[Ll.a,Ol.a,nl.j,nl.z,[2,Bl.a]],null,null),nl._19(335544320,4,{contentLabel:0}),nl._19(603979776,5,{_buttons:1}),nl._19(603979776,6,{_icons:1}),nl.Y(5,16384,null,0,Ml.a,[],null,null),nl.Y(6,16384,null,0,El.a,[Vl.a],{menuClose:[0,"menuClose"]},null),(l()(),nl._21(7,2,["\n          ","\n        "]))],function(l,n){l(n,6,0,"")},function(l,n){l(n,7,0,n.context.$implicit.title)})}function t(l){return nl._23(0,[nl._19(402653184,1,{nav:0}),(l()(),nl.Z(1,0,null,null,29,"ion-menu",[["role","navigation"]],null,null,null,ql.b,ql.a)),nl._17(6144,null,$l.a,null,[Rl.a]),nl.Y(3,245760,null,2,Rl.a,[Vl.a,nl.j,Ol.a,Hl.a,nl.z,Xl.a,Kl.l,Wl.a,Gl.a],{content:[0,"content"]},null),nl._19(335544320,2,{menuContent:0}),nl._19(335544320,3,{menuNav:0}),(l()(),nl._21(-1,0,["\n\n    "])),(l()(),nl.Z(7,0,null,0,6,"ion-toolbar",[["class","toolbar"]],[[2,"statusbar-padding",null]],null,null,Jl.b,Jl.a)),nl.Y(8,49152,null,0,Ql.a,[Ol.a,nl.j,nl.z],null,null),(l()(),nl._21(-1,3,["\n      "])),(l()(),nl.Z(10,0,null,3,2,"ion-title",[],null,null,null,ln.b,ln.a)),nl.Y(11,49152,null,0,nn.a,[Ol.a,nl.j,nl.z,[2,Ql.a],[2,un.a]],null,null),(l()(),nl._21(-1,0,["MyMan"])),(l()(),nl._21(-1,3,["\n    "])),(l()(),nl._21(-1,0,["\n  \n    "])),(l()(),nl.Z(15,0,null,0,14,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,an.b,an.a)),nl.Y(16,4374528,[[2,4]],0,tn.a,[Ol.a,Hl.a,Wl.a,nl.j,nl.z,Gl.a,Xl.a,nl.u,[2,en.a],[2,on.a]],null,null),(l()(),nl._21(-1,1,["\n      "])),(l()(),nl.Z(18,0,null,1,10,"ion-list",[],null,null,null,null,null)),nl.Y(19,16384,null,0,sn.a,[Ol.a,nl.j,nl.z,Hl.a,Kl.l,Wl.a],null,null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.U(16777216,null,null,1,null,a)),nl.Y(22,802816,null,0,rn.i,[nl.I,nl.F,nl.p],{ngForOf:[0,"ngForOf"]},null),(l()(),nl._21(-1,null,["\n\n        "])),(l()(),nl.Z(24,0,null,null,3,"button",[["class","button-logout"],["full",""],["ion-button",""],["menuClose",""],["round",""]],null,[[null,"click"]],function(l,n,u){var a=!0,t=l.component;if("click"===n){a=!1!==nl._11(l,26).close()&&a}if("click"===n){a=!1!==t.logout()&&a}return a},cn.b,cn.a)),nl.Y(25,1097728,null,0,_n.a,[[8,""],Ol.a,nl.j,nl.z],{round:[0,"round"],full:[1,"full"]},null),nl.Y(26,16384,null,0,El.a,[Vl.a],{menuClose:[0,"menuClose"]},null),(l()(),nl._21(-1,0,["\n                  Logout\n        "])),(l()(),nl._21(-1,null,["\n\n      "])),(l()(),nl._21(-1,1,["\n    "])),(l()(),nl._21(-1,0,["\n  \n  "])),(l()(),nl._21(-1,null,["\n  \n  "])),(l()(),nl.Z(32,0,null,null,2,"ion-nav",[["id","nav"],["swipeBackEnabled","false"]],null,null,null,dn.b,dn.a)),nl._17(6144,null,$l.a,null,[hn.a]),nl.Y(34,4374528,[[1,4],["content",4]],0,hn.a,[[2,en.a],[2,on.a],Gl.a,Ol.a,Hl.a,nl.j,nl.u,nl.z,nl.i,Kl.l,mn.a,[2,pn.a],Wl.a,nl.k],{swipeBackEnabled:[0,"swipeBackEnabled"],root:[1,"root"]},null),(l()(),nl._21(-1,null,["\n"]))],function(l,n){var u=n.component;l(n,3,0,nl._11(n,34));l(n,22,0,u.pages);l(n,25,0,"","");l(n,26,0,"");l(n,34,0,"false",u.rootPage)},function(l,n){l(n,7,0,nl._11(n,8)._sbPadding);l(n,15,0,nl._11(n,16).statusbarPadding,nl._11(n,16)._hasRefresher)})}function e(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,46,"ion-header",[],null,null,null,null,null)),nl.Y(1,16384,null,0,Zn.a,[Ol.a,nl.j,nl.z,[2,en.a]],null,null),(l()(),nl._21(-1,null,["\n  "])),(l()(),nl.Z(3,0,null,null,42,"ion-navbar",[["class","toolbar"],["hideBackButton",""]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,vn.b,vn.a)),nl.Y(4,49152,null,0,un.a,[Gl.a,[2,en.a],[2,on.a],Ol.a,nl.j,nl.z],{hideBackButton:[0,"hideBackButton"]},null),(l()(),nl._21(-1,3,["\n    "])),(l()(),nl.Z(6,0,null,3,2,"ion-title",[["class","toolbar-title.toolbar-title-md"]],null,null,null,ln.b,ln.a)),nl.Y(7,49152,null,0,nn.a,[Ol.a,nl.j,nl.z,[2,Ql.a],[2,un.a]],null,null),(l()(),nl._21(-1,0,["MyMan"])),(l()(),nl._21(-1,3,["\n    "])),(l()(),nl.Z(10,0,null,0,12,"ion-buttons",[["class","Menu"],["left",""]],null,null,null,null,null)),nl.Y(11,16384,null,1,Yn.a,[Ol.a,nl.j,nl.z,[2,Ql.a],[2,un.a]],null,null),nl._19(603979776,1,{_buttons:1}),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(14,0,null,null,7,"button",[["icon-only",""],["ion-button",""],["menuToggle",""]],[[8,"hidden",0]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==nl._11(l,16).toggle()&&a}return a},cn.b,cn.a)),nl.Y(15,1097728,[[2,4],[1,4]],0,_n.a,[[8,""],Ol.a,nl.j,nl.z],null,null),nl.Y(16,1064960,null,0,yn.a,[Vl.a,[2,en.a],[2,_n.a],[2,un.a]],{menuToggle:[0,"menuToggle"]},null),nl.Y(17,16384,null,1,Yn.a,[Ol.a,nl.j,nl.z,[2,Ql.a],[2,un.a]],null,null),nl._19(603979776,2,{_buttons:1}),(l()(),nl._21(-1,0,["\n            "])),(l()(),nl.Z(20,0,null,0,1,"ion-icon",[["class","resize-icon"],["name","menu"],["role","img"]],[[2,"hide",null]],null,null,null,null)),nl.Y(21,147456,null,0,Cn.a,[Ol.a,nl.j,nl.z],{name:[0,"name"]},null),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl._21(-1,3,["\n    "])),(l()(),nl.Z(24,0,null,2,9,"ion-buttons",[["class","hammer"],["right",""]],null,null,null,null,null)),nl.Y(25,16384,null,1,Yn.a,[Ol.a,nl.j,nl.z,[2,Ql.a],[2,un.a]],null,null),nl._19(603979776,3,{_buttons:1}),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(28,0,null,null,4,"button",[["icon-only",""],["ion-button",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.order()&&a}return a},cn.b,cn.a)),nl.Y(29,1097728,[[3,4]],0,_n.a,[[8,""],Ol.a,nl.j,nl.z],null,null),(l()(),nl._21(-1,0,["\n          "])),(l()(),nl.Z(31,0,null,0,1,"ion-icon",[["class","resize-icon"],["name","custom-hammer"],["role","img"]],[[2,"hide",null]],null,null,null,null)),nl.Y(32,147456,null,0,Cn.a,[Ol.a,nl.j,nl.z],{name:[0,"name"]},null),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl._21(-1,3,["\n    "])),(l()(),nl.Z(35,0,null,2,9,"ion-buttons",[["class","Union"],["right",""]],null,null,null,null,null)),nl.Y(36,16384,null,1,Yn.a,[Ol.a,nl.j,nl.z,[2,Ql.a],[2,un.a]],null,null),nl._19(603979776,4,{_buttons:1}),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(39,0,null,null,4,"button",[["icon-only",""],["ion-button",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.clicked()&&a}return a},cn.b,cn.a)),nl.Y(40,1097728,[[4,4]],0,_n.a,[[8,""],Ol.a,nl.j,nl.z],null,null),(l()(),nl._21(-1,0,["\n          "])),(l()(),nl.Z(42,0,null,0,1,"ion-icon",[["class","resize-icon"],["name","custom-Union"],["role","img"]],[[2,"hide",null]],null,null,null,null)),nl.Y(43,147456,null,0,Cn.a,[Ol.a,nl.j,nl.z],{name:[0,"name"]},null),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl._21(-1,3,["\n  "])),(l()(),nl._21(-1,null,["\n"])),(l()(),nl._21(-1,null,["\n\n"])),(l()(),nl.Z(48,0,null,null,66,"ion-content",[["padding",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,an.b,an.a)),nl.Y(49,4374528,null,0,tn.a,[Ol.a,Hl.a,Wl.a,nl.j,nl.z,Gl.a,Xl.a,nl.u,[2,en.a],[2,on.a]],null,null),(l()(),nl._21(-1,1,["\n  "])),(l()(),nl.Z(51,0,null,1,62,"ion-grid",[["class","grid"]],null,null,null,null,null)),nl.Y(52,16384,null,0,wn.a,[],null,null),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl.Z(54,0,null,null,34,"ion-row",[["class","row"]],null,null,null,null,null)),nl.Y(55,16384,null,0,jn.a,[],null,null),(l()(),nl._21(-1,null,["\n\n      "])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(58,0,null,null,13,"ion-col",[["class","col"],["col-sm-2",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.photography()&&a}return a},null,null)),nl.Y(59,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(61,0,null,null,3,"ion-avatar",[["class","p1"],["style"," border: 1px solid black;"]],null,null,null,null,null)),nl.Y(62,16384,null,0,zn.a,[],null,null),(l()(),nl._21(-1,null,["\n          "])),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(66,0,null,null,1,"h1",[["text-center",""]],null,null,null,null,null)),(l()(),nl._21(-1,null,["Photography"])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(69,0,null,null,1,"p",[["text-center",""]],null,null,null,null,null)),(l()(),nl._21(-1,null,["Sample text"])),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl._21(-1,null,["\n\n    "])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(74,0,null,null,13,"ion-col",[["class","col"],["col-sm-2",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.navToHaircut()&&a}return a},null,null)),nl.Y(75,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n          "])),(l()(),nl.Z(77,0,null,null,3,"ion-avatar",[["class","h"],["style"," border: 1px solid black;"]],null,null,null,null,null)),nl.Y(78,16384,null,0,zn.a,[],null,null),(l()(),nl._21(-1,null,["\n            "])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(82,0,null,null,1,"h1",[["text-center",""]],null,null,null,null,null)),(l()(),nl._21(-1,null,["Haircut"])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(85,0,null,null,1,"p",[["text-center",""]],null,null,null,null,null)),(l()(),nl._21(-1,null,["Sample text"])),(l()(),nl._21(-1,null,["\n            "])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(90,0,null,null,22,"ion-row",[["class","row"]],null,null,null,null,null)),nl.Y(91,16384,null,0,jn.a,[],null,null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(93,0,null,null,13,"ion-col",[["class","col"],["col-sm-2",""]],null,null,null,null,null)),nl.Y(94,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n          "])),(l()(),nl.Z(96,0,null,null,3,"ion-avatar",[["class","g"],["style"," border: 1px solid black;"]],null,null,null,null,null)),nl.Y(97,16384,null,0,zn.a,[],null,null),(l()(),nl._21(-1,null,["\n            "])),(l()(),nl._21(-1,null,["\n          "])),(l()(),nl._21(-1,null,["\n          "])),(l()(),nl.Z(101,0,null,null,1,"h1",[["text-center",""]],null,null,null,null,null)),(l()(),nl._21(-1,null,["Grocery"])),(l()(),nl._21(-1,null,["\n          "])),(l()(),nl.Z(104,0,null,null,1,"p",[["text-center",""]],null,null,null,null,null)),(l()(),nl._21(-1,null,["Sample text"])),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(108,0,null,null,3,"ion-col",[["class","col"],["col-sm-2",""]],null,null,null,null,null)),nl.Y(109,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n          "])),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl._21(-1,1,["      \n      \n"])),(l()(),nl._21(-1,null,["\n"]))],function(l,n){l(n,4,0,"");l(n,16,0,"");l(n,21,0,"menu");l(n,32,0,"custom-hammer");l(n,43,0,"custom-Union")},function(l,n){l(n,3,0,nl._11(n,4)._hidden,nl._11(n,4)._sbPadding);l(n,14,0,nl._11(n,16).isHidden);l(n,20,0,nl._11(n,21)._hidden);l(n,31,0,nl._11(n,32)._hidden);l(n,42,0,nl._11(n,43)._hidden);l(n,48,0,nl._11(n,49).statusbarPadding,nl._11(n,49)._hasRefresher)})}function o(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,9,"ion-item",[["class","warning-on-input item item-block"]],null,null,null,Tl.b,Tl.a)),nl.Y(1,1097728,null,3,Nl.a,[Ll.a,Ol.a,nl.j,nl.z,[2,Bl.a]],null,null),nl._19(335544320,4,{contentLabel:0}),nl._19(603979776,5,{_buttons:1}),nl._19(603979776,6,{_icons:1}),nl.Y(5,16384,null,0,Ml.a,[],null,null),(l()(),nl._21(-1,2,["\n    "])),(l()(),nl.Z(7,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),nl._21(-1,null,["Enter your name"])),(l()(),nl._21(-1,2,["\n  "]))],null,null)}function i(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,9,"ion-item",[["class","warning-on-input item item-block"]],null,null,null,Tl.b,Tl.a)),nl.Y(1,1097728,null,3,Nl.a,[Ll.a,Ol.a,nl.j,nl.z,[2,Bl.a]],null,null),nl._19(335544320,10,{contentLabel:0}),nl._19(603979776,11,{_buttons:1}),nl._19(603979776,12,{_icons:1}),nl.Y(5,16384,null,0,Ml.a,[],null,null),(l()(),nl._21(-1,2,["\n    "])),(l()(),nl.Z(7,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),nl._21(-1,null,["Please enter a valid Phone Number"])),(l()(),nl._21(-1,2,["\n  "]))],null,null)}function s(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,9,"ion-item",[["class","warning-on-input item item-block"]],null,null,null,Tl.b,Tl.a)),nl.Y(1,1097728,null,3,Nl.a,[Ll.a,Ol.a,nl.j,nl.z,[2,Bl.a]],null,null),nl._19(335544320,16,{contentLabel:0}),nl._19(603979776,17,{_buttons:1}),nl._19(603979776,18,{_icons:1}),nl.Y(5,16384,null,0,Ml.a,[],null,null),(l()(),nl._21(-1,2,["\n    "])),(l()(),nl.Z(7,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),nl._21(-1,null,["Please enter a valid Email"])),(l()(),nl._21(-1,2,["\n  "]))],null,null)}function r(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,9,"ion-item",[["class","warning-on-input item item-block"]],null,null,null,Tl.b,Tl.a)),nl.Y(1,1097728,null,3,Nl.a,[Ll.a,Ol.a,nl.j,nl.z,[2,Bl.a]],null,null),nl._19(335544320,22,{contentLabel:0}),nl._19(603979776,23,{_buttons:1}),nl._19(603979776,24,{_icons:1}),nl.Y(5,16384,null,0,Ml.a,[],null,null),(l()(),nl._21(-1,2,["\n    "])),(l()(),nl.Z(7,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),nl._21(-1,null,["Password should be greater than 6 characters"])),(l()(),nl._21(-1,2,["\n  "]))],null,null)}function c(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,9,"ion-item",[["class","warning-on-input item item-block"]],null,null,null,Tl.b,Tl.a)),nl.Y(1,1097728,null,3,Nl.a,[Ll.a,Ol.a,nl.j,nl.z,[2,Bl.a]],null,null),nl._19(335544320,28,{contentLabel:0}),nl._19(603979776,29,{_buttons:1}),nl._19(603979776,30,{_icons:1}),nl.Y(5,16384,null,0,Ml.a,[],null,null),(l()(),nl._21(-1,2,["\n    "])),(l()(),nl.Z(7,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),nl._21(-1,null,["Password and Conform password must be same"])),(l()(),nl._21(-1,2,["\n  "]))],null,null)}function _(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,10,"ion-header",[],null,null,null,null,null)),nl.Y(1,16384,null,0,Zn.a,[Ol.a,nl.j,nl.z,[2,en.a]],null,null),(l()(),nl._21(-1,null,["\n  "])),(l()(),nl.Z(3,0,null,null,6,"ion-navbar",[["class","toolbar-background toolbar"],["hideBackButton",""]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,vn.b,vn.a)),nl.Y(4,49152,null,0,un.a,[Gl.a,[2,en.a],[2,on.a],Ol.a,nl.j,nl.z],{hideBackButton:[0,"hideBackButton"]},null),(l()(),nl._21(-1,3,["\n    "])),(l()(),nl.Z(6,0,null,3,2,"ion-title",[["class","toolbar-title.toolbar-title-md"]],null,null,null,ln.b,ln.a)),nl.Y(7,49152,null,0,nn.a,[Ol.a,nl.j,nl.z,[2,Ql.a],[2,un.a]],null,null),(l()(),nl._21(-1,0,["Signup"])),(l()(),nl._21(-1,3,["\n  "])),(l()(),nl._21(-1,null,["\n"])),(l()(),nl._21(-1,null,["\n\n\n"])),(l()(),nl.Z(12,0,null,null,119,"ion-content",[["padding",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,an.b,an.a)),nl.Y(13,4374528,null,0,tn.a,[Ol.a,Hl.a,Wl.a,nl.j,nl.z,Gl.a,Xl.a,nl.u,[2,en.a],[2,on.a]],null,null),(l()(),nl._21(-1,1,["\n  \n    "])),(l()(),nl.Z(15,0,null,1,3,"ion-avatar",[["style"," border: 1px solid black;"]],null,null,null,null,null)),nl.Y(16,16384,null,0,zn.a,[],null,null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl._21(-1,1,["\n\n"])),(l()(),nl.Z(20,0,null,1,110,"form",[["novalidate",""]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"submit"],[null,"reset"]],function(l,n,u){var a=!0;if("submit"===n){a=!1!==nl._11(l,22).onSubmit(u)&&a}if("reset"===n){a=!1!==nl._11(l,22).onReset()&&a}return a},null,null)),nl.Y(21,16384,null,0,tl.p,[],null,null),nl.Y(22,540672,null,0,tl.f,[[8,null],[8,null]],{form:[0,"form"]},null),nl._17(2048,null,tl.b,null,[tl.f]),nl.Y(24,16384,null,0,tl.k,[tl.b],null,null),(l()(),nl._21(-1,null,[" \n\n\n  "])),(l()(),nl.Z(26,0,null,null,13,"ion-item",[["class","l4 item item-block"]],null,null,null,Tl.b,Tl.a)),nl.Y(27,1097728,null,3,Nl.a,[Ll.a,Ol.a,nl.j,nl.z,[2,Bl.a]],null,null),nl._19(335544320,1,{contentLabel:0}),nl._19(603979776,2,{_buttons:1}),nl._19(603979776,3,{_icons:1}),nl.Y(31,16384,null,0,Ml.a,[],null,null),(l()(),nl._21(-1,2,["\n    "])),(l()(),nl._21(-1,2,["\n    "])),(l()(),nl.Z(34,0,null,3,4,"ion-input",[["formControlName","name"],["placeholder","Name"],["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],null,null,In.b,In.a)),nl.Y(35,671744,null,0,tl.e,[[3,tl.b],[8,null],[8,null],[8,null]],{name:[0,"name"]},null),nl._17(2048,null,tl.i,null,[tl.e]),nl.Y(37,16384,null,0,tl.j,[tl.i],null,null),nl.Y(38,5423104,null,0,Dn.a,[Ol.a,Hl.a,Ll.a,Gl.a,nl.j,nl.z,[2,tn.a],[2,Nl.a],[2,tl.i],Wl.a],{type:[0,"type"],placeholder:[1,"placeholder"]},null),(l()(),nl._21(-1,2,["\n  "])),(l()(),nl._21(-1,null,["\n\n  "])),(l()(),nl.U(16777216,null,null,1,null,o)),nl.Y(42,16384,null,0,rn.j,[nl.I,nl.F],{ngIf:[0,"ngIf"]},null),(l()(),nl._21(-1,null,["\n\n  "])),(l()(),nl.Z(44,0,null,null,13,"ion-item",[["class","l1 item item-block"]],null,null,null,Tl.b,Tl.a)),nl.Y(45,1097728,null,3,Nl.a,[Ll.a,Ol.a,nl.j,nl.z,[2,Bl.a]],null,null),nl._19(335544320,7,{contentLabel:0}),nl._19(603979776,8,{_buttons:1}),nl._19(603979776,9,{_icons:1}),nl.Y(49,16384,null,0,Ml.a,[],null,null),(l()(),nl._21(-1,2,["\n    "])),(l()(),nl._21(-1,2,["\n    "])),(l()(),nl.Z(52,0,null,3,4,"ion-input",[["formControlName","phoneNumber"],["placeholder","Phone Number"],["type","Number"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],null,null,In.b,In.a)),nl.Y(53,671744,null,0,tl.e,[[3,tl.b],[8,null],[8,null],[8,null]],{name:[0,"name"]},null),nl._17(2048,null,tl.i,null,[tl.e]),nl.Y(55,16384,null,0,tl.j,[tl.i],null,null),nl.Y(56,5423104,null,0,Dn.a,[Ol.a,Hl.a,Ll.a,Gl.a,nl.j,nl.z,[2,tn.a],[2,Nl.a],[2,tl.i],Wl.a],{type:[0,"type"],placeholder:[1,"placeholder"]},null),(l()(),nl._21(-1,2,["\n  "])),(l()(),nl._21(-1,null,["\n\n  "])),(l()(),nl.U(16777216,null,null,1,null,i)),nl.Y(60,16384,null,0,rn.j,[nl.I,nl.F],{ngIf:[0,"ngIf"]},null),(l()(),nl._21(-1,null,["\n\n  "])),(l()(),nl.Z(62,0,null,null,13,"ion-item",[["class","l2 item item-block"]],null,null,null,Tl.b,Tl.a)),nl.Y(63,1097728,null,3,Nl.a,[Ll.a,Ol.a,nl.j,nl.z,[2,Bl.a]],null,null),nl._19(335544320,13,{contentLabel:0}),nl._19(603979776,14,{_buttons:1}),nl._19(603979776,15,{_icons:1}),nl.Y(67,16384,null,0,Ml.a,[],null,null),(l()(),nl._21(-1,2,["\n    "])),(l()(),nl._21(-1,2,["\n    "])),(l()(),nl.Z(70,0,null,3,4,"ion-input",[["formControlName","email"],["placeholder","Email"],["type","email"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],null,null,In.b,In.a)),nl.Y(71,671744,null,0,tl.e,[[3,tl.b],[8,null],[8,null],[8,null]],{name:[0,"name"]},null),nl._17(2048,null,tl.i,null,[tl.e]),nl.Y(73,16384,null,0,tl.j,[tl.i],null,null),nl.Y(74,5423104,null,0,Dn.a,[Ol.a,Hl.a,Ll.a,Gl.a,nl.j,nl.z,[2,tn.a],[2,Nl.a],[2,tl.i],Wl.a],{type:[0,"type"],placeholder:[1,"placeholder"]},null),(l()(),nl._21(-1,2,["\n  "])),(l()(),nl._21(-1,null,["\n\n  "])),(l()(),nl.U(16777216,null,null,1,null,s)),nl.Y(78,16384,null,0,rn.j,[nl.I,nl.F],{ngIf:[0,"ngIf"]},null),(l()(),nl._21(-1,null,["\n\n  "])),(l()(),nl.Z(80,0,null,null,13,"ion-item",[["class","l3 item item-block"]],null,null,null,Tl.b,Tl.a)),nl.Y(81,1097728,null,3,Nl.a,[Ll.a,Ol.a,nl.j,nl.z,[2,Bl.a]],null,null),nl._19(335544320,19,{contentLabel:0}),nl._19(603979776,20,{_buttons:1}),nl._19(603979776,21,{_icons:1}),nl.Y(85,16384,null,0,Ml.a,[],null,null),(l()(),nl._21(-1,2,["\n    "])),(l()(),nl._21(-1,2,["\n    "])),(l()(),nl.Z(88,0,null,3,4,"ion-input",[["formControlName","password"],["placeholder","Password"],["type","password"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],null,null,In.b,In.a)),nl.Y(89,671744,null,0,tl.e,[[3,tl.b],[8,null],[8,null],[8,null]],{name:[0,"name"]},null),nl._17(2048,null,tl.i,null,[tl.e]),nl.Y(91,16384,null,0,tl.j,[tl.i],null,null),nl.Y(92,5423104,null,0,Dn.a,[Ol.a,Hl.a,Ll.a,Gl.a,nl.j,nl.z,[2,tn.a],[2,Nl.a],[2,tl.i],Wl.a],{type:[0,"type"],placeholder:[1,"placeholder"]},null),(l()(),nl._21(-1,2,["\n  "])),(l()(),nl._21(-1,null,["\n\n  "])),(l()(),nl.U(16777216,null,null,1,null,r)),nl.Y(96,16384,null,0,rn.j,[nl.I,nl.F],{ngIf:[0,"ngIf"]},null),(l()(),nl._21(-1,null,["\n\n  "])),(l()(),nl.Z(98,0,null,null,13,"ion-item",[["class","l4 item item-block"]],null,null,null,Tl.b,Tl.a)),nl.Y(99,1097728,null,3,Nl.a,[Ll.a,Ol.a,nl.j,nl.z,[2,Bl.a]],null,null),nl._19(335544320,25,{contentLabel:0}),nl._19(603979776,26,{_buttons:1}),nl._19(603979776,27,{_icons:1}),nl.Y(103,16384,null,0,Ml.a,[],null,null),(l()(),nl._21(-1,2,["\n    "])),(l()(),nl._21(-1,2,["\n    "])),(l()(),nl.Z(106,0,null,3,4,"ion-input",[["formControlName","confirmPassword"],["placeholder","Confirm Password"],["type","password"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],null,null,In.b,In.a)),nl.Y(107,671744,null,0,tl.e,[[3,tl.b],[8,null],[8,null],[8,null]],{name:[0,"name"]},null),nl._17(2048,null,tl.i,null,[tl.e]),nl.Y(109,16384,null,0,tl.j,[tl.i],null,null),nl.Y(110,5423104,null,0,Dn.a,[Ol.a,Hl.a,Ll.a,Gl.a,nl.j,nl.z,[2,tn.a],[2,Nl.a],[2,tl.i],Wl.a],{type:[0,"type"],placeholder:[1,"placeholder"]},null),(l()(),nl._21(-1,2,["\n  "])),(l()(),nl._21(-1,null,["\n\n  "])),(l()(),nl.U(16777216,null,null,1,null,c)),nl.Y(114,16384,null,0,rn.j,[nl.I,nl.F],{ngIf:[0,"ngIf"]},null),(l()(),nl._21(-1,null,["\n  \n  "])),(l()(),nl.Z(116,0,null,null,7,"ion-buttons",[["type","submit"]],null,null,null,null,null)),nl.Y(117,16384,null,1,Yn.a,[Ol.a,nl.j,nl.z,[2,Ql.a],[2,un.a]],null,null),nl._19(603979776,31,{_buttons:1}),(l()(),nl._21(-1,null,["\n  "])),(l()(),nl.Z(120,0,null,null,2,"button",[["class","button"],["full",""],["ion-button",""],["round",""]],[[8,"disabled",0]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.signUp()&&a}return a},cn.b,cn.a)),nl.Y(121,1097728,[[31,4]],0,_n.a,[[8,""],Ol.a,nl.j,nl.z],{round:[0,"round"],full:[1,"full"]},null),(l()(),nl._21(-1,0,["SIGNUP"])),(l()(),nl._21(-1,null,["\n  "])),(l()(),nl._21(-1,null,["\n    \n    "])),(l()(),nl.Z(125,0,null,null,4,"p",[["class","navLogin"],["text-center",""]],null,null,null,null,null)),(l()(),nl._21(-1,null,["  Already an user?  "])),(l()(),nl.Z(127,0,null,null,1,"a",[],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.navToLogin()&&a}return a},null,null)),(l()(),nl._21(-1,null,[" Login"])),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl._21(-1,null,["\n  "])),(l()(),nl._21(-1,1,["\n"])),(l()(),nl._21(-1,null,["\n"]))],function(l,n){var u=n.component;l(n,4,0,"");l(n,22,0,u.credentialForm);l(n,35,0,"name");l(n,38,0,"text","Name");l(n,42,0,!u.credentialForm.controls.name.valid&&(u.credentialForm.controls.name.dirty||u.submitAttempt)&&!u.credentialForm.controls.name.valid);l(n,53,0,"phoneNumber");l(n,56,0,"Number","Phone Number");l(n,60,0,!u.credentialForm.controls.phoneNumber.valid&&(u.credentialForm.controls.phoneNumber.dirty||u.submitAttempt));l(n,71,0,"email");l(n,74,0,"email","Email");l(n,78,0,!u.credentialForm.controls.email.valid&&(u.credentialForm.controls.email.dirty||u.submitAttempt));l(n,89,0,"password");l(n,92,0,"password","Password");l(n,96,0,!u.credentialForm.controls.password.valid&&(u.credentialForm.controls.password.dirty||u.submitAttempt));l(n,107,0,"confirmPassword");l(n,110,0,"password","Confirm Password");l(n,114,0,!u.credentialForm.controls.confirmPassword.valid&&(u.credentialForm.controls.password.dirty||u.submitAttempt)&&!u.credentialForm.controls.confirmPassword.valid);l(n,121,0,"","")},function(l,n){var u=n.component;l(n,3,0,nl._11(n,4)._hidden,nl._11(n,4)._sbPadding);l(n,12,0,nl._11(n,13).statusbarPadding,nl._11(n,13)._hasRefresher);l(n,20,0,nl._11(n,24).ngClassUntouched,nl._11(n,24).ngClassTouched,nl._11(n,24).ngClassPristine,nl._11(n,24).ngClassDirty,nl._11(n,24).ngClassValid,nl._11(n,24).ngClassInvalid,nl._11(n,24).ngClassPending);l(n,34,0,nl._11(n,37).ngClassUntouched,nl._11(n,37).ngClassTouched,nl._11(n,37).ngClassPristine,nl._11(n,37).ngClassDirty,nl._11(n,37).ngClassValid,nl._11(n,37).ngClassInvalid,nl._11(n,37).ngClassPending);l(n,52,0,nl._11(n,55).ngClassUntouched,nl._11(n,55).ngClassTouched,nl._11(n,55).ngClassPristine,nl._11(n,55).ngClassDirty,nl._11(n,55).ngClassValid,nl._11(n,55).ngClassInvalid,nl._11(n,55).ngClassPending);l(n,70,0,nl._11(n,73).ngClassUntouched,nl._11(n,73).ngClassTouched,nl._11(n,73).ngClassPristine,nl._11(n,73).ngClassDirty,nl._11(n,73).ngClassValid,nl._11(n,73).ngClassInvalid,nl._11(n,73).ngClassPending);l(n,88,0,nl._11(n,91).ngClassUntouched,nl._11(n,91).ngClassTouched,nl._11(n,91).ngClassPristine,nl._11(n,91).ngClassDirty,nl._11(n,91).ngClassValid,nl._11(n,91).ngClassInvalid,nl._11(n,91).ngClassPending);l(n,106,0,nl._11(n,109).ngClassUntouched,nl._11(n,109).ngClassTouched,nl._11(n,109).ngClassPristine,nl._11(n,109).ngClassDirty,nl._11(n,109).ngClassValid,nl._11(n,109).ngClassInvalid,nl._11(n,109).ngClassPending);l(n,120,0,!u.credentialForm.valid)})}function d(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,9,"ion-item",[["class","warning-on-input item item-block"]],null,null,null,Tl.b,Tl.a)),nl.Y(1,1097728,null,3,Nl.a,[Ll.a,Ol.a,nl.j,nl.z,[2,Bl.a]],null,null),nl._19(335544320,4,{contentLabel:0}),nl._19(603979776,5,{_buttons:1}),nl._19(603979776,6,{_icons:1}),nl.Y(5,16384,null,0,Ml.a,[],null,null),(l()(),nl._21(-1,2,["\n        "])),(l()(),nl.Z(7,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),nl._21(-1,null,["Enter valid Phone number"])),(l()(),nl._21(-1,2,["\n    "]))],null,null)}function h(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,9,"ion-item",[["class","warning-on-input item item-block"]],null,null,null,Tl.b,Tl.a)),nl.Y(1,1097728,null,3,Nl.a,[Ll.a,Ol.a,nl.j,nl.z,[2,Bl.a]],null,null),nl._19(335544320,10,{contentLabel:0}),nl._19(603979776,11,{_buttons:1}),nl._19(603979776,12,{_icons:1}),nl.Y(5,16384,null,0,Ml.a,[],null,null),(l()(),nl._21(-1,2,["\n        "])),(l()(),nl.Z(7,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),nl._21(-1,null,["Password length should be 8 characters long"])),(l()(),nl._21(-1,2,["\n    "]))],null,null)}function m(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,9,"ion-header",[],null,null,null,null,null)),nl.Y(1,16384,null,0,Zn.a,[Ol.a,nl.j,nl.z,[2,en.a]],null,null),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl.Z(3,0,null,null,5,"ion-navbar",[["class","toolbar-background toolbar"],["hideBackButton",""]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,vn.b,vn.a)),nl.Y(4,49152,null,0,un.a,[Gl.a,[2,en.a],[2,on.a],Ol.a,nl.j,nl.z],{hideBackButton:[0,"hideBackButton"]},null),(l()(),nl._21(-1,3,["\n        "])),(l()(),nl.Z(6,0,null,3,1,"p",[["class","toolbar-title"]],null,null,null,null,null)),(l()(),nl._21(-1,null,["Login"])),(l()(),nl._21(-1,3,["\n    "])),(l()(),nl._21(-1,null,["\n"])),(l()(),nl._21(-1,null,["\n\n"])),(l()(),nl.Z(11,0,null,null,54,"ion-content",[["padding",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,an.b,an.a)),nl.Y(12,4374528,null,0,tn.a,[Ol.a,Hl.a,Wl.a,nl.j,nl.z,Gl.a,Xl.a,nl.u,[2,en.a],[2,on.a]],null,null),(l()(),nl._21(-1,1,["\n\n  "])),(l()(),nl.Z(14,0,null,1,50,"form",[["novalidate",""]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"submit"],[null,"reset"]],function(l,n,u){var a=!0;if("submit"===n){a=!1!==nl._11(l,16).onSubmit(u)&&a}if("reset"===n){a=!1!==nl._11(l,16).onReset()&&a}return a},null,null)),nl.Y(15,16384,null,0,tl.p,[],null,null),nl.Y(16,540672,null,0,tl.f,[[8,null],[8,null]],{form:[0,"form"]},null),nl._17(2048,null,tl.b,null,[tl.f]),nl.Y(18,16384,null,0,tl.k,[tl.b],null,null),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl.Z(20,0,null,null,13,"ion-item",[["class","l1 item item-block"],["no-line",""]],null,null,null,Tl.b,Tl.a)),nl.Y(21,1097728,null,3,Nl.a,[Ll.a,Ol.a,nl.j,nl.z,[2,Bl.a]],null,null),nl._19(335544320,1,{contentLabel:0}),nl._19(603979776,2,{_buttons:1}),nl._19(603979776,3,{_icons:1}),nl.Y(25,16384,null,0,Ml.a,[],null,null),(l()(),nl._21(-1,2,["\n      "])),(l()(),nl._21(-1,2,["\n      "])),(l()(),nl.Z(28,0,null,3,4,"ion-input",[["formControlName","phoneNumber"],["placeholder","Phone Number"],["type","Number"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],null,null,In.b,In.a)),nl.Y(29,671744,null,0,tl.e,[[3,tl.b],[8,null],[8,null],[8,null]],{name:[0,"name"]},null),nl._17(2048,null,tl.i,null,[tl.e]),nl.Y(31,16384,null,0,tl.j,[tl.i],null,null),nl.Y(32,5423104,null,0,Dn.a,[Ol.a,Hl.a,Ll.a,Gl.a,nl.j,nl.z,[2,tn.a],[2,Nl.a],[2,tl.i],Wl.a],{type:[0,"type"],placeholder:[1,"placeholder"]},null),(l()(),nl._21(-1,2,["\n    "])),(l()(),nl._21(-1,null,["\n\n    "])),(l()(),nl.U(16777216,null,null,1,null,d)),nl.Y(36,16384,null,0,rn.j,[nl.I,nl.F],{ngIf:[0,"ngIf"]},null),(l()(),nl._21(-1,null,["\n    \n    "])),(l()(),nl.Z(38,0,null,null,13,"ion-item",[["class","l2 item item-block"]],null,null,null,Tl.b,Tl.a)),nl.Y(39,1097728,null,3,Nl.a,[Ll.a,Ol.a,nl.j,nl.z,[2,Bl.a]],null,null),nl._19(335544320,7,{contentLabel:0}),nl._19(603979776,8,{_buttons:1}),nl._19(603979776,9,{_icons:1}),nl.Y(43,16384,null,0,Ml.a,[],null,null),(l()(),nl._21(-1,2,["\n        "])),(l()(),nl._21(-1,2,["\n        "])),(l()(),nl.Z(46,0,null,3,4,"ion-input",[["formControlName","password"],["placeholder","Password"],["type","password"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],null,null,In.b,In.a)),nl.Y(47,671744,null,0,tl.e,[[3,tl.b],[8,null],[8,null],[8,null]],{name:[0,"name"]},null),nl._17(2048,null,tl.i,null,[tl.e]),nl.Y(49,16384,null,0,tl.j,[tl.i],null,null),nl.Y(50,5423104,null,0,Dn.a,[Ol.a,Hl.a,Ll.a,Gl.a,nl.j,nl.z,[2,tn.a],[2,Nl.a],[2,tl.i],Wl.a],{type:[0,"type"],placeholder:[1,"placeholder"]},null),(l()(),nl._21(-1,2,["\n    "])),(l()(),nl._21(-1,null,["\n\n    "])),(l()(),nl.U(16777216,null,null,1,null,h)),nl.Y(54,16384,null,0,rn.j,[nl.I,nl.F],{ngIf:[0,"ngIf"]},null),(l()(),nl._21(-1,null,["\n      \n    "])),(l()(),nl.Z(56,0,null,null,2,"button",[["class","button"],["full",""],["ion-button",""],["round",""]],[[8,"disabled",0]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.signIn()&&a}return a},cn.b,cn.a)),nl.Y(57,1097728,null,0,_n.a,[[8,""],Ol.a,nl.j,nl.z],{round:[0,"round"],full:[1,"full"]},null),(l()(),nl._21(-1,0,["SIGN IN"])),(l()(),nl._21(-1,null,["\n      \n    "])),(l()(),nl.Z(60,0,null,null,3,"p",[["class","navSignUp"],["text-center",""]],null,null,null,null,null)),(l()(),nl._21(-1,null,["  New user?  "])),(l()(),nl.Z(62,0,null,null,1,"a",[],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.navToSignUp()&&a}return a},null,null)),(l()(),nl._21(-1,null,[" Signup"])),(l()(),nl._21(-1,null,["\n  "])),(l()(),nl._21(-1,1,[" \n"]))],function(l,n){var u=n.component;l(n,4,0,"");l(n,16,0,u.credentialForm);l(n,29,0,"phoneNumber");l(n,32,0,"Number","Phone Number");l(n,36,0,!u.credentialForm.controls.phoneNumber.valid&&(u.credentialForm.controls.phoneNumber.dirty||u.submitAttempt));l(n,47,0,"password");l(n,50,0,"password","Password");l(n,54,0,!u.credentialForm.controls.password.valid&&(u.credentialForm.controls.password.dirty||u.submitAttempt));l(n,57,0,"","")},function(l,n){var u=n.component;l(n,3,0,nl._11(n,4)._hidden,nl._11(n,4)._sbPadding);l(n,11,0,nl._11(n,12).statusbarPadding,nl._11(n,12)._hasRefresher);l(n,14,0,nl._11(n,18).ngClassUntouched,nl._11(n,18).ngClassTouched,nl._11(n,18).ngClassPristine,nl._11(n,18).ngClassDirty,nl._11(n,18).ngClassValid,nl._11(n,18).ngClassInvalid,nl._11(n,18).ngClassPending);l(n,28,0,nl._11(n,31).ngClassUntouched,nl._11(n,31).ngClassTouched,nl._11(n,31).ngClassPristine,nl._11(n,31).ngClassDirty,nl._11(n,31).ngClassValid,nl._11(n,31).ngClassInvalid,nl._11(n,31).ngClassPending);l(n,46,0,nl._11(n,49).ngClassUntouched,nl._11(n,49).ngClassTouched,nl._11(n,49).ngClassPristine,nl._11(n,49).ngClassDirty,nl._11(n,49).ngClassValid,nl._11(n,49).ngClassInvalid,nl._11(n,49).ngClassPending);l(n,56,0,!u.credentialForm.valid)})}function p(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,27,"ion-row",[["class","row"]],null,null,null,null,null)),nl.Y(1,16384,null,0,jn.a,[],null,null),(l()(),nl._21(-1,null,["\n           "])),(l()(),nl.Z(3,0,null,null,23,"ion-col",[["class","col"]],null,null,null,null,null)),nl.Y(4,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n                "])),(l()(),nl.Z(6,0,null,null,19,"ion-card",[["style"," border: 1px solid black; border-radius: 20px;"],["type","button"]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.packClicked(l.context.$implicit)&&a}return a},null,null)),nl.Y(7,16384,null,0,On.a,[Ol.a,nl.j,nl.z],null,null),(l()(),nl._21(-1,null,["\n                     "])),(l()(),nl.Z(9,0,null,null,15,"div",[["class","c1"]],null,null,null,null,null)),(l()(),nl._21(-1,null,["\n                          "])),(l()(),nl.Z(11,0,null,null,12,"ion-card-content",[],null,null,null,null,null)),nl.Y(12,16384,null,0,Bn.a,[Ol.a,nl.j,nl.z],null,null),(l()(),nl._21(-1,null,["\n                                  "])),(l()(),nl.Z(14,0,null,null,3,"ion-avatar",[["class","img1"],["style"," border: 1px solid black;"]],null,null,null,null,null)),nl.Y(15,16384,null,0,zn.a,[],null,null),(l()(),nl._21(-1,null,["\n                                           "])),(l()(),nl._21(-1,null,["\n                                  "])),(l()(),nl._21(-1,null,["\n                                   "])),(l()(),nl.Z(19,0,null,null,3,"ion-label",[["class","p1"],["style","color:black;"]],null,null,null,null,null)),nl.Y(20,16384,null,0,Mn.a,[Ol.a,nl.j,nl.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),nl.Z(21,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),nl._21(22,null,["Pack ",""])),(l()(),nl._21(-1,null,["\n                          "])),(l()(),nl._21(-1,null,["\n                     "])),(l()(),nl._21(-1,null,["\n               "])),(l()(),nl._21(-1,null,["\n          "])),(l()(),nl._21(-1,null,["\n        "]))],null,function(l,n){l(n,22,0,n.context.$implicit.id)})}function g(l){return nl._23(0,[(l()(),nl._21(-1,null,["\n"])),(l()(),nl.Z(1,0,null,null,22,"ion-header",[],null,null,null,null,null)),nl.Y(2,16384,null,0,Zn.a,[Ol.a,nl.j,nl.z,[2,en.a]],null,null),(l()(),nl._21(-1,null,["\n     "])),(l()(),nl.Z(4,0,null,null,18,"ion-navbar",[["class","toolbar"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,vn.b,vn.a)),nl.Y(5,49152,null,0,un.a,[Gl.a,[2,en.a],[2,on.a],Ol.a,nl.j,nl.z],null,null),(l()(),nl._21(-1,3,["\n           "])),(l()(),nl.Z(7,0,null,3,2,"ion-title",[["class","toolbar-title.toolbar-title-md"]],null,null,null,ln.b,ln.a)),nl.Y(8,49152,null,0,nn.a,[Ol.a,nl.j,nl.z,[2,Ql.a],[2,un.a]],null,null),(l()(),nl._21(-1,0,["Photography"])),(l()(),nl._21(-1,3,["\n                "])),(l()(),nl.Z(11,0,null,2,10,"ion-buttons",[["class","hamri8"],["right",""]],null,null,null,null,null)),nl.Y(12,16384,null,1,Yn.a,[Ol.a,nl.j,nl.z,[2,Ql.a],[2,un.a]],null,null),nl._19(603979776,1,{_buttons:1}),(l()(),nl._21(-1,null,["\n                       "])),(l()(),nl.Z(15,0,null,null,5,"button",[["icon-only",""],["ion-button",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.order()&&a}return a},cn.b,cn.a)),nl.Y(16,1097728,[[1,4]],0,_n.a,[[8,""],Ol.a,nl.j,nl.z],null,null),(l()(),nl._21(-1,0,["\n                                "])),(l()(),nl.Z(18,0,null,0,1,"ion-icon",[["name","custom-hammer"],["role","img"]],[[2,"hide",null]],null,null,null,null)),nl.Y(19,147456,null,0,Cn.a,[Ol.a,nl.j,nl.z],{name:[0,"name"]},null),(l()(),nl._21(-1,0,["\n                       "])),(l()(),nl._21(-1,null,["\n                "])),(l()(),nl._21(-1,3,["\n     "])),(l()(),nl._21(-1,null,["\n"])),(l()(),nl._21(-1,null,["\n\n"])),(l()(),nl.Z(25,0,null,null,13,"ion-content",[["padding",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,an.b,an.a)),nl.Y(26,4374528,null,0,tn.a,[Ol.a,Hl.a,Wl.a,nl.j,nl.z,Gl.a,Xl.a,nl.u,[2,en.a],[2,on.a]],null,null),(l()(),nl._21(-1,1,[" \n    "])),(l()(),nl.Z(28,0,null,1,9,"ion-grid",[["class","grid"]],null,null,null,null,null)),nl.Y(29,16384,null,0,wn.a,[],null,null),(l()(),nl._21(-1,null,["\n\n        "])),(l()(),nl.U(16777216,null,null,1,null,p)),nl.Y(32,802816,null,0,rn.i,[nl.I,nl.F,nl.p],{ngForOf:[0,"ngForOf"]},null),(l()(),nl._21(-1,null,["\n    \n    \n        "])),(l()(),nl._21(-1,null,["\n                                   "])),(l()(),nl._21(-1,null,["\n                                           "])),(l()(),nl._21(-1,null,["\n                                    "])),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl._21(-1,1,["\n"])),(l()(),nl._21(-1,null,["\n"]))],function(l,n){var u=n.component;l(n,19,0,"custom-hammer");l(n,32,0,u.packs)},function(l,n){l(n,4,0,nl._11(n,5)._hidden,nl._11(n,5)._sbPadding);l(n,18,0,nl._11(n,19)._hidden);l(n,25,0,nl._11(n,26).statusbarPadding,nl._11(n,26)._hasRefresher)})}function f(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,17,"ion-row",[["class","row"]],null,null,null,null,null)),nl.Y(1,16384,null,0,jn.a,[],null,null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(3,0,null,null,13,"ion-item",[["class","l2 item item-block"]],null,null,null,Tl.b,Tl.a)),nl.Y(4,1097728,null,3,Nl.a,[Ll.a,Ol.a,nl.j,nl.z,[2,Bl.a]],null,null),nl._19(335544320,2,{contentLabel:0}),nl._19(603979776,3,{_buttons:1}),nl._19(603979776,4,{_icons:1}),nl.Y(8,16384,null,0,Ml.a,[],null,null),(l()(),nl._21(-1,2,["\n          "])),(l()(),nl._21(-1,2,["\n          "])),(l()(),nl.Z(11,0,null,3,4,"ion-input",[["placeholder","type your function"],["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.otherFunctionName=u)&&a}return a},In.b,In.a)),nl.Y(12,671744,null,0,tl.l,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),nl._17(2048,null,tl.i,null,[tl.l]),nl.Y(14,16384,null,0,tl.j,[tl.i],null,null),nl.Y(15,5423104,null,0,Dn.a,[Ol.a,Hl.a,Ll.a,Gl.a,nl.j,nl.z,[2,tn.a],[2,Nl.a],[2,tl.i],Wl.a],{type:[0,"type"],placeholder:[1,"placeholder"]},null),(l()(),nl._21(-1,2,["\n        "])),(l()(),nl._21(-1,null,["\n      "]))],function(l,n){l(n,12,0,n.component.otherFunctionName);l(n,15,0,"text","type your function")},function(l,n){l(n,11,0,nl._11(n,14).ngClassUntouched,nl._11(n,14).ngClassTouched,nl._11(n,14).ngClassPristine,nl._11(n,14).ngClassDirty,nl._11(n,14).ngClassValid,nl._11(n,14).ngClassInvalid,nl._11(n,14).ngClassPending)})}function b(l){return nl._23(0,[(l()(),nl._21(-1,null,["\n"])),(l()(),nl.Z(1,0,null,null,22,"ion-header",[],null,null,null,null,null)),nl.Y(2,16384,null,0,Zn.a,[Ol.a,nl.j,nl.z,[2,en.a]],null,null),(l()(),nl._21(-1,null,["\n  "])),(l()(),nl.Z(4,0,null,null,18,"ion-navbar",[["class","toolbar"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,vn.b,vn.a)),nl.Y(5,49152,null,0,un.a,[Gl.a,[2,en.a],[2,on.a],Ol.a,nl.j,nl.z],null,null),(l()(),nl._21(-1,3,["\n    "])),(l()(),nl.Z(7,0,null,3,2,"ion-title",[["class","toolbar-title.toolbar-title-md"]],null,null,null,ln.b,ln.a)),nl.Y(8,49152,null,0,nn.a,[Ol.a,nl.j,nl.z,[2,Ql.a],[2,un.a]],null,null),(l()(),nl._21(-1,0,["Book"])),(l()(),nl._21(-1,3,["\n    "])),(l()(),nl.Z(11,0,null,2,10,"ion-buttons",[["class","hamri8"],["right",""]],null,null,null,null,null)),nl.Y(12,16384,null,1,Yn.a,[Ol.a,nl.j,nl.z,[2,Ql.a],[2,un.a]],null,null),nl._19(603979776,1,{_buttons:1}),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(15,0,null,null,5,"button",[["icon-only",""],["ion-button",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.order()&&a}return a},cn.b,cn.a)),nl.Y(16,1097728,[[1,4]],0,_n.a,[[8,""],Ol.a,nl.j,nl.z],null,null),(l()(),nl._21(-1,0,["\n        "])),(l()(),nl.Z(18,0,null,0,1,"ion-icon",[["name","custom-hammer"],["role","img"]],[[2,"hide",null]],null,null,null,null)),nl.Y(19,147456,null,0,Cn.a,[Ol.a,nl.j,nl.z],{name:[0,"name"]},null),(l()(),nl._21(-1,0,["\n      "])),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl._21(-1,3,["\n  "])),(l()(),nl._21(-1,null,["\n"])),(l()(),nl._21(-1,null,["\n\n"])),(l()(),nl.Z(25,0,null,null,175,"ion-content",[["padding",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,an.b,an.a)),nl.Y(26,4374528,null,0,tn.a,[Ol.a,Hl.a,Wl.a,nl.j,nl.z,Gl.a,Xl.a,nl.u,[2,en.a],[2,on.a]],null,null),(l()(),nl._21(-1,1,["\n  "])),(l()(),nl.Z(28,0,null,1,171,"div",[["class","d1"]],null,null,null,null,null)),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl.Z(30,0,null,null,168,"ion-grid",[["class","grid"]],null,null,null,null,null)),nl.Y(31,16384,null,0,wn.a,[],null,null),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(33,0,null,null,17,"ion-row",[["class","row"]],null,null,null,null,null)),nl.Y(34,16384,null,0,jn.a,[],null,null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(36,0,null,null,7,"ion-col",[["class","col"],["col-4",""]],null,null,null,null,null)),nl.Y(37,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n          "])),(l()(),nl.Z(39,0,null,null,3,"ion-avatar",[["class","i1"],["style"," border: 1px solid black;"]],null,null,null,null,null)),nl.Y(40,16384,null,0,zn.a,[],null,null),(l()(),nl._21(-1,null,["\n            "])),(l()(),nl._21(-1,null,["\n          "])),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(45,0,null,null,4,"ion-col",[["class","l1 col"],["col-8",""]],null,null,null,null,null)),nl.Y(46,16384,null,0,kn.a,[],null,null),(l()(),nl.Z(47,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),nl._21(48,null,["Pack ",""])),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl._21(-1,null,["\n\n      "])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(52,0,null,null,7,"ion-row",[["class","row"]],null,null,null,null,null)),nl.Y(53,16384,null,0,jn.a,[],null,null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(55,0,null,null,3,"ion-col",[["class","col"],["col-12",""]],null,null,null,null,null)),nl.Y(56,16384,null,0,kn.a,[],null,null),(l()(),nl.Z(57,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),nl._21(-1,null,["Function Type"])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(61,0,null,null,17,"ion-row",[["class","b1 row"],["id","function-type"]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.functionType()&&a}return a},null,null)),nl.Y(62,16384,null,0,jn.a,[],null,null),(l()(),nl._21(-1,null,["\n          "])),(l()(),nl.Z(64,0,null,null,6,"ion-col",[["class","col"],["col-10",""]],null,null,null,null,null)),nl.Y(65,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n            "])),(l()(),nl.Z(67,0,null,null,2,"ion-label",[],null,null,null,null,null)),nl.Y(68,16384,null,0,Mn.a,[Ol.a,nl.j,nl.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),nl._21(69,null,["\n              ","\n            "])),(l()(),nl._21(-1,null,["\n          "])),(l()(),nl._21(-1,null,["\n          "])),(l()(),nl.Z(72,0,null,null,5,"ion-col",[["class","col"],["col-2",""]],null,null,null,null,null)),nl.Y(73,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n            "])),(l()(),nl.Z(75,0,null,null,1,"ion-icon",[["class","icon1"],["name","custom-Downarrow"],["role","img"]],[[2,"hide",null]],null,null,null,null)),nl.Y(76,147456,null,0,Cn.a,[Ol.a,nl.j,nl.z],{name:[0,"name"]},null),(l()(),nl._21(-1,null,["\n          "])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.U(16777216,null,null,1,null,f)),nl.Y(81,16384,null,0,rn.j,[nl.I,nl.F],{ngIf:[0,"ngIf"]},null),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(83,0,null,null,12,"ion-row",[["class","row"]],null,null,null,null,null)),nl.Y(84,16384,null,0,jn.a,[],null,null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(86,0,null,null,3,"ion-col",[["class","col"],["col-6",""]],null,null,null,null,null)),nl.Y(87,16384,null,0,kn.a,[],null,null),(l()(),nl.Z(88,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),nl._21(-1,null,["From"])),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(91,0,null,null,3,"ion-col",[["class","col"],["col-6",""]],null,null,null,null,null)),nl.Y(92,16384,null,0,kn.a,[],null,null),(l()(),nl.Z(93,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),nl._21(-1,null,["To"])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(97,0,null,null,64,"ion-row",[["class","row"]],null,null,null,null,null)),nl.Y(98,16384,null,0,jn.a,[],null,null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(100,0,null,null,29,"ion-col",[["class","col"],["col-6",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==nl._11(l,113).open()&&a}return a},null,null)),nl.Y(101,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n              \n          "])),(l()(),nl.Z(103,0,null,null,25,"button",[["class","b3"],["icon-end",""],["ion-button",""],["outline",""],["round",""],["style"," border: 1px solid black;"]],null,null,null,cn.b,cn.a)),nl.Y(104,1097728,null,0,_n.a,[[8,""],Ol.a,nl.j,nl.z],{outline:[0,"outline"],round:[1,"round"]},null),(l()(),nl._21(-1,0,["\n            "])),(l()(),nl.Z(106,0,null,0,21,"ion-row",[["class","fullWidth row"]],null,null,null,null,null)),nl.Y(107,16384,null,0,jn.a,[],null,null),(l()(),nl._21(-1,null,["\n              "])),(l()(),nl.Z(109,0,null,null,10,"ion-col",[["class","fullWidth col"],["col-9",""]],null,null,null,null,null)),nl.Y(110,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n                "])),(l()(),nl.Z(112,0,null,null,6,"ion-datetime",[["pickerFormat","DD MM YYYY"]],[[2,"datetime-disabled",null],[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"],[null,"click"],[null,"keyup.space"]],function(l,n,u){var a=!0,t=l.component;if("click"===n){a=!1!==nl._11(l,113)._click(u)&&a}if("keyup.space"===n){a=!1!==nl._11(l,113)._keyup()&&a}if("ngModelChange"===n){a=!1!==(t.fromTime=u)&&a}if("ngModelChange"===n){a=!1!==t.updateEstimatedAmount()&&a}return a},qn.b,qn.a)),nl.Y(113,1228800,[["picker",4]],0,$n.a,[Ll.a,Ol.a,nl.j,nl.z,[2,Nl.a],[2,Rn.a]],{pickerFormat:[0,"pickerFormat"]},null),nl._17(1024,null,tl.h,function(l){return[l]},[$n.a]),nl.Y(115,671744,null,0,tl.l,[[8,null],[8,null],[8,null],[2,tl.h]],{model:[0,"model"]},{update:"ngModelChange"}),nl._17(2048,null,tl.i,null,[tl.l]),nl.Y(117,16384,null,0,tl.j,[tl.i],null,null),(l()(),nl._21(-1,null,["\n                "])),(l()(),nl._21(-1,null,["\n              "])),(l()(),nl._21(-1,null,["\n              "])),(l()(),nl.Z(121,0,null,null,5,"ion-col",[["class","col"],["col-3",""]],null,null,null,null,null)),nl.Y(122,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n                "])),(l()(),nl.Z(124,0,null,null,1,"ion-icon",[["class","icon1"],["name","custom-calendar"],["role","img"]],[[2,"hide",null]],null,null,null,null)),nl.Y(125,147456,null,0,Cn.a,[Ol.a,nl.j,nl.z],{name:[0,"name"]},null),(l()(),nl._21(-1,null,["\n              "])),(l()(),nl._21(-1,null,["\n            "])),(l()(),nl._21(-1,0,["\n          "])),(l()(),nl._21(-1,null,["\n          \n        "])),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(131,0,null,null,29,"ion-col",[["class","col"],["col-6",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==nl._11(l,144).open()&&a}return a},null,null)),nl.Y(132,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n          "])),(l()(),nl.Z(134,0,null,null,25,"button",[["class","b3"],["icon-end",""],["ion-button",""],["outline",""],["round",""],["style"," border: 1px solid black;"]],null,null,null,cn.b,cn.a)),nl.Y(135,1097728,null,0,_n.a,[[8,""],Ol.a,nl.j,nl.z],{outline:[0,"outline"],round:[1,"round"]},null),(l()(),nl._21(-1,0,["\n            "])),(l()(),nl.Z(137,0,null,0,21,"ion-row",[["class","fullWidth row"]],null,null,null,null,null)),nl.Y(138,16384,null,0,jn.a,[],null,null),(l()(),nl._21(-1,null,["\n              "])),(l()(),nl.Z(140,0,null,null,10,"ion-col",[["class","fullWidth col"],["col-9",""]],null,null,null,null,null)),nl.Y(141,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n                "])),(l()(),nl.Z(143,0,null,null,6,"ion-datetime",[["pickerFormat","DD MM YYYY"]],[[2,"datetime-disabled",null],[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"],[null,"click"],[null,"keyup.space"]],function(l,n,u){var a=!0,t=l.component;if("click"===n){a=!1!==nl._11(l,144)._click(u)&&a}if("keyup.space"===n){a=!1!==nl._11(l,144)._keyup()&&a}if("ngModelChange"===n){a=!1!==(t.toTime=u)&&a}if("ngModelChange"===n){a=!1!==t.updateEstimatedAmount()&&a}return a},qn.b,qn.a)),nl.Y(144,1228800,[["picker1",4]],0,$n.a,[Ll.a,Ol.a,nl.j,nl.z,[2,Nl.a],[2,Rn.a]],{pickerFormat:[0,"pickerFormat"]},null),nl._17(1024,null,tl.h,function(l){return[l]},[$n.a]),nl.Y(146,671744,null,0,tl.l,[[8,null],[8,null],[8,null],[2,tl.h]],{model:[0,"model"]},{update:"ngModelChange"}),nl._17(2048,null,tl.i,null,[tl.l]),nl.Y(148,16384,null,0,tl.j,[tl.i],null,null),(l()(),nl._21(-1,null,["\n                "])),(l()(),nl._21(-1,null,["\n              "])),(l()(),nl._21(-1,null,["\n              "])),(l()(),nl.Z(152,0,null,null,5,"ion-col",[["class","col"],["col-3",""]],null,null,null,null,null)),nl.Y(153,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n                "])),(l()(),nl.Z(155,0,null,null,1,"ion-icon",[["class","icon1"],["name","custom-calendar"],["role","img"]],[[2,"hide",null]],null,null,null,null)),nl.Y(156,147456,null,0,Cn.a,[Ol.a,nl.j,nl.z],{name:[0,"name"]},null),(l()(),nl._21(-1,null,["\n              "])),(l()(),nl._21(-1,null,["\n            "])),(l()(),nl._21(-1,0,["\n\n          "])),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl._21(-1,null,["\n\n      "])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(163,0,null,null,7,"ion-row",[["class","row"]],null,null,null,null,null)),nl.Y(164,16384,null,0,jn.a,[],null,null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(166,0,null,null,3,"ion-col",[["class","col"],["col-12",""]],null,null,null,null,null)),nl.Y(167,16384,null,0,kn.a,[],null,null),(l()(),nl.Z(168,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),nl._21(-1,null,["Address or Location"])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(172,0,null,null,25,"ion-row",[["class","row"]],null,null,null,null,null)),nl.Y(173,16384,null,0,jn.a,[],null,null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(175,0,null,null,21,"ion-col",[["class","col"],["col-12",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.location()&&a}return a},null,null)),nl.Y(176,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n          "])),(l()(),nl.Z(178,0,null,null,17,"button",[["class","b1"],["icon-end",""],["ion-button",""],["outline",""],["round",""],["style"," border: 1px solid black;"]],null,[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==l.component.updateEstimatedAmount()&&a}return a},cn.b,cn.a)),nl.Y(179,1097728,null,0,_n.a,[[8,""],Ol.a,nl.j,nl.z],{outline:[0,"outline"],round:[1,"round"]},null),(l()(),nl._21(-1,0,["\n            "])),(l()(),nl.Z(181,0,null,0,13,"ion-row",[["class","fullWidth row"]],null,null,null,null,null)),nl.Y(182,16384,null,0,jn.a,[],null,null),(l()(),nl._21(-1,null,["\n              "])),(l()(),nl.Z(184,0,null,null,2,"ion-col",[["class","btnText col"],["col-9",""]],null,null,null,null,null)),nl.Y(185,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n\n              "])),(l()(),nl._21(-1,null,["\n              "])),(l()(),nl.Z(188,0,null,null,5,"ion-col",[["class","col"],["col-3",""]],null,null,null,null,null)),nl.Y(189,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n                "])),(l()(),nl.Z(191,0,null,null,1,"ion-icon",[["class","icon1"],["name","custom-places"],["role","img"]],[[2,"hide",null]],null,null,null,null)),nl.Y(192,147456,null,0,Cn.a,[Ol.a,nl.j,nl.z],{name:[0,"name"]},null),(l()(),nl._21(-1,null,["\n              "])),(l()(),nl._21(-1,null,["\n            "])),(l()(),nl._21(-1,0,["\n          "])),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl._21(-1,null,["\n  "])),(l()(),nl._21(-1,1,["\n"])),(l()(),nl._21(-1,null,["\n\n"])),(l()(),nl.Z(202,0,null,null,17,"ion-footer",[["no-border",""]],null,null,null,null,null)),nl.Y(203,16384,null,0,Hn.a,[Ol.a,nl.j,nl.z,[2,en.a]],null,null),(l()(),nl._21(-1,null,["\n  "])),(l()(),nl.Z(205,0,null,null,13,"div",[["class","d2"]],null,null,null,null,null)),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl.Z(207,0,null,null,2,"ion-label",[["class","l4"]],null,null,null,null,null)),nl.Y(208,16384,null,0,Mn.a,[Ol.a,nl.j,nl.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),nl._21(209,null,["INR ",""])),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl.Z(211,0,null,null,2,"ion-label",[["class","l5"]],null,null,null,null,null)),nl.Y(212,16384,null,0,Mn.a,[Ol.a,nl.j,nl.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),nl._21(-1,null,["Estimated Amount"])),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl.Z(215,0,null,null,2,"button",[["class","b5"],["ion-button",""],["outline",""],["round",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.checkout()&&a}return a},cn.b,cn.a)),nl.Y(216,1097728,null,0,_n.a,[[8,""],Ol.a,nl.j,nl.z],{outline:[0,"outline"],round:[1,"round"]},null),(l()(),nl._21(-1,0,["\n      CHECK OUT\n    "])),(l()(),nl._21(-1,null,["\n  "])),(l()(),nl._21(-1,null,["\n"])),(l()(),nl._21(-1,null,["\n"]))],function(l,n){var u=n.component;l(n,19,0,"custom-hammer");l(n,76,0,"custom-Downarrow");l(n,81,0,"Others"==u.selectedFunction);l(n,104,0,"","");l(n,113,0,"DD MM YYYY");l(n,115,0,u.fromTime);l(n,125,0,"custom-calendar");l(n,135,0,"","");l(n,144,0,"DD MM YYYY");l(n,146,0,u.toTime);l(n,156,0,"custom-calendar");l(n,179,0,"","");l(n,192,0,"custom-places");l(n,216,0,"","")},function(l,n){var u=n.component;l(n,4,0,nl._11(n,5)._hidden,nl._11(n,5)._sbPadding);l(n,18,0,nl._11(n,19)._hidden);l(n,25,0,nl._11(n,26).statusbarPadding,nl._11(n,26)._hasRefresher);l(n,48,0,u.pack.id);l(n,69,0,u.selectedFunction);l(n,75,0,nl._11(n,76)._hidden);l(n,112,0,nl._11(n,113)._disabled,nl._11(n,117).ngClassUntouched,nl._11(n,117).ngClassTouched,nl._11(n,117).ngClassPristine,nl._11(n,117).ngClassDirty,nl._11(n,117).ngClassValid,nl._11(n,117).ngClassInvalid,nl._11(n,117).ngClassPending);l(n,124,0,nl._11(n,125)._hidden);l(n,143,0,nl._11(n,144)._disabled,nl._11(n,148).ngClassUntouched,nl._11(n,148).ngClassTouched,nl._11(n,148).ngClassPristine,nl._11(n,148).ngClassDirty,nl._11(n,148).ngClassValid,nl._11(n,148).ngClassInvalid,nl._11(n,148).ngClassPending);l(n,155,0,nl._11(n,156)._hidden);l(n,191,0,nl._11(n,192)._hidden);l(n,209,0,u.estimatedAmount)})}function Z(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,1,"p",[["class","alert"]],null,null,null,null,null)),(l()(),nl._21(-1,null,["Sorry, No orders found for Photography..!"]))],null,null)}function v(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,25,"ion-card",[],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.cardclick(l.context.$implicit)&&a}return a},null,null)),nl.Y(1,16384,null,0,On.a,[Ol.a,nl.j,nl.z],null,null),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(3,0,null,null,21,"ion-item",[["class","item item-block"]],null,null,null,Tl.b,Tl.a)),nl.Y(4,1097728,null,3,Nl.a,[Ll.a,Ol.a,nl.j,nl.z,[2,Bl.a]],null,null),nl._19(335544320,2,{contentLabel:0}),nl._19(603979776,3,{_buttons:1}),nl._19(603979776,4,{_icons:1}),nl.Y(8,16384,null,0,Ml.a,[],null,null),(l()(),nl._21(-1,2,["\n        "])),(l()(),nl.Z(10,0,null,0,4,"ion-avatar",[["item-start",""]],null,null,null,null,null)),nl.Y(11,16384,null,0,zn.a,[],null,null),(l()(),nl._21(-1,null,["\n          "])),(l()(),nl.Z(13,0,null,null,0,"img",[["src","../../assets/imgs/camera1.jpg"]],null,null,null,null,null)),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl._21(-1,2,["\n\n        "])),(l()(),nl.Z(16,0,null,2,1,"h2",[],null,null,null,null,null)),(l()(),nl._21(17,null,["Pack ",""])),(l()(),nl._21(-1,2,["\n        "])),(l()(),nl.Z(19,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),nl._21(20,null,["Ordered : ",""])),(l()(),nl._21(-1,2,["\n        "])),(l()(),nl.Z(22,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),nl._21(23,null,["Function : ",""])),(l()(),nl._21(-1,2,["\n      "])),(l()(),nl._21(-1,null,["\n    "]))],null,function(l,n){l(n,17,0,n.context.$implicit.pack.id);l(n,20,0,n.context.$implicit.bookedDate);l(n,23,0,n.context.$implicit.fromDate)})}function Y(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,5,"div",[["id","expand-flag"],["text-center",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.alterView("photography",!0)&&a}return a},null,null)),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(2,0,null,null,2,"ion-label",[],null,null,null,null,null)),nl.Y(3,16384,null,0,Mn.a,[Ol.a,nl.j,nl.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),nl._21(-1,null,["Show more"])),(l()(),nl._21(-1,null,["\n    "]))],null,null)}function y(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,5,"div",[["id","expand-flag"],["text-center",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.alterView("photography",!1)&&a}return a},null,null)),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(2,0,null,null,2,"ion-label",[],null,null,null,null,null)),nl.Y(3,16384,null,0,Mn.a,[Ol.a,nl.j,nl.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),nl._21(-1,null,["Show less"])),(l()(),nl._21(-1,null,["\n    "]))],null,null)}function C(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,10,"div",[],null,null,null,null,null)),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl.U(16777216,null,null,1,null,v)),nl.Y(3,802816,null,0,rn.i,[nl.I,nl.F,nl.p],{ngForOf:[0,"ngForOf"]},null),(l()(),nl._21(-1,null,["\n\n    "])),(l()(),nl.U(16777216,null,null,1,null,Y)),nl.Y(6,16384,null,0,rn.j,[nl.I,nl.F],{ngIf:[0,"ngIf"]},null),(l()(),nl._21(-1,null,["\n\n    "])),(l()(),nl.U(16777216,null,null,1,null,y)),nl.Y(9,16384,null,0,rn.j,[nl.I,nl.F],{ngIf:[0,"ngIf"]},null),(l()(),nl._21(-1,null,["\n  "]))],function(l,n){var u=n.component;l(n,3,0,u.photographyOrders);l(n,6,0,!u.photographyExpanded);l(n,9,0,u.photographyExpanded)},null)}function w(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,1,"p",[["class","alert"]],null,null,null,null,null)),(l()(),nl._21(-1,null,["Sorry, No orders found for Haircut..!"]))],null,null)}function j(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,1,"p",[],null,null,null,null,null)),(l()(),nl._21(-1,null,["Seats : 2"]))],null,null)}function k(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,1,"p",[],null,null,null,null,null)),(l()(),nl._21(-1,null,["Seats : 1"]))],null,null)}function z(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,28,"ion-card",[],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.cardclick(l.context.$implicit)&&a}return a},null,null)),nl.Y(1,16384,null,0,On.a,[Ol.a,nl.j,nl.z],null,null),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(3,0,null,null,24,"ion-item",[["class","item item-block"]],null,null,null,Tl.b,Tl.a)),nl.Y(4,1097728,null,3,Nl.a,[Ll.a,Ol.a,nl.j,nl.z,[2,Bl.a]],null,null),nl._19(335544320,5,{contentLabel:0}),nl._19(603979776,6,{_buttons:1}),nl._19(603979776,7,{_icons:1}),nl.Y(8,16384,null,0,Ml.a,[],null,null),(l()(),nl._21(-1,2,["\n        "])),(l()(),nl.Z(10,0,null,0,4,"ion-avatar",[["item-start",""]],null,null,null,null,null)),nl.Y(11,16384,null,0,zn.a,[],null,null),(l()(),nl._21(-1,null,["\n          "])),(l()(),nl.Z(13,0,null,null,0,"img",[["src","../../assets/imgs/camera1.jpg"]],null,null,null,null,null)),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl._21(-1,2,["\n\n        "])),(l()(),nl.Z(16,0,null,2,1,"h2",[],null,null,null,null,null)),(l()(),nl._21(17,null,["Date : ",""])),(l()(),nl._21(-1,2,["\n        "])),(l()(),nl.Z(19,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),nl._21(20,null,["Time : ",""])),(l()(),nl._21(-1,2,["\n        "])),(l()(),nl.U(16777216,null,2,1,null,j)),nl.Y(23,16384,null,0,rn.j,[nl.I,nl.F],{ngIf:[0,"ngIf"]},null),(l()(),nl._21(-1,2,["\n        "])),(l()(),nl.U(16777216,null,2,1,null,k)),nl.Y(26,16384,null,0,rn.j,[nl.I,nl.F],{ngIf:[0,"ngIf"]},null),(l()(),nl._21(-1,2,["\n      "])),(l()(),nl._21(-1,null,["\n    "]))],function(l,n){l(n,23,0,1==n.context.$implicit.seats.first&&1==n.context.$implicit.seats.second);l(n,26,0,!(1==n.context.$implicit.seats.first&&1==n.context.$implicit.seats.second))},function(l,n){l(n,17,0,n.context.$implicit.date);l(n,20,0,n.context.$implicit.time)})}function P(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,5,"div",[["id","expand-flag"],["text-center",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.alterView("haircut",!0)&&a}return a},null,null)),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(2,0,null,null,2,"ion-label",[],null,null,null,null,null)),nl.Y(3,16384,null,0,Mn.a,[Ol.a,nl.j,nl.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),nl._21(-1,null,["Show more"])),(l()(),nl._21(-1,null,["\n    "]))],null,null)}function S(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,5,"div",[["id","expand-flag"],["text-center",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.alterView("haircut",!1)&&a}return a},null,null)),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(2,0,null,null,2,"ion-label",[],null,null,null,null,null)),nl.Y(3,16384,null,0,Mn.a,[Ol.a,nl.j,nl.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),nl._21(-1,null,["Show less"])),(l()(),nl._21(-1,null,["\n    "]))],null,null)}function F(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,10,"div",[["class","parent"]],null,null,null,null,null)),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl.U(16777216,null,null,1,null,z)),nl.Y(3,802816,null,0,rn.i,[nl.I,nl.F,nl.p],{ngForOf:[0,"ngForOf"]},null),(l()(),nl._21(-1,null,["\n\n    "])),(l()(),nl.U(16777216,null,null,1,null,P)),nl.Y(6,16384,null,0,rn.j,[nl.I,nl.F],{ngIf:[0,"ngIf"]},null),(l()(),nl._21(-1,null,["\n\n    "])),(l()(),nl.U(16777216,null,null,1,null,S)),nl.Y(9,16384,null,0,rn.j,[nl.I,nl.F],{ngIf:[0,"ngIf"]},null),(l()(),nl._21(-1,null,["\n  "]))],function(l,n){var u=n.component;l(n,3,0,u.haircutOrders);l(n,6,0,!u.haircutExpanded);l(n,9,0,u.haircutExpanded)},null)}function I(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,22,"ion-header",[],null,null,null,null,null)),nl.Y(1,16384,null,0,Zn.a,[Ol.a,nl.j,nl.z,[2,en.a]],null,null),(l()(),nl._21(-1,null,["\n  "])),(l()(),nl.Z(3,0,null,null,18,"ion-navbar",[["class","toolbar"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,vn.b,vn.a)),nl.Y(4,49152,null,0,un.a,[Gl.a,[2,en.a],[2,on.a],Ol.a,nl.j,nl.z],null,null),(l()(),nl._21(-1,3,["\n    "])),(l()(),nl.Z(6,0,null,3,2,"ion-title",[["class","toolbar-title.toolbar-title-md"]],null,null,null,ln.b,ln.a)),nl.Y(7,49152,null,0,nn.a,[Ol.a,nl.j,nl.z,[2,Ql.a],[2,un.a]],null,null),(l()(),nl._21(-1,0,["My Order"])),(l()(),nl._21(-1,3,["\n    "])),(l()(),nl.Z(10,0,null,2,10,"ion-buttons",[["class","paddingright"],["right",""]],null,null,null,null,null)),nl.Y(11,16384,null,1,Yn.a,[Ol.a,nl.j,nl.z,[2,Ql.a],[2,un.a]],null,null),nl._19(603979776,1,{_buttons:1}),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(14,0,null,null,5,"button",[["icon-only",""],["ion-button",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.clicked()&&a}return a},cn.b,cn.a)),nl.Y(15,1097728,[[1,4]],0,_n.a,[[8,""],Ol.a,nl.j,nl.z],null,null),(l()(),nl._21(-1,0,["\n        "])),(l()(),nl.Z(17,0,null,0,1,"ion-icon",[["class","ion-md-person"],["name","person"],["role","img"]],[[2,"hide",null]],null,null,null,null)),nl.Y(18,147456,null,0,Cn.a,[Ol.a,nl.j,nl.z],{name:[0,"name"]},null),(l()(),nl._21(-1,0,["\n      "])),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl._21(-1,3,["\n  "])),(l()(),nl._21(-1,null,["\n"])),(l()(),nl._21(-1,null,["\n\n\n\n"])),(l()(),nl.Z(24,0,null,null,20,"ion-content",[["padding",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,an.b,an.a)),nl.Y(25,4374528,null,0,tn.a,[Ol.a,Hl.a,Wl.a,nl.j,nl.z,Gl.a,Xl.a,nl.u,[2,en.a],[2,on.a]],null,null),(l()(),nl._21(-1,1,["\n\n  "])),(l()(),nl.Z(27,0,null,1,1,"h1",[],null,null,null,null,null)),(l()(),nl._21(-1,null,["Photography"])),(l()(),nl._21(-1,1,["\n  "])),(l()(),nl.U(16777216,null,1,1,null,Z)),nl.Y(31,16384,null,0,rn.j,[nl.I,nl.F],{ngIf:[0,"ngIf"]},null),(l()(),nl._21(-1,1,["\n  "])),(l()(),nl.U(16777216,null,1,1,null,C)),nl.Y(34,16384,null,0,rn.j,[nl.I,nl.F],{ngIf:[0,"ngIf"]},null),(l()(),nl._21(-1,1,["\n\n  "])),(l()(),nl.Z(36,0,null,1,1,"h1",[],null,null,null,null,null)),(l()(),nl._21(-1,null,["Haircut"])),(l()(),nl._21(-1,1,["\n  "])),(l()(),nl.U(16777216,null,1,1,null,w)),nl.Y(40,16384,null,0,rn.j,[nl.I,nl.F],{ngIf:[0,"ngIf"]},null),(l()(),nl._21(-1,1,["\n  "])),(l()(),nl.U(16777216,null,1,1,null,F)),nl.Y(43,16384,null,0,rn.j,[nl.I,nl.F],{ngIf:[0,"ngIf"]},null),(l()(),nl._21(-1,1,["\n"])),(l()(),nl._21(-1,null,["\n"]))],function(l,n){var u=n.component;l(n,18,0,"person");l(n,31,0,u.photographyFlag);l(n,34,0,!u.photographyFlag);l(n,40,0,u.haircutFlag);l(n,43,0,!u.haircutFlag)},function(l,n){l(n,3,0,nl._11(n,4)._hidden,nl._11(n,4)._sbPadding);l(n,17,0,nl._11(n,18)._hidden);l(n,24,0,nl._11(n,25).statusbarPadding,nl._11(n,25)._hasRefresher)})}function D(l){return nl._23(0,[nl._14(0,rn.d,[nl.r]),(l()(),nl._21(-1,null,["\n"])),(l()(),nl.Z(2,0,null,null,10,"ion-header",[],null,null,null,null,null)),nl.Y(3,16384,null,0,Zn.a,[Ol.a,nl.j,nl.z,[2,en.a]],null,null),(l()(),nl._21(-1,null,["\n  "])),(l()(),nl.Z(5,0,null,null,6,"ion-navbar",[["class","toolbar"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,vn.b,vn.a)),nl.Y(6,49152,null,0,un.a,[Gl.a,[2,en.a],[2,on.a],Ol.a,nl.j,nl.z],null,null),(l()(),nl._21(-1,3,["\n    "])),(l()(),nl.Z(8,0,null,3,2,"ion-title",[["class","toolbar-title.toolbar-title-md"]],null,null,null,ln.b,ln.a)),nl.Y(9,49152,null,0,nn.a,[Ol.a,nl.j,nl.z,[2,Ql.a],[2,un.a]],null,null),(l()(),nl._21(-1,0,["Order Booked"])),(l()(),nl._21(-1,3,["\n  "])),(l()(),nl._21(-1,null,["\n"])),(l()(),nl._21(-1,null,["\n\n\n\n"])),(l()(),nl.Z(14,0,null,null,168,"ion-content",[["padding",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,an.b,an.a)),nl.Y(15,4374528,null,0,tn.a,[Ol.a,Hl.a,Wl.a,nl.j,nl.z,Gl.a,Xl.a,nl.u,[2,en.a],[2,on.a]],null,null),(l()(),nl._21(-1,1,["\n\n  "])),(l()(),nl.Z(17,0,null,1,3,"div",[["class","wrapper"]],null,null,null,null,null)),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl.Z(19,0,null,null,0,"img",[["src","../../assets/imgs/order_placed.png"],["style","margin-top: 40px"]],null,null,null,null,null)),(l()(),nl._21(-1,null,["\n  "])),(l()(),nl._21(-1,1,["\n\n\n\n  "])),(l()(),nl.Z(22,0,null,1,128,"ion-grid",[["class","grid"],["style","margin-top: 80px"]],null,null,null,null,null)),nl.Y(23,16384,null,0,wn.a,[],null,null),(l()(),nl._21(-1,null,["\n\n    "])),(l()(),nl.Z(25,0,null,null,23,"ion-row",[["class","row"]],null,null,null,null,null)),nl.Y(26,16384,null,0,jn.a,[],null,null),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(28,0,null,null,5,"ion-col",[["align-items-center",""],["class","col"],["col-5",""]],null,null,null,null,null)),nl.Y(29,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(31,0,null,null,1,"div",[["class","bold"]],null,null,null,null,null)),(l()(),nl._21(-1,null,["Odered by"])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(35,0,null,null,5,"ion-col",[["align-items-center",""],["class","col"],["col-1",""]],null,null,null,null,null)),nl.Y(36,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(38,0,null,null,1,"div",[["class","bold"]],null,null,null,null,null)),(l()(),nl._21(-1,null,[":"])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(42,0,null,null,5,"ion-col",[["align-items-start",""],["class","col"],["col-4",""]],null,null,null,null,null)),nl.Y(43,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(45,0,null,null,1,"div",[],null,null,null,null,null)),(l()(),nl._21(46,null,["",""])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl._21(-1,null,["\n\n\n    "])),(l()(),nl.Z(50,0,null,null,23,"ion-row",[["class","row"]],null,null,null,null,null)),nl.Y(51,16384,null,0,jn.a,[],null,null),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(53,0,null,null,5,"ion-col",[["align-items-center",""],["class","col"],["col-5",""]],null,null,null,null,null)),nl.Y(54,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(56,0,null,null,1,"div",[["class","bold"]],null,null,null,null,null)),(l()(),nl._21(-1,null,["Function Name"])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(60,0,null,null,5,"ion-col",[["align-items-center",""],["class","col"],["col-1",""]],null,null,null,null,null)),nl.Y(61,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(63,0,null,null,1,"div",[["class","bold"]],null,null,null,null,null)),(l()(),nl._21(-1,null,[":"])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(67,0,null,null,5,"ion-col",[["align-items-start",""],["class","col"],["col-4",""]],null,null,null,null,null)),nl.Y(68,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(70,0,null,null,1,"div",[],null,null,null,null,null)),(l()(),nl._21(71,null,["",""])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl._21(-1,null,["\n\n    "])),(l()(),nl.Z(75,0,null,null,23,"ion-row",[["class","row"]],null,null,null,null,null)),nl.Y(76,16384,null,0,jn.a,[],null,null),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(78,0,null,null,5,"ion-col",[["align-items-center",""],["class","col"],["col-5",""]],null,null,null,null,null)),nl.Y(79,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(81,0,null,null,1,"div",[["class","bold"]],null,null,null,null,null)),(l()(),nl._21(-1,null,["Function Date and Time"])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(85,0,null,null,5,"ion-col",[["align-items-center",""],["class","col"],["col-1",""]],null,null,null,null,null)),nl.Y(86,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(88,0,null,null,1,"div",[["class","bold"]],null,null,null,null,null)),(l()(),nl._21(-1,null,[":"])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(92,0,null,null,5,"ion-col",[["align-items-start",""],["class","col"],["col-6",""]],null,null,null,null,null)),nl.Y(93,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(95,0,null,null,1,"div",[],null,null,null,null,null)),(l()(),nl._21(96,null,["",""])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl._21(-1,null,["\n\n\n    "])),(l()(),nl.Z(100,0,null,null,23,"ion-row",[["class","row"]],null,null,null,null,null)),nl.Y(101,16384,null,0,jn.a,[],null,null),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(103,0,null,null,5,"ion-col",[["align-items-center",""],["class","col"],["col-5",""]],null,null,null,null,null)),nl.Y(104,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(106,0,null,null,1,"div",[["class","bold"]],null,null,null,null,null)),(l()(),nl._21(-1,null,["Transaction ID"])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(110,0,null,null,5,"ion-col",[["align-items-center",""],["class","col"],["col-1",""]],null,null,null,null,null)),nl.Y(111,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(113,0,null,null,1,"div",[["class","bold"]],null,null,null,null,null)),(l()(),nl._21(-1,null,[":"])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(117,0,null,null,5,"ion-col",[["align-items-start",""],["class","col"],["col-6",""]],null,null,null,null,null)),nl.Y(118,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(120,0,null,null,1,"div",[],null,null,null,null,null)),(l()(),nl._21(-1,null,["126hdh89asd123d12"])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl._21(-1,null,["\n\n\n    "])),(l()(),nl.Z(125,0,null,null,24,"ion-row",[["class","row"]],null,null,null,null,null)),nl.Y(126,16384,null,0,jn.a,[],null,null),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(128,0,null,null,5,"ion-col",[["align-items-center",""],["class","col"],["col-5",""]],null,null,null,null,null)),nl.Y(129,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(131,0,null,null,1,"div",[["class","bold"]],null,null,null,null,null)),(l()(),nl._21(-1,null,["Transaction Time"])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(135,0,null,null,5,"ion-col",[["align-items-center",""],["class","col"],["col-1",""]],null,null,null,null,null)),nl.Y(136,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(138,0,null,null,1,"div",[["class","bold"]],null,null,null,null,null)),(l()(),nl._21(-1,null,[":"])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(142,0,null,null,6,"ion-col",[["align-items-start",""],["class","col"],["col-6",""]],null,null,null,null,null)),nl.Y(143,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(145,0,null,null,2,"div",[],null,null,null,null,null)),(l()(),nl._21(146,null,["",""])),nl._16(147,1),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl._21(-1,null,["\n\n  "])),(l()(),nl._21(-1,1,["\n\n\n\n  "])),(l()(),nl.Z(152,0,null,1,29,"ion-card",[],null,null,null,null,null)),nl.Y(153,16384,null,0,On.a,[Ol.a,nl.j,nl.z],null,null),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl.Z(155,0,null,null,25,"ion-item",[["class","item item-block"]],null,null,null,Tl.b,Tl.a)),nl.Y(156,1097728,null,3,Nl.a,[Ll.a,Ol.a,nl.j,nl.z,[2,Bl.a]],null,null),nl._19(335544320,1,{contentLabel:0}),nl._19(603979776,2,{_buttons:1}),nl._19(603979776,3,{_icons:1}),nl.Y(160,16384,null,0,Ml.a,[],null,null),(l()(),nl._21(-1,2,["\n      "])),(l()(),nl.Z(162,0,null,0,4,"ion-avatar",[["item-start",""]],null,null,null,null,null)),nl.Y(163,16384,null,0,zn.a,[],null,null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(165,0,null,null,0,"img",[["src","../../assets/imgs/camera1.jpg"]],null,null,null,null,null)),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl._21(-1,2,["\n      "])),(l()(),nl.Z(168,0,null,2,1,"h2",[],null,null,null,null,null)),(l()(),nl._21(-1,null,[" "])),(l()(),nl._21(-1,2,["\n      "])),(l()(),nl.Z(171,0,null,2,1,"h2",[],null,null,null,null,null)),(l()(),nl._21(-1,null,["Photographer status"])),(l()(),nl._21(-1,2,["\n      "])),(l()(),nl.Z(174,0,null,2,5,"p",[],null,null,null,null,null)),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(176,0,null,null,2,"ion-badge",[["color","secondary"]],null,null,null,null,null)),nl.Y(177,16384,null,0,Qn.a,[Ol.a,nl.j,nl.z],{color:[0,"color"]},null),(l()(),nl._21(-1,null,["Pending"])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl._21(-1,2,["\n    "])),(l()(),nl._21(-1,null,["\n\n  "])),(l()(),nl._21(-1,1,["\n\n"])),(l()(),nl._21(-1,null,["\n"]))],function(l,n){l(n,177,0,"secondary")},function(l,n){var u=n.component;l(n,5,0,nl._11(n,6)._hidden,nl._11(n,6)._sbPadding);l(n,14,0,nl._11(n,15).statusbarPadding,nl._11(n,15)._hasRefresher);l(n,46,0,u.name);l(n,71,0,u.functionType);l(n,96,0,u.fromDate);l(n,146,0,nl._22(n,146,0,l(n,147,0,nl._11(n,0),u.nowDate)))})}function A(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,25,"ion-item",[["class","item item-block"]],null,null,null,Tl.b,Tl.a)),nl.Y(1,1097728,null,3,Nl.a,[Ll.a,Ol.a,nl.j,nl.z,[2,Bl.a]],null,null),nl._19(335544320,7,{contentLabel:0}),nl._19(603979776,8,{_buttons:1}),nl._19(603979776,9,{_icons:1}),nl.Y(5,16384,null,0,Ml.a,[],null,null),(l()(),nl._21(-1,2,["\n        "])),(l()(),nl.Z(7,0,null,0,4,"ion-avatar",[["item-start",""]],null,null,null,null,null)),nl.Y(8,16384,null,0,zn.a,[],null,null),(l()(),nl._21(-1,null,["\n          "])),(l()(),nl.Z(10,0,null,null,0,"img",[["src","../../assets/imgs/camera1.jpg"]],null,null,null,null,null)),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl._21(-1,2,["\n        "])),(l()(),nl.Z(13,0,null,2,1,"h2",[],null,null,null,null,null)),(l()(),nl._21(-1,null,[" "])),(l()(),nl._21(-1,2,["\n        "])),(l()(),nl.Z(16,0,null,2,1,"h2",[],null,null,null,null,null)),(l()(),nl._21(-1,null,["Photographer status"])),(l()(),nl._21(-1,2,["\n        "])),(l()(),nl.Z(19,0,null,2,5,"p",[],null,null,null,null,null)),(l()(),nl._21(-1,null,["\n          "])),(l()(),nl.Z(21,0,null,null,2,"ion-badge",[["color","secondary"]],null,null,null,null,null)),nl.Y(22,16384,null,0,Qn.a,[Ol.a,nl.j,nl.z],{color:[0,"color"]},null),(l()(),nl._21(-1,null,["Pending"])),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl._21(-1,2,["\n      "]))],function(l,n){l(n,22,0,"secondary")},null)}function x(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,21,"ion-item",[["class","item item-block"]],null,null,null,Tl.b,Tl.a)),nl.Y(1,1097728,null,3,Nl.a,[Ll.a,Ol.a,nl.j,nl.z,[2,Bl.a]],null,null),nl._19(335544320,10,{contentLabel:0}),nl._19(603979776,11,{_buttons:1}),nl._19(603979776,12,{_icons:1}),nl.Y(5,16384,null,0,Ml.a,[],null,null),(l()(),nl._21(-1,2,["\n        "])),(l()(),nl.Z(7,0,null,0,4,"ion-avatar",[["item-start",""]],null,null,null,null,null)),nl.Y(8,16384,null,0,zn.a,[],null,null),(l()(),nl._21(-1,null,["\n          "])),(l()(),nl.Z(10,0,null,null,0,"img",[["src","../../assets/imgs/camera1.jpg"]],null,null,null,null,null)),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl._21(-1,2,["\n        "])),(l()(),nl.Z(13,0,null,2,1,"h2",[],null,null,null,null,null)),(l()(),nl._21(-1,null,["Photographer Name"])),(l()(),nl._21(-1,2,["\n        "])),(l()(),nl.Z(16,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),nl._21(-1,null,["City"])),(l()(),nl._21(-1,2,["\n        "])),(l()(),nl.Z(19,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),nl._21(-1,null,["Phone Number"])),(l()(),nl._21(-1,2,["\n      "]))],null,null)}function U(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,100,"div",[],null,null,null,null,null)),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl.Z(2,0,null,null,21,"ion-grid",[["class","grid"]],null,null,null,null,null)),nl.Y(3,16384,null,0,wn.a,[],null,null),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(5,0,null,null,17,"ion-row",[["class","row"]],null,null,null,null,null)),nl.Y(6,16384,null,0,jn.a,[],null,null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(8,0,null,null,7,"ion-col",[["class","col"],["col-4",""]],null,null,null,null,null)),nl.Y(9,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n          "])),(l()(),nl.Z(11,0,null,null,3,"ion-avatar",[["class","i1"],["style"," border: 1px solid black;"]],null,null,null,null,null)),nl.Y(12,16384,null,0,zn.a,[],null,null),(l()(),nl._21(-1,null,["\n            "])),(l()(),nl._21(-1,null,["\n          "])),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(17,0,null,null,4,"ion-col",[["class","l1 col"],["col-8",""]],null,null,null,null,null)),nl.Y(18,16384,null,0,kn.a,[],null,null),(l()(),nl.Z(19,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),nl._21(-1,null,["Pack 1"])),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl._21(-1,null,["\n\n    "])),(l()(),nl.Z(25,0,null,null,1,"h2",[["class","h2"]],null,null,null,null,null)),(l()(),nl._21(-1,null,["Ordered by"])),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl.Z(28,0,null,null,1,"p",[["class","p"]],null,null,null,null,null)),(l()(),nl._21(29,null,["",""])),(l()(),nl._21(-1,null,["\n\n    "])),(l()(),nl.Z(31,0,null,null,34,"ion-card",[["class","card1"]],null,null,null,null,null)),nl.Y(32,16384,null,0,On.a,[Ol.a,nl.j,nl.z],null,null),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(34,0,null,null,30,"ion-item",[["class","item item-block"]],null,null,null,Tl.b,Tl.a)),nl.Y(35,1097728,null,3,Nl.a,[Ll.a,Ol.a,nl.j,nl.z,[2,Bl.a]],null,null),nl._19(335544320,1,{contentLabel:0}),nl._19(603979776,2,{_buttons:1}),nl._19(603979776,3,{_icons:1}),nl.Y(39,16384,null,0,Ml.a,[],null,null),(l()(),nl._21(-1,2,["\n        "])),(l()(),nl.Z(41,0,null,2,1,"h2",[],null,null,null,null,null)),(l()(),nl._21(-1,null,["Function Name"])),(l()(),nl._21(-1,2,["\n        "])),(l()(),nl.Z(44,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),nl._21(45,null,["",""])),(l()(),nl._21(-1,2,["\n        "])),(l()(),nl.Z(47,0,null,2,1,"h2",[],null,null,null,null,null)),(l()(),nl._21(-1,null,["Function Date and Time"])),(l()(),nl._21(-1,2,["\n        "])),(l()(),nl.Z(50,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),nl._21(51,null,["",""])),(l()(),nl._21(-1,2,["\n        "])),(l()(),nl.Z(53,0,null,2,1,"h2",[],null,null,null,null,null)),(l()(),nl._21(-1,null,["Event Start"])),(l()(),nl._21(-1,2,["\n        "])),(l()(),nl.Z(56,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),nl._21(57,null,["",""])),(l()(),nl._21(-1,2,["\n        "])),(l()(),nl.Z(59,0,null,2,1,"h2",[],null,null,null,null,null)),(l()(),nl._21(-1,null,["Event End"])),(l()(),nl._21(-1,2,["\n        "])),(l()(),nl.Z(62,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),nl._21(63,null,["",""])),(l()(),nl._21(-1,2,["\n      "])),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl._21(-1,null,["\n\n    "])),(l()(),nl.Z(67,0,null,null,22,"ion-card",[["class","card2"]],null,null,null,null,null)),nl.Y(68,16384,null,0,On.a,[Ol.a,nl.j,nl.z],null,null),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(70,0,null,null,18,"ion-item",[["class","item item-block"]],null,null,null,Tl.b,Tl.a)),nl.Y(71,1097728,null,3,Nl.a,[Ll.a,Ol.a,nl.j,nl.z,[2,Bl.a]],null,null),nl._19(335544320,4,{contentLabel:0}),nl._19(603979776,5,{_buttons:1}),nl._19(603979776,6,{_icons:1}),nl.Y(75,16384,null,0,Ml.a,[],null,null),(l()(),nl._21(-1,2,["\n        "])),(l()(),nl.Z(77,0,null,2,1,"h2",[],null,null,null,null,null)),(l()(),nl._21(-1,null,["Function Name"])),(l()(),nl._21(-1,2,["\n        "])),(l()(),nl.Z(80,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),nl._21(81,null,["",""])),(l()(),nl._21(-1,2,["\n        "])),(l()(),nl.Z(83,0,null,2,1,"h2",[],null,null,null,null,null)),(l()(),nl._21(-1,null,["Function Date and Time"])),(l()(),nl._21(-1,2,["\n        "])),(l()(),nl.Z(86,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),nl._21(87,null,["",""])),(l()(),nl._21(-1,2,["\n      "])),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl._21(-1,null,["\n\n    "])),(l()(),nl.Z(91,0,null,null,8,"ion-card",[["class","card3"]],null,null,null,null,null)),nl.Y(92,16384,null,0,On.a,[Ol.a,nl.j,nl.z],null,null),(l()(),nl._21(-1,null,["\n\n      "])),(l()(),nl.U(16777216,null,null,1,null,A)),nl.Y(95,16384,null,0,rn.j,[nl.I,nl.F],{ngIf:[0,"ngIf"]},null),(l()(),nl._21(-1,null,["\n\n      "])),(l()(),nl.U(16777216,null,null,1,null,x)),nl.Y(98,16384,null,0,rn.j,[nl.I,nl.F],{ngIf:[0,"ngIf"]},null),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl._21(-1,null,["\n\n  "]))],function(l,n){var u=n.component;l(n,95,0,0==u.status);l(n,98,0,0!=u.status)},function(l,n){var u=n.component;l(n,29,0,u.item.userName);l(n,45,0,u.item.function);l(n,51,0,u.item.fromDate);l(n,57,0,u.item.fromDate);l(n,63,0,u.item.toDate);l(n,81,0,u.item.function);l(n,87,0,u.item.fromDate)})}function T(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,1,"p",[],null,null,null,null,null)),(l()(),nl._21(-1,null,["Seats : 2"]))],null,null)}function N(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,1,"p",[],null,null,null,null,null)),(l()(),nl._21(-1,null,["Seats : 1"]))],null,null)}function L(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,93,"div",[],null,null,null,null,null)),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl.Z(2,0,null,null,21,"ion-grid",[["class","grid"]],null,null,null,null,null)),nl.Y(3,16384,null,0,wn.a,[],null,null),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(5,0,null,null,17,"ion-row",[["class","row"]],null,null,null,null,null)),nl.Y(6,16384,null,0,jn.a,[],null,null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(8,0,null,null,7,"ion-col",[["class","col"],["col-4",""]],null,null,null,null,null)),nl.Y(9,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n          "])),(l()(),nl.Z(11,0,null,null,3,"ion-avatar",[["class","i1"],["style"," border: 1px solid black;"]],null,null,null,null,null)),nl.Y(12,16384,null,0,zn.a,[],null,null),(l()(),nl._21(-1,null,["\n            "])),(l()(),nl._21(-1,null,["\n          "])),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(17,0,null,null,4,"ion-col",[["class","l1 col"],["col-8",""]],null,null,null,null,null)),nl.Y(18,16384,null,0,kn.a,[],null,null),(l()(),nl.Z(19,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),nl._21(-1,null,["Haircut"])),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl._21(-1,null,["\n\n    "])),(l()(),nl.Z(25,0,null,null,1,"h2",[["class","h2"]],null,null,null,null,null)),(l()(),nl._21(-1,null,["Ordered by"])),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl.Z(28,0,null,null,1,"p",[["class","p"]],null,null,null,null,null)),(l()(),nl._21(29,null,["",""])),(l()(),nl._21(-1,null,["\n\n    "])),(l()(),nl.Z(31,0,null,null,37,"ion-card",[["class","card1"]],null,null,null,null,null)),nl.Y(32,16384,null,0,On.a,[Ol.a,nl.j,nl.z],null,null),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(34,0,null,null,33,"ion-item",[["class","item item-block"]],null,null,null,Tl.b,Tl.a)),nl.Y(35,1097728,null,3,Nl.a,[Ll.a,Ol.a,nl.j,nl.z,[2,Bl.a]],null,null),nl._19(335544320,13,{contentLabel:0}),nl._19(603979776,14,{_buttons:1}),nl._19(603979776,15,{_icons:1}),nl.Y(39,16384,null,0,Ml.a,[],null,null),(l()(),nl._21(-1,2,["\n        "])),(l()(),nl.Z(41,0,null,2,1,"h2",[],null,null,null,null,null)),(l()(),nl._21(-1,null,["Shop Name"])),(l()(),nl._21(-1,2,["\n        "])),(l()(),nl.Z(44,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),nl._21(45,null,["",""])),(l()(),nl._21(-1,2,["\n        "])),(l()(),nl.Z(47,0,null,2,1,"h2",[],null,null,null,null,null)),(l()(),nl._21(-1,null,["Time"])),(l()(),nl._21(-1,2,["\n        "])),(l()(),nl.Z(50,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),nl._21(51,null,["",""])),(l()(),nl._21(-1,2,["\n        "])),(l()(),nl.Z(53,0,null,2,1,"h2",[],null,null,null,null,null)),(l()(),nl._21(-1,null,["Date"])),(l()(),nl._21(-1,2,["\n        "])),(l()(),nl.Z(56,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),nl._21(57,null,["",""])),(l()(),nl._21(-1,2,["\n        "])),(l()(),nl.Z(59,0,null,2,1,"h2",[],null,null,null,null,null)),(l()(),nl._21(-1,null,["No. of Seats"])),(l()(),nl._21(-1,2,["\n        "])),(l()(),nl.U(16777216,null,2,1,null,T)),nl.Y(63,16384,null,0,rn.j,[nl.I,nl.F],{ngIf:[0,"ngIf"]},null),(l()(),nl._21(-1,2,["\n        "])),(l()(),nl.U(16777216,null,2,1,null,N)),nl.Y(66,16384,null,0,rn.j,[nl.I,nl.F],{ngIf:[0,"ngIf"]},null),(l()(),nl._21(-1,2,["\n      "])),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl._21(-1,null,["\n\n    "])),(l()(),nl.Z(70,0,null,null,22,"ion-card",[["class","card2"]],null,null,null,null,null)),nl.Y(71,16384,null,0,On.a,[Ol.a,nl.j,nl.z],null,null),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(73,0,null,null,18,"ion-item",[["class","item item-block"]],null,null,null,Tl.b,Tl.a)),nl.Y(74,1097728,null,3,Nl.a,[Ll.a,Ol.a,nl.j,nl.z,[2,Bl.a]],null,null),nl._19(335544320,16,{contentLabel:0}),nl._19(603979776,17,{_buttons:1}),nl._19(603979776,18,{_icons:1}),nl.Y(78,16384,null,0,Ml.a,[],null,null),(l()(),nl._21(-1,2,["\n        "])),(l()(),nl.Z(80,0,null,2,1,"h2",[],null,null,null,null,null)),(l()(),nl._21(-1,null,["Transaction Id"])),(l()(),nl._21(-1,2,["\n        "])),(l()(),nl.Z(83,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),nl._21(84,null,["",""])),(l()(),nl._21(-1,2,["\n        "])),(l()(),nl.Z(86,0,null,2,1,"h2",[],null,null,null,null,null)),(l()(),nl._21(-1,null,["Transaction Date"])),(l()(),nl._21(-1,2,["\n        "])),(l()(),nl.Z(89,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),nl._21(90,null,["",""])),(l()(),nl._21(-1,2,["\n      "])),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl._21(-1,null,["\n  "]))],function(l,n){var u=n.component;l(n,63,0,1==u.item.seats.first&&1==u.item.seats.second);l(n,66,0,!(1==u.item.seats.first&&1==u.item.seats.second))},function(l,n){var u=n.component;l(n,29,0,u.item.userName);l(n,45,0,u.item.shopName);l(n,51,0,u.item.time);l(n,57,0,u.item.date);l(n,84,0,u.item.transactionId);l(n,90,0,u.item.date)})}function O(l){return nl._23(0,[(l()(),nl._21(-1,null,["\n"])),(l()(),nl.Z(1,0,null,null,10,"ion-header",[],null,null,null,null,null)),nl.Y(2,16384,null,0,Zn.a,[Ol.a,nl.j,nl.z,[2,en.a]],null,null),(l()(),nl._21(-1,null,["\n  "])),(l()(),nl.Z(4,0,null,null,6,"ion-navbar",[["class","toolbar"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,vn.b,vn.a)),nl.Y(5,49152,null,0,un.a,[Gl.a,[2,en.a],[2,on.a],Ol.a,nl.j,nl.z],null,null),(l()(),nl._21(-1,3,["\n    "])),(l()(),nl.Z(7,0,null,3,2,"ion-title",[["class","toolbar-title.toolbar-title-md"]],null,null,null,ln.b,ln.a)),nl.Y(8,49152,null,0,nn.a,[Ol.a,nl.j,nl.z,[2,Ql.a],[2,un.a]],null,null),(l()(),nl._21(-1,0,["Order Booked"])),(l()(),nl._21(-1,3,["\n  "])),(l()(),nl._21(-1,null,["\n"])),(l()(),nl._21(-1,null,["\n\n\n"])),(l()(),nl.Z(13,0,null,null,10,"ion-content",[["padding",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,an.b,an.a)),nl.Y(14,4374528,null,0,tn.a,[Ol.a,Hl.a,Wl.a,nl.j,nl.z,Gl.a,Xl.a,nl.u,[2,en.a],[2,on.a]],null,null),(l()(),nl._21(-1,1,["\n\n  "])),(l()(),nl._21(-1,1,["\n  "])),(l()(),nl.U(16777216,null,1,1,null,U)),nl.Y(18,16384,null,0,rn.j,[nl.I,nl.F],{ngIf:[0,"ngIf"]},null),(l()(),nl._21(-1,1,["\n\n  "])),(l()(),nl._21(-1,1,["\n  "])),(l()(),nl.U(16777216,null,1,1,null,L)),nl.Y(22,16384,null,0,rn.j,[nl.I,nl.F],{ngIf:[0,"ngIf"]},null),(l()(),nl._21(-1,1,["\n\n"])),(l()(),nl._21(-1,null,["\n"]))],function(l,n){var u=n.component;l(n,18,0,"photography"==u.item.service);l(n,22,0,"haircut"==u.item.service)},function(l,n){l(n,4,0,nl._11(n,5)._hidden,nl._11(n,5)._sbPadding);l(n,13,0,nl._11(n,14).statusbarPadding,nl._11(n,14)._hasRefresher)})}function B(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,10,"ion-buttons",[["class","hammer"],["right",""]],null,null,null,null,null)),nl.Y(1,16384,null,1,Yn.a,[Ol.a,nl.j,nl.z,[2,Ql.a],[2,un.a]],null,null),nl._19(603979776,2,{_buttons:1}),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(4,0,null,null,5,"button",[["icon-only",""],["ion-button",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.order()&&a}return a},cn.b,cn.a)),nl.Y(5,1097728,[[2,4]],0,_n.a,[[8,""],Ol.a,nl.j,nl.z],null,null),(l()(),nl._21(-1,0,["\n        "])),(l()(),nl.Z(7,0,null,0,1,"ion-icon",[["class","resize-icon"],["name","custom-hammer"],["role","img"]],[[2,"hide",null]],null,null,null,null)),nl.Y(8,147456,null,0,Cn.a,[Ol.a,nl.j,nl.z],{name:[0,"name"]},null),(l()(),nl._21(-1,0,["\n      "])),(l()(),nl._21(-1,null,["\n    "]))],function(l,n){l(n,8,0,"custom-hammer")},function(l,n){l(n,7,0,nl._11(n,8)._hidden)})}function M(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,10,"ion-buttons",[["class","Del"],["right",""]],null,null,null,null,null)),nl.Y(1,16384,null,1,Yn.a,[Ol.a,nl.j,nl.z,[2,Ql.a],[2,un.a]],null,null),nl._19(603979776,3,{_buttons:1}),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(4,0,null,null,5,"button",[["icon-only",""],["ion-button",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.deleteUser()&&a}return a},cn.b,cn.a)),nl.Y(5,1097728,[[3,4]],0,_n.a,[[8,""],Ol.a,nl.j,nl.z],null,null),(l()(),nl._21(-1,0,["\n        "])),(l()(),nl.Z(7,0,null,0,1,"ion-icon",[["name","trash"],["role","img"]],[[2,"hide",null]],null,null,null,null)),nl.Y(8,147456,null,0,Cn.a,[Ol.a,nl.j,nl.z],{name:[0,"name"]},null),(l()(),nl._21(-1,0,["\n      "])),(l()(),nl._21(-1,null,["\n    "]))],function(l,n){l(n,8,0,"trash")},function(l,n){l(n,7,0,nl._11(n,8)._hidden)})}function E(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,10,"ion-buttons",[["class","Del"],["right",""]],null,null,null,null,null)),nl.Y(1,16384,null,1,Yn.a,[Ol.a,nl.j,nl.z,[2,Ql.a],[2,un.a]],null,null),nl._19(603979776,4,{_buttons:1}),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(4,0,null,null,5,"button",[["icon-only",""],["ion-button",""]],[[8,"disabled",0]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.editFired(0)&&a}return a},cn.b,cn.a)),nl.Y(5,1097728,[[4,4]],0,_n.a,[[8,""],Ol.a,nl.j,nl.z],null,null),(l()(),nl._21(-1,0,["\n        "])),(l()(),nl.Z(7,0,null,0,1,"ion-icon",[["name","checkmark"],["role","img"]],[[2,"hide",null]],null,null,null,null)),nl.Y(8,147456,null,0,Cn.a,[Ol.a,nl.j,nl.z],{name:[0,"name"]},null),(l()(),nl._21(-1,0,["\n      "])),(l()(),nl._21(-1,null,["\n    "]))],function(l,n){l(n,8,0,"checkmark")},function(l,n){l(n,4,0,!n.component.editFormIcon);l(n,7,0,nl._11(n,8)._hidden)})}function V(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,10,"ion-buttons",[["class","Del"],["right",""]],null,null,null,null,null)),nl.Y(1,16384,null,1,Yn.a,[Ol.a,nl.j,nl.z,[2,Ql.a],[2,un.a]],null,null),nl._19(603979776,5,{_buttons:1}),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(4,0,null,null,5,"button",[["icon-only",""],["ion-button",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.editFired(1)&&a}return a},cn.b,cn.a)),nl.Y(5,1097728,[[5,4]],0,_n.a,[[8,""],Ol.a,nl.j,nl.z],null,null),(l()(),nl._21(-1,0,["\n        "])),(l()(),nl.Z(7,0,null,0,1,"ion-icon",[["name","create"],["role","img"]],[[2,"hide",null]],null,null,null,null)),nl.Y(8,147456,null,0,Cn.a,[Ol.a,nl.j,nl.z],{name:[0,"name"]},null),(l()(),nl._21(-1,0,["\n      "])),(l()(),nl._21(-1,null,["\n    "]))],function(l,n){l(n,8,0,"create")},function(l,n){l(n,7,0,nl._11(n,8)._hidden)})}function q(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,9,"ion-item",[["class","warning-on-input item item-block"]],null,null,null,Tl.b,Tl.a)),nl.Y(1,1097728,null,3,Nl.a,[Ll.a,Ol.a,nl.j,nl.z,[2,Bl.a]],null,null),nl._19(335544320,9,{contentLabel:0}),nl._19(603979776,10,{_buttons:1}),nl._19(603979776,11,{_icons:1}),nl.Y(5,16384,null,0,Ml.a,[],null,null),(l()(),nl._21(-1,2,["\n            "])),(l()(),nl.Z(7,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),nl._21(-1,null,["Please enter your full name"])),(l()(),nl._21(-1,2,["\n          "]))],null,null)}function $(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,9,"ion-item",[["class","warning-on-input item item-block"]],null,null,null,Tl.b,Tl.a)),nl.Y(1,1097728,null,3,Nl.a,[Ll.a,Ol.a,nl.j,nl.z,[2,Bl.a]],null,null),nl._19(335544320,15,{contentLabel:0}),nl._19(603979776,16,{_buttons:1}),nl._19(603979776,17,{_icons:1}),nl.Y(5,16384,null,0,Ml.a,[],null,null),(l()(),nl._21(-1,2,["\n            "])),(l()(),nl.Z(7,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),nl._21(-1,null,["Please enter a valid Phone Number"])),(l()(),nl._21(-1,2,["\n          "]))],null,null)}function R(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,9,"ion-item",[["class","warning-on-input item item-block"]],null,null,null,Tl.b,Tl.a)),nl.Y(1,1097728,null,3,Nl.a,[Ll.a,Ol.a,nl.j,nl.z,[2,Bl.a]],null,null),nl._19(335544320,21,{contentLabel:0}),nl._19(603979776,22,{_buttons:1}),nl._19(603979776,23,{_icons:1}),nl.Y(5,16384,null,0,Ml.a,[],null,null),(l()(),nl._21(-1,2,["\n            "])),(l()(),nl.Z(7,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),nl._21(-1,null,["Please enter a valid Email"])),(l()(),nl._21(-1,2,["\n          "]))],null,null)}function H(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,34,"ion-header",[],null,null,null,null,null)),nl.Y(1,16384,null,0,Zn.a,[Ol.a,nl.j,nl.z,[2,en.a]],null,null),(l()(),nl._21(-1,null,["\n  "])),(l()(),nl.Z(3,0,null,null,30,"ion-navbar",[["class","toolbar-background toolbar"],["hideBackButton",""]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,vn.b,vn.a)),nl.Y(4,49152,null,0,un.a,[Gl.a,[2,en.a],[2,on.a],Ol.a,nl.j,nl.z],{hideBackButton:[0,"hideBackButton"]},null),(l()(),nl._21(-1,3,["\n    "])),(l()(),nl.Z(6,0,null,3,2,"ion-title",[["class","toolbar-title.toolbar-title-md"]],null,null,null,ln.b,ln.a)),nl.Y(7,49152,null,0,nn.a,[Ol.a,nl.j,nl.z,[2,Ql.a],[2,un.a]],null,null),(l()(),nl._21(-1,0,["Profile"])),(l()(),nl._21(-1,3,["\n\n    "])),(l()(),nl.Z(10,0,null,0,10,"ion-buttons",[["left",""]],null,null,null,null,null)),nl.Y(11,16384,null,1,Yn.a,[Ol.a,nl.j,nl.z,[2,Ql.a],[2,un.a]],null,null),nl._19(603979776,1,{_buttons:1}),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(14,0,null,null,5,"button",[["class","back-btn"],["icon-only",""],["ion-button",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.navCtrl.pop()&&a}return a},cn.b,cn.a)),nl.Y(15,1097728,[[1,4]],0,_n.a,[[8,""],Ol.a,nl.j,nl.z],null,null),(l()(),nl._21(-1,0,["\n        "])),(l()(),nl.Z(17,0,null,0,1,"ion-icon",[["name","arrow-back"],["role","img"]],[[2,"hide",null]],null,null,null,null)),nl.Y(18,147456,null,0,Cn.a,[Ol.a,nl.j,nl.z],{name:[0,"name"]},null),(l()(),nl._21(-1,0,["\n      "])),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl._21(-1,3,["\n\n    "])),(l()(),nl.U(16777216,null,2,1,null,B)),nl.Y(23,16384,null,0,rn.j,[nl.I,nl.F],{ngIf:[0,"ngIf"]},null),(l()(),nl._21(-1,3,["\n\n    "])),(l()(),nl.U(16777216,null,2,1,null,M)),nl.Y(26,16384,null,0,rn.j,[nl.I,nl.F],{ngIf:[0,"ngIf"]},null),(l()(),nl._21(-1,3,["\n\n    "])),(l()(),nl.U(16777216,null,2,1,null,E)),nl.Y(29,16384,null,0,rn.j,[nl.I,nl.F],{ngIf:[0,"ngIf"]},null),(l()(),nl._21(-1,3,["\n\n    "])),(l()(),nl.U(16777216,null,2,1,null,V)),nl.Y(32,16384,null,0,rn.j,[nl.I,nl.F],{ngIf:[0,"ngIf"]},null),(l()(),nl._21(-1,3,["\n\n  "])),(l()(),nl._21(-1,null,["\n"])),(l()(),nl._21(-1,null,["\n\n"])),(l()(),nl.Z(36,0,null,null,165,"ion-content",[["padding",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,an.b,an.a)),nl.Y(37,4374528,null,0,tn.a,[Ol.a,Hl.a,Wl.a,nl.j,nl.z,Gl.a,Xl.a,nl.u,[2,en.a],[2,on.a]],null,null),(l()(),nl._21(-1,1,["\n\n  "])),(l()(),nl.Z(39,0,null,1,161,"form",[["novalidate",""]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"submit"],[null,"reset"]],function(l,n,u){var a=!0;if("submit"===n){a=!1!==nl._11(l,41).onSubmit(u)&&a}if("reset"===n){a=!1!==nl._11(l,41).onReset()&&a}return a},null,null)),nl.Y(40,16384,null,0,tl.p,[],null,null),nl.Y(41,540672,null,0,tl.f,[[8,null],[8,null]],{form:[0,"form"]},null),nl._17(2048,null,tl.b,null,[tl.f]),nl.Y(43,16384,null,0,tl.k,[tl.b],null,null),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl.Z(45,0,null,null,145,"ion-grid",[["class","grid"]],null,null,null,null,null)),nl.Y(46,16384,null,0,wn.a,[],null,null),(l()(),nl._21(-1,null,["\n\n      "])),(l()(),nl.Z(48,0,null,null,7,"ion-row",[["class","row"]],null,null,null,null,null)),nl.Y(49,16384,null,0,jn.a,[],null,null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(51,0,null,null,3,"ion-col",[["class","l1 col"],["col-12",""]],null,null,null,null,null)),nl.Y(52,16384,null,0,kn.a,[],null,null),(l()(),nl.Z(53,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),nl._21(-1,null,["Name"])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(57,0,null,null,23,"ion-row",[["class","row"]],null,null,null,null,null)),nl.Y(58,16384,null,0,jn.a,[],null,null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(60,0,null,null,19,"ion-col",[["class","col"]],null,null,null,null,null)),nl.Y(61,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n          "])),(l()(),nl.Z(63,0,null,null,12,"ion-item",[["class","round-border item item-block"]],null,null,null,Tl.b,Tl.a)),nl.Y(64,1097728,null,3,Nl.a,[Ll.a,Ol.a,nl.j,nl.z,[2,Bl.a]],null,null),nl._19(335544320,6,{contentLabel:0}),nl._19(603979776,7,{_buttons:1}),nl._19(603979776,8,{_icons:1}),nl.Y(68,16384,null,0,Ml.a,[],null,null),(l()(),nl._21(-1,2,["\n            "])),(l()(),nl.Z(70,0,null,3,4,"ion-input",[["formControlName","name"],["placeholder","Name"],["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==l.component.editIconUpdate()&&a}return a},In.b,In.a)),nl.Y(71,671744,null,0,tl.e,[[3,tl.b],[8,null],[8,null],[8,null]],{name:[0,"name"],isDisabled:[1,"isDisabled"]},{update:"ngModelChange"}),nl._17(2048,null,tl.i,null,[tl.e]),nl.Y(73,16384,null,0,tl.j,[tl.i],null,null),nl.Y(74,5423104,null,0,Dn.a,[Ol.a,Hl.a,Ll.a,Gl.a,nl.j,nl.z,[2,tn.a],[2,Nl.a],[2,tl.i],Wl.a],{disabled:[0,"disabled"],type:[1,"type"],placeholder:[2,"placeholder"]},null),(l()(),nl._21(-1,2,["\n          "])),(l()(),nl._21(-1,null,["\n\n          "])),(l()(),nl.U(16777216,null,null,1,null,q)),nl.Y(78,16384,null,0,rn.j,[nl.I,nl.F],{ngIf:[0,"ngIf"]},null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl._21(-1,null,["\n\n      "])),(l()(),nl.Z(82,0,null,null,7,"ion-row",[["class","row"]],null,null,null,null,null)),nl.Y(83,16384,null,0,jn.a,[],null,null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(85,0,null,null,3,"ion-col",[["class","l1 col"],["col-12",""]],null,null,null,null,null)),nl.Y(86,16384,null,0,kn.a,[],null,null),(l()(),nl.Z(87,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),nl._21(-1,null,["Phone Number"])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(91,0,null,null,23,"ion-row",[["class","row"]],null,null,null,null,null)),nl.Y(92,16384,null,0,jn.a,[],null,null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(94,0,null,null,19,"ion-col",[["class","col"]],null,null,null,null,null)),nl.Y(95,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n          "])),(l()(),nl.Z(97,0,null,null,12,"ion-item",[["class","round-border item item-block"]],null,null,null,Tl.b,Tl.a)),nl.Y(98,1097728,null,3,Nl.a,[Ll.a,Ol.a,nl.j,nl.z,[2,Bl.a]],null,null),nl._19(335544320,12,{contentLabel:0}),nl._19(603979776,13,{_buttons:1}),nl._19(603979776,14,{_icons:1}),nl.Y(102,16384,null,0,Ml.a,[],null,null),(l()(),nl._21(-1,2,["\n            "])),(l()(),nl.Z(104,0,null,3,4,"ion-input",[["formControlName","phoneNumber"],["placeholder","Phone Number"],["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==l.component.editIconUpdate()&&a}return a},In.b,In.a)),nl.Y(105,671744,null,0,tl.e,[[3,tl.b],[8,null],[8,null],[8,null]],{name:[0,"name"],isDisabled:[1,"isDisabled"]},{update:"ngModelChange"}),nl._17(2048,null,tl.i,null,[tl.e]),nl.Y(107,16384,null,0,tl.j,[tl.i],null,null),nl.Y(108,5423104,null,0,Dn.a,[Ol.a,Hl.a,Ll.a,Gl.a,nl.j,nl.z,[2,tn.a],[2,Nl.a],[2,tl.i],Wl.a],{disabled:[0,"disabled"],type:[1,"type"],placeholder:[2,"placeholder"]},null),(l()(),nl._21(-1,2,["\n          "])),(l()(),nl._21(-1,null,["\n\n          "])),(l()(),nl.U(16777216,null,null,1,null,$)),nl.Y(112,16384,null,0,rn.j,[nl.I,nl.F],{ngIf:[0,"ngIf"]},null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(116,0,null,null,7,"ion-row",[["class","row"]],null,null,null,null,null)),nl.Y(117,16384,null,0,jn.a,[],null,null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(119,0,null,null,3,"ion-col",[["class","l1 col"],["col-12",""]],null,null,null,null,null)),nl.Y(120,16384,null,0,kn.a,[],null,null),(l()(),nl.Z(121,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),nl._21(-1,null,["Mail"])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(125,0,null,null,23,"ion-row",[["class","row"]],null,null,null,null,null)),nl.Y(126,16384,null,0,jn.a,[],null,null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(128,0,null,null,19,"ion-col",[["class","col"]],null,null,null,null,null)),nl.Y(129,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n          "])),(l()(),nl.Z(131,0,null,null,12,"ion-item",[["class","round-border item item-block"]],null,null,null,Tl.b,Tl.a)),nl.Y(132,1097728,null,3,Nl.a,[Ll.a,Ol.a,nl.j,nl.z,[2,Bl.a]],null,null),nl._19(335544320,18,{contentLabel:0}),nl._19(603979776,19,{_buttons:1}),nl._19(603979776,20,{_icons:1}),nl.Y(136,16384,null,0,Ml.a,[],null,null),(l()(),nl._21(-1,2,["\n            "])),(l()(),nl.Z(138,0,null,3,4,"ion-input",[["formControlName","email"],["placeholder","Mail"],["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==l.component.editIconUpdate()&&a}return a},In.b,In.a)),nl.Y(139,671744,null,0,tl.e,[[3,tl.b],[8,null],[8,null],[8,null]],{name:[0,"name"],isDisabled:[1,"isDisabled"]},{update:"ngModelChange"}),nl._17(2048,null,tl.i,null,[tl.e]),nl.Y(141,16384,null,0,tl.j,[tl.i],null,null),nl.Y(142,5423104,null,0,Dn.a,[Ol.a,Hl.a,Ll.a,Gl.a,nl.j,nl.z,[2,tn.a],[2,Nl.a],[2,tl.i],Wl.a],{disabled:[0,"disabled"],type:[1,"type"],placeholder:[2,"placeholder"]},null),(l()(),nl._21(-1,2,["\n          "])),(l()(),nl._21(-1,null,["\n\n          "])),(l()(),nl.U(16777216,null,null,1,null,R)),nl.Y(146,16384,null,0,rn.j,[nl.I,nl.F],{ngIf:[0,"ngIf"]},null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(150,0,null,null,7,"ion-row",[["class","row"]],null,null,null,null,null)),nl.Y(151,16384,null,0,jn.a,[],null,null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(153,0,null,null,3,"ion-col",[["class","l1 col"],["col-12",""]],null,null,null,null,null)),nl.Y(154,16384,null,0,kn.a,[],null,null),(l()(),nl.Z(155,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),nl._21(-1,null,["Recent Orders"])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(159,0,null,null,30,"ion-row",[["class","row"]],null,null,null,null,null)),nl.Y(160,16384,null,0,jn.a,[],null,null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(162,0,null,null,26,"ion-col",[["class","col"]],null,null,null,null,null)),nl.Y(163,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n          "])),(l()(),nl.Z(165,0,null,null,22,"ion-card",[],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.cardclick()&&a}return a},null,null)),nl.Y(166,16384,null,0,On.a,[Ol.a,nl.j,nl.z],null,null),(l()(),nl._21(-1,null,["\n            "])),(l()(),nl.Z(168,0,null,null,18,"ion-item",[["class","item item-block"]],null,null,null,Tl.b,Tl.a)),nl.Y(169,1097728,null,3,Nl.a,[Ll.a,Ol.a,nl.j,nl.z,[2,Bl.a]],null,null),nl._19(335544320,24,{contentLabel:0}),nl._19(603979776,25,{_buttons:1}),nl._19(603979776,26,{_icons:1}),nl.Y(173,16384,null,0,Ml.a,[],null,null),(l()(),nl._21(-1,2,["\n              "])),(l()(),nl.Z(175,0,null,0,4,"ion-avatar",[["item-start",""]],null,null,null,null,null)),nl.Y(176,16384,null,0,zn.a,[],null,null),(l()(),nl._21(-1,null,["\n                "])),(l()(),nl.Z(178,0,null,null,0,"img",[["src","../../assets/imgs/camera1.jpg"]],null,null,null,null,null)),(l()(),nl._21(-1,null,["\n              "])),(l()(),nl._21(-1,2,["\n              "])),(l()(),nl.Z(181,0,null,2,1,"h2",[],null,null,null,null,null)),(l()(),nl._21(182,null,["Service: ",""])),(l()(),nl._21(-1,2,["\n              "])),(l()(),nl.Z(184,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),nl._21(185,null,["Ordered : ",""])),(l()(),nl._21(-1,2,["\n            "])),(l()(),nl._21(-1,null,["\n          "])),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl._21(-1,null,["\n\n\n\n    "])),(l()(),nl.Z(192,0,null,null,7,"ion-buttons",[["type","password"]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.changePassword()&&a}return a},null,null)),nl.Y(193,16384,null,1,Yn.a,[Ol.a,nl.j,nl.z,[2,Ql.a],[2,un.a]],null,null),nl._19(603979776,27,{_buttons:1}),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(196,0,null,null,2,"button",[["class","button"],["full",""],["ion-button",""],["round",""]],[[8,"disabled",0]],null,null,cn.b,cn.a)),nl.Y(197,1097728,[[27,4]],0,_n.a,[[8,""],Ol.a,nl.j,nl.z],{round:[0,"round"],full:[1,"full"]},null),(l()(),nl._21(-1,0,["Change Password"])),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl._21(-1,null,["\n\n  "])),(l()(),nl._21(-1,1,["\n"])),(l()(),nl._21(-1,null,["\n"]))],function(l,n){var u=n.component;l(n,4,0,"");l(n,18,0,"arrow-back");l(n,23,0,0==u.editStatus);l(n,26,0,0==u.editStatus);l(n,29,0,1==u.editStatus);l(n,32,0,0==u.editStatus);l(n,41,0,u.editForm);l(n,71,0,"name",0==u.editStatus);l(n,74,0,0==u.editStatus,"text","Name");l(n,78,0,!u.editForm.controls.name.valid&&(u.editForm.controls.name.dirty||u.submitAttempt));l(n,105,0,"phoneNumber",0==u.editStatus);l(n,108,0,0==u.editStatus,"text","Phone Number");l(n,112,0,!u.editForm.controls.phoneNumber.valid&&(u.editForm.controls.phoneNumber.dirty||u.submitAttempt));l(n,139,0,"email",0==u.editStatus);l(n,142,0,0==u.editStatus,"text","Mail");l(n,146,0,!u.editForm.controls.email.valid&&(u.editForm.controls.email.dirty||u.submitAttempt));l(n,197,0,"","")},function(l,n){var u=n.component;l(n,3,0,nl._11(n,4)._hidden,nl._11(n,4)._sbPadding);l(n,17,0,nl._11(n,18)._hidden);l(n,36,0,nl._11(n,37).statusbarPadding,nl._11(n,37)._hasRefresher);l(n,39,0,nl._11(n,43).ngClassUntouched,nl._11(n,43).ngClassTouched,nl._11(n,43).ngClassPristine,nl._11(n,43).ngClassDirty,nl._11(n,43).ngClassValid,nl._11(n,43).ngClassInvalid,nl._11(n,43).ngClassPending);l(n,70,0,nl._11(n,73).ngClassUntouched,nl._11(n,73).ngClassTouched,nl._11(n,73).ngClassPristine,nl._11(n,73).ngClassDirty,nl._11(n,73).ngClassValid,nl._11(n,73).ngClassInvalid,nl._11(n,73).ngClassPending);l(n,104,0,nl._11(n,107).ngClassUntouched,nl._11(n,107).ngClassTouched,nl._11(n,107).ngClassPristine,nl._11(n,107).ngClassDirty,nl._11(n,107).ngClassValid,nl._11(n,107).ngClassInvalid,nl._11(n,107).ngClassPending);l(n,138,0,nl._11(n,141).ngClassUntouched,nl._11(n,141).ngClassTouched,nl._11(n,141).ngClassPristine,nl._11(n,141).ngClassDirty,nl._11(n,141).ngClassValid,nl._11(n,141).ngClassInvalid,nl._11(n,141).ngClassPending);l(n,182,0,u.service);l(n,185,0,u.bookedDate);l(n,196,0,0==u.editStatus)})}function X(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,58,"ion-grid",[["class","card-position grid"]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.shopSelected(l.context.$implicit)&&a}return a},null,null)),nl.Y(1,16384,null,0,wn.a,[],null,null),(l()(),nl._21(-1,null,["\n\n    "])),(l()(),nl._21(-1,null,["\n\n    "])),(l()(),nl.Z(4,0,null,null,53,"ion-card",[["class","card-area"],["style"," border: 1.3px solid #a9a9a9;"],["type","button"]],null,null,null,null,null)),nl.Y(5,16384,null,0,On.a,[Ol.a,nl.j,nl.z],null,null),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(7,0,null,null,49,"ion-card-content",[],null,null,null,null,null)),nl.Y(8,16384,null,0,Bn.a,[Ol.a,nl.j,nl.z],null,null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(10,0,null,null,45,"ion-row",[["class","row"]],null,null,null,null,null)),nl.Y(11,16384,null,0,jn.a,[],null,null),(l()(),nl._21(-1,null,["\n          "])),(l()(),nl._21(-1,null,["\n\n          "])),(l()(),nl.Z(14,0,null,null,6,"ion-col",[["class","col"],["col-4",""]],null,null,null,null,null)),nl.Y(15,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n\n            "])),(l()(),nl.Z(17,0,null,null,2,"ion-avatar",[["class","image"],["style"," border: 1px solid #a9a9a9;"]],null,null,null,null,null)),nl.Y(18,16384,null,0,zn.a,[],null,null),(l()(),nl._21(-1,null,["\n            "])),(l()(),nl._21(-1,null,["\n          "])),(l()(),nl._21(-1,null,["\n\n          "])),(l()(),nl._21(-1,null,["\n\n          "])),(l()(),nl.Z(23,0,null,null,23,"ion-col",[["class","col"],["col-7",""]],null,null,null,null,null)),nl.Y(24,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n            "])),(l()(),nl.Z(26,0,null,null,3,"ion-label",[["class","Ist-label-pos first-last-label"]],null,null,null,null,null)),nl.Y(27,16384,null,0,Mn.a,[Ol.a,nl.j,nl.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),nl.Z(28,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),nl._21(29,null,["",""])),(l()(),nl._21(-1,null,["\n            "])),(l()(),nl.Z(31,0,null,null,2,"ion-label",[["class","other-label-pos mid-all-label"]],null,null,null,null,null)),nl.Y(32,16384,null,0,Mn.a,[Ol.a,nl.j,nl.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),nl._21(33,null,["",""])),(l()(),nl._21(-1,null,["\n            "])),(l()(),nl.Z(35,0,null,null,2,"ion-label",[["class","other-label-pos mid-all-label"]],null,null,null,null,null)),nl.Y(36,16384,null,0,Mn.a,[Ol.a,nl.j,nl.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),nl._21(37,null,["",""])),(l()(),nl._21(-1,null,["\n            "])),(l()(),nl.Z(39,0,null,null,2,"ion-label",[["class","other-label-pos mid-all-label"]],null,null,null,null,null)),nl.Y(40,16384,null,0,Mn.a,[Ol.a,nl.j,nl.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),nl._21(41,null,["",""])),(l()(),nl._21(-1,null,["\n            "])),(l()(),nl.Z(43,0,null,null,2,"ion-label",[["class","other-label-pos first-last-label"]],null,null,null,null,null)),nl.Y(44,16384,null,0,Mn.a,[Ol.a,nl.j,nl.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),nl._21(45,null,["Offer: ","%"])),(l()(),nl._21(-1,null,["\n          "])),(l()(),nl._21(-1,null,["\n\n          "])),(l()(),nl._21(-1,null,["\n\n          "])),(l()(),nl.Z(49,0,null,null,5,"ion-col",[["class","col"],["col-1",""]],null,null,null,null,null)),nl.Y(50,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n            "])),(l()(),nl.Z(52,0,null,null,1,"ion-icon",[["class","pin-icon"],["name","pin"],["role","img"]],[[2,"hide",null]],null,null,null,null)),nl.Y(53,147456,null,0,Cn.a,[Ol.a,nl.j,nl.z],{name:[0,"name"]},null),(l()(),nl._21(-1,null,["\n          "])),(l()(),nl._21(-1,null,["\n\n        "])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl._21(-1,null,["\n  "]))],function(l,n){l(n,53,0,"pin")},function(l,n){l(n,29,0,n.context.$implicit.shopName);l(n,33,0,n.context.$implicit.street);l(n,37,0,n.context.$implicit.city);l(n,41,0,n.context.$implicit.state);l(n,45,0,n.context.$implicit.offers);l(n,52,0,nl._11(n,53)._hidden)})}function K(l){return nl._23(0,[(l()(),nl._21(-1,null,["\n\n"])),(l()(),nl._21(-1,null,["\n\n"])),(l()(),nl.Z(2,0,null,null,34,"ion-header",[],null,null,null,null,null)),nl.Y(3,16384,null,0,Zn.a,[Ol.a,nl.j,nl.z,[2,en.a]],null,null),(l()(),nl._21(-1,null,["\n  "])),(l()(),nl.Z(5,0,null,null,30,"ion-navbar",[["class","toolbar"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,vn.b,vn.a)),nl.Y(6,49152,null,0,un.a,[Gl.a,[2,en.a],[2,on.a],Ol.a,nl.j,nl.z],null,null),(l()(),nl._21(-1,3,["\n\n    "])),(l()(),nl.Z(8,0,null,3,2,"ion-title",[["class","toolbar-title.toolbar-title-md"]],null,null,null,ln.b,ln.a)),nl.Y(9,49152,null,0,nn.a,[Ol.a,nl.j,nl.z,[2,Ql.a],[2,un.a]],null,null),(l()(),nl._21(-1,0,["Haircut"])),(l()(),nl._21(-1,3,["\n\n    "])),(l()(),nl.Z(12,0,null,2,10,"ion-buttons",[["class","Union"],["right",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.navToProfile()&&a}return a},null,null)),nl.Y(13,16384,null,1,Yn.a,[Ol.a,nl.j,nl.z,[2,Ql.a],[2,un.a]],null,null),nl._19(603979776,1,{_buttons:1}),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(16,0,null,null,5,"button",[["icon-only",""],["ion-button",""]],null,null,null,cn.b,cn.a)),nl.Y(17,1097728,[[1,4]],0,_n.a,[[8,""],Ol.a,nl.j,nl.z],null,null),(l()(),nl._21(-1,0,["\n        "])),(l()(),nl.Z(19,0,null,0,1,"ion-icon",[["class","resize-icon"],["name","custom-Union"],["role","img"]],[[2,"hide",null]],null,null,null,null)),nl.Y(20,147456,null,0,Cn.a,[Ol.a,nl.j,nl.z],{name:[0,"name"]},null),(l()(),nl._21(-1,0,["\n      "])),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl._21(-1,3,["\n\n    "])),(l()(),nl.Z(24,0,null,2,10,"ion-buttons",[["class","hammer"],["right",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.navToMyOrders()&&a}return a},null,null)),nl.Y(25,16384,null,1,Yn.a,[Ol.a,nl.j,nl.z,[2,Ql.a],[2,un.a]],null,null),nl._19(603979776,2,{_buttons:1}),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(28,0,null,null,5,"button",[["icon-only",""],["ion-button",""]],null,null,null,cn.b,cn.a)),nl.Y(29,1097728,[[2,4]],0,_n.a,[[8,""],Ol.a,nl.j,nl.z],null,null),(l()(),nl._21(-1,0,["\n        "])),(l()(),nl.Z(31,0,null,0,1,"ion-icon",[["class","resize-icon"],["name","custom-hammer"],["role","img"]],[[2,"hide",null]],null,null,null,null)),nl.Y(32,147456,null,0,Cn.a,[Ol.a,nl.j,nl.z],{name:[0,"name"]},null),(l()(),nl._21(-1,0,["\n      "])),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl._21(-1,3,["\n\n  "])),(l()(),nl._21(-1,null,["\n"])),(l()(),nl._21(-1,null,["\n\n\n"])),(l()(),nl.Z(38,0,null,null,23,"ion-content",[["padding",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,an.b,an.a)),nl.Y(39,4374528,null,0,tn.a,[Ol.a,Hl.a,Wl.a,nl.j,nl.z,Gl.a,Xl.a,nl.u,[2,en.a],[2,on.a]],null,null),(l()(),nl._21(-1,1,["\n\n  "])),(l()(),nl._21(-1,1,["\n\n  "])),(l()(),nl.Z(42,0,null,1,14,"ion-grid",[["class","grid"]],null,null,null,null,null)),nl.Y(43,16384,null,0,wn.a,[],null,null),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl.Z(45,0,null,null,10,"ion-row",[["class","row"],["row-12",""]],null,null,null,null,null)),nl.Y(46,16384,null,0,jn.a,[],null,null),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(48,0,null,null,6,"ion-col",[["class","col"]],null,null,null,null,null)),nl.Y(49,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n          "])),(l()(),nl._21(-1,null,["\n          "])),(l()(),nl.Z(52,0,null,null,1,"ion-searchbar",[],[[2,"searchbar-animated",null],[2,"searchbar-has-value",null],[2,"searchbar-active",null],[2,"searchbar-show-cancel",null],[2,"searchbar-left-aligned",null],[2,"searchbar-has-focus",null]],[[null,"ionInput"]],function(l,n,u){var a=!0;if("ionInput"===n){a=!1!==l.component.getItems(u)&&a}return a},ou.b,ou.a)),nl.Y(53,1294336,null,0,iu.a,[Ol.a,Hl.a,nl.j,nl.z,[2,tl.i]],null,{ionInput:"ionInput"}),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl._21(-1,null,["\n  "])),(l()(),nl._21(-1,1,["\n\n  "])),(l()(),nl._21(-1,1,["\n\n  "])),(l()(),nl.U(16777216,null,1,1,null,X)),nl.Y(60,802816,null,0,rn.i,[nl.I,nl.F,nl.p],{ngForOf:[0,"ngForOf"]},null),(l()(),nl._21(-1,1,["\n\n  \n"])),(l()(),nl._21(-1,null,["\n"]))],function(l,n){var u=n.component;l(n,20,0,"custom-Union");l(n,32,0,"custom-hammer"),l(n,53,0);l(n,60,0,u.shopArray)},function(l,n){l(n,5,0,nl._11(n,6)._hidden,nl._11(n,6)._sbPadding);l(n,19,0,nl._11(n,20)._hidden);l(n,31,0,nl._11(n,32)._hidden);l(n,38,0,nl._11(n,39).statusbarPadding,nl._11(n,39)._hasRefresher);l(n,52,0,nl._11(n,53)._animated,nl._11(n,53)._value,nl._11(n,53)._isActive,nl._11(n,53)._showCancelButton,nl._11(n,53)._shouldAlignLeft,nl._11(n,53)._isFocus)})}function W(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,32,"ion-col",[["class","col"],["col-4",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.popup(l.context.$implicit)&&a}return a},null,null)),nl.Y(1,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(3,0,null,null,28,"div",[["class","roundedCorners"]],null,null,null,null,null)),nl.Y(4,278528,null,0,rn.h,[nl.p,nl.q,nl.j,nl.A],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),nl._13(5,3),(l()(),nl._21(-1,null,["\n          "])),(l()(),nl.Z(7,0,null,null,1,"p",[["class","textSize"]],null,null,null,null,null)),(l()(),nl._21(8,null,["",""])),(l()(),nl._21(-1,null,["\n          "])),(l()(),nl.Z(10,0,null,null,20,"ion-row",[["class","row"],["justify-content-center",""]],null,null,null,null,null)),nl.Y(11,16384,null,0,jn.a,[],null,null),(l()(),nl._21(-1,null,["\n            "])),(l()(),nl.Z(13,0,null,null,7,"ion-col",[["class","col"],["col-5",""]],null,null,null,null,null)),nl.Y(14,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n              "])),(l()(),nl.Z(16,0,null,null,3,"ion-icon",[["name","custom-gnSeat"],["role","img"]],[[2,"hide",null]],null,null,null,null)),nl.Y(17,278528,null,0,rn.h,[nl.p,nl.q,nl.j,nl.A],{ngClass:[0,"ngClass"]},null),nl._13(18,1),nl.Y(19,147456,null,0,Cn.a,[Ol.a,nl.j,nl.z],{name:[0,"name"]},null),(l()(),nl._21(-1,null,["\n            "])),(l()(),nl._21(-1,null,["\n            "])),(l()(),nl.Z(22,0,null,null,7,"ion-col",[["class","col"],["col-5",""]],null,null,null,null,null)),nl.Y(23,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n              "])),(l()(),nl.Z(25,0,null,null,3,"ion-icon",[["name","custom-gnSeat"],["role","img"]],[[2,"hide",null]],null,null,null,null)),nl.Y(26,278528,null,0,rn.h,[nl.p,nl.q,nl.j,nl.A],{ngClass:[0,"ngClass"]},null),nl._13(27,1),nl.Y(28,147456,null,0,Cn.a,[Ol.a,nl.j,nl.z],{name:[0,"name"]},null),(l()(),nl._21(-1,null,["\n            "])),(l()(),nl._21(-1,null,["\n          "])),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl._21(-1,null,["\n      "]))],function(l,n){l(n,4,0,"roundedCorners",l(n,5,0,0==n.context.$implicit.status?"green":"",1==n.context.$implicit.status?"yellow":"",2==n.context.$implicit.status?"red":""));l(n,17,0,l(n,18,0,n.context.$implicit.first?"greyIcon":"greenIcon"));l(n,19,0,"custom-gnSeat");l(n,26,0,l(n,27,0,n.context.$implicit.second?"greyIcon":"greenIcon"));l(n,28,0,"custom-gnSeat")},function(l,n){l(n,8,0,n.context.$implicit.time);l(n,16,0,nl._11(n,19)._hidden);l(n,25,0,nl._11(n,28)._hidden)})}function G(l){return nl._23(0,[(l()(),nl._21(-1,null,["\n\n"])),(l()(),nl._21(-1,null,["\n"])),(l()(),nl.Z(2,0,null,null,34,"ion-header",[],null,null,null,null,null)),nl.Y(3,16384,null,0,Zn.a,[Ol.a,nl.j,nl.z,[2,en.a]],null,null),(l()(),nl._21(-1,null,["\n  "])),(l()(),nl.Z(5,0,null,null,30,"ion-navbar",[["class","toolbar"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,vn.b,vn.a)),nl.Y(6,49152,null,0,un.a,[Gl.a,[2,en.a],[2,on.a],Ol.a,nl.j,nl.z],null,null),(l()(),nl._21(-1,3,["\n    "])),(l()(),nl.Z(8,0,null,3,2,"ion-title",[["class","toolbar-title.toolbar-title-md "]],null,null,null,ln.b,ln.a)),nl.Y(9,49152,null,0,nn.a,[Ol.a,nl.j,nl.z,[2,Ql.a],[2,un.a]],null,null),(l()(),nl._21(-1,0,["Book"])),(l()(),nl._21(-1,3,["\n\n    "])),(l()(),nl.Z(12,0,null,2,10,"ion-buttons",[["class","Union"],["right",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.navToProfile()&&a}return a},null,null)),nl.Y(13,16384,null,1,Yn.a,[Ol.a,nl.j,nl.z,[2,Ql.a],[2,un.a]],null,null),nl._19(603979776,1,{_buttons:1}),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(16,0,null,null,5,"button",[["icon-only",""],["ion-button",""]],null,null,null,cn.b,cn.a)),nl.Y(17,1097728,[[1,4]],0,_n.a,[[8,""],Ol.a,nl.j,nl.z],null,null),(l()(),nl._21(-1,0,["\n        "])),(l()(),nl.Z(19,0,null,0,1,"ion-icon",[["class","resize-icon"],["name","custom-Union"],["role","img"]],[[2,"hide",null]],null,null,null,null)),nl.Y(20,147456,null,0,Cn.a,[Ol.a,nl.j,nl.z],{name:[0,"name"]},null),(l()(),nl._21(-1,0,["\n      "])),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl._21(-1,3,["\n\n    "])),(l()(),nl.Z(24,0,null,2,10,"ion-buttons",[["class","hammer"],["right",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.navToMyOrders()&&a}return a},null,null)),nl.Y(25,16384,null,1,Yn.a,[Ol.a,nl.j,nl.z,[2,Ql.a],[2,un.a]],null,null),nl._19(603979776,2,{_buttons:1}),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(28,0,null,null,5,"button",[["icon-only",""],["ion-button",""]],null,null,null,cn.b,cn.a)),nl.Y(29,1097728,[[2,4]],0,_n.a,[[8,""],Ol.a,nl.j,nl.z],null,null),(l()(),nl._21(-1,0,["\n        "])),(l()(),nl.Z(31,0,null,0,1,"ion-icon",[["class","resize-icon"],["name","custom-hammer"],["role","img"]],[[2,"hide",null]],null,null,null,null)),nl.Y(32,147456,null,0,Cn.a,[Ol.a,nl.j,nl.z],{name:[0,"name"]},null),(l()(),nl._21(-1,0,["\n      "])),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl._21(-1,3,["\n\n  "])),(l()(),nl._21(-1,null,["\n"])),(l()(),nl._21(-1,null,["\n\n"])),(l()(),nl._21(-1,null,["\n"])),(l()(),nl.Z(39,0,null,null,45,"ion-content",[["padding",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,an.b,an.a)),nl.Y(40,4374528,null,0,tn.a,[Ol.a,Hl.a,Wl.a,nl.j,nl.z,Gl.a,Xl.a,nl.u,[2,en.a],[2,on.a]],null,null),(l()(),nl._21(-1,1,["\n\n  "])),(l()(),nl.Z(42,0,null,1,41,"ion-grid",[["class","grid"]],null,null,null,null,null)),nl.Y(43,16384,null,0,wn.a,[],null,null),(l()(),nl._21(-1,null,["\n\n    "])),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl.Z(46,0,null,null,5,"ion-row",[["class","row"]],null,null,null,null,null)),nl.Y(47,16384,null,0,jn.a,[],null,null),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(49,0,null,null,1,"ion-img",[["src","assets/imgs/camera.jpg"]],null,null,null,cu.b,cu.a)),nl.Y(50,1228800,null,0,_u.a,[nl.j,nl.z,Hl.a,[2,tn.a],Wl.a],{src:[0,"src"]},null),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl._21(-1,null,["\n\n    "])),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl.Z(54,0,null,null,12,"ion-row",[["class","row"],["justify-content-center",""]],null,null,null,null,null)),nl.Y(55,16384,null,0,jn.a,[],null,null),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(57,0,null,null,8,"div",[["text-center",""]],null,null,null,null,null)),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(59,0,null,null,2,"p",[["class","shopName"]],null,null,null,null,null)),(l()(),nl.Z(60,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),nl._21(61,null,["",""])),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(63,0,null,null,1,"p",[["class","shopDetails"]],null,null,null,null,null)),(l()(),nl._21(64,null,["",""])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl.Z(68,0,null,null,6,"ion-row",[["class","row"]],null,null,null,null,null)),nl.Y(69,16384,null,0,jn.a,[],null,null),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(71,0,null,null,2,"p",[["class","time"]],null,null,null,null,null)),(l()(),nl.Z(72,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),nl._21(-1,null,["Time"])),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl._21(-1,null,["\n\n    "])),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl.Z(77,0,null,null,5,"ion-row",[["class","row"]],null,null,null,null,null)),nl.Y(78,16384,null,0,jn.a,[],null,null),(l()(),nl._21(-1,null,["\n\n      "])),(l()(),nl.U(16777216,null,null,1,null,W)),nl.Y(81,802816,null,0,rn.i,[nl.I,nl.F,nl.p],{ngForOf:[0,"ngForOf"]},null),(l()(),nl._21(-1,null,["\n\n    "])),(l()(),nl._21(-1,null,["\n\n  "])),(l()(),nl._21(-1,1,["\n\n\n"])),(l()(),nl._21(-1,null,["\n"]))],function(l,n){var u=n.component;l(n,20,0,"custom-Union");l(n,32,0,"custom-hammer");l(n,50,0,"assets/imgs/camera.jpg");l(n,81,0,u.timeSlots)},function(l,n){var u=n.component;l(n,5,0,nl._11(n,6)._hidden,nl._11(n,6)._sbPadding);l(n,19,0,nl._11(n,20)._hidden);l(n,31,0,nl._11(n,32)._hidden);l(n,39,0,nl._11(n,40).statusbarPadding,nl._11(n,40)._hasRefresher);l(n,61,0,u.selectedShop.shopName);l(n,64,0,u.toDate)})}function J(l){return nl._23(0,[(l()(),nl._21(-1,null,["\n"])),(l()(),nl.Z(1,0,null,null,28,"ion-header",[],null,null,null,null,null)),nl.Y(2,16384,null,0,Zn.a,[Ol.a,nl.j,nl.z,[2,en.a]],null,null),(l()(),nl._21(-1,null,["\n  "])),(l()(),nl._21(-1,null,["\n  "])),(l()(),nl.Z(5,0,null,null,23,"ion-toolbar",[["class","toolbar"]],[[2,"statusbar-padding",null]],null,null,Jl.b,Jl.a)),nl.Y(6,49152,null,0,Ql.a,[Ol.a,nl.j,nl.z],null,null),(l()(),nl._21(-1,3,["\n    "])),(l()(),nl.Z(8,0,null,3,2,"ion-title",[["class","toolbar-title.toolbar-title-md"]],null,null,null,ln.b,ln.a)),nl.Y(9,49152,null,0,nn.a,[Ol.a,nl.j,nl.z,[2,Ql.a],[2,un.a]],null,null),(l()(),nl._21(-1,0,["Order Confirmation"])),(l()(),nl._21(-1,3,["\n    "])),(l()(),nl.Z(12,0,null,1,15,"ion-buttons",[["start",""]],null,null,null,null,null)),nl.Y(13,16384,null,1,Yn.a,[Ol.a,nl.j,nl.z,[2,Ql.a],[2,un.a]],null,null),nl._19(603979776,1,{_buttons:1}),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(16,0,null,null,10,"button",[["ion-button",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.dismiss()&&a}return a},cn.b,cn.a)),nl.Y(17,1097728,[[1,4]],0,_n.a,[[8,""],Ol.a,nl.j,nl.z],null,null),(l()(),nl._21(-1,0,["\n        "])),(l()(),nl.Z(19,0,null,0,3,"span",[["color","primary"],["ion-text",""],["showWhen","ios"]],[[2,"hidden-show-when",null]],null,null,null,null)),nl.Y(20,147456,null,0,pu.a,[[8,"ios"],Hl.a,nl.u],null,null),nl.Y(21,16384,null,0,gu.a,[Ol.a,nl.j,nl.z],{color:[0,"color"]},null),(l()(),nl._21(-1,null,["Cancel"])),(l()(),nl._21(-1,0,["\n        "])),(l()(),nl.Z(24,0,null,0,1,"ion-icon",[["name","md-close"],["role","img"]],[[2,"hide",null]],null,null,null,null)),nl.Y(25,147456,null,0,Cn.a,[Ol.a,nl.j,nl.z],{name:[0,"name"]},null),(l()(),nl._21(-1,0,["\n      "])),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl._21(-1,3,["\n  "])),(l()(),nl._21(-1,null,["\n\n"])),(l()(),nl._21(-1,null,["\n\n\n"])),(l()(),nl.Z(31,0,null,null,110,"ion-content",[["padding",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,an.b,an.a)),nl.Y(32,4374528,null,0,tn.a,[Ol.a,Hl.a,Wl.a,nl.j,nl.z,Gl.a,Xl.a,nl.u,[2,en.a],[2,on.a]],null,null),(l()(),nl._21(-1,1,["\n\n\n  "])),(l()(),nl.Z(34,0,null,1,106,"ion-grid",[["class","grid"]],null,null,null,null,null)),nl.Y(35,16384,null,0,wn.a,[],null,null),(l()(),nl._21(-1,null,["\n\n    "])),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl.Z(38,0,null,null,23,"ion-row",[["class","row"]],null,null,null,null,null)),nl.Y(39,16384,null,0,jn.a,[],null,null),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(41,0,null,null,5,"ion-col",[["class","col"],["col-5",""]],null,null,null,null,null)),nl.Y(42,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(44,0,null,null,1,"b",[["class","marginLeft-45"]],null,null,null,null,null)),(l()(),nl._21(-1,null,["Shop Name"])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(48,0,null,null,5,"ion-col",[["class","col"],["col-1",""]],null,null,null,null,null)),nl.Y(49,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(51,0,null,null,1,"b",[["class","marginLeft-colon"]],null,null,null,null,null)),(l()(),nl._21(-1,null,[":"])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(55,0,null,null,5,"ion-col",[["class","col"],["col-6",""]],null,null,null,null,null)),nl.Y(56,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(58,0,null,null,1,"div",[["class","marginLeft-light"]],null,null,null,null,null)),(l()(),nl._21(59,null,["",""])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl._21(-1,null,["\n\n    "])),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl.Z(64,0,null,null,23,"ion-row",[["class","row"]],null,null,null,null,null)),nl.Y(65,16384,null,0,jn.a,[],null,null),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(67,0,null,null,5,"ion-col",[["class","col"],["col-5",""]],null,null,null,null,null)),nl.Y(68,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(70,0,null,null,1,"b",[["class","marginLeft-45"]],null,null,null,null,null)),(l()(),nl._21(-1,null,["Date"])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(74,0,null,null,5,"ion-col",[["class","col"],["col-1",""]],null,null,null,null,null)),nl.Y(75,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(77,0,null,null,1,"b",[["class","marginLeft-colon"]],null,null,null,null,null)),(l()(),nl._21(-1,null,[":"])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(81,0,null,null,5,"ion-col",[["class","col"],["col-6",""]],null,null,null,null,null)),nl.Y(82,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(84,0,null,null,1,"div",[["class","marginLeft-light"]],null,null,null,null,null)),(l()(),nl._21(85,null,["",""])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl._21(-1,null,["\n\n    "])),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl.Z(90,0,null,null,23,"ion-row",[["class","row"]],null,null,null,null,null)),nl.Y(91,16384,null,0,jn.a,[],null,null),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(93,0,null,null,5,"ion-col",[["class","col"],["col-5",""]],null,null,null,null,null)),nl.Y(94,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(96,0,null,null,1,"b",[["class","marginLeft-45"]],null,null,null,null,null)),(l()(),nl._21(-1,null,["Time"])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(100,0,null,null,5,"ion-col",[["class","col"],["col-1",""]],null,null,null,null,null)),nl.Y(101,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(103,0,null,null,1,"b",[["class","marginLeft-colon"]],null,null,null,null,null)),(l()(),nl._21(-1,null,[":"])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(107,0,null,null,5,"ion-col",[["class","col"],["col-6",""]],null,null,null,null,null)),nl.Y(108,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(110,0,null,null,1,"div",[["class","marginLeft-light"]],null,null,null,null,null)),(l()(),nl._21(111,null,["",""])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl._21(-1,null,["\n\n    "])),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl.Z(116,0,null,null,23,"ion-row",[["class","row"]],null,null,null,null,null)),nl.Y(117,16384,null,0,jn.a,[],null,null),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(119,0,null,null,5,"ion-col",[["class","col"],["col-5",""]],null,null,null,null,null)),nl.Y(120,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(122,0,null,null,1,"b",[["class","marginLeft-45"]],null,null,null,null,null)),(l()(),nl._21(-1,null,["No. of Seats"])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(126,0,null,null,5,"ion-col",[["class","col"],["col-1",""]],null,null,null,null,null)),nl.Y(127,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(129,0,null,null,1,"b",[["class","marginLeft-colon"]],null,null,null,null,null)),(l()(),nl._21(-1,null,[":"])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(133,0,null,null,5,"ion-col",[["class","col"],["col-6",""]],null,null,null,null,null)),nl.Y(134,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(136,0,null,null,1,"div",[["class","marginLeft-light"]],null,null,null,null,null)),(l()(),nl._21(137,null,["",""])),(l()(),nl._21(-1,null,["\n\n      "])),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl._21(-1,null,["\n\n\n  "])),(l()(),nl._21(-1,1,["\n\n"])),(l()(),nl._21(-1,null,["\n\n"])),(l()(),nl.Z(143,0,null,null,16,"ion-footer",[["no-border",""]],null,null,null,null,null)),nl.Y(144,16384,null,0,Hn.a,[Ol.a,nl.j,nl.z,[2,en.a]],null,null),(l()(),nl._21(-1,null,["\n\n  "])),(l()(),nl._21(-1,null,["\n  "])),(l()(),nl.Z(147,0,null,null,11,"div",[["text-center",""]],null,null,null,null,null)),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl.Z(149,0,null,null,8,"ion-card",[],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.navToMyOrders()&&a}return a},null,null)),nl.Y(150,16384,null,0,On.a,[Ol.a,nl.j,nl.z],null,null),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(152,0,null,null,1,"p",[["class","reduceTop"]],null,null,null,null,null)),(l()(),nl._21(-1,null,["No cancellation allowed"])),(l()(),nl._21(-1,null,["\n      "])),(l()(),nl.Z(155,0,null,null,1,"p",[["class","reduceTop1"]],null,null,null,null,null)),(l()(),nl._21(-1,null,["Click to see order history"])),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl._21(-1,null,["\n  "])),(l()(),nl._21(-1,null,["\n\n"])),(l()(),nl._21(-1,null,["\n"]))],function(l,n){l(n,21,0,"primary");l(n,25,0,"md-close")},function(l,n){var u=n.component;l(n,5,0,nl._11(n,6)._sbPadding);l(n,19,0,!nl._11(n,20).isMatch);l(n,24,0,nl._11(n,25)._hidden);l(n,31,0,nl._11(n,32).statusbarPadding,nl._11(n,32)._hasRefresher);l(n,59,0,u.bookedDetails.shopName);l(n,85,0,u.bookedDetails.date);l(n,111,0,u.bookedDetails.time);l(n,137,0,u.numberOfSeats)})}function Q(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,42,"ion-content",[["padding",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,an.b,an.a)),nl.Y(1,4374528,null,0,tn.a,[Ol.a,Hl.a,Wl.a,nl.j,nl.z,Gl.a,Xl.a,nl.u,[2,en.a],[2,on.a]],null,null),(l()(),nl._21(-1,1,["\n\n    "])),(l()(),nl.Z(3,0,null,1,38,"ion-grid",[["class","con-grid grid"]],null,null,null,null,null)),nl.Y(4,16384,null,0,wn.a,[],null,null),(l()(),nl._21(-1,null,["\n\n        "])),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(8,0,null,null,5,"ion-row",[["class","row"],["justify-content-center",""]],null,null,null,null,null)),nl.Y(9,16384,null,0,jn.a,[],null,null),(l()(),nl._21(-1,null,["\n          "])),(l()(),nl.Z(11,0,null,null,1,"h1",[],null,null,null,null,null)),(l()(),nl._21(-1,null,["Select Seat"])),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(16,0,null,null,5,"ion-row",[["class","row"],["justify-content-center",""]],null,null,null,null,null)),nl.Y(17,16384,null,0,jn.a,[],null,null),(l()(),nl._21(-1,null,["\n          "])),(l()(),nl.Z(19,0,null,null,1,"p",[],null,null,null,null,null)),(l()(),nl._21(20,null,["",""])),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(24,0,null,null,16,"ion-row",[["class","seatCenter row"],["justify-content-center",""]],null,null,null,null,null)),nl.Y(25,16384,null,0,jn.a,[],null,null),(l()(),nl._21(-1,null,["\n          "])),(l()(),nl.Z(27,0,null,null,5,"ion-col",[["class","col"],["col-6",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.firstSeat()&&a}return a},null,null)),nl.Y(28,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n              "])),(l()(),nl.Z(30,0,null,null,1,"ion-icon",[["class","firstIcon"],["name","custom-gnSeat"],["role","img"]],[[2,"hide",null]],null,null,null,null)),nl.Y(31,147456,null,0,Cn.a,[Ol.a,nl.j,nl.z],{name:[0,"name"]},null),(l()(),nl._21(-1,null,["\n          "])),(l()(),nl._21(-1,null,["\n          "])),(l()(),nl.Z(34,0,null,null,5,"ion-col",[["class","col"],["col-6",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.secondSeat()&&a}return a},null,null)),nl.Y(35,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n              "])),(l()(),nl.Z(37,0,null,null,1,"ion-icon",[["class","secondIcon"],["name","custom-gnSeat"],["role","img"]],[[2,"hide",null]],null,null,null,null)),nl.Y(38,147456,null,0,Cn.a,[Ol.a,nl.j,nl.z],{name:[0,"name"]},null),(l()(),nl._21(-1,null,["\n          "])),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl._21(-1,null,["\n\n    "])),(l()(),nl._21(-1,1,["\n\n"])),(l()(),nl._21(-1,null,["\n\n\n\n\n"])),(l()(),nl._21(-1,null,["\n"])),(l()(),nl.Z(45,0,null,null,28,"ion-footer",[["class","center"],["no-border",""]],null,null,null,null,null)),nl.Y(46,16384,null,0,Hn.a,[Ol.a,nl.j,nl.z,[2,en.a]],null,null),(l()(),nl._21(-1,null,["\n\n    "])),(l()(),nl._21(-1,null,["\n    "])),(l()(),nl.Z(49,0,null,null,23,"ion-grid",[["class","footer-grid grid"]],null,null,null,null,null)),nl.Y(50,16384,null,0,wn.a,[],null,null),(l()(),nl._21(-1,null,["\n\n        "])),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl.Z(53,0,null,null,18,"ion-row",[["class","borderTop row"]],null,null,null,null,null)),nl.Y(54,16384,null,0,jn.a,[],null,null),(l()(),nl._21(-1,null,["\n            "])),(l()(),nl.Z(56,0,null,null,6,"ion-col",[["class","borderRight col"],["col-6",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.cancelled()&&a}return a},null,null)),nl.Y(57,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n              "])),(l()(),nl.Z(59,0,null,null,2,"ion-label",[["class","red"]],null,null,null,null,null)),nl.Y(60,16384,null,0,Mn.a,[Ol.a,nl.j,nl.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),nl._21(-1,null,["Cancel"])),(l()(),nl._21(-1,null,["\n            "])),(l()(),nl._21(-1,null,["\n            "])),(l()(),nl.Z(64,0,null,null,6,"ion-col",[["class","col"]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.conformed()&&a}return a},null,null)),nl.Y(65,16384,null,0,kn.a,[],null,null),(l()(),nl._21(-1,null,["\n              "])),(l()(),nl.Z(67,0,null,null,2,"ion-label",[["class","green"]],null,null,null,null,null)),nl.Y(68,16384,null,0,Mn.a,[Ol.a,nl.j,nl.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),nl._21(-1,null,["Ok"])),(l()(),nl._21(-1,null,["\n            "])),(l()(),nl._21(-1,null,["\n        "])),(l()(),nl._21(-1,null,["\n\n    "])),(l()(),nl._21(-1,null,["\n\n"])),(l()(),nl._21(-1,null,["\n"]))],function(l,n){l(n,31,0,"custom-gnSeat");l(n,38,0,"custom-gnSeat")},function(l,n){var u=n.component;l(n,0,0,nl._11(n,1).statusbarPadding,nl._11(n,1)._hasRefresher);l(n,20,0,u.timeSlot.time);l(n,30,0,nl._11(n,31)._hidden);l(n,37,0,nl._11(n,38)._hidden)})}Object.defineProperty(n,"__esModule",{value:!0});var ll=u(64),nl=u(0),ul=(u(3),u(29),u(113)),al=u(114),tl=u(18),el=u(25),ol=u(160),il=function(){function l(l,n){this.fbAuth=l,this.fbDatabase=n,this.orderByChild=1,this.orderByKey=2,this.orderByValue=3,this.limitToFirst=1,this.limitToLast=2,this.startAt=3,this.endAt=4,this.equalTo=5}return l.prototype.readOnce=function(l){var n=this;return new Promise(function(u,a){n.fbDatabase.database.ref(l).once("value").then(function(l){u(l.val())}).catch(function(l){a("Something is wrong")})})},l.prototype.pushInDatabase=function(l,n){var u=this;return new Promise(function(a,t){u.fbDatabase.database.ref(l).push(n).then(function(l){a(l)})})},l.prototype.writeInDatabase=function(l,n){var u=this;return new Promise(function(a,t){u.fbDatabase.database.ref(l).set(n).then(function(l){a("Data written successfully")}).catch(function(l){t("Data written failed")})})},l.prototype.updateField=function(l){var n=this;return new Promise(function(u,a){n.fbDatabase.database.ref().update(l).then(function(){u("Field updated successfully")}).catch(function(l){a("Field updation failed")})})},l.prototype.removeField=function(l,n){var u=this;return new Promise(function(a,t){u.fbDatabase.database.ref(l).child(n).remove().then(function(){a("Field removed successfully")}).catch(function(){t("Field removal failed")})})},l.prototype.orderData=function(l,n,u){var a=this;return void 0===u&&(u=null),new Promise(function(t,e){l==a.orderByChild?a.fbDatabase.database.ref(n).orderByChild(u).once("value").then(function(l){t(l.val())}).catch(function(l){e(l)}):l==a.orderByKey?a.fbDatabase.database.ref(n).orderByKey().once("value").then(function(l){var n=Array();l.val().forEach(function(l){n.push(l)}),t(n)}).catch(function(l){e(l)}):l==a.orderByValue&&a.fbDatabase.database.ref(n).orderByValue().once("value").then(function(l){var n=Array();l.val().forEach(function(l){n.push(l)}),t(n)}).catch(function(l){e(l)})})},l.prototype.filterData=function(l,n,u,a,t,e){var o=this;return void 0===u&&(u=null),void 0===a&&(a=null),void 0===t&&(t=null),void 0===e&&(e=null),new Promise(function(i,s){l==o.limitToFirst?o.fbDatabase.database.ref(n).limitToFirst(u).once("value").then(function(l){i(l.val())}).catch(function(l){s(l)}):l==o.limitToLast?o.fbDatabase.database.ref(n).limitToLast(u).once("value").then(function(l){i(l.val())}).catch(function(l){s(l)}):l==o.startAt?null==a?s("orderBy Method missing"):a==o.orderByChild?o.fbDatabase.database.ref(n).orderByChild(t).startAt(u).once("value").then(function(l){var n=Array();l.forEach(function(l){n.push(l.val())}),i(n)}).catch(function(l){s(l)}):a==o.orderByKey?o.fbDatabase.database.ref(n).orderByKey().startAt(u).once("value").then(function(l){var n=Array();l.forEach(function(l){n.push(l.val())}),i(n)}).catch(function(l){s(l)}):a==o.orderByValue&&o.fbDatabase.database.ref(n).orderByValue().startAt(u).once("value").then(function(l){var n=Array();l.forEach(function(l){n.push(l.val())}),i(n)}).catch(function(l){s(l)}):l==o.endAt?null==a?s("orderBy Method missing"):a==o.orderByChild?o.fbDatabase.database.ref(n).orderByChild(t).endAt(u).once("value").then(function(l){var n=Array();l.forEach(function(l){n.push(l.val())}),i(n)}).catch(function(l){s(l)}):a==o.orderByKey?o.fbDatabase.database.ref(n).orderByKey().endAt(u).once("value").then(function(l){var n=Array();l.forEach(function(l){n.push(l.val())}),i(n)}).catch(function(l){s(l)}):a==o.orderByValue&&o.fbDatabase.database.ref(n).orderByValue().endAt(u).once("value").then(function(l){var n=Array();l.forEach(function(l){n.push(l.val())}),i(n)}).catch(function(l){s(l)}):l==o.equalTo&&(null==a?s("orderBy Method missing"):a==o.orderByChild?o.fbDatabase.database.ref(n).orderByChild(t).equalTo(e).once("value").then(function(l){var n=Array();l.forEach(function(l){n.push(l.val())}),i(n)}).catch(function(l){s(l)}):a==o.orderByKey?o.fbDatabase.database.ref(n).orderByKey().equalTo(e).once("value").then(function(l){var n=Array();l.forEach(function(l){n.push(l.val())}),i(n)}).catch(function(l){s(l)}):a==o.orderByValue&&o.fbDatabase.database.ref(n).orderByValue().equalTo(e).once("value").then(function(l){var n=Array();l.forEach(function(l){n.push(l.val())}),i(n)}).catch(function(l){s(l)}))})},l.prototype.login=function(l,n){var u=this;return new Promise(function(a,t){u.fbAuth.auth.signInWithEmailAndPassword(l,n).then(function(l){a(l)}).catch(function(l){t(l)})})},l.prototype.signUp=function(l,n){var u=this;return new Promise(function(a,t){u.fbAuth.auth.createUserWithEmailAndPassword(l,n).then(function(l){a(l.uid)}).catch(function(l){t(l)})})},l}(),sl=function(){function l(l,n,u,a,t,e,o,i){this.navCtrl=l,this.navParams=n,this.fbService=u,this.formBuilder=a,this.loadingCtrl=t,this.toastCtrl=e,this.alterCtrl=o,this.afAuth=i,this.credentialForm=this.formBuilder.group({email:["",tl.n.compose([tl.n.pattern("^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9]+.[a-zA-Z0-9]+$"),tl.n.required])],phoneNumber:["",tl.n.compose([tl.n.pattern("^[0-9]+$"),tl.n.required,tl.n.minLength(10),tl.n.maxLength(10)])],password:["",tl.n.compose([tl.n.minLength(8),tl.n.required])],confirmPassword:["",tl.n.compose([tl.n.minLength(8),tl.n.maxLength(10),tl.n.required])],name:["",tl.n.compose([tl.n.required,tl.n.minLength(4)])]},{validator:function(l,n){return function(u){var a=u.controls[n];a.errors&&!a.errors.mustMatch||a.setErrors(u.controls[l].value!==a.value?{mustMatch:!0}:null)}}("password","confirmPassword")})}return l.prototype.ionViewDidLoad=function(){console.log("ionViewDidLoad SignupPage"),console.log(this.afAuth.auth.currentUser)},l.prototype.navToLogin=function(){this.navCtrl.push(Cl)},l.prototype.signUp=function(){var l=this,n=this.credentialForm.controls.email.value,u=this.credentialForm.controls.password.value,a=this.credentialForm.controls.phoneNumber.value,t=this.credentialForm.controls.name.value,e=this.loadingCtrl.create({content:"please wait, your account is creating"}),o=this.toastCtrl.create({message:"Some error has occured. Please try agian",duration:2e3,position:"bottom"}),i=this.alterCtrl.create({title:"Hurray..!",subTitle:"Your account has been created.",buttons:[{text:"Okay",handler:function(l){}}]});e.present(),this.fbService.signUp(n,u).then(function(u){l.fbService.writeInDatabase("users/"+u,{email:n,phoneNumber:a,name:t,type:"user"}).then(function(l){e.dismiss(),i.present()}).catch(function(l){e.dismiss(),o.present()})}).catch(function(l){e.dismiss(),o.present()})},l}(),rl=function(){function l(l,n){this.navCtrl=l,this.navParams=n,this.item=this.navParams.get("payload"),console.log(this.item),this.status=this.item.status}return l.prototype.ionViewDidLoad=function(){console.log("ionViewDidLoad Orderbooked2Page")},l}(),cl=u(49),_l=function(){function l(l,n,u,a,t,e,o,i){var s=this;this.navCtrl=l,this.navParams=n,this.afAuth=u,this.fbService=a,this.formBuilder=t,this.toastCtrl=e,this.alertCtrl=o,this.afApp=i,this.editStatus=0,this.editFormIcon=!1,this.editForm=this.formBuilder.group({phoneNumber:[this.navParams.get("payload").phoneNumber,tl.n.compose([tl.n.required,tl.n.pattern("^[0-9]+$"),tl.n.minLength(10),tl.n.maxLength(10)])],email:[this.navParams.get("payload").email,tl.n.compose([tl.n.pattern("^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9]+.[a-zA-Z0-9]+$"),tl.n.required])],name:[this.navParams.get("payload").name,tl.n.compose([tl.n.required,tl.n.minLength(4)])]}),this.fbService.filterData(this.fbService.equalTo,"requests",null,this.fbService.orderByChild,"userId",this.navParams.get("payload").uid).then(function(l){var n=Object.entries(l);s.latestReq=n[n.length-1][1],s.service=s.latestReq.service,s.bookedDate=s.latestReq.date}).catch(function(l){console.log(l)})}return l.prototype.ionViewDidLoad=function(){console.log("ionViewDidLoad ProfilePage")},l.prototype.order=function(){this.navCtrl.push(dl)},l.prototype.cardclick=function(){this.navCtrl.push(rl,{payload:this.latestReq})},l.prototype.editIconUpdate=function(){var l=this;setTimeout(function(){l.editFormIcon=l.editForm.valid},10)},l.prototype.editFired=function(l){var n=this;this.editStatus=l,this.editFormIcon=this.editForm.valid;var u=this.alertCtrl.create({title:"Verification",message:"Please enter your password",inputs:[{name:"password",placeholder:"password"}],buttons:[{text:"Done",handler:function(l){console.log(n.afAuth.auth.currentUser.email),n.fbService.login(n.afAuth.auth.currentUser.email,l.password).then(function(l){var u="users/"+n.afAuth.auth.currentUser.uid+"/email",a="users/"+n.afAuth.auth.currentUser.uid+"/phoneNumber",t="users/"+n.afAuth.auth.currentUser.uid+"/name",e={};n.afAuth.auth.currentUser.updateEmail(n.editForm.controls.email.value),e[u]=n.editForm.controls.email.value,e[a]=n.editForm.controls.phoneNumber.value,e[t]=n.editForm.controls.name.value,n.fbService.updateField(e),document.documentElement.style.setProperty("--teal","#18A0A0"),document.documentElement.style.setProperty("--header-profile","20%");n.alertCtrl.create({message:"Hurray..! The profile details are updated"}).present()}).catch(function(l){n.alertCtrl.create({message:"Password is incorrect. Please enter the correct password"}).present(),document.documentElement.style.setProperty("--teal","#18A0A0"),document.documentElement.style.setProperty("--header-profile","20%")})}}]});if(1==l)document.documentElement.style.setProperty("--teal","red"),document.documentElement.style.setProperty("--header-profile","0%");else{var a=this.editForm.controls.name.value,t=this.editForm.controls.phoneNumber.value;if(this.editForm.controls.email.value!=this.navParams.get("payload").email||a!=this.navParams.get("payload").name||t!=this.navParams.get("payload").phoneNumber)u.present();else{this.toastCtrl.create({message:"Seems like you didn't changed anything",duration:3e3,position:"bottom"}).present(),document.documentElement.style.setProperty("--teal","#18A0A0"),document.documentElement.style.setProperty("--header-profile","20%")}}},l.prototype.changePassword=function(){var l=this;this.alertCtrl.create({title:"New Password",message:"Please enter the new password",inputs:[{name:"oldPassword",placeholder:"Old password"},{name:"newPassword",placeholder:"New password"}],buttons:[{text:"Done",handler:function(n){var u=l.afAuth.auth.currentUser;l.fbService.login(u.email,n.oldPassword).then(function(a){if(n.newPassword.length>=6)u.updatePassword(n.newPassword).then(function(n){l.alertCtrl.create({title:"Updated",message:"Password updated successfully...!"}).present()}).catch(function(l){this.alertCtrl.create({title:"Failed",message:"Some problem occured...Please try again later...!"}).present()});else{l.alertCtrl.create({title:"Failed",message:"Password should be minimum of 6 characters"}).present()}}).catch(function(n){console.log(n);l.alertCtrl.create({title:"Failed",message:"Enter the correct old password"}).present()})}},{text:"cancel",handler:function(l){}}]}).present()},l.prototype.deleteUser=function(){var l=this,n=this.afAuth.auth.currentUser;this.alertCtrl.create({title:"Conformation",message:"Enter your password to delete the account",inputs:[{name:"password",placeholder:"placeholder"}],buttons:[{text:"Delete",handler:function(u){l.fbService.login(n.email,u.password).then(function(u){n.delete().then(function(n){l.alertCtrl.create({title:"Account deleted",message:"Your account has been deleted successfully..! We miss you..!"}).present(),l.afAuth.auth.signOut()}).catch(function(n){l.alertCtrl.create({title:"Error",message:"Something is wrong, please try again later"}).present()})}).catch(function(n){l.alertCtrl.create({title:"Error",message:"Enter the correct password"}).present()})}}]}).present()},l}(),dl=function(){function l(l,n,u,a,t,e){var o=this;this.navCtrl=l,this.navParams=n,this.fbService=u,this.afAuth=a,this.loadingCtrl=t,this.toastCtrl=e,this.photographyOrders=[],this.haircutOrders=[],this.haircutFlag=!1,this.photographyFlag=!1,this.rawPhotographyOrders=[],this.rawHaircutOrders=[],this.haircutExpanded=!1,this.photographyExpanded=!1;var i=this.afAuth.auth.currentUser,s=this.loadingCtrl.create({content:"please wait"});s.present(),this.fbService.filterData(this.fbService.equalTo,"requests",null,this.fbService.orderByChild,"userId",i.uid).then(function(l){s.dismiss();var n=Object.entries(l),u=Array(),a=Array();n.forEach(function(l){"Haircut"==l[1].service?u.push(l[1]):"Photography"==l[1].service&&a.push(l[1])}),0==u.length?o.haircutFlag=!0:o.rawHaircutOrders=u,0==a.length?o.photographyFlag=!0:o.rawPhotographyOrders=a,o.limitRequests()})}return l.prototype.ionViewDidLoad=function(){console.log("ionViewDidLoad MyOrderPage")},l.prototype.clicked=function(){var l=this,n=this.toastCtrl.create({duration:2e3,message:"Check your internet connection",position:"bottom"});this.fbService.readOnce("users/"+this.afAuth.auth.currentUser.uid).then(function(n){var u=Object.entries(n);l.navCtrl.push(_l,{payload:{email:u[0][1],phoneNumber:u[2][1],name:u[1][1]}})}).catch(function(l){n.present()})},l.prototype.cardclick=function(l){this.navCtrl.push(rl,{payload:l})},l.prototype.alterView=function(l,n){"haircut"==l?this.haircutExpanded=n:"photography"==l&&(this.photographyExpanded=n),this.limitRequests()},l.prototype.limitRequests=function(){this.haircutOrders=this.haircutExpanded?this.rawHaircutOrders:this.rawHaircutOrders.slice(0,3),this.photographyOrders=this.photographyExpanded?this.rawPhotographyOrders:this.rawPhotographyOrders.slice(0,3)},l}(),hl=function(){function l(l,n,u,a){var t=this;this.navCtrl=l,this.navParams=n,this.fbAuth=u,this.fbService=a,this.source=n.get("payload");var e=new Date,o=e.getFullYear()+"-"+(e.getMonth()+1)+"-"+e.getDate(),i=e.getHours()+":"+e.getMinutes()+":"+e.getSeconds();this.nowDate=o+" "+i,this.fromDate=this.source.fromDate,this.functionType=this.source.function;this.fbService.readOnce("users/"+this.fbAuth.auth.currentUser.uid).then(function(l){var n=Object.entries(l);t.source.userId=n[0][1],t.name=n[1][1],t.source.bookedDate=t.nowDate,t.source.userName=t.name,t.source.service="Photography",t.fbService.pushInDatabase("requests",t.source)}).catch(function(l){})}return l.prototype.ionViewDidLoad=function(){console.log("ionViewDidLoad OrderBookedPage")},l}(),ml=function(){function l(l){var n=this;this.fbService=l,this.fbService.readOnce("packs").then(function(l){n.pack=l}).catch(function(l){}),this.fbService.readOnce("photographers").then(function(l){n.photographer=l}).catch(function(l){})}return l.prototype.updateETA=function(l,n,u){return new Promise(function(a,t){console.log({fromTime:l,toTime:n,pack:u});var e=0,o=Number(u.cost),i=new Date(l),s=new Date(n),r=Date.UTC(i.getFullYear(),i.getMonth(),i.getDate()),c=Date.UTC(s.getFullYear(),s.getMonth(),s.getDate()),_=Math.floor((c-r)/864e5);_<0?t(e=0):e=0==_?1*o:(_+1)*o,a(e)})},l}(),pl=function(){function l(l,n,u,a,t,e,o,i){var s=this;this.navCtrl=l,this.navParams=n,this.alertCtrl=u,this.modalCtrl=a,this.mmnService=t,this.fbService=e,this.loadingCtrl=o,this.toastCtrl=i,this.selectedFunction="",this.fromTime="",this.toTime="",this.locationBooked="",this.estimatedAmount=0,this.checkoutSatus=!1,this.loading=this.loadingCtrl.create({content:"please wait"}),this.toast=this.toastCtrl.create({duration:2500,position:"bottom"}),this.source=n.get("payload"),this.pack=this.source.data,this.fbService.readOnce("functions").then(function(l){s.functions=l}).catch(function(l){s.toast.setMessage("Network connection error..!"),s.toast.present()})}return l.prototype.ionViewDidLoad=function(){console.log("ionViewDidLoad BookPage")},l.prototype.order=function(){this.navCtrl.push(dl)},l.prototype.checkout=function(){if(this.checkoutSatus){this.navCtrl.push(hl,{payload:{pack:this.pack,cost:this.estimatedAmount,fromDate:this.fromTime,toDate:this.toTime,function:this.selectedFunction,location:this.locationBooked,status:0}})}else this.toast.setMessage("Choose the fields correctly..!"),this.toast.present()},l.prototype.functionType=function(){var l=this,n=this.alertCtrl.create();n.setTitle("Functions"),this.functions.forEach(function(l){n.addInput({type:"radio",label:l.name,value:l.name,checked:!1})}),n.addButton("Cancel"),n.addButton({text:"OK",handler:function(n){l.selectedFunction=n}}),n.present()},l.prototype.updateEstimatedAmount=function(){var l=this;""!=this.fromTime&&""!=this.toTime&&""!=this.selectedFunction?(this.checkoutSatus=!0,this.mmnService.updateETA(this.fromTime,this.toTime,this.pack).then(function(n){l.estimatedAmount=Number(n)}).catch(function(n){l.estimatedAmount=Number(n),l.toast.setMessage("From and To date incorrect"),l.toast.present()})):this.checkoutSatus=!1},l.prototype.location=function(){console.log("Location clicked")},l}(),gl=function(){function l(l,n,u,a,t){this.navCtrl=l,this.navParams=n,this.fbService=u,this.loadingCtrl=a,this.toastCtrl=t,this.loading=this.loadingCtrl.create({content:"please wait"}),this.toast=this.toastCtrl.create({message:"Some error has occured. Please try agian",duration:2e3,position:"bottom"}),this.fetchFromDb()}return l.prototype.ionViewDidLoad=function(){console.log("ionViewDidLoad PhotographyPage")},l.prototype.order=function(){this.navCtrl.push(dl)},l.prototype.fetchFromDb=function(){var l=this;this.loading.present(),this.fbService.readOnce("packs").then(function(n){l.loading.dismiss(),l.packs=n}).catch(function(n){l.loading.dismiss(),l.toast.present()})},l.prototype.packClicked=function(l){this.navCtrl.push(pl,{payload:{source:"photography",data:l}})},l}(),fl=function(){function l(l,n,u){this.navCtrl=l,this.navParams=n,this.viewCtrl=u,this.firstSeatFlag=0,this.secondSeatFlag=0,this.timeSlot=this.navParams.get("data"),console.log(this.timeSlot),1==this.timeSlot.first?(this.firstSeatFlag=3,document.documentElement.style.setProperty("--seat-color-first","#adadad")):(this.firstSeatFlag=0,document.documentElement.style.setProperty("--seat-color-first","#808080")),1==this.timeSlot.second?(this.secondSeatFlag=3,document.documentElement.style.setProperty("--seat-color-second","#adadad")):(this.secondSeatFlag=0,document.documentElement.style.setProperty("--seat-color-second","#808080"))}return l.prototype.ionViewDidLoad=function(){console.log("ionViewDidLoad HaircutPopupPage")},l.prototype.firstSeat=function(){0==this.firstSeatFlag?(document.documentElement.style.setProperty("--seat-color-first","#35AE59"),this.firstSeatFlag=1):1==this.firstSeatFlag&&(document.documentElement.style.setProperty("--seat-color-first","#808080"),this.firstSeatFlag=0)},l.prototype.secondSeat=function(){0==this.secondSeatFlag?(document.documentElement.style.setProperty("--seat-color-second","#35AE59"),this.secondSeatFlag=1):1==this.secondSeatFlag&&(document.documentElement.style.setProperty("--seat-color-second","#808080"),this.secondSeatFlag=0)},l.prototype.cancelled=function(){this.viewCtrl.dismiss()},l.prototype.conformed=function(){0!=this.firstSeatFlag&&1!=this.firstSeatFlag||(this.timeSlot.first=this.firstSeatFlag),0!=this.secondSeatFlag&&1!=this.secondSeatFlag||(this.timeSlot.second=this.secondSeatFlag),this.timeSlot.status=1==this.firstSeatFlag&&1==this.secondSeatFlag||3==this.firstSeatFlag&&3==this.secondSeatFlag||1==this.firstSeatFlag&&3==this.secondSeatFlag||3==this.firstSeatFlag&&1==this.secondSeatFlag?2:1==this.firstSeatFlag||1==this.secondSeatFlag?1:0,0!=this.firstSeatFlag||0!=this.secondSeatFlag?this.viewCtrl.dismiss(this.timeSlot):this.viewCtrl.dismiss()},l}(),bl=u(376),Zl=function(){function l(l,n,u){this.navCtrl=l,this.navParams=n,this.viewCtrl=u,this.bookedDetails=this.navParams.get("payload"),this.numberOfSeats=1==this.bookedDetails.seats.first&&1==this.bookedDetails.seats.second?2:1}return l.prototype.ionViewDidLoad=function(){console.log("ionViewDidLoad HaircutConformationPage")},l.prototype.dismiss=function(){this.viewCtrl.dismiss()},l.prototype.navToMyOrders=function(){this.navCtrl.push(dl)},l}(),vl=function(){function l(l,n,u,a,t,e,o,i,s){var r=this;this.navCtrl=l,this.navParams=n,this.popoverCtrl=u,this.fbService=a,this.afAuth=t,this.alertCtrl=e,this.modalCtrl=o,this.toastCtrl=i,this.loadingCtrl=s,this.selectedShop=this.navParams.get("data"),this.timeSlots=this.navParams.get("data").timeSlots,this.rawTimeSlots=this.timeSlots;var c=new Date,_=String(c.getDate()).padStart(2,"0"),d=String(c.getMonth()+1).padStart(2,"0"),h=c.getFullYear();this.toDate=_+"-"+this.convertMonth(d)+"-"+h;(c=new Date).getHours(),c.getMinutes();this.timeSlots=this.timeSlots.filter(function(l){return"12:8:00"<r.convertTime(l.time)})}return l.prototype.ionViewDidLoad=function(){console.log("ionViewDidLoad HaircutBookPage")},l.prototype.popup=function(l){var n=this,u=this.popoverCtrl.create(fl,{data:l});u.onDidDismiss(function(l){console.log(l),void 0!=l&&n.bookAppointment(l)}),u.present()},l.prototype.convertMonth=function(l){return 1==l?"Jan":(l=2)?"Feb":(l=3)?"Mar":(l=4)?"Apr":(l=5)?"May":(l=6)?"Jun":(l=7)?"July":(l=8)?"Aug":(l=9)?"Sept":(l=10)?"Oct":(l=11)?"Nov":(l=12)?"Dec":void 0},l.prototype.convertTime=function(l){var n=Number(l.match(/^(\d+)/)[1]),u=Number(l.match(/:(\d+)/)[1]),a=l.match(/\s(.*)$/)[1];"PM"==a&&n<12&&(n+=12),"AM"==a&&12==n&&(n-=12);var t=n.toString(),e=u.toString();return n<10&&(t="0"+t),u<10&&(e="0"+e),String(t+":"+e+":00")},l.prototype.bookAppointment=function(l){var n=this,u=this.loadingCtrl.create({content:"Please wait..."});u.present();var a=this.rawTimeSlots.map(function(n){return n.time==l.time&&(n.first=l.first,n.second=l.second,n.status=l.status),n}),t=(e={},e["haircut/shops/"+this.selectedShop.id+"/timeSlots"]=a,e);this.fbService.updateField(t).then(function(a){var t=(new Date).getMilliseconds(),e="MMN"+n.selectedShop.id+"U"+t+n.afAuth.auth.currentUser.uid+l.time+n.toDate,o={appointmentId:e=Object(bl.sha256)(e),cost:0,date:n.toDate,userId:n.afAuth.auth.currentUser.uid,seats:{first:l.first,second:l.second},service:"Haircut",shopId:n.selectedShop.id,status:0,time:l.time,transactionId:0,userName:"",shopName:n.selectedShop.shopName};n.fbService.readOnce("users/"+n.afAuth.auth.currentUser.uid).then(function(l){o.userName=l.name,n.fbService.writeInDatabase("requests/"+e,o).then(function(l){u.dismiss();n.modalCtrl.create(Zl,{payload:o}).present()}).catch(function(l){u.dismiss();n.alertCtrl.create({title:"Failed",message:"Something seems to be wrong, please try again later",buttons:[{text:"Okay"}]}).present()})}).catch(function(l){u.dismiss();n.alertCtrl.create({title:"Failed",message:"Something seems to be wrong, please try again later",buttons:[{text:"Okay"}]}).present()})}).catch(function(l){u.dismiss();n.alertCtrl.create({title:"Failed",message:"Something seems to be wrong, please try again later",buttons:[{text:"Okay"}]}).present()});var e},l.prototype.navToProfile=function(){var l=this,n=this.toastCtrl.create({duration:2e3,message:"Check your internet connection",position:"bottom"});this.fbService.readOnce("users/"+this.afAuth.auth.currentUser.uid).then(function(n){var u=Object.entries(n);l.navCtrl.push(_l,{payload:{email:u[0][1],phoneNumber:u[2][1],name:u[1][1]}})}).catch(function(l){n.present()})},l.prototype.navToMyOrders=function(){this.navCtrl.push(dl)},l}(),Yl=function(){function l(l,n,u,a,t){var e=this;this.navCtrl=l,this.navParams=n,this.fbService=u,this.afAuth=a,this.toastCtrl=t,this.shopArray=[],this.location="Dindigul",this.fbService.readOnce("haircut/shops").then(function(l){var n=Object.entries(l);e.loadedShopArray=[],n.forEach(function(l){l[1].city==e.location&&e.loadedShopArray.push(l[1])}),e.initializeItems()}).catch(function(l){})}return l.prototype.initializeItems=function(){this.shopArray=this.loadedShopArray},l.prototype.ionViewDidLoad=function(){console.log("ionViewDidLoad HaircutHomePage")},l.prototype.getItems=function(l){this.initializeItems();var n=l.target.value;n&&""!=n.trim()&&(this.shopArray=this.shopArray.filter(function(l){return l.shopName.toLowerCase().indexOf(n.toLowerCase())>-1}))},l.prototype.shopSelected=function(l){this.navCtrl.push(vl,{source:"haircut-home",data:l})},l.prototype.navToProfile=function(){var l=this,n=this.toastCtrl.create({duration:2e3,message:"Check your internet connection",position:"bottom"});this.fbService.readOnce("users/"+this.afAuth.auth.currentUser.uid).then(function(n){var u=Object.entries(n);l.navCtrl.push(_l,{payload:{email:u[0][1],phoneNumber:u[2][1],name:u[1][1]}})}).catch(function(l){n.present()})},l.prototype.navToMyOrders=function(){this.navCtrl.push(dl)},l}(),yl=function(){function l(l,n,u,a){this.navCtrl=l,this.afAuth=n,this.fbService=u,this.toastCtrl=a}return l.prototype.photography=function(){this.navCtrl.push(gl)},l.prototype.clicked=function(){var l=this,n=this.toastCtrl.create({duration:2e3,message:"Check your internet connection",position:"bottom"});this.fbService.readOnce("users/"+this.afAuth.auth.currentUser.uid).then(function(n){var u=Object.entries(n);l.navCtrl.push(_l,{payload:{email:u[0][1],phoneNumber:u[2][1],name:u[1][1]}})}).catch(function(l){n.present()})},l.prototype.order=function(){this.navCtrl.push(dl)},l.prototype.navToHaircut=function(){this.navCtrl.push(Yl)},l}(),Cl=function(){function l(l,n,u,a,t,e){this.navCtrl=l,this.navParams=n,this.formBuilder=u,this.fbService=a,this.toastCtrl=t,this.loadingCtrl=e,this.credentialForm=this.formBuilder.group({phoneNumber:["",tl.n.compose([tl.n.pattern("^[0-9]+$"),tl.n.minLength(10),tl.n.maxLength(10),tl.n.required])],password:["",tl.n.compose([tl.n.required,tl.n.minLength(8)])]})}return l.prototype.ionViewDidLoad=function(){console.log("ionViewDidLoad LoginPage")},l.prototype.navToSignUp=function(){this.navCtrl.push(sl)},l.prototype.signIn=function(){var l=this,n=this.loadingCtrl.create({content:"please wait, logging in"}),u=this.toastCtrl.create({duration:2e3,position:"bottom"}),a=this.credentialForm.controls.phoneNumber.value,t=this.credentialForm.controls.password.value;n.present(),this.fbService.filterData(this.fbService.equalTo,"users",null,this.fbService.orderByChild,"phoneNumber",a).then(function(a){var e=Object.entries(a);l.fbService.login(e[0][1].email,t).then(function(u){n.dismiss(),l.navCtrl.push(yl)}).catch(function(l){n.dismiss(),"The password is invalid or the user does not have a password."==l.message?(u.setMessage("Invalid username or password"),u.present()):(u.setMessage("Some error has occured. Please try again"),u.present())})}).catch(function(l){n.dismiss(),u.setMessage("Oops...! Phone number not found, Please signin to continue"),u.present()})},l}(),wl=function(){function l(l,n,u,a,t,e){this.platform=l,this.statusBar=n,this.splashScreen=u,this.angularFire=a,this.af=t,this.alertCtrl=e,this.initialiseApp()}return l.prototype.initialiseApp=function(){var l=this;this.pages=[{title:"",component:""},{title:"Home",component:Cl}],this.platform.ready().then(function(){l.angularFire.authState.subscribe(function(n){l.rootPage=n?yl:Cl})}),this.statusBar.styleBlackOpaque(),this.splashScreen.hide()},l.prototype.openPage=function(l){this.nav.setRoot(l.component)},l.prototype.logout=function(){var l=this;this.alertCtrl.create({title:"Oops..!",message:"Do you want to logout?",buttons:[{text:"Yes",handler:function(){l.angularFire.auth.signOut(),l.nav.setRoot(Cl)}},{text:"No",handler:function(){}}]}).present()},l}(),jl=function(){return function(){}}(),kl=u(79),zl=u(378),Pl=u(379),Sl=u(380),Fl=u(381),Il=u(382),Dl=u(383),Al=u(384),xl=u(385),Ul=u(386),Tl=u(56),Nl=u(20),Ll=u(19),Ol=u(1),Bl=u(37),Ml=u(47),El=u(135),Vl=u(45),ql=u(387),$l=u(63),Rl=u(104),Hl=u(5),Xl=u(21),Kl=u(12),Wl=u(8),Gl=u(7),Jl=u(265),Ql=u(26),ln=u(44),nn=u(31),un=u(23),an=u(35),tn=u(16),en=u(6),on=u(17),sn=u(83),rn=u(14),cn=u(24),_n=u(15),dn=u(388),hn=u(84),mn=u(59),pn=u(30),gn=u(60),fn=nl.X({encapsulation:2,styles:[],data:{}}),bn=nl.V("ng-component",wl,function(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,1,"ng-component",[],null,null,null,t,fn)),nl.Y(1,49152,null,0,wl,[Hl.a,al.a,ul.a,el.a,cl.a,gn.a],null,null)],null,null)},{},{},[]),Zn=u(33),vn=u(50),Yn=u(48),yn=u(136),Cn=u(28),wn=u(40),jn=u(41),kn=u(39),zn=u(46),Pn=u(42),Sn=nl.X({encapsulation:2,styles:[],data:{}}),Fn=nl.V("page-home",yl,function(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,1,"page-home",[],null,null,null,e,Sn)),nl.Y(1,49152,null,0,yl,[on.a,el.a,il,Pn.a],null,null)],null,null)},{},{},[]),In=u(122),Dn=u(69),An=u(13),xn=u(55),Un=nl.X({encapsulation:2,styles:[],data:{}}),Tn=nl.V("page-signup",sl,function(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,1,"page-signup",[],null,null,null,_,Un)),nl.Y(1,49152,null,0,sl,[on.a,An.a,il,tl.d,xn.a,Pn.a,gn.a,el.a],null,null)],null,null)},{},{},[]),Nn=nl.X({encapsulation:2,styles:[],data:{}}),Ln=nl.V("page-login",Cl,function(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,1,"page-login",[],null,null,null,m,Nn)),nl.Y(1,49152,null,0,Cl,[on.a,An.a,tl.d,il,Pn.a,xn.a],null,null)],null,null)},{},{},[]),On=u(54),Bn=u(97),Mn=u(52),En=nl.X({encapsulation:2,styles:[],data:{}}),Vn=nl.V("page-photography",gl,function(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,1,"page-photography",[],null,null,null,g,En)),nl.Y(1,49152,null,0,gl,[on.a,An.a,il,xn.a,Pn.a],null,null)],null,null)},{},{},[]),qn=u(389),$n=u(98),Rn=u(73),Hn=u(87),Xn=u(85),Kn=nl.X({encapsulation:2,styles:[],data:{}}),Wn=nl.V("page-book",pl,function(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,1,"page-book",[],null,null,null,b,Kn)),nl.Y(1,49152,null,0,pl,[on.a,An.a,gn.a,Xn.a,ml,il,xn.a,Pn.a],null,null)],null,null)},{},{},[]),Gn=nl.X({encapsulation:2,styles:[],data:{}}),Jn=nl.V("page-my-order",dl,function(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,1,"page-my-order",[],null,null,null,I,Gn)),nl.Y(1,49152,null,0,dl,[on.a,An.a,il,el.a,xn.a,Pn.a],null,null)],null,null)},{},{},[]),Qn=u(96),lu=nl.X({encapsulation:2,styles:[],data:{}}),nu=nl.V("page-order-booked",hl,function(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,1,"page-order-booked",[],null,null,null,D,lu)),nl.Y(1,49152,null,0,hl,[on.a,An.a,el.a,il],null,null)],null,null)},{},{},[]),uu=nl.X({encapsulation:2,styles:[],data:{}}),au=nl.V("page-orderbooked2",rl,function(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,1,"page-orderbooked2",[],null,null,null,O,uu)),nl.Y(1,49152,null,0,rl,[on.a,An.a],null,null)],null,null)},{},{},[]),tu=nl.X({encapsulation:2,styles:[],data:{}}),eu=nl.V("page-profile",_l,function(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,1,"page-profile",[],null,null,null,H,tu)),nl.Y(1,49152,null,0,_l,[on.a,An.a,el.a,il,tl.d,Pn.a,gn.a,cl.a],null,null)],null,null)},{},{},[]),ou=u(390),iu=u(109),su=nl.X({encapsulation:2,styles:[],data:{}}),ru=nl.V("page-haircut-home",Yl,function(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,1,"page-haircut-home",[],null,null,null,K,su)),nl.Y(1,49152,null,0,Yl,[on.a,An.a,il,el.a,Pn.a],null,null)],null,null)},{},{},[]),cu=u(391),_u=u(101),du=u(107),hu=nl.X({encapsulation:2,styles:[],data:{}}),mu=nl.V("page-haircut-book",vl,function(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,1,"page-haircut-book",[],null,null,null,G,hu)),nl.Y(1,49152,null,0,vl,[on.a,An.a,du.a,il,el.a,gn.a,Xn.a,Pn.a,xn.a],null,null)],null,null)},{},{},[]),pu=u(144),gu=u(149),fu=nl.X({encapsulation:2,styles:[],data:{}}),bu=nl.V("page-haircut-conformation",Zl,function(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,1,"page-haircut-conformation",[],null,null,null,J,fu)),nl.Y(1,49152,null,0,Zl,[on.a,An.a,en.a],null,null)],null,null)},{},{},[]),Zu=nl.X({encapsulation:2,styles:[],data:{}}),vu=nl.V("page-haircut-popup",fl,function(l){return nl._23(0,[(l()(),nl.Z(0,0,null,null,1,"page-haircut-popup",[],null,null,null,Q,Zu)),nl.Y(1,49152,null,0,fl,[on.a,An.a,en.a],null,null)],null,null)},{},{},[]),Yu=u(157),yu=u(129),Cu=u(154),wu=u(62),ju=u(221),ku=u(81),zu=u(74),Pu=u(153),Su=u(220),Fu=u(155),Iu=u(137),Du=u(156),Au=nl.W(jl,[kl.b],function(l){return nl._7([nl._8(512,nl.i,nl.S,[[8,[zl.a,Pl.a,Sl.a,Fl.a,Il.a,Dl.a,Al.a,xl.a,Ul.a,bn,Fn,Tn,Ln,Vn,Wn,Jn,nu,au,eu,ru,mu,bu,vu]],[3,nl.i],nl.s]),nl._8(5120,nl.r,nl._18,[[3,nl.r]]),nl._8(4608,rn.l,rn.k,[nl.r,[2,rn.t]]),nl._8(5120,nl.b,nl._1,[]),nl._8(5120,nl.p,nl._9,[]),nl._8(5120,nl.q,nl._12,[]),nl._8(4608,ll.c,ll.q,[rn.c]),nl._8(6144,nl.D,null,[ll.c]),nl._8(4608,ll.f,Yu.a,[]),nl._8(5120,ll.d,function(l,n,u,a,t){return[new ll.k(l,n),new ll.o(u),new ll.n(a,t)]},[rn.c,nl.u,rn.c,rn.c,ll.f]),nl._8(4608,ll.e,ll.e,[ll.d,nl.u]),nl._8(135680,ll.m,ll.m,[rn.c]),nl._8(4608,ll.l,ll.l,[ll.e,ll.m]),nl._8(6144,nl.B,null,[ll.l]),nl._8(6144,ll.p,null,[ll.m]),nl._8(4608,nl.G,nl.G,[nl.u]),nl._8(4608,ll.h,ll.h,[rn.c]),nl._8(4608,ll.i,ll.i,[rn.c]),nl._8(4608,tl.q,tl.q,[]),nl._8(4608,tl.d,tl.d,[]),nl._8(5120,cl.b,cl.f,[cl.c,cl.d]),nl._8(4608,yu.a,yu.a,[Gl.a,Ol.a]),nl._8(4608,gn.a,gn.a,[Gl.a,Ol.a]),nl._8(4608,Cu.a,Cu.a,[]),nl._8(4608,Ll.a,Ll.a,[]),nl._8(4608,wu.a,wu.a,[Hl.a]),nl._8(4608,Xl.a,Xl.a,[Ol.a,Hl.a,nl.u,Wl.a]),nl._8(4608,xn.a,xn.a,[Gl.a,Ol.a]),nl._8(5120,rn.g,ju.b,[rn.r,[2,rn.a],Ol.a]),nl._8(4608,rn.f,rn.f,[rn.g]),nl._8(5120,ku.b,ku.d,[Gl.a,ku.a]),nl._8(5120,pn.a,pn.b,[Gl.a,ku.b,rn.f,zu.b,nl.i]),nl._8(4608,Xn.a,Xn.a,[Gl.a,Ol.a,pn.a]),nl._8(4608,Rn.a,Rn.a,[Gl.a,Ol.a]),nl._8(4608,du.a,du.a,[Gl.a,Ol.a,pn.a]),nl._8(4608,Pu.a,Pu.a,[Ol.a,Hl.a,Wl.a,Gl.a,Kl.l]),nl._8(4608,Pn.a,Pn.a,[Gl.a,Ol.a]),nl._8(4608,mn.a,mn.a,[Hl.a,Ol.a]),nl._8(4608,al.a,al.a,[]),nl._8(4608,ul.a,ul.a,[]),nl._8(4608,el.a,el.a,[cl.b]),nl._8(4608,ol.a,ol.a,[cl.b]),nl._8(4608,il,il,[el.a,ol.a]),nl._8(4608,ml,ml,[il]),nl._8(512,rn.b,rn.b,[]),nl._8(512,nl.k,Su.a,[]),nl._8(256,Ol.b,{},[]),nl._8(1024,Fu.a,Fu.b,[]),nl._8(1024,Hl.a,Hl.b,[ll.b,Fu.a,nl.u]),nl._8(1024,Ol.a,Ol.c,[Ol.b,Hl.a]),nl._8(512,Wl.a,Wl.a,[Hl.a]),nl._8(512,Vl.a,Vl.a,[]),nl._8(512,Gl.a,Gl.a,[Ol.a,Hl.a,[2,Vl.a]]),nl._8(512,Kl.l,Kl.l,[Gl.a]),nl._8(256,ku.a,{links:[]},[]),nl._8(512,nl.h,nl.h,[]),nl._8(512,Iu.a,Iu.a,[nl.h]),nl._8(1024,zu.b,zu.c,[Iu.a,nl.o]),nl._8(1024,nl.c,function(l,n,u,a,t,e,o,i,s,r,c,_,d){return[ll.s(l),Du.a(n),Cu.b(u,a),Pu.b(t,e,o,i,s),zu.d(r,c,_,d)]},[[2,nl.t],Ol.a,Hl.a,Wl.a,Ol.a,Hl.a,Wl.a,Gl.a,Kl.l,Ol.a,ku.a,zu.b,nl.u]),nl._8(512,nl.d,nl.d,[[2,nl.c]]),nl._8(131584,nl.f,nl.f,[nl.u,nl.T,nl.o,nl.k,nl.i,nl.d]),nl._8(512,nl.e,nl.e,[nl.f]),nl._8(512,ll.a,ll.a,[[3,ll.a]]),nl._8(512,tl.o,tl.o,[]),nl._8(512,tl.g,tl.g,[]),nl._8(512,tl.m,tl.m,[]),nl._8(512,ju.a,ju.a,[]),nl._8(512,cl.a,cl.a,[]),nl._8(512,jl,jl,[]),nl._8(256,cl.c,{apiKey:"AIzaSyDO7w2BSyaeqHISmXz7A5Vc_hMs_SPUQzs",authDomain:"myman180.firebaseapp.com",databaseURL:"https://myman180.firebaseio.com",projectId:"myman180",storageBucket:"",messagingSenderId:"60171985623",appId:"1:60171985623:web:6a3661263e11b72fefc692"},[]),nl._8(256,cl.d,void 0,[]),nl._8(256,kl.a,wl,[]),nl._8(256,rn.a,"/",[])])});Object(nl.M)(),Object(ll.j)().bootstrapModuleFactory(Au)}},[266]);
+webpackJsonp([0],{
+
+/***/ 127:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__signup_signup__ = __webpack_require__(237);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(138);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_forms__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_fireBaseService__ = __webpack_require__(22);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+/**
+ * Generated class for the LoginPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var LoginPage = /** @class */ (function () {
+    function LoginPage(navCtrl, navParams, formBuilder, fbService, toastCtrl, loadingCtrl) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.formBuilder = formBuilder;
+        this.fbService = fbService;
+        this.toastCtrl = toastCtrl;
+        this.loadingCtrl = loadingCtrl;
+        this.credentialForm = this.formBuilder.group({
+            phoneNumber: ['', __WEBPACK_IMPORTED_MODULE_4__angular_forms__["f" /* Validators */].compose([
+                    __WEBPACK_IMPORTED_MODULE_4__angular_forms__["f" /* Validators */].pattern('^[0-9]+$'),
+                    __WEBPACK_IMPORTED_MODULE_4__angular_forms__["f" /* Validators */].minLength(10),
+                    __WEBPACK_IMPORTED_MODULE_4__angular_forms__["f" /* Validators */].maxLength(10),
+                    __WEBPACK_IMPORTED_MODULE_4__angular_forms__["f" /* Validators */].required
+                ])],
+            password: ['', __WEBPACK_IMPORTED_MODULE_4__angular_forms__["f" /* Validators */].compose([
+                    __WEBPACK_IMPORTED_MODULE_4__angular_forms__["f" /* Validators */].required,
+                    __WEBPACK_IMPORTED_MODULE_4__angular_forms__["f" /* Validators */].minLength(8)
+                ])]
+        });
+    }
+    LoginPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad LoginPage');
+    };
+    LoginPage.prototype.navToSignUp = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__signup_signup__["a" /* SignupPage */]);
+    };
+    LoginPage.prototype.signIn = function () {
+        var _this = this;
+        // loading instance
+        var loading = this.loadingCtrl.create({
+            content: 'please wait, logging in'
+        });
+        // toast instance
+        var toast = this.toastCtrl.create({
+            duration: 2000,
+            position: 'bottom'
+        });
+        var phoneNumber = this.credentialForm.controls['phoneNumber'].value;
+        var password = this.credentialForm.controls['password'].value;
+        loading.present();
+        this.fbService.filterData(this.fbService.equalTo, 'users', null, this.fbService.orderByChild, 'phoneNumber', phoneNumber)
+            .then(function (response) {
+            var obj = Object.entries(response);
+            var email = obj[0][1].email;
+            _this.fbService.login(email, password)
+                .then(function (response) {
+                loading.dismiss();
+                _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__home_home__["a" /* HomePage */]);
+            })
+                .catch(function (error) {
+                // toast.present();
+                loading.dismiss();
+                if (error.message == "The password is invalid or the user does not have a password.") {
+                    toast.setMessage("Invalid username or password");
+                    toast.present();
+                }
+                else {
+                    toast.setMessage("Some error has occured. Please try again");
+                    toast.present();
+                }
+            });
+        })
+            .catch(function (error) {
+            loading.dismiss();
+            toast.setMessage("Oops...! Phone number not found, Please signin to continue");
+            toast.present();
+        });
+    };
+    LoginPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-login',template:/*ion-inline-start:"/home/ghost/My_works/Ionic/MyMan/src/pages/Common/login/login.html"*/'<ion-header>\n    <ion-navbar class="toolbar-background" hideBackButton>\n        <p class="toolbar-title">Login</p>\n    </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n  <form [formGroup]="credentialForm">\n    <ion-item no-line class="l1">\n      <!-- <ion-label stacked>Phone Number</ion-label> -->\n      <ion-input type="Number" \n                  placeholder="Phone Number"\n                  formControlName="phoneNumber"></ion-input>\n    </ion-item>\n\n    <ion-item \n      class="warning-on-input"\n      *ngIf="!credentialForm.controls.phoneNumber.valid && (credentialForm.controls.phoneNumber.dirty || submitAttempt)">\n        <p>Enter valid Phone number</p>\n    </ion-item>\n    \n    <ion-item class="l2">\n        <!-- <ion-label stacked>Password</ion-label> -->\n        <ion-input type="password" \n                    placeholder="Password"\n                    formControlName="password"></ion-input>\n    </ion-item>\n\n    <ion-item\n      class="warning-on-input"\n      *ngIf="!credentialForm.controls.password.valid && (credentialForm.controls.password.dirty || submitAttempt)">\n        <p>Password length should be 8 characters long</p>\n    </ion-item>\n      \n    <button  ion-button  round full \n          class="button" \n          (click)="signIn()"\n          [disabled]="!credentialForm.valid">SIGN IN</button>\n      \n    <p text-center class="navSignUp">  New user?  <a (click)="navToSignUp()"> Signup</a></p>\n  </form> \n</ion-content>'/*ion-inline-end:"/home/ghost/My_works/Ionic/MyMan/src/pages/Common/login/login.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_4__angular_forms__["a" /* FormBuilder */],
+            __WEBPACK_IMPORTED_MODULE_5__services_fireBaseService__["a" /* FirebaseServices */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* ToastController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* LoadingController */]])
+    ], LoginPage);
+    return LoginPage;
+}());
+
+//# sourceMappingURL=login.js.map
+
+/***/ }),
+
+/***/ 138:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Photography_photography_photography__ = __webpack_require__(288);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__profile_profile__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__my_order_my_order__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_angularfire2_auth__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_fireBaseService__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Haircut_haircut_home_haircut_home__ = __webpack_require__(293);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+
+var HomePage = /** @class */ (function () {
+    function HomePage(navCtrl, afAuth, fbService, toastCtrl) {
+        this.navCtrl = navCtrl;
+        this.afAuth = afAuth;
+        this.fbService = fbService;
+        this.toastCtrl = toastCtrl;
+    }
+    HomePage.prototype.photography = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__Photography_photography_photography__["a" /* PhotographyPage */]);
+    };
+    HomePage.prototype.clicked = function () {
+        var _this = this;
+        var toast = this.toastCtrl.create({
+            duration: 2000,
+            message: "Check your internet connection",
+            position: 'bottom'
+        });
+        var user = this.afAuth.auth.currentUser;
+        this.fbService.readOnce('users/' + user.uid)
+            .then(function (response) {
+            var details = Object.entries(response);
+            var emailId = details[0][1];
+            var phone = details[2][1];
+            var fullName = details[1][1];
+            var payload = {
+                email: emailId,
+                phoneNumber: phone,
+                name: fullName
+            };
+            _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__profile_profile__["a" /* ProfilePage */], { 'payload': payload });
+        })
+            .catch(function (error) {
+            toast.present();
+        });
+    };
+    HomePage.prototype.order = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_4__my_order_my_order__["a" /* MyOrderPage */]);
+    };
+    // nav to haircut page
+    HomePage.prototype.navToHaircut = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_7__Haircut_haircut_home_haircut_home__["a" /* HaircutHomePage */]);
+    };
+    HomePage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-home',template:/*ion-inline-start:"/home/ghost/My_works/Ionic/MyMan/src/pages/Common/home/home.html"*/'<ion-header>\n  <ion-navbar hideBackButton >\n    <ion-title class="toolbar-title.toolbar-title-md">MyMan</ion-title>\n    <ion-buttons left class="Menu">\n        <button ion-button icon-only menuToggle>\n            <ion-icon name="menu" class="resize-icon"></ion-icon></button>\n    </ion-buttons>\n    <ion-buttons right class="hammer">\n        <button ion-button icon-only (click)="order()">\n          <ion-icon name="custom-hammer" class="resize-icon"></ion-icon></button>\n    </ion-buttons>\n    <ion-buttons right class="Union">\n        <button ion-button icon-only (click)="clicked()" >\n          <ion-icon name="custom-Union" class="resize-icon"></ion-icon></button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <ion-grid>\n    <ion-row>\n\n      <!-- Photography -->\n      <ion-col col-sm-2 (click)="photography()">\n        <ion-avatar class="p1" style=" border: 1px solid black;">\n          <!--image-->\n        </ion-avatar>\n      <h1 text-center>Photography</h1>\n      <p text-center>Sample text</p>\n    </ion-col>\n\n    <!-- Haircut -->\n      <ion-col col-sm-2 (click)="navToHaircut()">\n          <ion-avatar class="h" style=" border: 1px solid black;">\n            <!--image-->\n      </ion-avatar>\n      <h1 text-center>Haircut</h1>\n      <p text-center>Sample text</p>\n            </ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col col-sm-2>\n          <ion-avatar class="g" style=" border: 1px solid black;">\n            <!--image-->\n          </ion-avatar>\n          <h1 text-center>Grocery</h1>\n          <p text-center>Sample text</p>\n        </ion-col>\n        <ion-col col-sm-2>\n          <!-- <ion-avatar class="g" style=" border: 1px solid black;">\n            \n          </ion-avatar>\n          <h1 text-center>Grocery</h1>\n          <p text-center>Sample text</p> -->\n        </ion-col>\n      </ion-row>\n    </ion-grid>      \n      \n</ion-content>\n'/*ion-inline-end:"/home/ghost/My_works/Ionic/MyMan/src/pages/Common/home/home.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_5_angularfire2_auth__["a" /* AngularFireAuth */],
+            __WEBPACK_IMPORTED_MODULE_6__services_fireBaseService__["a" /* FirebaseServices */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* ToastController */]])
+    ], HomePage);
+    return HomePage;
+}());
+
+//# sourceMappingURL=home.js.map
+
+/***/ }),
+
+/***/ 139:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Orderbooked2Page; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var Orderbooked2Page = /** @class */ (function () {
+    function Orderbooked2Page(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.item = this.navParams.get('payload');
+        console.log(this.item);
+        this.status = this.item.status;
+    }
+    Orderbooked2Page.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad Orderbooked2Page');
+    };
+    Orderbooked2Page = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-orderbooked2',template:/*ion-inline-start:"/home/ghost/My_works/Ionic/MyMan/src/pages/Common/orderbooked2/orderbooked2.html"*/'<!--\n  Generated template for the Orderbooked2Page page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar>\n    <ion-title class="toolbar-title.toolbar-title-md">Order Booked</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding>\n\n  <!-- For Photography -->\n  <div *ngIf="item.service == \'Photography\'">\n    <ion-grid>\n      <ion-row>\n        <ion-col col-4>\n          <ion-avatar style=" border: 1px solid black;" class="i1">\n            <!----image-->\n          </ion-avatar>\n        </ion-col>\n        <ion-col col-8 class="l1"><b>Pack 1</b>\n        </ion-col>\n      </ion-row>\n    </ion-grid>\n\n    <h2 class="h2">Ordered by</h2>\n    <p class="p">{{ item.userName }}</p>\n\n    <ion-card class="card1">\n      <ion-item>\n        <h2>Function Name</h2>\n        <p>{{ item.function }}</p>\n        <h2>Function Date and Time</h2>\n        <p>{{ item.fromDate }}</p>\n        <h2>Event Start</h2>\n        <p>{{ item.fromDate }}</p>\n        <h2>Event End</h2>\n        <p>{{ item.toDate }}</p>\n      </ion-item>\n    </ion-card>\n\n    <ion-card class="card2">\n      <ion-item>\n        <h2>Function Name</h2>\n        <p>{{ item.function }}</p>\n        <h2>Function Date and Time</h2>\n        <p>{{ item.fromDate }}</p>\n      </ion-item>\n    </ion-card>\n\n    <ion-card class="card3">\n\n      <ion-item *ngIf="status == 0">\n        <ion-avatar item-start>\n          <img src="../../assets/imgs/camera1.jpg">\n        </ion-avatar>\n        <h2> </h2>\n        <h2>Photographer status</h2>\n        <p>\n          <ion-badge color="secondary">Pending</ion-badge>\n        </p>\n      </ion-item>\n\n      <ion-item *ngIf="status != 0">\n        <ion-avatar item-start>\n          <img src="../../assets/imgs/camera1.jpg">\n        </ion-avatar>\n        <h2>Photographer Name</h2>\n        <p>City</p>\n        <p>Phone Number</p>\n      </ion-item>\n    </ion-card>\n\n  </div>\n\n  <!-- For Haircut -->\n  <div *ngIf="item.service == \'Haircut\'">\n    <ion-grid>\n      <ion-row>\n        <ion-col col-4>\n          <ion-avatar style=" border: 1px solid black;" class="i1">\n            <!----image-->\n          </ion-avatar>\n        </ion-col>\n        <ion-col col-8 class="l1"><b>Haircut</b>\n        </ion-col>\n      </ion-row>\n    </ion-grid>\n\n    <h2 class="h2">Ordered by</h2>\n    <p class="p">{{ item.userName }}</p>\n\n    <ion-card class="card1">\n      <ion-item>\n        <h2>Shop Name</h2>\n        <p>{{ item.shopName }}</p>\n        <h2>Time</h2>\n        <p>{{ item.time }}</p>\n        <h2>Date</h2>\n        <p>{{ item.date }}</p>\n        <h2>No. of Seats</h2>\n        <p *ngIf="item.seats.first == 1 && item.seats.second == 1">Seat No: 1, 2</p>\n        <p *ngIf="(item.seats.first == 0 && item.seats.second == 1)">Seat No: 2</p>\n        <p *ngIf="(item.seats.first == 1 && item.seats.second == 0)">Seat No: 1</p>\n      </ion-item>\n    </ion-card>\n\n    <ion-card class="card2">\n      <ion-item>\n        <h2>Transaction Id</h2>\n        <p>{{ item.transactionId }}</p>\n        <h2>Transaction Date</h2>\n        <p>{{ item.date }}</p>\n      </ion-item>\n    </ion-card>\n  </div>\n\n</ion-content>\n'/*ion-inline-end:"/home/ghost/My_works/Ionic/MyMan/src/pages/Common/orderbooked2/orderbooked2.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
+    ], Orderbooked2Page);
+    return Orderbooked2Page;
+}());
+
+//# sourceMappingURL=orderbooked2.js.map
+
+/***/ }),
+
+/***/ 150:
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncatched exception popping up in devtools
+	return Promise.resolve().then(function() {
+		throw new Error("Cannot find module '" + req + "'.");
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = 150;
+
+/***/ }),
+
+/***/ 193:
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncatched exception popping up in devtools
+	return Promise.resolve().then(function() {
+		throw new Error("Cannot find module '" + req + "'.");
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = 193;
+
+/***/ }),
+
+/***/ 22:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FirebaseServices; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_angularfire2_auth__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_angularfire2_database__ = __webpack_require__(251);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var FirebaseServices = /** @class */ (function () {
+    function FirebaseServices(fbAuth, fbDatabase) {
+        this.fbAuth = fbAuth;
+        this.fbDatabase = fbDatabase;
+        // integer values for three sorting types
+        this.orderByChild = 1;
+        this.orderByKey = 2;
+        this.orderByValue = 3;
+        // integer values for five filtering methods
+        this.limitToFirst = 1;
+        this.limitToLast = 2;
+        this.startAt = 3;
+        this.endAt = 4;
+        this.equalTo = 5;
+    }
+    // get the nodes under the parent as json object
+    FirebaseServices.prototype.readOnce = function (parent) {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            _this.fbDatabase.database.ref(parent)
+                .once("value")
+                .then(function (snapshot) {
+                resolve(snapshot.val());
+            })
+                .catch(function (error) {
+                reject('Something is wrong');
+            });
+        });
+    };
+    // push in database
+    FirebaseServices.prototype.pushInDatabase = function (parent, data) {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            _this.fbDatabase.database.ref(parent)
+                .push(data)
+                .then(function (snapshot) {
+                resolve(snapshot);
+            });
+        });
+    };
+    // write data to database
+    FirebaseServices.prototype.writeInDatabase = function (parent, data) {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            _this.fbDatabase.database.ref(parent)
+                .set(data)
+                .then(function (message) {
+                resolve("Data written successfully");
+            })
+                .catch(function (error) {
+                reject("Data written failed");
+            });
+        });
+    };
+    // update a field or append a child to the parent
+    FirebaseServices.prototype.updateField = function (data) {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            _this.fbDatabase.database.ref()
+                .update(data)
+                .then(function () {
+                resolve("Field updated successfully");
+            })
+                .catch(function (error) {
+                reject("Field updation failed");
+            });
+        });
+    };
+    // remove a field
+    FirebaseServices.prototype.removeField = function (parent, child) {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            _this.fbDatabase.database.ref(parent).child(child)
+                .remove()
+                .then(function () {
+                resolve("Field removed successfully");
+            })
+                .catch(function () {
+                reject("Field removal failed");
+            });
+        });
+    };
+    // orderBy Method
+    FirebaseServices.prototype.orderData = function (method, parent, child) {
+        var _this = this;
+        if (child === void 0) { child = null; }
+        return new Promise(function (resolve, reject) {
+            if (method == _this.orderByChild) {
+                _this.fbDatabase.database.ref(parent)
+                    .orderByChild(child)
+                    .once("value")
+                    .then(function (snapshot) {
+                    resolve(snapshot.val());
+                })
+                    .catch(function (error) {
+                    reject(error);
+                });
+            }
+            else if (method == _this.orderByKey) {
+                _this.fbDatabase.database.ref(parent)
+                    .orderByKey()
+                    .once("value")
+                    .then(function (snapshot) {
+                    var result = Array();
+                    snapshot.val().forEach(function (element) {
+                        result.push(element);
+                    });
+                    resolve(result);
+                })
+                    .catch(function (error) {
+                    reject(error);
+                });
+            }
+            else if (method == _this.orderByValue) {
+                _this.fbDatabase.database.ref(parent)
+                    .orderByValue()
+                    .once("value")
+                    .then(function (snapshot) {
+                    var result = Array();
+                    snapshot.val().forEach(function (element) {
+                        result.push(element);
+                    });
+                    resolve(result);
+                })
+                    .catch(function (error) {
+                    reject(error);
+                });
+            }
+        });
+    };
+    // filter the data 
+    FirebaseServices.prototype.filterData = function (method, parent, limit, orderByMethod, orderByChild, equalToString) {
+        var _this = this;
+        if (limit === void 0) { limit = null; }
+        if (orderByMethod === void 0) { orderByMethod = null; }
+        if (orderByChild === void 0) { orderByChild = null; }
+        if (equalToString === void 0) { equalToString = null; }
+        return new Promise(function (resolve, reject) {
+            if (method == _this.limitToFirst) {
+                _this.fbDatabase.database.ref(parent)
+                    .limitToFirst(limit)
+                    .once("value")
+                    .then(function (snapshot) {
+                    resolve(snapshot.val());
+                })
+                    .catch(function (error) {
+                    reject(error);
+                });
+            }
+            else if (method == _this.limitToLast) {
+                _this.fbDatabase.database.ref(parent)
+                    .limitToLast(limit)
+                    .once("value")
+                    .then(function (snapshot) {
+                    resolve(snapshot.val());
+                })
+                    .catch(function (error) {
+                    reject(error);
+                });
+            }
+            else if (method == _this.startAt) {
+                if (orderByMethod == null) {
+                    reject("orderBy Method missing");
+                }
+                else {
+                    if (orderByMethod == _this.orderByChild) {
+                        _this.fbDatabase.database.ref(parent)
+                            .orderByChild(orderByChild)
+                            .startAt(limit)
+                            .once("value")
+                            .then(function (snapshot) {
+                            var result = Array();
+                            snapshot.forEach(function (element) {
+                                result.push(element.val());
+                            });
+                            resolve(result);
+                        })
+                            .catch(function (error) {
+                            reject(error);
+                        });
+                    }
+                    else if (orderByMethod == _this.orderByKey) {
+                        _this.fbDatabase.database.ref(parent)
+                            .orderByKey()
+                            .startAt(limit)
+                            .once("value")
+                            .then(function (snapshot) {
+                            var result = Array();
+                            snapshot.forEach(function (element) {
+                                result.push(element.val());
+                            });
+                            resolve(result);
+                        })
+                            .catch(function (error) {
+                            reject(error);
+                        });
+                    }
+                    else if (orderByMethod == _this.orderByValue) {
+                        _this.fbDatabase.database.ref(parent)
+                            .orderByValue()
+                            .startAt(limit)
+                            .once("value")
+                            .then(function (snapshot) {
+                            var result = Array();
+                            snapshot.forEach(function (element) {
+                                result.push(element.val());
+                            });
+                            resolve(result);
+                        })
+                            .catch(function (error) {
+                            reject(error);
+                        });
+                    }
+                }
+            }
+            else if (method == _this.endAt) {
+                if (orderByMethod == null) {
+                    reject("orderBy Method missing");
+                }
+                else {
+                    if (orderByMethod == _this.orderByChild) {
+                        _this.fbDatabase.database.ref(parent)
+                            .orderByChild(orderByChild)
+                            .endAt(limit)
+                            .once("value")
+                            .then(function (snapshot) {
+                            var result = Array();
+                            snapshot.forEach(function (element) {
+                                result.push(element.val());
+                            });
+                            resolve(result);
+                        })
+                            .catch(function (error) {
+                            reject(error);
+                        });
+                    }
+                    else if (orderByMethod == _this.orderByKey) {
+                        _this.fbDatabase.database.ref(parent)
+                            .orderByKey()
+                            .endAt(limit)
+                            .once("value")
+                            .then(function (snapshot) {
+                            var result = Array();
+                            snapshot.forEach(function (element) {
+                                result.push(element.val());
+                            });
+                            resolve(result);
+                        })
+                            .catch(function (error) {
+                            reject(error);
+                        });
+                    }
+                    else if (orderByMethod == _this.orderByValue) {
+                        _this.fbDatabase.database.ref(parent)
+                            .orderByValue()
+                            .endAt(limit)
+                            .once("value")
+                            .then(function (snapshot) {
+                            var result = Array();
+                            snapshot.forEach(function (element) {
+                                result.push(element.val());
+                            });
+                            resolve(result);
+                        })
+                            .catch(function (error) {
+                            reject(error);
+                        });
+                    }
+                }
+            }
+            else if (method == _this.equalTo) {
+                if (orderByMethod == null) {
+                    reject("orderBy Method missing");
+                }
+                else {
+                    if (orderByMethod == _this.orderByChild) {
+                        _this.fbDatabase.database.ref(parent)
+                            .orderByChild(orderByChild)
+                            .equalTo(equalToString)
+                            .once("value")
+                            .then(function (snapshot) {
+                            var result = Array();
+                            snapshot.forEach(function (element) {
+                                result.push(element.val());
+                            });
+                            resolve(result);
+                        })
+                            .catch(function (error) {
+                            reject(error);
+                        });
+                    }
+                    else if (orderByMethod == _this.orderByKey) {
+                        _this.fbDatabase.database.ref(parent)
+                            .orderByKey()
+                            .equalTo(equalToString)
+                            .once("value")
+                            .then(function (snapshot) {
+                            var result = Array();
+                            snapshot.forEach(function (element) {
+                                result.push(element.val());
+                            });
+                            resolve(result);
+                        })
+                            .catch(function (error) {
+                            reject(error);
+                        });
+                    }
+                    else if (orderByMethod == _this.orderByValue) {
+                        _this.fbDatabase.database.ref(parent)
+                            .orderByValue()
+                            .equalTo(equalToString)
+                            .once("value")
+                            .then(function (snapshot) {
+                            var result = Array();
+                            snapshot.forEach(function (element) {
+                                result.push(element.val());
+                            });
+                            resolve(result);
+                        })
+                            .catch(function (error) {
+                            reject(error);
+                        });
+                    }
+                }
+            }
+        });
+    };
+    // login with email and password
+    FirebaseServices.prototype.login = function (username, password) {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            _this.fbAuth.auth.signInWithEmailAndPassword(username, password)
+                .then(function (response) {
+                resolve(response);
+            })
+                .catch(function (error) {
+                reject(error);
+            });
+        });
+    };
+    // sign up with username and password
+    FirebaseServices.prototype.signUp = function (username, password) {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            _this.fbAuth.auth.createUserWithEmailAndPassword(username, password)
+                .then(function (response) {
+                resolve(response.uid);
+            })
+                .catch(function (error) {
+                reject(error);
+            });
+        });
+    };
+    FirebaseServices = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0_angularfire2_auth__["a" /* AngularFireAuth */],
+            __WEBPACK_IMPORTED_MODULE_1_angularfire2_database__["a" /* AngularFireDatabase */]])
+    ], FirebaseServices);
+    return FirebaseServices;
+}());
+
+//# sourceMappingURL=fireBaseService.js.map
+
+/***/ }),
+
+/***/ 237:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SignupPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_login__ = __webpack_require__(127);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_fireBaseService__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__validators_must_match__ = __webpack_require__(459);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_angularfire2_auth__ = __webpack_require__(28);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+var SignupPage = /** @class */ (function () {
+    function SignupPage(navCtrl, navParams, fbService, formBuilder, loadingCtrl, toastCtrl, alterCtrl, afAuth) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.fbService = fbService;
+        this.formBuilder = formBuilder;
+        this.loadingCtrl = loadingCtrl;
+        this.toastCtrl = toastCtrl;
+        this.alterCtrl = alterCtrl;
+        this.afAuth = afAuth;
+        this.credentialForm = this.formBuilder.group({
+            email: ['',
+                __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].compose([
+                    __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].pattern('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9]+.[a-zA-Z0-9]+$'),
+                    __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].required
+                ])],
+            phoneNumber: ['',
+                __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].compose([
+                    __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].pattern('^[0-9]+$'),
+                    __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].required,
+                    __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].minLength(10),
+                    __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].maxLength(10)
+                ])],
+            password: ['',
+                __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].compose([
+                    __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].minLength(8),
+                    __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].required
+                ])],
+            confirmPassword: ['',
+                __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].compose([
+                    __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].minLength(8),
+                    __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].maxLength(10),
+                    __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].required
+                ])],
+            name: ['',
+                __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].compose([
+                    __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].required,
+                    __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].minLength(4)
+                ])]
+        }, {
+            validator: Object(__WEBPACK_IMPORTED_MODULE_5__validators_must_match__["a" /* MustMatch */])('password', 'confirmPassword')
+        });
+    }
+    SignupPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad SignupPage');
+        console.log(this.afAuth.auth.currentUser);
+    };
+    SignupPage.prototype.navToLogin = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__login_login__["a" /* LoginPage */]);
+    };
+    // Sign Up function
+    SignupPage.prototype.signUp = function () {
+        var _this = this;
+        var email = this.credentialForm.controls['email'].value;
+        var password = this.credentialForm.controls['password'].value;
+        var phoneNumber = this.credentialForm.controls['phoneNumber'].value;
+        var name = this.credentialForm.controls['name'].value;
+        // loading instance
+        var loading = this.loadingCtrl.create({
+            content: 'please wait, your account is creating'
+        });
+        // toast instance
+        var toast = this.toastCtrl.create({
+            message: 'Some error has occured. Please try agian',
+            duration: 2000,
+            position: 'bottom'
+        });
+        // alert instance
+        var alert = this.alterCtrl.create({
+            title: 'Hurray..!',
+            subTitle: 'Your account has been created.',
+            buttons: [{
+                    text: 'Okay',
+                    handler: function (data) {
+                        //         
+                    }
+                }]
+        });
+        loading.present();
+        this.fbService.signUp(email, password)
+            .then(function (response) {
+            var uid = response;
+            var node = {
+                'email': email,
+                'phoneNumber': phoneNumber,
+                'name': name,
+                'type': 'user'
+            };
+            _this.fbService.writeInDatabase('users/' + uid, node)
+                .then(function (response) {
+                loading.dismiss();
+                alert.present();
+            })
+                .catch(function (error) {
+                loading.dismiss();
+                toast.present();
+            });
+        })
+            .catch(function (error) {
+            loading.dismiss();
+            toast.present();
+        });
+    };
+    SignupPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-signup',template:/*ion-inline-start:"/home/ghost/My_works/Ionic/MyMan/src/pages/Common/signup/signup.html"*/'<ion-header>\n  <ion-navbar class="toolbar-background" hideBackButton>\n    <ion-title class="toolbar-title.toolbar-title-md">Signup</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding>\n  \n    <ion-avatar  style=" border: 1px solid black;">\n        <!--image-->\n    </ion-avatar>\n\n<form [formGroup]="credentialForm"> \n\n\n  <ion-item class="l4">\n    <!-- <ion-label   position="floating"> Confirm Password</ion-label> -->\n    <ion-input type="text" \n                placeholder="Name"\n                formControlName="name"></ion-input>\n  </ion-item>\n\n  <ion-item \n      class="warning-on-input"\n      *ngIf="!credentialForm.controls.name.valid  && (credentialForm.controls.name.dirty || submitAttempt) && !credentialForm.controls.name.valid">\n    <p>Enter your name</p>\n  </ion-item>\n\n  <ion-item class="l1">\n    <!-- <ion-label  position="floating">Phone Number</ion-label> -->\n    <ion-input type="Number" \n                placeholder="Phone Number"\n                formControlName="phoneNumber"></ion-input>\n  </ion-item>\n\n  <ion-item \n      class="warning-on-input"\n      *ngIf="!credentialForm.controls.phoneNumber.valid  && (credentialForm.controls.phoneNumber.dirty || submitAttempt)">\n    <p>Please enter a valid Phone Number</p>\n  </ion-item>\n\n  <ion-item class="l2">\n    <!-- <ion-label    position="floating">Mail</ion-label> -->\n    <ion-input type="email" \n                placeholder="Email"\n                formControlName="email"></ion-input>\n  </ion-item>\n\n  <ion-item \n      class="warning-on-input"\n      *ngIf="!credentialForm.controls.email.valid  && (credentialForm.controls.email.dirty || submitAttempt)">\n    <p>Please enter a valid Email</p>\n  </ion-item>\n\n  <ion-item class="l3">\n    <!-- <ion-label  position="floating">Password</ion-label> -->\n    <ion-input type="password" \n                placeholder="Password"\n                formControlName="password"></ion-input>\n  </ion-item>\n\n  <ion-item \n      class="warning-on-input"\n      *ngIf="!credentialForm.controls.password.valid  && (credentialForm.controls.password.dirty || submitAttempt)">\n    <p>Password should be greater than 6 characters</p>\n  </ion-item>\n\n  <ion-item class="l4">\n    <!-- <ion-label   position="floating"> Confirm Password</ion-label> -->\n    <ion-input type="password" \n                placeholder="Confirm Password"\n                formControlName="confirmPassword"></ion-input>\n  </ion-item>\n\n  <ion-item \n      class="warning-on-input"\n      *ngIf="!credentialForm.controls.confirmPassword.valid  && (credentialForm.controls.password.dirty || submitAttempt) && !credentialForm.controls.confirmPassword.valid">\n    <p>Password and Conform password must be same</p>\n  </ion-item>\n  \n  <ion-buttons type="submit">\n  <button  ion-button  round full class="button" \n            (click)="signUp()"\n            [disabled]="!credentialForm.valid">SIGNUP</button>\n  </ion-buttons>\n    \n    <p text-center class="navLogin">  Already an user?  <a (click)="navToLogin()"> Login</a>\n    </p>\n  </form>\n</ion-content>\n'/*ion-inline-end:"/home/ghost/My_works/Ionic/MyMan/src/pages/Common/signup/signup.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_4__services_fireBaseService__["a" /* FirebaseServices */],
+            __WEBPACK_IMPORTED_MODULE_3__angular_forms__["a" /* FormBuilder */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* LoadingController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* ToastController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */],
+            __WEBPACK_IMPORTED_MODULE_6_angularfire2_auth__["a" /* AngularFireAuth */]])
+    ], SignupPage);
+    return SignupPage;
+}());
+
+//# sourceMappingURL=signup.js.map
+
+/***/ }),
+
+/***/ 288:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PhotographyPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Common_my_order_my_order__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__book_book__ = __webpack_require__(289);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_fireBaseService__ = __webpack_require__(22);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+/**
+ * Generated class for the PhotographyPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var PhotographyPage = /** @class */ (function () {
+    function PhotographyPage(navCtrl, navParams, fbService, loadingCtrl, toastCtrl) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.fbService = fbService;
+        this.loadingCtrl = loadingCtrl;
+        this.toastCtrl = toastCtrl;
+        // loading instance
+        this.loading = this.loadingCtrl.create({
+            content: 'please wait'
+        });
+        // toast instance
+        this.toast = this.toastCtrl.create({
+            message: 'Some error has occured. Please try agian',
+            duration: 2000,
+            position: 'bottom'
+        });
+        this.fetchFromDb();
+    }
+    PhotographyPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad PhotographyPage');
+    };
+    PhotographyPage.prototype.order = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__Common_my_order_my_order__["a" /* MyOrderPage */]);
+    };
+    // fetch from Firebase Database
+    PhotographyPage.prototype.fetchFromDb = function () {
+        var _this = this;
+        // start loading component 
+        this.loading.present();
+        this.fbService.readOnce('photography/packs')
+            .then(function (response) {
+            // terminate loading component 
+            _this.loading.dismiss();
+            _this.packs = response;
+        })
+            .catch(function (error) {
+            // terminate loading component
+            _this.loading.dismiss();
+            // show toast message
+            _this.toast.present();
+        });
+    };
+    // pack clicked
+    PhotographyPage.prototype.packClicked = function (pack) {
+        var payload = {
+            source: 'photography',
+            data: pack
+        };
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__book_book__["a" /* BookPage */], { payload: payload });
+    };
+    PhotographyPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-photography',template:/*ion-inline-start:"/home/ghost/My_works/Ionic/MyMan/src/pages/Photography/photography/photography.html"*/'<!--\n  Generated template for the PhotographyPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n     <ion-navbar>\n           <ion-title class="toolbar-title.toolbar-title-md">Photography</ion-title>\n                <ion-buttons right class="hamri8">\n                       <button ion-button icon-only (click)="order()"  >\n                                <ion-icon name="custom-hammer"></ion-icon>\n                       </button>\n                </ion-buttons>\n     </ion-navbar>\n</ion-header>\n\n<ion-content padding> \n    <ion-grid>\n\n        <ion-row *ngFor="let pack of packs">\n           <ion-col>\n                <ion-card (click)="packClicked(pack)" type="button" style=" border: 1px solid black; border-radius: 20px;" >\n                     <div class="c1" >\n                          <ion-card-content>\n                                  <ion-avatar class="img1" style=" border: 1px solid black;">\n                                           <!--image-->\n                                  </ion-avatar>\n                                   <ion-label class="p1" style="color:black;"><b>Pack {{ pack.id }}</b></ion-label>\n                          </ion-card-content>\n                     </div>\n               </ion-card>\n          </ion-col>\n        </ion-row>\n    \n    \n        <!-- <ion-row>\n           <ion-col>\n               <ion-card (click)="card2click()" type="button" style=" border: 1px solid black; border-radius: 20px;" >\n                     <div class="c1">\n                           <ion-card-content>\n                                   <ion-avatar class="img2" style=" border: 1px solid black;">\n                                         image-->\n                                   <!-- </ion-avatar>\n                                   <ion-label class="p1" style="color:black;"><b>Pack 2</b></ion-label>\n                           </ion-card-content>\n                     </div>\n        \n                </ion-card>\n            </ion-col>\n        </ion-row> \n\n        <ion-row>\n             <ion-col>\n                  <ion-card (click)="card3click()" type="button" style=" border: 1px solid black; border-radius: 20px;" >\n                        <div class="c1">\n                               <ion-card-content>\n                                    <ion-avatar class="img3" style=" border: 1px solid black;"> -->\n                                           <!--image-->\n                                    <!-- </ion-avatar>\n                                    <ion-label class="p1" style="color:black;"><b>Pack 3</b></ion-label>\n                               </ion-card-content>\n                        </div>\n                   </ion-card>\n             </ion-col>\n      </ion-row> -->\n    </ion-grid>\n</ion-content>\n'/*ion-inline-end:"/home/ghost/My_works/Ionic/MyMan/src/pages/Photography/photography/photography.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_4__services_fireBaseService__["a" /* FirebaseServices */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* LoadingController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* ToastController */]])
+    ], PhotographyPage);
+    return PhotographyPage;
+}());
+
+//# sourceMappingURL=photography.js.map
+
+/***/ }),
+
+/***/ 289:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BookPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Common_my_order_my_order__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__order_booked_order_booked__ = __webpack_require__(290);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_myManService__ = __webpack_require__(292);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_fireBaseService__ = __webpack_require__(22);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+var BookPage = /** @class */ (function () {
+    function BookPage(navCtrl, navParams, alertCtrl, modalCtrl, mmnService, fbService, loadingCtrl, toastCtrl) {
+        var _this = this;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.alertCtrl = alertCtrl;
+        this.modalCtrl = modalCtrl;
+        this.mmnService = mmnService;
+        this.fbService = fbService;
+        this.loadingCtrl = loadingCtrl;
+        this.toastCtrl = toastCtrl;
+        // input fields
+        this.selectedFunction = "";
+        this.fromTime = "";
+        this.toTime = "";
+        this.locationBooked = "";
+        // Estimated amount
+        this.estimatedAmount = 0;
+        // status flag for checkout
+        this.checkoutSatus = false;
+        // loading instance
+        this.loading = this.loadingCtrl.create({
+            content: 'please wait'
+        });
+        // toast instance
+        this.toast = this.toastCtrl.create({
+            duration: 2500,
+            position: 'bottom'
+        });
+        // get the value from source page
+        this.source = navParams.get('payload');
+        this.pack = this.source.data;
+        // get the functions details
+        this.fbService.readOnce('photography/functions')
+            .then(function (response) {
+            _this.functions = response;
+        })
+            .catch(function (error) {
+            // handle error
+            _this.toast.setMessage("Network connection error..!");
+            _this.toast.present();
+        });
+    }
+    BookPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad BookPage');
+    };
+    BookPage.prototype.order = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__Common_my_order_my_order__["a" /* MyOrderPage */]);
+    };
+    // checkout method
+    BookPage.prototype.checkout = function () {
+        if (this.checkoutSatus) {
+            var payload = {
+                pack: this.pack,
+                cost: this.estimatedAmount,
+                fromDate: this.fromTime,
+                toDate: this.toTime,
+                function: this.selectedFunction,
+                location: this.locationBooked,
+                status: 0
+            };
+            this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__order_booked_order_booked__["a" /* OrderBookedPage */], { payload: payload });
+        }
+        else {
+            this.toast.setMessage("Choose the fields correctly..!");
+            this.toast.present();
+        }
+    };
+    // function dropdown
+    BookPage.prototype.functionType = function () {
+        var _this = this;
+        var alert = this.alertCtrl.create();
+        alert.setTitle('Functions');
+        this.functions.forEach(function (element) {
+            alert.addInput({
+                type: 'radio',
+                label: element.name,
+                value: element.name,
+                checked: false
+            });
+        });
+        alert.addButton('Cancel');
+        alert.addButton({
+            text: 'OK',
+            handler: function (data) {
+                _this.selectedFunction = data;
+            }
+        });
+        alert.present();
+    };
+    //update EST
+    BookPage.prototype.updateEstimatedAmount = function () {
+        var _this = this;
+        // call amount estimation function
+        if (this.fromTime != "" && this.toTime != "" && this.selectedFunction != "") {
+            this.checkoutSatus = true;
+            this.mmnService.updateETA(this.fromTime, this.toTime, this.pack)
+                .then(function (response) {
+                _this.estimatedAmount = Number(response);
+            })
+                .catch(function (error) {
+                _this.estimatedAmount = Number(error);
+                _this.toast.setMessage("From and To date incorrect");
+                _this.toast.present();
+            });
+        }
+        else {
+            this.checkoutSatus = false;
+        }
+    };
+    // location clicked
+    BookPage.prototype.location = function () {
+        console.log("Location clicked");
+    };
+    BookPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-book',template:/*ion-inline-start:"/home/ghost/My_works/Ionic/MyMan/src/pages/Photography/book/book.html"*/'<!--\n  Generated template for the BookPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar>\n    <ion-title class="toolbar-title.toolbar-title-md">Book</ion-title>\n    <ion-buttons right class="hamri8">\n      <button ion-button icon-only (click)="order()">\n        <ion-icon name="custom-hammer"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <div class="d1">\n    <ion-grid>\n      <ion-row>\n        <ion-col col-4>\n          <ion-avatar style=" border: 1px solid black;" class="i1">\n            <!----image-->\n          </ion-avatar>\n        </ion-col>\n        <ion-col col-8 class="l1"><b>Pack {{ pack.id }}</b>\n        </ion-col>\n\n      </ion-row>\n      <ion-row>\n        <ion-col col-12><b>Function Type</b></ion-col>\n      </ion-row>\n      <ion-row (click)="functionType()" class="b1" id="function-type">\n          <ion-col col-10>\n            <ion-label>\n              {{ selectedFunction }}\n            </ion-label>\n          </ion-col>\n          <ion-col col-2>\n            <ion-icon class="icon1" name="custom-Downarrow"></ion-icon>\n          </ion-col>\n      </ion-row>\n      <ion-row *ngIf="selectedFunction == \'Others\'">\n        <ion-item class="l2">\n          <!-- <ion-label stacked>Password</ion-label> -->\n          <ion-input type="text" placeholder="type your function" [(ngModel)]="otherFunctionName"></ion-input>\n        </ion-item>\n      </ion-row>\n      <ion-row>\n        <ion-col col-6><b>From</b></ion-col>\n        <ion-col col-6><b>To</b></ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col col-6 (click)="picker.open()">\n              \n          <button class="b3" style=" border: 1px solid black;" ion-button round outline icon-end>\n            <ion-row class="fullWidth">\n              <ion-col col-9 class="fullWidth">\n                <ion-datetime #picker pickerFormat="DD MM YYYY" [(ngModel)]="fromTime"\n                  (ngModelChange)="updateEstimatedAmount()">\n                </ion-datetime>\n              </ion-col>\n              <ion-col col-3>\n                <ion-icon name="custom-calendar" class="icon1"></ion-icon>\n              </ion-col>\n            </ion-row>\n          </button>\n          \n        </ion-col>\n        <ion-col col-6 (click)="picker1.open()">\n          <button class="b3" style=" border: 1px solid black;" ion-button round outline icon-end>\n            <ion-row class="fullWidth">\n              <ion-col col-9 class="fullWidth">\n                <ion-datetime #picker1 pickerFormat="DD MM YYYY" [(ngModel)]="toTime"\n                  (ngModelChange)="updateEstimatedAmount()">\n                </ion-datetime>\n              </ion-col>\n              <ion-col col-3>\n                <ion-icon name="custom-calendar" class="icon1"></ion-icon>\n              </ion-col>\n            </ion-row>\n\n          </button>\n        </ion-col>\n\n      </ion-row>\n      <ion-row>\n        <ion-col col-12><b>Address or Location</b></ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col col-12 (click)="location()">\n          <button class="b1" (ngModelChange)="updateEstimatedAmount()" style=" border: 1px solid black;" ion-button\n            icon-end round outline>\n            <ion-row class="fullWidth">\n              <ion-col col-9 class="btnText">\n\n              </ion-col>\n              <ion-col col-3>\n                <ion-icon name="custom-places" class="icon1"></ion-icon>\n              </ion-col>\n            </ion-row>\n          </button>\n        </ion-col>\n      </ion-row>\n    </ion-grid>\n  </div>\n</ion-content>\n\n<ion-footer no-border>\n  <div class="d2">\n    <ion-label class="l4">INR {{ estimatedAmount }}</ion-label>\n    <ion-label class="l5">Estimated Amount</ion-label>\n    <button (click)="checkout()" class="b5" ion-button round outline>\n      CHECK OUT\n    </button>\n  </div>\n</ion-footer>\n'/*ion-inline-end:"/home/ghost/My_works/Ionic/MyMan/src/pages/Photography/book/book.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* ModalController */],
+            __WEBPACK_IMPORTED_MODULE_4__services_myManService__["a" /* MyManService */],
+            __WEBPACK_IMPORTED_MODULE_5__services_fireBaseService__["a" /* FirebaseServices */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* LoadingController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* ToastController */]])
+    ], BookPage);
+    return BookPage;
+}());
+
+//# sourceMappingURL=book.js.map
+
+/***/ }),
+
+/***/ 290:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OrderBookedPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_fireBaseService__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_js_sha256__ = __webpack_require__(291);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_js_sha256___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_js_sha256__);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+/**
+ * Generated class for the OrderBookedPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var OrderBookedPage = /** @class */ (function () {
+    function OrderBookedPage(navCtrl, navParams, fbAuth, fbService) {
+        var _this = this;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.fbAuth = fbAuth;
+        this.fbService = fbService;
+        this.source = navParams.get('payload');
+        var today = new Date();
+        var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+        var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+        this.nowDate = date + ' ' + time;
+        this.fromDate = this.source.fromDate;
+        this.functionType = this.source.function;
+        var user = this.fbAuth.auth.currentUser;
+        // console.log(user.uid);
+        this.fbService.readOnce('users/' + user.uid)
+            .then(function (response) {
+            var details = Object.entries(response);
+            // Generate request Id
+            var reqId = Object(__WEBPACK_IMPORTED_MODULE_4_js_sha256__["sha256"])(details[1][1] + user.uid + Date.now());
+            _this.source.appointmentId = reqId;
+            _this.source.userId = user.uid;
+            _this.name = details[1][1];
+            _this.source.bookedDate = _this.nowDate;
+            _this.source.userName = _this.name;
+            _this.source.service = 'Photography';
+            // Write the request in database
+            _this.fbService.writeInDatabase('requests/' + reqId, _this.source);
+        })
+            .catch(function (error) {
+            // console.log(error);
+        });
+    }
+    OrderBookedPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad OrderBookedPage');
+    };
+    OrderBookedPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-order-booked',template:/*ion-inline-start:"/home/ghost/My_works/Ionic/MyMan/src/pages/Photography/order-booked/order-booked.html"*/'<!--\n  Generated template for the OrderBookedPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar>\n    <ion-title class="toolbar-title.toolbar-title-md">Order Booked</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <div class="wrapper">\n    <img src="../../assets/imgs/order_placed.png" style="margin-top: 40px" />\n  </div>\n\n\n\n  <ion-grid style="margin-top: 80px">\n\n    <ion-row>\n      <ion-col align-items-center col-5>\n        <div class="bold">Odered by</div>\n      </ion-col>\n      <ion-col align-items-center col-1>\n        <div class="bold">:</div>\n      </ion-col>\n      <ion-col align-items-start col-4>\n        <div>{{ name }}</div>\n      </ion-col>\n    </ion-row>\n\n\n    <ion-row>\n      <ion-col align-items-center col-5>\n        <div class="bold">Function Name</div>\n      </ion-col>\n      <ion-col align-items-center col-1>\n        <div class="bold">:</div>\n      </ion-col>\n      <ion-col align-items-start col-4>\n        <div>{{ functionType }}</div>\n      </ion-col>\n    </ion-row>\n\n    <ion-row>\n      <ion-col align-items-center col-5>\n        <div class="bold">Function Date and Time</div>\n      </ion-col>\n      <ion-col align-items-center col-1>\n        <div class="bold">:</div>\n      </ion-col>\n      <ion-col align-items-start col-6>\n        <div>{{ fromDate }}</div>\n      </ion-col>\n    </ion-row>\n\n\n    <ion-row>\n      <ion-col align-items-center col-5>\n        <div class="bold">Transaction ID</div>\n      </ion-col>\n      <ion-col align-items-center col-1>\n        <div class="bold">:</div>\n      </ion-col>\n      <ion-col align-items-start col-6>\n        <div>126hdh89asd123d12</div>\n      </ion-col>\n    </ion-row>\n\n\n    <ion-row>\n      <ion-col align-items-center col-5>\n        <div class="bold">Transaction Time</div>\n      </ion-col>\n      <ion-col align-items-center col-1>\n        <div class="bold">:</div>\n      </ion-col>\n      <ion-col align-items-start col-6>\n        <div>{{ nowDate | date }}</div>\n      </ion-col>\n    </ion-row>\n\n  </ion-grid>\n\n\n\n  <ion-card>\n    <ion-item>\n      <ion-avatar item-start>\n        <img src="../../assets/imgs/camera1.jpg">\n      </ion-avatar>\n      <h2> </h2>\n      <h2>Photographer status</h2>\n      <p>\n        <ion-badge color="secondary">Pending</ion-badge>\n      </p>\n    </ion-item>\n\n  </ion-card>\n\n</ion-content>\n'/*ion-inline-end:"/home/ghost/My_works/Ionic/MyMan/src/pages/Photography/order-booked/order-booked.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__["a" /* AngularFireAuth */],
+            __WEBPACK_IMPORTED_MODULE_3__services_fireBaseService__["a" /* FirebaseServices */]])
+    ], OrderBookedPage);
+    return OrderBookedPage;
+}());
+
+//# sourceMappingURL=order-booked.js.map
+
+/***/ }),
+
+/***/ 292:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyManService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__fireBaseService__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var MyManService = /** @class */ (function () {
+    function MyManService(fbService) {
+        var _this = this;
+        this.fbService = fbService;
+        // fetch the pack details
+        this.fbService.readOnce('packs')
+            .then(function (response) {
+            _this.pack = response;
+        })
+            .catch(function (error) {
+        });
+        // fetch the photographer details
+        this.fbService.readOnce('photographers')
+            .then(function (response) {
+            _this.photographer = response;
+        })
+            .catch(function (error) {
+        });
+    }
+    // update the Estimated amount of Booking
+    MyManService.prototype.updateETA = function (fromTime, toTime, pack) {
+        return new Promise(function (resolve, reject) {
+            console.log({ fromTime: fromTime, toTime: toTime, pack: pack });
+            var ETA = 0;
+            var cost = Number(pack.cost);
+            var sTime = new Date(fromTime);
+            var eTime = new Date(toTime);
+            var utc1 = Date.UTC(sTime.getFullYear(), sTime.getMonth(), sTime.getDate());
+            var utc2 = Date.UTC(eTime.getFullYear(), eTime.getMonth(), eTime.getDate());
+            var difference = Math.floor((utc2 - utc1) / (1000 * 60 * 60 * 24));
+            ;
+            if (difference < 0) {
+                ETA = 0;
+                reject(ETA);
+            }
+            else if (difference == 0) {
+                ETA = 1 * cost;
+            }
+            else {
+                ETA = (difference + 1) * cost;
+            }
+            resolve(ETA);
+        });
+    };
+    MyManService = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__fireBaseService__["a" /* FirebaseServices */]])
+    ], MyManService);
+    return MyManService;
+}());
+
+//# sourceMappingURL=myManService.js.map
+
+/***/ }),
+
+/***/ 293:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HaircutHomePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_fireBaseService__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__haircut_book_haircut_book__ = __webpack_require__(294);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Common_profile_profile__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Common_my_order_my_order__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_angularfire2_auth__ = __webpack_require__(28);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+var HaircutHomePage = /** @class */ (function () {
+    function HaircutHomePage(navCtrl, navParams, fbService, afAuth, toastCtrl) {
+        var _this = this;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.fbService = fbService;
+        this.afAuth = afAuth;
+        this.toastCtrl = toastCtrl;
+        // object array of shops
+        this.shopArray = [];
+        // location for filtering the shops
+        this.location = "Dindigul";
+        // read the shops list from db
+        this.fbService.readOnce('haircut/shops')
+            .then(function (response) {
+            var obj = Object.entries(response);
+            _this.loadedShopArray = [];
+            obj.forEach(function (shop) {
+                if (shop[1]['city'] == _this.location) {
+                    _this.loadedShopArray.push(shop[1]);
+                }
+            });
+            _this.initializeItems();
+        })
+            .catch(function (error) {
+        });
+    }
+    HaircutHomePage.prototype.initializeItems = function () {
+        this.shopArray = this.loadedShopArray;
+    };
+    HaircutHomePage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad HaircutHomePage');
+    };
+    // filtering the shops based on shop name
+    HaircutHomePage.prototype.getItems = function (ev) {
+        // Reset items back to all of the items
+        this.initializeItems();
+        // set val to the value of the searchbar
+        var val = ev.target.value;
+        // if the value is an empty string don't filter the items
+        if (val && val.trim() != '') {
+            this.shopArray = this.shopArray.filter(function (item) {
+                return (item.shopName.toLowerCase().indexOf(val.toLowerCase()) > -1);
+            });
+        }
+    };
+    // nav to selected shop
+    HaircutHomePage.prototype.shopSelected = function (shop) {
+        var payload = {
+            source: 'haircut-home',
+            data: shop
+        };
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__haircut_book_haircut_book__["a" /* HaircutBookPage */], payload);
+    };
+    // nav to profile
+    HaircutHomePage.prototype.navToProfile = function () {
+        var _this = this;
+        var toast = this.toastCtrl.create({
+            duration: 2000,
+            message: "Check your internet connection",
+            position: 'bottom'
+        });
+        var user = this.afAuth.auth.currentUser;
+        this.fbService.readOnce('users/' + user.uid)
+            .then(function (response) {
+            var details = Object.entries(response);
+            var emailId = details[0][1];
+            var phone = details[2][1];
+            var fullName = details[1][1];
+            var payload = {
+                email: emailId,
+                phoneNumber: phone,
+                name: fullName
+            };
+            _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_4__Common_profile_profile__["a" /* ProfilePage */], { 'payload': payload });
+        })
+            .catch(function (error) {
+            toast.present();
+        });
+    };
+    // nav to my order page
+    HaircutHomePage.prototype.navToMyOrders = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_5__Common_my_order_my_order__["a" /* MyOrderPage */]);
+    };
+    HaircutHomePage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-haircut-home',template:/*ion-inline-start:"/home/ghost/My_works/Ionic/MyMan/src/pages/Haircut/haircut-home/haircut-home.html"*/'<!--\n  Generated template for the HaircutHomePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n\n<!-- Title display -->\n\n<ion-header>\n  <ion-navbar>\n\n    <ion-title class="toolbar-title.toolbar-title-md">Haircut</ion-title>\n\n    <ion-buttons right class="Union" (click)="navToProfile()">\n      <button ion-button icon-only>\n        <ion-icon name="custom-Union" class="resize-icon"></ion-icon>\n      </button>\n    </ion-buttons>\n\n    <ion-buttons right class="hammer" (click)="navToMyOrders()">\n      <button ion-button icon-only>\n        <ion-icon name="custom-hammer" class="resize-icon"></ion-icon>\n      </button>\n    </ion-buttons>\n\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding>\n\n  <!-- Search display -->\n\n  <ion-grid>\n    <ion-row row-12>\n      <ion-col>\n          <!-- <ion-input placeholder="Search" (ionInput)="getItems($event)"></ion-input> -->\n          <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n\n  <!-- First card display -->\n\n  <ion-grid class="card-position" *ngFor="let shop of shopArray" (click)="shopSelected(shop)">\n\n    <!-- Card area -->\n\n    <ion-card class="card-area" type="button" style=" border: 1.3px solid #a9a9a9;">\n      <ion-card-content>\n        <ion-row>\n          <!-- Card picture -->\n\n          <ion-col col-4>\n\n            <ion-avatar class="image" style=" border: 1px solid #a9a9a9;">\n            </ion-avatar>\n          </ion-col>\n\n          <!-- Card content -->\n\n          <ion-col col-7>\n            <ion-label class="Ist-label-pos first-last-label"><b>{{ shop.shopName }}</b></ion-label>\n            <ion-label class="other-label-pos mid-all-label">{{ shop.street }}</ion-label>\n            <ion-label class="other-label-pos mid-all-label">{{ shop.city }}</ion-label>\n            <ion-label class="other-label-pos mid-all-label">{{ shop.state }}</ion-label>\n            <ion-label class="other-label-pos mid-all-label">Today Offer: {{ shop.offers }}%</ion-label>\n          </ion-col>\n\n          <!-- location pin display -->\n\n          <ion-col col-1>\n            <ion-icon name="pin" class="pin-icon"></ion-icon>\n          </ion-col>\n\n        </ion-row>\n      </ion-card-content>\n    </ion-card>\n  </ion-grid>\n\n  \n</ion-content>\n'/*ion-inline-end:"/home/ghost/My_works/Ionic/MyMan/src/pages/Haircut/haircut-home/haircut-home.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_2__services_fireBaseService__["a" /* FirebaseServices */],
+            __WEBPACK_IMPORTED_MODULE_6_angularfire2_auth__["a" /* AngularFireAuth */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* ToastController */]])
+    ], HaircutHomePage);
+    return HaircutHomePage;
+}());
+
+//# sourceMappingURL=haircut-home.js.map
+
+/***/ }),
+
+/***/ 294:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HaircutBookPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__haircut_popup_haircut_popup__ = __webpack_require__(295);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_fireBaseService__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_angularfire2_auth__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_js_sha256__ = __webpack_require__(291);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_js_sha256___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_js_sha256__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__haircut_conformation_haircut_conformation__ = __webpack_require__(296);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Common_profile_profile__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Common_my_order_my_order__ = __webpack_require__(36);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+
+
+/**
+ * Generated class for the HaircutBookPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var HaircutBookPage = /** @class */ (function () {
+    function HaircutBookPage(navCtrl, navParams, popoverCtrl, fbService, afAuth, alertCtrl, modalCtrl, toastCtrl, loadingCtrl) {
+        var _this = this;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.popoverCtrl = popoverCtrl;
+        this.fbService = fbService;
+        this.afAuth = afAuth;
+        this.alertCtrl = alertCtrl;
+        this.modalCtrl = modalCtrl;
+        this.toastCtrl = toastCtrl;
+        this.loadingCtrl = loadingCtrl;
+        this.selectedShop = this.navParams.get('data');
+        this.timeSlots = this.navParams.get('data')['timeSlots'];
+        this.rawTimeSlots = this.timeSlots;
+        // get the current date
+        var today = new Date();
+        var dd = String(today.getDate()).padStart(2, '0');
+        var mm = String(today.getMonth() + 1).padStart(2, '0');
+        var yyyy = today.getFullYear();
+        this.toDate = dd + '-' + this.convertMonth(mm) + '-' + yyyy;
+        // get the current time
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var timeNow = h + ":" + m + ":" + '00';
+        timeNow = "12:8:00";
+        // filter the slots based on current time
+        this.timeSlots = this.timeSlots.filter(function (element) {
+            return (timeNow < _this.convertTime(element.time));
+        });
+    }
+    HaircutBookPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad HaircutBookPage');
+    };
+    HaircutBookPage.prototype.popup = function (times) {
+        var _this = this;
+        var popover = this.popoverCtrl.create(__WEBPACK_IMPORTED_MODULE_2__haircut_popup_haircut_popup__["a" /* HaircutPopupPage */], { data: times });
+        popover.onDidDismiss(function (data) {
+            console.log(data);
+            if (data != undefined) {
+                _this.bookAppointment(data);
+            }
+        });
+        popover.present();
+    };
+    // convert the month to it's key word
+    HaircutBookPage.prototype.convertMonth = function (mm) {
+        if (mm == 1) {
+            return 'Jan';
+        }
+        else if (mm = 2) {
+            return 'Feb';
+        }
+        else if (mm = 3) {
+            return 'Mar';
+        }
+        else if (mm = 4) {
+            return 'Apr';
+        }
+        else if (mm = 5) {
+            return 'May';
+        }
+        else if (mm = 6) {
+            return 'Jun';
+        }
+        else if (mm = 7) {
+            return 'July';
+        }
+        else if (mm = 8) {
+            return 'Aug';
+        }
+        else if (mm = 9) {
+            return 'Sept';
+        }
+        else if (mm = 10) {
+            return 'Oct';
+        }
+        else if (mm = 11) {
+            return 'Nov';
+        }
+        else if (mm = 12) {
+            return 'Dec';
+        }
+    };
+    // time - 12hr to 24hr
+    HaircutBookPage.prototype.convertTime = function (time) {
+        var hours = Number(time.match(/^(\d+)/)[1]);
+        var minutes = Number(time.match(/:(\d+)/)[1]);
+        var AMPM = time.match(/\s(.*)$/)[1];
+        if (AMPM == "PM" && hours < 12)
+            hours = hours + 12;
+        if (AMPM == "AM" && hours == 12)
+            hours = hours - 12;
+        var sHours = hours.toString();
+        var sMinutes = minutes.toString();
+        if (hours < 10)
+            sHours = "0" + sHours;
+        if (minutes < 10)
+            sMinutes = "0" + sMinutes;
+        return (String(sHours + ":" + sMinutes + ":00"));
+    };
+    // book the seat 
+    HaircutBookPage.prototype.bookAppointment = function (dataToBook) {
+        var _this = this;
+        // loading instance
+        var loading = this.loadingCtrl.create({
+            content: 'Please wait...'
+        });
+        loading.present();
+        var dataToUpdate = this.rawTimeSlots.map(function (element) {
+            if (element.time == dataToBook.time) {
+                element.first = dataToBook.first;
+                element.second = dataToBook.second;
+                element.status = dataToBook.status;
+            }
+            return element;
+        });
+        // Update the data
+        var path = 'haircut/shops/' + this.selectedShop.id + '/timeSlots';
+        var data = (_a = {},
+            _a[path] = dataToUpdate,
+            _a);
+        this.fbService.updateField(data)
+            .then(function (response) {
+            // appointmentId
+            var d = new Date();
+            var n = d.getMilliseconds();
+            var appointmentId = 'MMN' + _this.selectedShop.id + 'U' + n +
+                _this.afAuth.auth.currentUser.uid + dataToBook.time + _this.toDate;
+            // Hash using sha256
+            appointmentId = Object(__WEBPACK_IMPORTED_MODULE_5_js_sha256__["sha256"])(appointmentId);
+            // data to update in request
+            var dataToRequest = {
+                'appointmentId': appointmentId,
+                'cost': 0,
+                'date': _this.toDate,
+                'userId': _this.afAuth.auth.currentUser.uid,
+                'seats': {
+                    'first': dataToBook.first,
+                    'second': dataToBook.second
+                },
+                'service': 'Haircut',
+                'shopId': _this.selectedShop.id,
+                'status': 0,
+                'time': dataToBook.time,
+                'transactionId': 0,
+                'userName': '',
+                'shopName': _this.selectedShop.shopName
+            };
+            // get the userName
+            _this.fbService.readOnce('users/' + _this.afAuth.auth.currentUser.uid)
+                .then(function (response) {
+                dataToRequest.userName = response['name'];
+                // update in request set
+                _this.fbService.writeInDatabase('requests/' + appointmentId, dataToRequest)
+                    .then(function (response) {
+                    // dismiss loading
+                    loading.dismiss();
+                    var modal = _this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_6__haircut_conformation_haircut_conformation__["a" /* HaircutConformationPage */], { payload: dataToRequest });
+                    modal.present();
+                })
+                    .catch(function (error) {
+                    // dismiss loading
+                    loading.dismiss();
+                    // alert message
+                    var alert = _this.alertCtrl.create({
+                        title: 'Failed',
+                        message: 'Something seems to be wrong, please try again later',
+                        buttons: [
+                            {
+                                text: 'Okay'
+                            }
+                        ]
+                    });
+                    alert.present();
+                });
+            })
+                .catch(function (error) {
+                // dismiss loading
+                loading.dismiss();
+                // alert message
+                var alert = _this.alertCtrl.create({
+                    title: 'Failed',
+                    message: 'Something seems to be wrong, please try again later',
+                    buttons: [
+                        {
+                            text: 'Okay'
+                        }
+                    ]
+                });
+                alert.present();
+            });
+        })
+            .catch(function (error) {
+            // dismiss loading
+            loading.dismiss();
+            // alert message
+            var alert = _this.alertCtrl.create({
+                title: 'Failed',
+                message: 'Something seems to be wrong, please try again later',
+                buttons: [
+                    {
+                        text: 'Okay'
+                    }
+                ]
+            });
+            alert.present();
+        });
+        var _a;
+    };
+    // nav to profile
+    HaircutBookPage.prototype.navToProfile = function () {
+        var _this = this;
+        var toast = this.toastCtrl.create({
+            duration: 2000,
+            message: "Check your internet connection",
+            position: 'bottom'
+        });
+        var user = this.afAuth.auth.currentUser;
+        this.fbService.readOnce('users/' + user.uid)
+            .then(function (response) {
+            var details = Object.entries(response);
+            var emailId = details[0][1];
+            var phone = details[2][1];
+            var fullName = details[1][1];
+            var payload = {
+                email: emailId,
+                phoneNumber: phone,
+                name: fullName
+            };
+            _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_7__Common_profile_profile__["a" /* ProfilePage */], { 'payload': payload });
+        })
+            .catch(function (error) {
+            toast.present();
+        });
+    };
+    // nav to my order page
+    HaircutBookPage.prototype.navToMyOrders = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_8__Common_my_order_my_order__["a" /* MyOrderPage */]);
+    };
+    HaircutBookPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-haircut-book',template:/*ion-inline-start:"/home/ghost/My_works/Ionic/MyMan/src/pages/Haircut/haircut-book/haircut-book.html"*/'<!--\n  Generated template for the HaircutBookPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n\n<!-- Header -->\n<ion-header>\n  <ion-navbar>\n    <ion-title class="toolbar-title.toolbar-title-md ">Book</ion-title>\n\n    <ion-buttons right class="Union" (click)="navToProfile()">\n      <button ion-button icon-only>\n        <ion-icon name="custom-Union" class="resize-icon"></ion-icon>\n      </button>\n    </ion-buttons>\n\n    <ion-buttons right class="hammer" (click)="navToMyOrders()">\n      <button ion-button icon-only>\n        <ion-icon name="custom-hammer" class="resize-icon"></ion-icon>\n      </button>\n    </ion-buttons>\n\n  </ion-navbar>\n</ion-header>\n\n<!-- content -->\n<ion-content padding>\n\n  <ion-grid>\n\n    <!-- image -->\n    <ion-row>\n      <ion-img src="assets/imgs/camera.jpg"></ion-img>\n    </ion-row>\n\n    <!-- Shop Details -->\n    <ion-row justify-content-center>\n      <div text-center>\n        <p class="shopName"><b>{{ selectedShop.shopName }}</b></p>\n        <p class="shopDetails">{{ toDate }}</p>\n      </div>\n    </ion-row>\n    <ion-row>\n      <p class="time"><b>Time</b></p>\n    </ion-row>\n\n    <!-- Timings -->\n    <ion-row>\n\n      <ion-col col-4 *ngFor="let times of timeSlots" (click)="popup(times)">\n        <div [ngClass]="[times.status == 0?\'green\':\'\', times.status == 1?\'yellow\':\'\', times.status == 2?\'red\':\'\']"\n          class="roundedCorners" >\n          <p class="textSize">{{ times.time }}</p>\n          <ion-row justify-content-center>\n            <ion-col col-5>\n              <ion-icon name="custom-gnSeat" [ngClass]="[times.first?\'greyIcon\':\'greenIcon\']"></ion-icon>\n            </ion-col>\n            <ion-col col-5>\n              <ion-icon name="custom-gnSeat" [ngClass]="[times.second?\'greyIcon\':\'greenIcon\']"></ion-icon>\n            </ion-col>\n          </ion-row>\n        </div>\n      </ion-col>\n\n    </ion-row>\n\n  </ion-grid>\n\n\n</ion-content>\n'/*ion-inline-end:"/home/ghost/My_works/Ionic/MyMan/src/pages/Haircut/haircut-book/haircut-book.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* PopoverController */],
+            __WEBPACK_IMPORTED_MODULE_3__services_fireBaseService__["a" /* FirebaseServices */],
+            __WEBPACK_IMPORTED_MODULE_4_angularfire2_auth__["a" /* AngularFireAuth */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* ModalController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* ToastController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* LoadingController */]])
+    ], HaircutBookPage);
+    return HaircutBookPage;
+}());
+
+//# sourceMappingURL=haircut-book.js.map
+
+/***/ }),
+
+/***/ 295:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HaircutPopupPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the HaircutPopupPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var HaircutPopupPage = /** @class */ (function () {
+    function HaircutPopupPage(navCtrl, navParams, viewCtrl) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.viewCtrl = viewCtrl;
+        // Flags for color change in seat icons
+        this.firstSeatFlag = 0;
+        this.secondSeatFlag = 0;
+        this.timeSlot = this.navParams.get('data');
+        console.log(this.timeSlot);
+        if (this.timeSlot.first == 1) {
+            this.firstSeatFlag = 3;
+            document.documentElement.style.setProperty("--seat-color-first", '#adadad');
+        }
+        else {
+            this.firstSeatFlag = 0;
+            document.documentElement.style.setProperty("--seat-color-first", '#808080');
+        }
+        if (this.timeSlot.second == 1) {
+            this.secondSeatFlag = 3;
+            document.documentElement.style.setProperty("--seat-color-second", '#adadad');
+        }
+        else {
+            this.secondSeatFlag = 0;
+            document.documentElement.style.setProperty("--seat-color-second", '#808080');
+        }
+    }
+    HaircutPopupPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad HaircutPopupPage');
+    };
+    // first seat
+    HaircutPopupPage.prototype.firstSeat = function () {
+        if (this.firstSeatFlag == 0) {
+            document.documentElement.style.setProperty("--seat-color-first", '#35AE59');
+            this.firstSeatFlag = 1;
+        }
+        else if (this.firstSeatFlag == 1) {
+            document.documentElement.style.setProperty("--seat-color-first", '#808080');
+            this.firstSeatFlag = 0;
+        }
+    };
+    // second seat
+    HaircutPopupPage.prototype.secondSeat = function () {
+        if (this.secondSeatFlag == 0) {
+            document.documentElement.style.setProperty("--seat-color-second", '#35AE59');
+            this.secondSeatFlag = 1;
+        }
+        else if (this.secondSeatFlag == 1) {
+            document.documentElement.style.setProperty("--seat-color-second", '#808080');
+            this.secondSeatFlag = 0;
+        }
+    };
+    // Cancel clicked
+    HaircutPopupPage.prototype.cancelled = function () {
+        this.viewCtrl.dismiss();
+    };
+    // Ok clicked
+    HaircutPopupPage.prototype.conformed = function () {
+        // Seat chosed update
+        if (this.firstSeatFlag == 0 || this.firstSeatFlag == 1) {
+            this.timeSlot.first = this.firstSeatFlag;
+        }
+        if (this.secondSeatFlag == 0 || this.secondSeatFlag == 1) {
+            this.timeSlot.second = this.secondSeatFlag;
+        }
+        // Status update
+        if ((this.firstSeatFlag == 1 && this.secondSeatFlag == 1) || (this.firstSeatFlag == 3 && this.secondSeatFlag == 3) || (this.firstSeatFlag == 1 && this.secondSeatFlag == 3) || this.firstSeatFlag == 3 && this.secondSeatFlag == 1) {
+            this.timeSlot.status = 2;
+        }
+        else if (this.firstSeatFlag == 1 || this.secondSeatFlag == 1) {
+            this.timeSlot.status = 1;
+        }
+        else {
+            this.timeSlot.status = 0;
+        }
+        if (this.firstSeatFlag != 0 || this.secondSeatFlag != 0) {
+            this.viewCtrl.dismiss(this.timeSlot);
+        }
+        else {
+            this.viewCtrl.dismiss();
+        }
+    };
+    HaircutPopupPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-haircut-popup',template:/*ion-inline-start:"/home/ghost/My_works/Ionic/MyMan/src/pages/Haircut/haircut-popup/haircut-popup.html"*/'<ion-content padding>\n\n    <ion-grid class="con-grid">\n\n        <!-- 3rows (2rows for text and 1row with 2col for seatIcon) -->\n        <!-- row1 -->\n        <ion-row justify-content-center>\n          <h1>Select Seat</h1>\n        </ion-row>\n        <!-- row2 -->\n        <ion-row justify-content-center>\n          <p>{{ timeSlot.time }}</p>\n        </ion-row>\n        <!-- row3 -->\n        <ion-row justify-content-center class="seatCenter">\n          <ion-col col-6 (click)="firstSeat()">\n              <ion-icon name="custom-gnSeat" class="firstIcon"></ion-icon>\n          </ion-col>\n          <ion-col col-6 (click)="secondSeat()">\n              <ion-icon  name="custom-gnSeat" class="secondIcon"></ion-icon>\n          </ion-col>\n        </ion-row>\n\n    </ion-grid>\n\n</ion-content>\n\n\n\n\n<!-- footer for cancel and ok -->\n<ion-footer no-border class="center" >\n\n    <!-- grid with 1row and 2col -->\n    <ion-grid class="footer-grid">\n\n        <!-- 1row with 2col for confirmation -->\n        <ion-row class = "borderTop">\n            <ion-col col-6 class="borderRight" (click)="cancelled()">\n              <ion-label  class="red">Cancel</ion-label>\n            </ion-col>\n            <ion-col (click)="conformed()">\n              <ion-label class="green">Ok</ion-label>\n            </ion-col>\n        </ion-row>\n\n    </ion-grid>\n\n</ion-footer>\n'/*ion-inline-end:"/home/ghost/My_works/Ionic/MyMan/src/pages/Haircut/haircut-popup/haircut-popup.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ViewController */]])
+    ], HaircutPopupPage);
+    return HaircutPopupPage;
+}());
+
+//# sourceMappingURL=haircut-popup.js.map
+
+/***/ }),
+
+/***/ 296:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HaircutConformationPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Common_my_order_my_order__ = __webpack_require__(36);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+/**
+ * Generated class for the HaircutConformationPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var HaircutConformationPage = /** @class */ (function () {
+    function HaircutConformationPage(navCtrl, navParams, viewCtrl) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.viewCtrl = viewCtrl;
+        // get the details from the source page
+        this.bookedDetails = this.navParams.get('payload');
+        // Updating the number of seats count
+        if (this.bookedDetails.seats['first'] == 1 && this.bookedDetails.seats['second'] == 1) {
+            this.numberOfSeats = 2;
+        }
+        else {
+            this.numberOfSeats = 1;
+        }
+    }
+    HaircutConformationPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad HaircutConformationPage');
+    };
+    // dismiss the view
+    HaircutConformationPage.prototype.dismiss = function () {
+        this.viewCtrl.dismiss();
+    };
+    // nav to my orders
+    HaircutConformationPage.prototype.navToMyOrders = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__Common_my_order_my_order__["a" /* MyOrderPage */]);
+    };
+    HaircutConformationPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-haircut-conformation',template:/*ion-inline-start:"/home/ghost/My_works/Ionic/MyMan/src/pages/Haircut/haircut-conformation/haircut-conformation.html"*/'<!--\n  Generated template for the HaircutConformationPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <!-- <ion-navbar class="toolbar-background">\n   \n  </ion-navbar> -->\n  <ion-toolbar>\n    <ion-title class="toolbar-title.toolbar-title-md">Order Confirmation</ion-title>\n    <ion-buttons start>\n      <button ion-button (click)="dismiss()">\n        <span ion-text color="primary" showWhen="ios">Cancel</span>\n        <ion-icon name="md-close"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n\n  <ion-grid>\n\n    <!-- row1 for shop name and has 3cols -->\n    <ion-row>\n      <ion-col col-5>\n        <b class="marginLeft-45">Shop Name</b>\n      </ion-col>\n      <ion-col col-1>\n        <b class="marginLeft-colon">:</b>\n      </ion-col>\n      <ion-col col-6>\n        <div class="marginLeft-light">{{ bookedDetails.shopName }}</div>\n      </ion-col>\n    </ion-row>\n\n    <!-- row2 for date name and has 3cols -->\n    <ion-row>\n      <ion-col col-5>\n        <b class="marginLeft-45">Date</b>\n      </ion-col>\n      <ion-col col-1>\n        <b class="marginLeft-colon">:</b>\n      </ion-col>\n      <ion-col col-6>\n        <div class="marginLeft-light">{{ bookedDetails.date }}</div>\n      </ion-col>\n    </ion-row>\n\n    <!-- row3 for Time and has 3cols -->\n    <ion-row>\n      <ion-col col-5>\n        <b class="marginLeft-45">Time</b>\n      </ion-col>\n      <ion-col col-1>\n        <b class="marginLeft-colon">:</b>\n      </ion-col>\n      <ion-col col-6>\n        <div class="marginLeft-light">{{ bookedDetails.time }}</div>\n      </ion-col>\n    </ion-row>\n\n    <!-- row4 for SeatNum and has 3cols -->\n    <ion-row>\n      <ion-col col-5>\n        <b class="marginLeft-45">No. of Seats</b>\n      </ion-col>\n      <ion-col col-1>\n        <b class="marginLeft-colon">:</b>\n      </ion-col>\n      <ion-col col-6>\n        <div class="marginLeft-light">{{ numberOfSeats }}</div>\n\n      </ion-col>\n    </ion-row>\n\n\n  </ion-grid>\n\n</ion-content>\n\n<ion-footer no-border>\n\n  <!-- card to navigate history page -->\n  <div text-center>\n    <ion-card (click)="navToMyOrders()">\n      <p class="reduceTop">No cancellation allowed</p>\n      <p class="reduceTop1">Click to see order history</p>\n    </ion-card>\n  </div>\n\n</ion-footer>\n'/*ion-inline-end:"/home/ghost/My_works/Ionic/MyMan/src/pages/Haircut/haircut-conformation/haircut-conformation.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ViewController */]])
+    ], HaircutConformationPage);
+    return HaircutConformationPage;
+}());
+
+//# sourceMappingURL=haircut-conformation.js.map
+
+/***/ }),
+
+/***/ 297:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(298);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(317);
+
+
+Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
+//# sourceMappingURL=main.js.map
+
+/***/ }),
+
+/***/ 317:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(233);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(236);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(365);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_Common_home_home__ = __webpack_require__(138);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_Common_signup_signup__ = __webpack_require__(237);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_Common_login_login__ = __webpack_require__(127);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_Photography_photography_photography__ = __webpack_require__(288);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_Photography_book_book__ = __webpack_require__(289);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_Common_my_order_my_order__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_Photography_order_booked_order_booked__ = __webpack_require__(290);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_Common_orderbooked2_orderbooked2__ = __webpack_require__(139);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_Common_profile_profile__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_Haircut_haircut_conformation_haircut_conformation__ = __webpack_require__(296);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_Haircut_haircut_book_haircut_book__ = __webpack_require__(294);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_Haircut_haircut_home_haircut_home__ = __webpack_require__(293);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_Haircut_haircut_popup_haircut_popup__ = __webpack_require__(295);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__services_fireBaseService__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20_angularfire2__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21_angularfire2_auth__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22_angularfire2_database__ = __webpack_require__(251);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__credentials_firebase_credential__ = __webpack_require__(461);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__services_myManService__ = __webpack_require__(292);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Firebase Services
+
+// Angularfire2 for firebase functions
+
+
+
+// firebase credentials
+
+// myman service
+
+var AppModule = /** @class */ (function () {
+    function AppModule() {
+    }
+    AppModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["I" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */],
+                __WEBPACK_IMPORTED_MODULE_6__pages_Common_home_home__["a" /* HomePage */],
+                __WEBPACK_IMPORTED_MODULE_7__pages_Common_signup_signup__["a" /* SignupPage */],
+                __WEBPACK_IMPORTED_MODULE_8__pages_Common_login_login__["a" /* LoginPage */],
+                __WEBPACK_IMPORTED_MODULE_9__pages_Photography_photography_photography__["a" /* PhotographyPage */],
+                __WEBPACK_IMPORTED_MODULE_10__pages_Photography_book_book__["a" /* BookPage */],
+                __WEBPACK_IMPORTED_MODULE_11__pages_Common_my_order_my_order__["a" /* MyOrderPage */],
+                __WEBPACK_IMPORTED_MODULE_12__pages_Photography_order_booked_order_booked__["a" /* OrderBookedPage */],
+                __WEBPACK_IMPORTED_MODULE_13__pages_Common_orderbooked2_orderbooked2__["a" /* Orderbooked2Page */],
+                __WEBPACK_IMPORTED_MODULE_14__pages_Common_profile_profile__["a" /* ProfilePage */],
+                __WEBPACK_IMPORTED_MODULE_17__pages_Haircut_haircut_home_haircut_home__["a" /* HaircutHomePage */],
+                __WEBPACK_IMPORTED_MODULE_16__pages_Haircut_haircut_book_haircut_book__["a" /* HaircutBookPage */],
+                __WEBPACK_IMPORTED_MODULE_15__pages_Haircut_haircut_conformation_haircut_conformation__["a" /* HaircutConformationPage */],
+                __WEBPACK_IMPORTED_MODULE_18__pages_Haircut_haircut_popup_haircut_popup__["a" /* HaircutPopupPage */]
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
+                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["d" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */], {}, {
+                    links: []
+                }),
+                __WEBPACK_IMPORTED_MODULE_20_angularfire2__["a" /* AngularFireModule */].initializeApp(__WEBPACK_IMPORTED_MODULE_23__credentials_firebase_credential__["a" /* firebaseConfig */].config)
+            ],
+            bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["b" /* IonicApp */]],
+            entryComponents: [
+                __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */],
+                __WEBPACK_IMPORTED_MODULE_6__pages_Common_home_home__["a" /* HomePage */],
+                __WEBPACK_IMPORTED_MODULE_7__pages_Common_signup_signup__["a" /* SignupPage */],
+                __WEBPACK_IMPORTED_MODULE_8__pages_Common_login_login__["a" /* LoginPage */],
+                __WEBPACK_IMPORTED_MODULE_9__pages_Photography_photography_photography__["a" /* PhotographyPage */],
+                __WEBPACK_IMPORTED_MODULE_10__pages_Photography_book_book__["a" /* BookPage */],
+                __WEBPACK_IMPORTED_MODULE_11__pages_Common_my_order_my_order__["a" /* MyOrderPage */],
+                __WEBPACK_IMPORTED_MODULE_12__pages_Photography_order_booked_order_booked__["a" /* OrderBookedPage */],
+                __WEBPACK_IMPORTED_MODULE_13__pages_Common_orderbooked2_orderbooked2__["a" /* Orderbooked2Page */],
+                __WEBPACK_IMPORTED_MODULE_14__pages_Common_profile_profile__["a" /* ProfilePage */],
+                __WEBPACK_IMPORTED_MODULE_17__pages_Haircut_haircut_home_haircut_home__["a" /* HaircutHomePage */],
+                __WEBPACK_IMPORTED_MODULE_16__pages_Haircut_haircut_book_haircut_book__["a" /* HaircutBookPage */],
+                __WEBPACK_IMPORTED_MODULE_15__pages_Haircut_haircut_conformation_haircut_conformation__["a" /* HaircutConformationPage */],
+                __WEBPACK_IMPORTED_MODULE_18__pages_Haircut_haircut_popup_haircut_popup__["a" /* HaircutPopupPage */]
+            ],
+            providers: [
+                __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__["a" /* StatusBar */],
+                __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */],
+                __WEBPACK_IMPORTED_MODULE_19__services_fireBaseService__["a" /* FirebaseServices */],
+                __WEBPACK_IMPORTED_MODULE_21_angularfire2_auth__["a" /* AngularFireAuth */],
+                __WEBPACK_IMPORTED_MODULE_22_angularfire2_database__["a" /* AngularFireDatabase */],
+                __WEBPACK_IMPORTED_MODULE_24__services_myManService__["a" /* MyManService */],
+                { provide: __WEBPACK_IMPORTED_MODULE_1__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicErrorHandler */] }
+            ]
+        })
+    ], AppModule);
+    return AppModule;
+}());
+
+//# sourceMappingURL=app.module.js.map
+
+/***/ }),
+
+/***/ 36:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyOrderPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__orderbooked2_orderbooked2__ = __webpack_require__(139);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__profile_profile__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_fireBaseService__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_angularfire2_auth__ = __webpack_require__(28);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+var MyOrderPage = /** @class */ (function () {
+    function MyOrderPage(navCtrl, navParams, fbService, afAuth, loadingCtrl, toastCtrl) {
+        var _this = this;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.fbService = fbService;
+        this.afAuth = afAuth;
+        this.loadingCtrl = loadingCtrl;
+        this.toastCtrl = toastCtrl;
+        // seperated orders list
+        this.photographyOrders = [];
+        this.haircutOrders = [];
+        // flags for user display
+        this.haircutFlag = false;
+        this.photographyFlag = false;
+        // Raw Requests
+        this.rawPhotographyOrders = [];
+        this.rawHaircutOrders = [];
+        // Expanded flags
+        this.haircutExpanded = false;
+        this.photographyExpanded = false;
+        var user = this.afAuth.auth.currentUser;
+        var loading = this.loadingCtrl.create({
+            content: 'please wait'
+        });
+        loading.present();
+        this.fbService.filterData(this.fbService.equalTo, 'requests', null, this.fbService.orderByChild, 'userId', user.uid)
+            .then(function (response) {
+            loading.dismiss();
+            var obj = Object.entries(response);
+            // arrays for seperated services
+            var haircut = Array();
+            var photography = Array();
+            obj.forEach(function (element) {
+                // Check the service
+                if (element[1]['service'] == 'Haircut') {
+                    haircut.push(element[1]);
+                }
+                else if (element[1]['service'] == 'Photography') {
+                    photography.push(element[1]);
+                }
+            });
+            // Presence of haircut orders
+            if (haircut.length == 0) {
+                _this.haircutFlag = true;
+            }
+            else {
+                _this.rawHaircutOrders = haircut;
+            }
+            // Presence if photography orders
+            if (photography.length == 0) {
+                _this.photographyFlag = true;
+            }
+            else {
+                _this.rawPhotographyOrders = photography;
+            }
+            _this.limitRequests();
+        });
+    }
+    MyOrderPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad MyOrderPage');
+    };
+    // Nav to profile page
+    MyOrderPage.prototype.clicked = function () {
+        var _this = this;
+        var toast = this.toastCtrl.create({
+            duration: 2000,
+            message: "Check your internet connection",
+            position: 'bottom'
+        });
+        var user = this.afAuth.auth.currentUser;
+        this.fbService.readOnce('users/' + user.uid)
+            .then(function (response) {
+            var details = Object.entries(response);
+            var emailId = details[0][1];
+            var phone = details[2][1];
+            var fullName = details[1][1];
+            var payload = {
+                email: emailId,
+                phoneNumber: phone,
+                name: fullName
+            };
+            _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__profile_profile__["a" /* ProfilePage */], { 'payload': payload });
+        })
+            .catch(function (error) {
+            toast.present();
+        });
+    };
+    // Request clicked
+    MyOrderPage.prototype.cardclick = function (item) {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__orderbooked2_orderbooked2__["a" /* Orderbooked2Page */], { 'payload': item });
+    };
+    // expand & shrink requests
+    MyOrderPage.prototype.alterView = function (service, flag) {
+        // check the service
+        if (service == 'haircut') {
+            this.haircutExpanded = flag;
+        }
+        else if (service == 'photography') {
+            this.photographyExpanded = flag;
+        }
+        this.limitRequests();
+    };
+    MyOrderPage.prototype.limitRequests = function () {
+        // check the expanded flag and assign the array of requests
+        if (this.haircutExpanded) {
+            this.haircutOrders = this.rawHaircutOrders;
+        }
+        else {
+            this.haircutOrders = this.rawHaircutOrders.slice(0, 3);
+        }
+        if (this.photographyExpanded) {
+            this.photographyOrders = this.rawPhotographyOrders;
+        }
+        else {
+            this.photographyOrders = this.rawPhotographyOrders.slice(0, 3);
+        }
+    };
+    MyOrderPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-my-order',template:/*ion-inline-start:"/home/ghost/My_works/Ionic/MyMan/src/pages/Common/my-order/my-order.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title class="toolbar-title.toolbar-title-md">My Order</ion-title>\n    <ion-buttons right class="paddingright">\n      <button ion-button icon-only (click)="clicked()">\n        <ion-icon name="person" class="ion-md-person"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <h1>Photography</h1>\n  <p *ngIf="photographyFlag" class="alert">Sorry, No orders found for Photography..!</p>\n  <div *ngIf="!photographyFlag" >\n    <ion-card *ngFor="let request of photographyOrders" (click)="cardclick(request)">\n      <ion-item>\n        <ion-avatar item-start>\n          <img src="../../assets/imgs/camera1.jpg">\n        </ion-avatar>\n\n        <h2>Pack {{ request.pack.id }}</h2>\n        <p>Ordered : {{ request.bookedDate }}</p>\n        <p>Function : {{ request.fromDate }}</p>\n      </ion-item>\n    </ion-card>\n\n    <div text-center id="expand-flag" (click)="alterView(\'photography\', true)" *ngIf="!photographyExpanded">\n      <ion-label>Show more</ion-label>\n    </div>\n\n    <div text-center id="expand-flag" (click)="alterView(\'photography\', false)" *ngIf="photographyExpanded">\n      <ion-label>Show less</ion-label>\n    </div>\n  </div>\n\n  <h1>Haircut</h1>\n  <p *ngIf="haircutFlag" class="alert">Sorry, No orders found for Haircut..!</p>\n  <div *ngIf="!haircutFlag" class="parent">\n    <ion-card *ngFor="let request of haircutOrders" (click)="cardclick(request)">\n      <ion-item>\n        <ion-avatar item-start>\n          <img src="../../assets/imgs/camera1.jpg">\n        </ion-avatar>\n\n        <h2>Shop Name: {{ request.shopName }}</h2>\n        <p>Date : {{ request.date }}</p> \n        <p>Time : {{ request.time }}</p>\n        <p *ngIf="request.seats.first == 1 && request.seats.second == 1">Seat No: 1, 2</p>\n        <p *ngIf="(request.seats.first == 0 && request.seats.second == 1)">Seat No: 2</p>\n        <p *ngIf="(request.seats.first == 1 && request.seats.second == 0)">Seat No: 1</p>\n      </ion-item>\n    </ion-card>\n\n    <div text-center id="expand-flag" (click)="alterView(\'haircut\', true)" *ngIf="!haircutExpanded">\n      <ion-label>Show more</ion-label>\n    </div>\n\n    <div text-center id="expand-flag" (click)="alterView(\'haircut\', false)" *ngIf="haircutExpanded">\n      <ion-label>Show less</ion-label>\n    </div>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/home/ghost/My_works/Ionic/MyMan/src/pages/Common/my-order/my-order.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_4__services_fireBaseService__["a" /* FirebaseServices */],
+            __WEBPACK_IMPORTED_MODULE_5_angularfire2_auth__["a" /* AngularFireAuth */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* LoadingController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* ToastController */]])
+    ], MyOrderPage);
+    return MyOrderPage;
+}());
+
+//# sourceMappingURL=my-order.js.map
+
+/***/ }),
+
+/***/ 365:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(236);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(233);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_Common_login_login__ = __webpack_require__(127);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_Common_home_home__ = __webpack_require__(138);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_angularfire2__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_angularfire2_auth__ = __webpack_require__(28);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+
+var MyApp = /** @class */ (function () {
+    function MyApp(platform, statusBar, splashScreen, angularFire, af, alertCtrl) {
+        this.platform = platform;
+        this.statusBar = statusBar;
+        this.splashScreen = splashScreen;
+        this.angularFire = angularFire;
+        this.af = af;
+        this.alertCtrl = alertCtrl;
+        this.initialiseApp();
+    }
+    MyApp.prototype.initialiseApp = function () {
+        var _this = this;
+        this.pages = [
+            { title: '', component: '' },
+            { title: 'Home', component: __WEBPACK_IMPORTED_MODULE_4__pages_Common_login_login__["a" /* LoginPage */] },
+        ];
+        this.platform.ready().then(function () {
+            // Okay, so the platform is ready and our plugins are available.
+            // Here you can do any higher level native things you might need.
+            // check if the user is signed in
+            _this.angularFire.authState.subscribe(function (user) {
+                _this.rootPage = user ? __WEBPACK_IMPORTED_MODULE_5__pages_Common_home_home__["a" /* HomePage */] : __WEBPACK_IMPORTED_MODULE_4__pages_Common_login_login__["a" /* LoginPage */];
+            });
+        });
+        this.statusBar.styleBlackOpaque();
+        this.splashScreen.hide();
+    };
+    MyApp.prototype.openPage = function (page) {
+        // Reset the content nav to have just this page
+        // we wouldn't want the back button to show in this scenario
+        this.nav.setRoot(page.component);
+    };
+    MyApp.prototype.logout = function () {
+        // logout the user and navigate to Login page
+        var _this = this;
+        var alert = this.alertCtrl.create({
+            title: 'Oops..!',
+            message: 'Do you want to logout?',
+            buttons: [
+                {
+                    text: 'Yes',
+                    handler: function () {
+                        _this.angularFire.auth.signOut();
+                        _this.nav.setRoot(__WEBPACK_IMPORTED_MODULE_4__pages_Common_login_login__["a" /* LoginPage */]);
+                    }
+                },
+                {
+                    text: 'No',
+                    handler: function () {
+                        //
+                    }
+                }
+            ]
+        });
+        alert.present();
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Nav */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Nav */])
+    ], MyApp.prototype, "nav", void 0);
+    MyApp = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/home/ghost/My_works/Ionic/MyMan/src/app/app.html"*/'<ion-menu [content]="content">\n\n    <ion-toolbar>\n      <ion-title>MyMan</ion-title>\n    </ion-toolbar>\n  \n    <ion-content>\n      <ion-list>\n        <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n          {{ p.title }}\n        </button>\n\n        <button  ion-button  round full menuClose\n                  class="button-logout" \n                  (click)="logout()">\n                  Logout\n        </button>\n\n      </ion-list>\n    </ion-content>\n  \n  </ion-menu>\n  \n  <ion-nav id="nav" [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>\n'/*ion-inline-end:"/home/ghost/My_works/Ionic/MyMan/src/app/app.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Platform */],
+            __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */],
+            __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */],
+            __WEBPACK_IMPORTED_MODULE_7_angularfire2_auth__["a" /* AngularFireAuth */],
+            __WEBPACK_IMPORTED_MODULE_6_angularfire2__["a" /* AngularFireModule */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]])
+    ], MyApp);
+    return MyApp;
+}());
+
+//# sourceMappingURL=app.component.js.map
+
+/***/ }),
+
+/***/ 459:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (immutable) */ __webpack_exports__["a"] = MustMatch;
+// custom validator to check that two fields match
+function MustMatch(controlName, matchingControlName) {
+    return function (formGroup) {
+        var control = formGroup.controls[controlName];
+        var matchingControl = formGroup.controls[matchingControlName];
+        if (matchingControl.errors && !matchingControl.errors.mustMatch) {
+            // return if another validator has already found an error on the matchingControl
+            return;
+        }
+        // set error on matchingControl if validation fails
+        if (control.value !== matchingControl.value) {
+            matchingControl.setErrors({ mustMatch: true });
+        }
+        else {
+            matchingControl.setErrors(null);
+        }
+    };
+}
+//# sourceMappingURL=must-match.js.map
+
+/***/ }),
+
+/***/ 461:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return firebaseConfig; });
+// credential for firebase project
+var firebaseConfig = {
+    config: {
+        apiKey: "AIzaSyDO7w2BSyaeqHISmXz7A5Vc_hMs_SPUQzs",
+        authDomain: "myman180.firebaseapp.com",
+        databaseURL: "https://myman180.firebaseio.com",
+        projectId: "myman180",
+        storageBucket: "",
+        messagingSenderId: "60171985623",
+        appId: "1:60171985623:web:6a3661263e11b72fefc692"
+    }
+};
+//# sourceMappingURL=firebase-credential.js.map
+
+/***/ }),
+
+/***/ 61:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProfilePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__my_order_my_order__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__orderbooked2_orderbooked2__ = __webpack_require__(139);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_angularfire2_auth__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_fireBaseService__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_forms__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_angularfire2__ = __webpack_require__(35);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+
+var ProfilePage = /** @class */ (function () {
+    function ProfilePage(navCtrl, navParams, afAuth, fbService, formBuilder, toastCtrl, alertCtrl, afApp) {
+        var _this = this;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.afAuth = afAuth;
+        this.fbService = fbService;
+        this.formBuilder = formBuilder;
+        this.toastCtrl = toastCtrl;
+        this.alertCtrl = alertCtrl;
+        this.afApp = afApp;
+        // flag for edit status
+        this.editStatus = 0;
+        this.editFormIcon = false;
+        // Requests flag
+        this.requestFlag = true;
+        this.editForm = this.formBuilder.group({
+            phoneNumber: [this.navParams.get('payload').phoneNumber, __WEBPACK_IMPORTED_MODULE_6__angular_forms__["f" /* Validators */].compose([
+                    __WEBPACK_IMPORTED_MODULE_6__angular_forms__["f" /* Validators */].required,
+                    __WEBPACK_IMPORTED_MODULE_6__angular_forms__["f" /* Validators */].pattern('^[0-9]+$'),
+                    __WEBPACK_IMPORTED_MODULE_6__angular_forms__["f" /* Validators */].minLength(10),
+                    __WEBPACK_IMPORTED_MODULE_6__angular_forms__["f" /* Validators */].maxLength(10)
+                ])],
+            email: [this.navParams.get('payload').email, __WEBPACK_IMPORTED_MODULE_6__angular_forms__["f" /* Validators */].compose([
+                    __WEBPACK_IMPORTED_MODULE_6__angular_forms__["f" /* Validators */].pattern('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9]+.[a-zA-Z0-9]+$'),
+                    __WEBPACK_IMPORTED_MODULE_6__angular_forms__["f" /* Validators */].required
+                ])],
+            name: [this.navParams.get('payload').name, __WEBPACK_IMPORTED_MODULE_6__angular_forms__["f" /* Validators */].compose([
+                    __WEBPACK_IMPORTED_MODULE_6__angular_forms__["f" /* Validators */].required,
+                    __WEBPACK_IMPORTED_MODULE_6__angular_forms__["f" /* Validators */].minLength(4)
+                ])]
+        });
+        this.fbService.filterData(this.fbService.equalTo, 'requests', null, this.fbService.orderByChild, 'userId', this.navParams.get('payload').uid)
+            .then(function (response) {
+            var result = Object.entries(response);
+            // append items to array
+            _this.latestReq = result[result.length - 1][1];
+            _this.service = _this.latestReq['service'];
+            _this.bookedDate = _this.latestReq['date'];
+        })
+            .catch(function (error) {
+            // If no requests found, set request flag to false
+            _this.requestFlag = false;
+            console.log(_this.requestFlag);
+        });
+    }
+    ProfilePage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad ProfilePage');
+    };
+    ProfilePage.prototype.order = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__my_order_my_order__["a" /* MyOrderPage */]);
+    };
+    ProfilePage.prototype.cardclick = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__orderbooked2_orderbooked2__["a" /* Orderbooked2Page */], { 'payload': this.latestReq });
+    };
+    // update checkmark icon status
+    ProfilePage.prototype.editIconUpdate = function () {
+        var _this = this;
+        setTimeout(function () {
+            _this.editFormIcon = _this.editForm.valid;
+        }, 10);
+    };
+    //maintain the edit and view state
+    ProfilePage.prototype.editFired = function (status) {
+        var _this = this;
+        this.editStatus = status;
+        this.editFormIcon = this.editForm.valid;
+        var prompt = this.alertCtrl.create({
+            title: 'Verification',
+            message: "Please enter your password",
+            inputs: [
+                {
+                    name: 'password',
+                    placeholder: 'password'
+                },
+            ],
+            buttons: [
+                {
+                    text: 'Done',
+                    handler: function (data) {
+                        console.log(_this.afAuth.auth.currentUser['email']);
+                        _this.fbService.login(_this.afAuth.auth.currentUser['email'], data.password)
+                            .then(function (response) {
+                            // Updating the edited details
+                            var email = 'users/' + (_this.afAuth.auth.currentUser.uid) + '/email';
+                            var phoneNumber = 'users/' + (_this.afAuth.auth.currentUser.uid) + '/phoneNumber';
+                            var name = 'users/' + (_this.afAuth.auth.currentUser.uid) + '/name';
+                            var data = {};
+                            _this.afAuth.auth.currentUser.updateEmail(_this.editForm.controls['email'].value);
+                            data[email] = _this.editForm.controls['email'].value;
+                            data[phoneNumber] = _this.editForm.controls['phoneNumber'].value;
+                            data[name] = _this.editForm.controls['name'].value;
+                            // updating in database
+                            _this.fbService.updateField(data);
+                            document.documentElement.style.setProperty("--teal", '#18A0A0');
+                            document.documentElement.style.setProperty("--header-profile", '20%');
+                            var alert = _this.alertCtrl.create({
+                                message: 'Hurray..! The profile details are updated'
+                            });
+                            alert.present();
+                        })
+                            .catch(function (error) {
+                            // displaying error toast
+                            var alert = _this.alertCtrl.create({
+                                message: 'Password is incorrect. Please enter the correct password'
+                            });
+                            alert.present();
+                            document.documentElement.style.setProperty("--teal", '#18A0A0');
+                            document.documentElement.style.setProperty("--header-profile", '20%');
+                        });
+                    }
+                }
+            ]
+        });
+        if (status == 1) {
+            document.documentElement.style.setProperty("--teal", 'red');
+            document.documentElement.style.setProperty("--header-profile", '0%');
+        }
+        else {
+            var email = this.editForm.controls['email'].value;
+            var name_1 = this.editForm.controls['name'].value;
+            var phoneNumber = this.editForm.controls['phoneNumber'].value;
+            if (email != this.navParams.get('payload').email ||
+                name_1 != this.navParams.get('payload').name ||
+                phoneNumber != this.navParams.get('payload').phoneNumber) {
+                prompt.present();
+            }
+            else {
+                // Toast for notifying user about the unedited details
+                var toast = this.toastCtrl.create({
+                    message: 'Seems like you didn\'t changed anything',
+                    duration: 3000,
+                    position: 'bottom'
+                });
+                toast.present();
+                document.documentElement.style.setProperty("--teal", '#18A0A0');
+                document.documentElement.style.setProperty("--header-profile", '20%');
+            }
+        }
+    };
+    // Change Password
+    ProfilePage.prototype.changePassword = function () {
+        var _this = this;
+        var alertPrompt = this.alertCtrl.create({
+            title: 'New Password',
+            message: "Please enter the new password",
+            inputs: [
+                {
+                    name: 'oldPassword',
+                    placeholder: 'Old password'
+                },
+                {
+                    name: 'newPassword',
+                    placeholder: 'New password'
+                }
+            ],
+            buttons: [
+                {
+                    text: 'Done',
+                    handler: function (data) {
+                        // Local scoped user crdentials
+                        var user = _this.afAuth.auth.currentUser;
+                        // Reauthenticate to check if the old 
+                        // password entered is correct.
+                        _this.fbService.login(user['email'], data.oldPassword)
+                            .then(function (response) {
+                            //update password if login is successful
+                            //checking new password characters length for 6
+                            if (data.newPassword.length >= 6) {
+                                user.updatePassword(data.newPassword)
+                                    .then(function (response) {
+                                    // Display the alert message
+                                    var alert = _this.alertCtrl.create({
+                                        title: 'Updated',
+                                        message: 'Password updated successfully...!'
+                                    });
+                                    alert.present();
+                                })
+                                    .catch(function (error) {
+                                    // Display the alert message
+                                    var alert = this.alertCtrl.create({
+                                        title: 'Failed',
+                                        message: 'Some problem occured...Please try again later...!'
+                                    });
+                                    alert.present();
+                                });
+                            }
+                            else {
+                                // Display the alert message
+                                var alert_1 = _this.alertCtrl.create({
+                                    title: 'Failed',
+                                    message: 'Password should be minimum of 6 characters'
+                                });
+                                alert_1.present();
+                            }
+                        })
+                            .catch(function (error) {
+                            console.log(error);
+                            // Display the alert message
+                            var alert = _this.alertCtrl.create({
+                                title: 'Failed',
+                                message: 'Enter the correct old password'
+                            });
+                            alert.present();
+                        });
+                    }
+                },
+                {
+                    text: 'cancel',
+                    handler: function (data) {
+                    }
+                }
+            ]
+        });
+        alertPrompt.present();
+    };
+    // delete the user 
+    ProfilePage.prototype.deleteUser = function () {
+        var _this = this;
+        // user & uid
+        var user = this.afAuth.auth.currentUser;
+        var alert = this.alertCtrl.create({
+            title: 'Conformation',
+            message: 'Enter your password to delete the account',
+            inputs: [
+                {
+                    name: 'password',
+                    placeholder: 'placeholder'
+                }
+            ],
+            buttons: [
+                {
+                    text: 'Delete',
+                    handler: function (data) {
+                        // check the user password
+                        _this.fbService.login(user['email'], data.password)
+                            .then(function (response) {
+                            // delete the user 
+                            user.delete()
+                                .then(function (response) {
+                                // display alert message
+                                var resultAlert = _this.alertCtrl.create({
+                                    title: 'Account deleted',
+                                    message: 'Your account has been deleted successfully..! We miss you..!'
+                                });
+                                resultAlert.present();
+                                // logout from the app
+                                _this.afAuth.auth.signOut();
+                            })
+                                .catch(function (error) {
+                                // display alert message
+                                var resultAlert = _this.alertCtrl.create({
+                                    title: 'Error',
+                                    message: 'Something is wrong, please try again later'
+                                });
+                                resultAlert.present();
+                            });
+                        })
+                            .catch(function (error) {
+                            // display alert message
+                            var resultAlert = _this.alertCtrl.create({
+                                title: 'Error',
+                                message: 'Enter the correct password'
+                            });
+                            resultAlert.present();
+                        });
+                    }
+                }
+            ]
+        });
+        alert.present();
+    };
+    ProfilePage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-profile',template:/*ion-inline-start:"/home/ghost/My_works/Ionic/MyMan/src/pages/Common/profile/profile.html"*/'<ion-header>\n  <ion-navbar class="toolbar-background" hideBackButton>\n    <ion-title class="toolbar-title.toolbar-title-md">Profile</ion-title>\n\n    <ion-buttons left>\n      <button ion-button icon-only (click)="navCtrl.pop()" class="back-btn">\n        <ion-icon name="arrow-back"></ion-icon>\n      </button>\n    </ion-buttons>\n\n    <ion-buttons right class="hammer" *ngIf="editStatus == 0">\n      <button ion-button icon-only (click)="order()">\n        <ion-icon name="custom-hammer" class="resize-icon"></ion-icon>\n      </button>\n    </ion-buttons>\n\n    <ion-buttons right class="Del" *ngIf="editStatus == 0">\n      <button ion-button icon-only (click)="deleteUser()">\n        <ion-icon name="trash"></ion-icon>\n      </button>\n    </ion-buttons>\n\n    <ion-buttons right class="Del" *ngIf="editStatus == 1">\n      <button ion-button icon-only (click)="editFired(0)" [disabled]="!editFormIcon">\n        <ion-icon name="checkmark"></ion-icon>\n      </button>\n    </ion-buttons>\n\n    <ion-buttons right class="Del" *ngIf="editStatus == 0">\n      <button ion-button icon-only (click)="editFired(1)">\n        <ion-icon name="create"></ion-icon>\n      </button>\n    </ion-buttons>\n\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n  <form [formGroup]="editForm">\n    <ion-grid>\n\n      <ion-row>\n        <ion-col col-12 class="l1"><b>Name</b></ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col>\n          <ion-item class="round-border">\n            <ion-input type="text" formControlName="name" (ngModelChange)="editIconUpdate()" placeholder="Name"\n              [disabled]="editStatus == 0"></ion-input>\n          </ion-item>\n\n          <ion-item class="warning-on-input"\n            *ngIf="!editForm.controls.name.valid  && (editForm.controls.name.dirty || submitAttempt)">\n            <p>Please enter your full name</p>\n          </ion-item>\n        </ion-col>\n      </ion-row>\n\n      <ion-row>\n        <ion-col col-12 class="l1"><b>Phone Number</b></ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col>\n          <ion-item class="round-border">\n            <ion-input type="text" formControlName="phoneNumber" (ngModelChange)="editIconUpdate()"\n              placeholder=\'Phone Number\' [disabled]="editStatus == 0"></ion-input>\n          </ion-item>\n\n          <ion-item class="warning-on-input"\n            *ngIf="!editForm.controls.phoneNumber.valid  && (editForm.controls.phoneNumber.dirty || submitAttempt)">\n            <p>Please enter a valid Phone Number</p>\n          </ion-item>\n        </ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col col-12 class="l1"><b>Mail</b></ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col>\n          <ion-item class="round-border">\n            <ion-input type="text" formControlName="email" (ngModelChange)="editIconUpdate()" placeholder="Mail"\n              [disabled]="editStatus == 0"></ion-input>\n          </ion-item>\n\n          <ion-item class="warning-on-input"\n            *ngIf="!editForm.controls.email.valid  && (editForm.controls.email.dirty || submitAttempt)">\n            <p>Please enter a valid Email</p>\n          </ion-item>\n        </ion-col>\n      </ion-row>\n\n\n      <ion-row>\n        <ion-col col-12 class="l1"><b>Recent Orders</b></ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col>\n          <ion-card (click)="cardclick()" *ngIf="requestFlag">\n            <ion-item>\n              <ion-avatar item-start>\n                <img src="../../assets/imgs/camera1.jpg">\n              </ion-avatar>\n              <h2>Service: {{ service }}</h2>\n              <p>Ordered : {{ bookedDate }}</p>\n            </ion-item>\n          </ion-card>\n\n          <ion-card *ngIf="!requestFlag">\n            <ion-item>\n              <ion-avatar item-start>\n                <img src="../../assets/imgs/camera1.jpg">\n              </ion-avatar>\n              <h2>No Bookings found..!</h2>\n              <p>Please book your first <br>Appointment</p>\n            </ion-item>\n          </ion-card>\n        </ion-col>\n      </ion-row>\n    </ion-grid>\n\n\n\n    <ion-buttons type="password" (click)="changePassword()">\n      <button ion-button round full class="button" [disabled]="editStatus == 0">Change Password</button>\n    </ion-buttons>\n\n  </form>\n</ion-content>\n'/*ion-inline-end:"/home/ghost/My_works/Ionic/MyMan/src/pages/Common/profile/profile.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_4_angularfire2_auth__["a" /* AngularFireAuth */],
+            __WEBPACK_IMPORTED_MODULE_5__services_fireBaseService__["a" /* FirebaseServices */],
+            __WEBPACK_IMPORTED_MODULE_6__angular_forms__["a" /* FormBuilder */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* ToastController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */],
+            __WEBPACK_IMPORTED_MODULE_7_angularfire2__["a" /* AngularFireModule */]])
+    ], ProfilePage);
+    return ProfilePage;
+}());
+
+//# sourceMappingURL=profile.js.map
+
+/***/ })
+
+},[297]);
+//# sourceMappingURL=main.js.map

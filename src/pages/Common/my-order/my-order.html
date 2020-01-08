@@ -46,10 +46,12 @@
           <img src="../../assets/imgs/camera1.jpg">
         </ion-avatar>
 
-        <h2>Date : {{ request.date }}</h2>
+        <h2>Shop Name: {{ request.shopName }}</h2>
+        <p>Date : {{ request.date }}</p> 
         <p>Time : {{ request.time }}</p>
-        <p *ngIf="request.seats.first == 1 && request.seats.second == 1">Seats : 2</p>
-        <p *ngIf="!(request.seats.first == 1 && request.seats.second == 1)">Seats : 1</p>
+        <p *ngIf="request.seats.first == 1 && request.seats.second == 1">Seat No: 1, 2</p>
+        <p *ngIf="(request.seats.first == 0 && request.seats.second == 1)">Seat No: 2</p>
+        <p *ngIf="(request.seats.first == 1 && request.seats.second == 0)">Seat No: 1</p>
       </ion-item>
     </ion-card>
 

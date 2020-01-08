@@ -26,6 +26,9 @@ export class ProfilePage {
   service: "";
   bookedDate: "";
 
+  // Requests flag
+  requestFlag: Boolean = true;
+
   constructor(public navCtrl: NavController,
     public navParams: NavParams,
     public afAuth: AngularFireAuth,
@@ -66,10 +69,12 @@ export class ProfilePage {
         this.service = this.latestReq['service'];
         this.bookedDate = this.latestReq['date'];
 
-
       })
       .catch((error) => {
-        console.log(error);
+
+        // If no requests found, set request flag to false
+        this.requestFlag = false;
+        console.log(this.requestFlag);
       })
 
   }

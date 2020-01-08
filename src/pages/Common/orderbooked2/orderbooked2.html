@@ -14,7 +14,7 @@
 <ion-content padding>
 
   <!-- For Photography -->
-  <div *ngIf="item.service == 'photography'">
+  <div *ngIf="item.service == 'Photography'">
     <ion-grid>
       <ion-row>
         <ion-col col-4>
@@ -78,7 +78,7 @@
   </div>
 
   <!-- For Haircut -->
-  <div *ngIf="item.service == 'haircut'">
+  <div *ngIf="item.service == 'Haircut'">
     <ion-grid>
       <ion-row>
         <ion-col col-4>
@@ -103,8 +103,9 @@
         <h2>Date</h2>
         <p>{{ item.date }}</p>
         <h2>No. of Seats</h2>
-        <p *ngIf="item.seats.first == 1 && item.seats.second == 1">Seats : 2</p>
-        <p *ngIf="!(item.seats.first == 1 && item.seats.second == 1)">Seats : 1</p>
+        <p *ngIf="item.seats.first == 1 && item.seats.second == 1">Seat No: 1, 2</p>
+        <p *ngIf="(item.seats.first == 0 && item.seats.second == 1)">Seat No: 2</p>
+        <p *ngIf="(item.seats.first == 1 && item.seats.second == 0)">Seat No: 1</p>
       </ion-item>
     </ion-card>
 

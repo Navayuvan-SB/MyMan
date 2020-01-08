@@ -59,7 +59,7 @@ export class BookPage {
 
 
     // get the functions details
-    this.fbService.readOnce('functions')
+    this.fbService.readOnce('photography/functions')
       .then((response) => {
 
         this.functions = response;

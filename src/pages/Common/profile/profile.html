@@ -89,18 +89,30 @@
           </ion-item>
         </ion-col>
       </ion-row>
+
+
       <ion-row>
         <ion-col col-12 class="l1"><b>Recent Orders</b></ion-col>
       </ion-row>
       <ion-row>
         <ion-col>
-          <ion-card (click)="cardclick()">
+          <ion-card (click)="cardclick()" *ngIf="requestFlag">
             <ion-item>
               <ion-avatar item-start>
                 <img src="../../assets/imgs/camera1.jpg">
               </ion-avatar>
               <h2>Service: {{ service }}</h2>
               <p>Ordered : {{ bookedDate }}</p>
+            </ion-item>
+          </ion-card>
+
+          <ion-card *ngIf="!requestFlag">
+            <ion-item>
+              <ion-avatar item-start>
+                <img src="../../assets/imgs/camera1.jpg">
+              </ion-avatar>
+              <h2>No Bookings found..!</h2>
+              <p>Please book your first <br>Appointment</p>
             </ion-item>
           </ion-card>
         </ion-col>

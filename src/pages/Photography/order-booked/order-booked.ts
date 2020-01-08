@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { FirebaseServices } from '../../../services/fireBaseService';
+import { sha256 } from 'js-sha256';
 
 /**
  * Generated class for the OrderBookedPage page.
@@ -42,12 +43,19 @@ export class OrderBookedPage {
                     .then((response) => {
 
                       let details = Object.entries(response);
-                      this.source.userId = details[0][1];
+
+                      // Generate request Id
+                      let reqId = sha256(details[1][1] + user.uid + Date.now());
+
+                      this.source.appointmentId = reqId;
+                      this.source.userId = user.uid;
                       this.name          = details[1][1];
                       this.source.bookedDate = this.nowDate;
                       this.source.userName   = this.name;
                       this.source.service = 'Photography';
-                      this.fbService.pushInDatabase('requests',this.source);
+
+                      // Write the request in database
+                      this.fbService.writeInDatabase('requests/' + reqId, this.source);
                     })
                     .catch((error) => {
                       // console.log(error);

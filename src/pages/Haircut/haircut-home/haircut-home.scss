@@ -38,13 +38,15 @@ page-haircut-home {
 
   // ###### total area for a card ######
   .card-area {
-
     width: 99%;
     height: 130px;
     margin: 0;
     text-align: center;
-    box-shadow: none !important;
-
+    border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
   }
 
   .card-position {

@@ -54,7 +54,7 @@ export class PhotographyPage {
 
     // start loading component 
     this.loading.present();
-    this.fbService.readOnce('packs')
+    this.fbService.readOnce('photography/packs')
         .then((response) => {
 
           // terminate loading component 
