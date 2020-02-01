@@ -15,16 +15,37 @@
 
   <h1>Photography</h1>
   <p *ngIf="photographyFlag" class="alert">Sorry, No orders found for Photography..!</p>
-  <div *ngIf="!photographyFlag" >
+  <div *ngIf="!photographyFlag">
     <ion-card *ngFor="let request of photographyOrders" (click)="cardclick(request)">
       <ion-item>
-        <ion-avatar item-start>
-          <img src="../../assets/imgs/camera1.jpg">
-        </ion-avatar>
 
-        <h2>Pack {{ request.pack.id }}</h2>
-        <p>Ordered : {{ request.bookedDate }}</p>
-        <p>Function : {{ request.fromDate }}</p>
+        <ion-row>
+
+          <ion-col col-5>
+            <img src="../../assets/imgs/camera1.jpg">
+          </ion-col>
+
+          <ion-col col-5 class="order-detail">
+            <h2>Pack {{ request.pack.id }}</h2>
+            <p>Ordered : {{ request.bookedDate }}</p>
+            <p>Function : {{ request.fromDate }}</p>
+            <ion-row><button class="b b3 com2 adjust1 adjust2 " ion-button round>Rejected</button></ion-row>
+            <!-- <ion-row *ngIf="data.status == 0"><button class="b b1 com2 adjust1 adjust2" ion-button
+                round>Waiting</button>
+            </ion-row>
+            <ion-row *ngIf="data.status == 1"><button class="b b2 com2 adjust1 adjust2" ion-button
+                round>Accepted</button>
+            </ion-row>
+            <ion-row *ngIf="data.status == 3"><button class="b b3 com2 adjust1 adjust2 " ion-button
+                round>Rejected</button></ion-row> -->
+          </ion-col>
+
+          <ion-col col-2 class="call-icon">
+            <ion-icon name="call"></ion-icon>
+          </ion-col>
+
+        </ion-row>
+
       </ion-item>
     </ion-card>
 
@@ -42,16 +63,38 @@
   <div *ngIf="!haircutFlag" class="parent">
     <ion-card *ngFor="let request of haircutOrders" (click)="cardclick(request)">
       <ion-item>
-        <ion-avatar item-start>
-          <img src="../../assets/imgs/camera1.jpg">
-        </ion-avatar>
 
-        <h2>Shop Name: {{ request.shopName }}</h2>
-        <p>Date : {{ request.date }}</p> 
-        <p>Time : {{ request.time }}</p>
-        <p *ngIf="request.seats.first == 1 && request.seats.second == 1">Seat No: 1, 2</p>
-        <p *ngIf="(request.seats.first == 0 && request.seats.second == 1)">Seat No: 2</p>
-        <p *ngIf="(request.seats.first == 1 && request.seats.second == 0)">Seat No: 1</p>
+        <ion-row>
+
+          <ion-col col-5>
+            <img src="../../assets/imgs/camera1.jpg" class="img-rect">
+          </ion-col>
+
+          <ion-col col-5 class="order-detail">
+
+            <h2>{{ request.shopName }}</h2>
+            <p>Date : {{ request.date }}</p>
+            <p>Time : {{ request.time }}</p>
+            <p *ngIf="request.seats.first == 1 && request.seats.second == 1">Seat No: 1, 2</p>
+            <p *ngIf="(request.seats.first == 0 && request.seats.second == 1)">Seat No: 2</p>
+            <p *ngIf="(request.seats.first == 1 && request.seats.second == 0)">Seat No: 1</p>
+            <ion-row><button class="b b3 com2 adjust1 adjust2 " ion-button round>Rejected</button></ion-row>
+            <!-- <ion-row *ngIf="data.status == 0"><button class="b b1 com2 adjust1 adjust2" ion-button
+                round>Waiting</button>
+            </ion-row>
+            <ion-row *ngIf="data.status == 1"><button class="b b2 com2 adjust1 adjust2" ion-button
+                round>Accepted</button>
+            </ion-row>
+            <ion-row *ngIf="data.status == 3"><button class="b b3 com2 adjust1 adjust2 " ion-button
+                round>Rejected</button></ion-row> -->
+          </ion-col>
+
+          <ion-col col-2 class="call-icon">
+            <ion-icon name="call"></ion-icon>
+          </ion-col>
+
+        </ion-row>
+
       </ion-item>
     </ion-card>
 

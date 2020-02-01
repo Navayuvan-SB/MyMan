@@ -1,113 +1,121 @@
 page-orderbooked2 {
 
-    .toolbar-title.toolbar-title-md{ 
-        color: #18A0A0; 
-        font-size: 25px; 
-        font-weight: 40; 
-        text-align: center; 
-        margin-right: 15%;
-    } 
-    .toolbar-background { 
-        background-color: White !important;
-    }
-    ion-icon{
-        color: #18A0A0;
-    }
+  .toolbar-title.toolbar-title-md {
+    color: #18A0A0;
+    font-size: 25px;
+    font-weight: 40;
+    text-align: center;
+    margin-right: 15%;
+  }
 
-    .l1{
-        padding-top: 15%;
-        padding-left:7%;
-        font-size: 140%;
-    }
+  .toolbar-background {
+    background-color: White !important;
+  }
 
-    .i1{
-        position:relative;
-        left:7px;
-        width :95px;
-        height:95px;
-        margin-top: 15px;
-       
-        background-image: url(../../assets/imgs/camera1.jpg);
-        background-size: cover;
-        display:block;
-        border-radius: 50%;          
- }
- .h2 {
-    padding-top: 15px ; 
+  ion-icon {
+    color: #18A0A0;
+  }
+
+  .l1 {
+    font-size: 16px;
+    margin-left: 15px;
+  }
+
+  .l1 ion-col {
+    margin-bottom: 6px;
+  }
+
+  .h2 {
+    padding-top: 15px;
     padding-left: 60px;
     font-size: 22px;
     font-weight: 900%;
-}
-.p{
-    padding-left: 62px; 
+  }
+
+  .p {
+    padding-left: 62px;
     margin-top: -9px;
-  
-}
 
-.card1{
-    border-radius: 20px !important; 
+  }
+
+  .card1 {
+    border-radius: 20px !important;
     height: 315px !important;
-    padding-top: 2px ;  
+    padding-top: 2px;
     //margin-left: 15px !important;
     //width: 330px !important;
     margin-right: 25px !important;
     padding-left: 32px !important;
-    margin-top: 40px !important; 
+    margin-top: 40px !important;
     border: 1px solid rgb(48, 49, 49);
-}
-ion-item{
-h2 {
-    //padding-top: 25px ; 
-    //padding-left: 60px;
-    font-size: 22px !important;
-    font-weight: bolder !important;
-    margin-top: 13px !important;
-}
-p{
-    //padding-left: 62px; 
-    margin-top: 13px !important;
-    font-weight: bolder !important;
+  }
 
-}
-}
-.card2{
-    border-radius: 20px !important; 
+  ion-item {
+    h2 {
+      //padding-top: 25px ; 
+      //padding-left: 60px;
+      font-size: 22px !important;
+      font-weight: bolder !important;
+      margin-top: 13px !important;
+    }
+
+    p {
+      //padding-left: 62px; 
+      margin-top: 13px !important;
+      font-weight: bolder !important;
+
+    }
+  }
+
+  .card2 {
+    border-radius: 20px !important;
     height: 180px !important;
-    padding-top: 2px ;  
+    padding-top: 2px;
     //margin-left: 15px !important;
     //width: 330px !important;
     margin-right: 25px !important;
     padding-left: 32px !important;
-    margin-top: 40px !important; 
+    margin-top: 40px !important;
     border: 1px solid rgb(48, 49, 49);
-}
-.card3{
-    border-radius: 20px !important; 
-    height: 140px !important; 
+  }
+
+  .card3 {
+    border-radius: 20px !important;
+    height: 140px !important;
     margin-left: 9px !important;
     //width: 330px !important;
     margin-right: 50px;
-    margin-top: 40px !important; 
+    margin-top: 40px !important;
     margin-bottom: 50px;
     border: 1px solid rgb(48, 49, 49);
-}
-ion-avatar img{
-    width: auto !important;
-    height: auto !important;
-    border-radius: 0 !important;
-    overflow: visible !important;
-    max-height: 100% !important;
-    max-width: none !important;
-}
-ion-avatar{
-    height: 90px !important;
-    width: 90px !important;
-    display: inline-block;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-top: 18px !important; 
-    margin-left: 7px !important;
-    border: 1px solid rgb(48, 49, 49);
-}
+  }
+
+  ion-col.shop-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    object-fit: cover;
+  }
+
+
+  ion-col.call-icon {
+    position: relative;
+  }
+
+  ion-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    zoom: 1.5;
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+  }
 
 }

@@ -25,7 +25,7 @@ import { OrderBookedPage } from '../pages/Photography/order-booked/order-booked'
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any;
+  rootPage: any  = HaircutConformationPage;
   pages: Array<{ title: string, component: any }>;
 
   constructor(public platform: Platform,
@@ -52,9 +52,9 @@ export class MyApp {
 
       // check if the user is signed in
 
-      this.angularFire.authState.subscribe(user => {
-        this.rootPage = user ? HomePage : LoginPage;
-      });
+      // this.angularFire.authState.subscribe(user => {
+      //   this.rootPage = user ? HomePage : LoginPage;
+      // });
 
 
     });

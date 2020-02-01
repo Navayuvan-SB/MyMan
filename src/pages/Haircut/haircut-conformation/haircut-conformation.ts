@@ -25,16 +25,16 @@ export class HaircutConformationPage {
   constructor(public navCtrl: NavController, public navParams: NavParams,
     public viewCtrl: ViewController) {
 
-    // get the details from the source page
-    this.bookedDetails = this.navParams.get('payload');
+    // // get the details from the source page
+    // this.bookedDetails = this.navParams.get('payload');
 
-    // Updating the number of seats count
-    if (this.bookedDetails.seats['first'] == 1 && this.bookedDetails.seats['second'] == 1) {
-      this.numberOfSeats = 2;
-    }
-    else {
-      this.numberOfSeats = 1;
-    }
+    // // Updating the number of seats count
+    // if (this.bookedDetails.seats['first'] == 1 && this.bookedDetails.seats['second'] == 1) {
+    //   this.numberOfSeats = 2;
+    // }
+    // else {
+    //   this.numberOfSeats = 1;
+    // }
 
   }
 

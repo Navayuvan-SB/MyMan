@@ -23,75 +23,80 @@
 
 <ion-content padding>
 
-
   <ion-grid>
 
-    <!-- row1 for shop name and has 3cols -->
+    <!-- Header meta data -->
     <ion-row>
-      <ion-col col-5>
-        <b class="marginLeft-45">Shop Name</b>
+      <ion-col col-5 class="shop-image">
+        <img src="../../../assets/imgs/image2.png" alt="Image">
       </ion-col>
-      <ion-col col-1>
-        <b class="marginLeft-colon">:</b>
+      <ion-col col-7 class="meta-data">
+
+        <ion-row>
+          <ion-col col-10>
+            <ion-row class="l1">
+
+              <ion-col col-12>
+                <b>Shop Name</b>
+              </ion-col>
+              <ion-col col-12>
+                <b>Date : </b> 00.00.00
+              </ion-col>
+              <ion-col col-12>
+                <b>Time : </b> 11.00 PM
+              </ion-col>
+
+              <ion-col col-12>
+                <b>Seat No. : </b> 2
+              </ion-col>
+
+            </ion-row>
+          </ion-col>
+
+        </ion-row>
+
       </ion-col>
-      <ion-col col-6>
-        <div class="marginLeft-light">{{ bookedDetails.shopName }}</div>
-      </ion-col>
+
     </ion-row>
 
-    <!-- row2 for date name and has 3cols -->
-    <ion-row>
-      <ion-col col-5>
-        <b class="marginLeft-45">Date</b>
+    <!-- Terms and Conditions -->
+    <ion-row id="terms">
+
+      <ion-col col-12>
+        <h2>Terms and Conditions</h2>
       </ion-col>
-      <ion-col col-1>
-        <b class="marginLeft-colon">:</b>
+
+      <ion-col col-12>
+
+        <ul>
+          <li>Timing slot for each batch is 30 minutes</li>
+          <li>Cancellation is not allowed</li>
+          <li>You should report before 10 minutes of the booked time slot to the shop</li>
+          <li>Booking charges may apply*</li>
+        </ul>
+
       </ion-col>
-      <ion-col col-6>
-        <div class="marginLeft-light">{{ bookedDetails.date }}</div>
-      </ion-col>
+
     </ion-row>
 
-    <!-- row3 for Time and has 3cols -->
-    <ion-row>
-      <ion-col col-5>
-        <b class="marginLeft-45">Time</b>
+    <!-- Checkbox for accepting terms and conditions -->
+    <ion-row id="terms-checkbox">
+
+      <ion-col col-12>
+        <ion-item no-lines>
+          <ion-label text-wrap>I accept to the Terms and Conditions</ion-label>
+          <ion-checkbox color="dark" checked="false"></ion-checkbox>
+        </ion-item>
       </ion-col>
-      <ion-col col-1>
-        <b class="marginLeft-colon">:</b>
-      </ion-col>
-      <ion-col col-6>
-        <div class="marginLeft-light">{{ bookedDetails.time }}</div>
-      </ion-col>
+
     </ion-row>
-
-    <!-- row4 for SeatNum and has 3cols -->
-    <ion-row>
-      <ion-col col-5>
-        <b class="marginLeft-45">No. of Seats</b>
-      </ion-col>
-      <ion-col col-1>
-        <b class="marginLeft-colon">:</b>
-      </ion-col>
-      <ion-col col-6>
-        <div class="marginLeft-light">{{ numberOfSeats }}</div>
-
-      </ion-col>
-    </ion-row>
-
 
   </ion-grid>
 
 </ion-content>
 
 <ion-footer no-border>
-
-  <!-- card to navigate history page -->
   <div text-center>
-    <ion-card (click)="navToMyOrders()">
-      <p class="reduceTop">No cancellation allowed</p>
-      <p class="reduceTop1">Click to see order history</p>
-    </ion-card>
+    <button ion-button color="secondary" round>Book</button>
   </div>
-
 </ion-footer>

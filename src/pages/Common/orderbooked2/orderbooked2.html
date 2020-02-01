@@ -81,28 +81,62 @@
   <div *ngIf="item.service == 'Haircut'">
     <ion-grid>
       <ion-row>
-        <ion-col col-4>
-          <ion-avatar style=" border: 1px solid black;" class="i1">
-            <!----image-->
-          </ion-avatar>
+        <ion-col col-5 class="shop-image">
+          <img src="../../../assets/imgs/image2.png" alt="Image">
         </ion-col>
-        <ion-col col-8 class="l1"><b>Haircut</b>
+        <ion-col col-7>
+
+          <ion-row>
+            <ion-col col-10>
+              <ion-row class="l1">
+
+                <ion-col col-12>
+                  <b>{{ item.shopName }}</b>
+                </ion-col>
+                <ion-col col-12>
+                  <b>Ordered by</b>
+                </ion-col>
+                <ion-col col-12>
+                  {{ item.userName }}
+                </ion-col>
+
+              </ion-row>
+            </ion-col>
+
+            <ion-col col-2 class="call-icon">
+              <ion-icon name="call"></ion-icon>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col col-12>
+              <ion-row><button class="b b3 com2 adjust1 adjust2 " ion-button round>Rejected</button></ion-row>
+              <!-- <ion-row *ngIf="data.status == 0"><button class="b b1 com2 adjust1 adjust2" ion-button
+                round>Waiting</button>
+            </ion-row>
+            <ion-row *ngIf="data.status == 1"><button class="b b2 com2 adjust1 adjust2" ion-button
+                round>Accepted</button>
+            </ion-row>
+            <ion-row *ngIf="data.status == 3"><button class="b b3 com2 adjust1 adjust2 " ion-button
+                round>Rejected</button></ion-row> -->
+            </ion-col>
+          </ion-row>
+
         </ion-col>
+
       </ion-row>
     </ion-grid>
 
-    <h2 class="h2">Ordered by</h2>
-    <p class="p">{{ item.userName }}</p>
 
     <ion-card class="card1">
       <ion-item>
-        <h2>Shop Name</h2>
-        <p>{{ item.shopName }}</p>
+        <h2>Cost</h2>
+        <p>Rs. {{ item.cost }}</p>
         <h2>Time</h2>
         <p>{{ item.time }}</p>
         <h2>Date</h2>
         <p>{{ item.date }}</p>
-        <h2>No. of Seats</h2>
+        <h2>Seat No.</h2>
         <p *ngIf="item.seats.first == 1 && item.seats.second == 1">Seat No: 1, 2</p>
         <p *ngIf="(item.seats.first == 0 && item.seats.second == 1)">Seat No: 2</p>
         <p *ngIf="(item.seats.first == 1 && item.seats.second == 0)">Seat No: 1</p>
