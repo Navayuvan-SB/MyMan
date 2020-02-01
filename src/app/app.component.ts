@@ -17,7 +17,12 @@ import { HaircutBookPage } from '../pages/Haircut/haircut-book/haircut-book';
 import { HaircutConformationPage } from '../pages/Haircut/haircut-conformation/haircut-conformation';
 import { HaircutPopupPage } from '../pages/Haircut/haircut-popup/haircut-popup';
 import { OrderBookedPage } from '../pages/Photography/order-booked/order-booked';
-
+import { ShopHomePage } from '../pages/Haircut-Shop/shop-home/shop-home';
+import { ShopOrdersPage } from '../pages/Haircut-Shop/shop-orders/shop-orders';
+import { ShopSettingsPage } from '../pages/Haircut-Shop/shop-settings/shop-settings';
+import { AdminEditPage } from '../pages/admin/admin-edit/admin-edit';
+import { AdminHomePage } from '../pages/admin/admin-home/admin-home';
+import { AdminNewPage } from '../pages/admin/admin-new/admin-new';
 
 @Component({
   templateUrl: 'app.html'
@@ -25,7 +30,7 @@ import { OrderBookedPage } from '../pages/Photography/order-booked/order-booked'
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any  = HaircutConformationPage;
+  rootPage: any  = AdminNewPage;
   pages: Array<{ title: string, component: any }>;
 
   constructor(public platform: Platform,

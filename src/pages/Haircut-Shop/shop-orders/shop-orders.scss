@@ -1,0 +1,66 @@
+page-shop-orders {
+
+  /*=====================================
+                    Global
+    ===================================*/
+
+  .toolbar-title.toolbar-title-md {
+    color: #18A0A0;
+    font-size: 23px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .toolbar-background {
+    background-color: white;
+  }
+
+  ion-icon {
+    color: #18A0A0;
+  }
+
+  /*=====================================
+                    Orders
+    ===================================*/
+
+  #orders {
+    margin-top: 20px;
+  }
+
+  #orders h2 {
+    margin-left: 8px;
+  }
+
+  #orders .card2 {
+    border-radius: 20px !important;
+    height: 350px !important;
+    padding-top: 2px;
+    margin-right: 25px !important;
+    padding-left: 12px !important;
+    margin-top: 40px !important;
+    border: 1px solid rgb(48, 49, 49);
+  }
+
+  #orders .card2 h2 {
+    margin-left: 0;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  #orders .card2 p {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  #orders .card2 ion-icon {
+    zoom: 1.6;
+  }
+
+  #orders .card2 h3 {
+    font-size: 16px;
+    color: #ff0000;
+    margin: 13px 0;
+  }
+
+}

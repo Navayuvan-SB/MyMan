@@ -17,6 +17,12 @@ import { HaircutConformationPage } from '../pages/Haircut/haircut-conformation/h
 import { HaircutBookPage } from '../pages/Haircut/haircut-book/haircut-book';
 import { HaircutHomePage } from '../pages/Haircut/haircut-home/haircut-home';
 import { HaircutPopupPage } from '../pages/Haircut/haircut-popup/haircut-popup';
+import { ShopHomePage } from '../pages/Haircut-Shop/shop-home/shop-home';
+import { ShopOrdersPage } from '../pages/Haircut-Shop/shop-orders/shop-orders';
+import { ShopSettingsPage } from '../pages/Haircut-Shop/shop-settings/shop-settings';
+import { AdminEditPage } from '../pages/admin/admin-edit/admin-edit';
+import { AdminHomePage } from '../pages/admin/admin-home/admin-home';
+import { AdminNewPage } from '../pages/admin/admin-new/admin-new';
 
 // Firebase Services
 import { FirebaseServices } from '../services/fireBaseService';
@@ -32,10 +38,6 @@ import { firebaseConfig } from '../credentials/firebase-credential'
 
 // myman service
 import { MyManService } from '../services/myManService';
-
-import { Network } from '@ionic-native/network';
-import { Geolocation } from '@ionic-native/geolocation';
-
 
 
 
@@ -55,7 +57,13 @@ import { Geolocation } from '@ionic-native/geolocation';
     HaircutHomePage,
     HaircutBookPage,
     HaircutConformationPage,
-    HaircutPopupPage
+    HaircutPopupPage,
+    ShopHomePage,
+    ShopOrdersPage,
+    ShopSettingsPage,
+    AdminEditPage,
+    AdminHomePage,
+    AdminNewPage
   ],
   imports: [
     BrowserModule,
@@ -77,7 +85,13 @@ import { Geolocation } from '@ionic-native/geolocation';
     HaircutHomePage,
     HaircutBookPage,
     HaircutConformationPage,
-    HaircutPopupPage
+    HaircutPopupPage,
+    ShopHomePage,
+    ShopOrdersPage,
+    ShopSettingsPage,
+    AdminEditPage,
+    AdminHomePage,
+    AdminNewPage
   ],
   providers: [
     StatusBar,

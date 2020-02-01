@@ -1,0 +1,60 @@
+<!--
+  Generated template for the AdminHomePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-grid>
+
+    <ion-row row-12>
+      <ion-col>
+        <!-- <ion-input placeholder="Search" (ionInput)="getItems($event)"></ion-input> -->
+        <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+      </ion-col>
+    </ion-row>
+
+    <ion-card>
+      <ion-item>
+
+        <ion-row>
+
+          <ion-col col-5>
+            <img src="../../assets/imgs/camera1.jpg" class="img-rect">
+          </ion-col>
+
+          <ion-col col-5 class="order-detail">
+
+            <h2>ASDASDASD</h2>
+            <p>Street: asdasdasdas</p>
+            <p>City: asdasdasdas</p>
+            <p>Offer: 10%</p>
+            <!-- <ion-row><button class="b b2 com2 adjust1 adjust2 " ion-button round>Open</button></ion-row> -->
+            <ion-row><button class="b b3 com2 adjust1 adjust2 " ion-button round>Closed</button></ion-row>
+          </ion-col>
+
+          <ion-col col-2 class="call-icon">
+            <ion-icon name="call"></ion-icon>
+          </ion-col>
+
+        </ion-row>
+
+      </ion-item>
+    </ion-card>
+
+  </ion-grid>
+
+</ion-content>
+
+<ion-footer text-center no-border>
+
+  <button ion-button round color="secondary">Add New</button>
+
+</ion-footer>

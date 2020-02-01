@@ -1,0 +1,47 @@
+page-shop-settings {
+
+  /*=====================================
+                Global
+    ===================================*/
+
+  //  common for all icon 
+  ion-icon {
+    color: #18A0A0;
+  }
+
+  .toolbar-title.toolbar-title-md {
+    color: #18A0A0;
+    font-size: 23px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .toolbar-background {
+    background-color: white;
+  }
+
+  /*=====================================
+                Change Password
+    ===================================*/
+
+  #change-password {
+    margin-top: 100px;
+  }
+
+  #change-password button {
+    margin-top: 60px;
+  }
+
+  /*=====================================
+                    Logout
+    ===================================*/
+
+  ion-footer {
+    height: 80px;
+  }
+
+  ion-footer button ion-icon {
+    color: #fff;
+  }
+  
+}

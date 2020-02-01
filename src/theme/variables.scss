@@ -35,7 +35,7 @@ $app-direction: ltr;
 
 $colors: (
   primary:    #488aff,
-  secondary:  #32db64,
+  secondary:  #18A0A0,
   danger:     #f53d3d,
   light:      #f4f4f4,
   dark:       #222
@@ -44,6 +44,10 @@ $colors: (
 $popover-md-border-radius: 24px;
 $popover-md-width: 200px;
 $popover-md-align: center;
+
+
+$searchbar-md-input-box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, .2);
+$searchbar-md-input-border-radius: 12px;
 
 // App iOS Variables
 // --------------------------------------------------

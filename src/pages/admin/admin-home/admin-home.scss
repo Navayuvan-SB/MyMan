@@ -1,13 +1,4 @@
-page-my-order {
-
-  .ion-md-person {
-    color: #18A0A0 !important;
-  }
-
-  .ion-md-menu {
-    color: #18A0A0 !important;
-    zoom: 1.2;
-  }
+page-admin-home {
 
   .toolbar-title.toolbar-title-md {
     color: #18A0A0;
@@ -18,14 +9,6 @@ page-my-order {
 
   .toolbar-background {
     background-color: White !important;
-  }
-
-  .paddingleft {
-    padding-left: 10px;
-  }
-
-  .paddingright {
-    padding-right: 13px;
   }
 
   ion-icon {
@@ -108,19 +91,6 @@ page-my-order {
     color: #808080;
   }
 
-  // ion-label for expand notifier
-  #expand-flag ion-label {
-    color: rgb(4, 102, 231);
-    padding: 10px;
-    border: 1px solid rgb(4, 102, 231);
-    border-radius: 8px;
-    display: inline-block;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
-  }
-
   .b {
     text-transform: none;
   }
@@ -161,4 +131,7 @@ page-my-order {
     -o-transform: translateX(-50%) translateY(-50%);
   }
 
+  ion-footer {
+    height: 80px;
+  }
 }

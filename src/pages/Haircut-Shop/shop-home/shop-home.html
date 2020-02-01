@@ -1,0 +1,113 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+
+    <!-- Shop Status -->
+    <ion-row id="shop-status">
+
+      <!-- Status text -->
+      <ion-col col-9>
+        <ion-row>
+
+          <ion-col col-12>
+            <h2>Shop Status</h2>
+          </ion-col>
+          <ion-col col-12>
+            <p>open</p>
+          </ion-col>
+
+        </ion-row>
+      </ion-col>
+
+      <!-- Toggle -->
+      <ion-col col-3 class="toggle">
+        <ion-toggle checked="false" color="secondary"></ion-toggle>
+      </ion-col>
+
+    </ion-row>
+
+    <!-- Discount -->
+    <ion-row id="discount">
+
+      <ion-col col-12>
+        <h2>Discount</h2>
+      </ion-col>
+      <ion-col col-12>
+
+        <div class="discount-wrapper">
+
+          <ion-row>
+            <ion-col col-10>
+              <p>Discount 10% Applied</p>
+            </ion-col>
+            <ion-col col-2 text-center>
+              <ion-icon name="arrow-dropdown"></ion-icon>
+            </ion-col>
+          </ion-row>
+
+        </div>
+
+      </ion-col>
+
+    </ion-row>
+
+    <!-- Orders -->
+    <ion-row id="orders">
+
+      <h2>Orders</h2>
+
+      <ion-card class="card2">
+        <ion-item>
+
+          <ion-row>
+
+            <ion-col col-12>
+              <h2>Customer Name</h2>
+              <p>ASDASDAS</p>
+            </ion-col>
+
+            <ion-col col-12>
+              <h2>Appointment Id</h2>
+              <p>ASDaD132131asd</p>
+            </ion-col>
+
+            <ion-col col-10>
+              <h2>Phone Number</h2>
+              <p>9876543210</p>
+            </ion-col>
+
+            <ion-col col-2>
+              <ion-icon name="call"></ion-icon>
+            </ion-col>
+
+            <ion-col col-12>
+              <h2>Time</h2>
+              <p>11.00 AM</p>
+            </ion-col>
+
+            <ion-col col-3>
+              
+            </ion-col>
+
+            <ion-col col-5>
+              <button ion-button color="secondary" round>Accept</button>
+            </ion-col>
+
+            <ion-col col-4 text-center>
+              <h3>Reject</h3>
+            </ion-col>
+
+          </ion-row>
+
+        </ion-item>
+      </ion-card>
+
+    </ion-row>
+
+  </ion-grid>
+</ion-content>
