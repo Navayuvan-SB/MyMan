@@ -1,12 +1,6 @@
-<!--
-  Generated template for the AdminNewPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
   <ion-navbar>
-    <ion-title>admin-new-page</ion-title>
+    <ion-title>New Shop</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -15,16 +9,81 @@
   <ion-grid>
 
     <ion-row id="meta-info">
-      <ion-col col-4 class="image-wrapper">
+      <ion-col col-5 class="image-wrapper">
         <img src="../../../assets/imgs/image5.jpg" alt="Image">
       </ion-col>
 
-      <ion-col col-8>
+      <ion-col col-7>
         <ion-item>
           <ion-input type="text" value="" placeholder="Shop Name"></ion-input>
         </ion-item>
       </ion-col>
 
+    </ion-row>
+
+    <!-- Image Section -->
+    <ion-row id="image-section">
+      <ion-col col-12>
+        <ion-scroll scrollX="true" style="white-space: nowrap; height: 200px">
+
+          <img src="../../../assets/imgs/image5.jpg" alt="Image">
+          <img src="../../../assets/imgs/image5.jpg" alt="Image">
+          <img src="../../../assets/imgs/image5.jpg" alt="Image">
+          <img src="../../../assets/imgs/image5.jpg" alt="Image">
+          <img src="../../../assets/imgs/image5.jpg" alt="Image">
+
+          <!-- Add Image -->
+          <img class="add-image" src="../../../assets/imgs/add-image.png" alt="Image">
+
+        </ion-scroll>
+      </ion-col>
+    </ion-row>
+
+    <!-- Details Section -->
+    <ion-row id="detail-section">
+      <ion-col col-12>
+
+        <ion-item>
+          <ion-label floating>Username</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Username</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Username</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Username</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Username</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Username</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+
+      </ion-col>
+    </ion-row>
+
+    <!-- Add Shop Button -->
+    <ion-row id="add-button">
+      <ion-col col-12>
+
+        <div text-center>
+          <button ion-button color="secondary" round>Add Shop</button>
+        </div>
+      </ion-col>
     </ion-row>
 
   </ion-grid>

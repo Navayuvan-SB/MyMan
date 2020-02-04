@@ -30,7 +30,7 @@ import { AdminNewPage } from '../pages/admin/admin-new/admin-new';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any  = AdminNewPage;
+  rootPage: any  = AdminEditPage;
   pages: Array<{ title: string, component: any }>;
 
   constructor(public platform: Platform,

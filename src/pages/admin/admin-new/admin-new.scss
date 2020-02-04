@@ -1,3 +1,85 @@
 page-admin-new {
 
+  /*=====================================
+                Global
+    ===================================*/
+
+  .toolbar-title.toolbar-title-md {
+    color: #18A0A0;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .toolbar-background {
+    background-color: White !important;
+  }
+
+  ion-icon {
+    color: #18A0A0;
+  }
+
+  /*=====================================
+            Header Image and Name
+    ===================================*/
+
+  #meta-info {
+
+    margin-bottom: 30px;
+  }
+
+  #meta-info img {
+    width: 130px;
+    height: 130px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    object-fit: cover;
+  }
+
+  #meta-info input {
+    margin-top: 50px;
+  }
+
+  /*=====================================
+              Image Section 
+    ===================================*/
+
+  #image-section {
+    position: relative;
+  }
+
+  #image-section img {
+    width: 400px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    margin-right: 10px;
+  }
+
+  #image-section img.add-image {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    padding: 20px 20px;
+    border: 1px solid #000;
+    margin-top: 38px;
+    margin-left: 20px;
+  }
+
+
+  /*=====================================
+              Add Shop Button
+    ===================================*/
+
+  #add-button button {
+    margin: 23px 0 10px 0;
+  }
+
 }
