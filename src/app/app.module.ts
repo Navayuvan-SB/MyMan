@@ -39,6 +39,8 @@ import { firebaseConfig } from '../credentials/firebase-credential'
 // myman service
 import { MyManService } from '../services/myManService';
 
+import { CallNumber } from '@ionic-native/call-number'
+
 
 
 
@@ -100,6 +102,7 @@ import { MyManService } from '../services/myManService';
     AngularFireAuth,
     AngularFireDatabase,
     MyManService,
+    CallNumber,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

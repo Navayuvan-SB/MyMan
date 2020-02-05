@@ -8,8 +8,8 @@ import { sha256, sha224 } from 'js-sha256';
 import { HaircutConformationPage } from '../haircut-conformation/haircut-conformation';
 import { ProfilePage } from '../../Common/profile/profile';
 import { MyOrderPage } from '../../Common/my-order/my-order';
-import { load } from 'google-maps';
 import { ShopHomePage } from '../../Haircut-Shop/shop-home/shop-home';
+import { HaircutHomePage } from '../haircut-home/haircut-home';
 
 /**
  * Generated class for the HaircutBookPage page.
@@ -62,6 +62,7 @@ export class HaircutBookPage {
     var m = today.getMinutes();
     var timeNow = h + ":" + m + ":" + '00';
 
+    timeNow = "08:00:00";
     // filter the slots based on current time
     this.timeSlots = this.timeSlots.map((element) => {
       if (timeNow < this.convertTime(element.time)) {
@@ -229,9 +230,36 @@ export class HaircutBookPage {
         let modal = this.modalCtrl.create(HaircutConformationPage, { payload: dataToRequest, dataToUpdate: dataToUpdate });
         modal.present();
 
-        modal.onDidDismiss(() => {
+        modal.onDidDismiss((status) => {
+
+          var alert;
+          if (status) {
+            alert = this.alertCtrl.create({
+              title: 'Booked',
+              message: 'Your Appointment was booked successfully...!',
+              buttons: [
+                {
+                  text: 'Okay'
+                }
+              ]
+            });
+          } else {
+            
+            alert = this.alertCtrl.create({
+              title: 'Failed',
+              message: 'Something seems to be wrong, please try again later',
+              buttons: [
+                {
+                  text: 'Okay'
+                }
+              ]
+            });
+          }
+
+
+          alert.present();
           loading.dismiss();
-          this.navCtrl.setRoot(ShopHomePage);
+          this.navCtrl.setRoot(HaircutHomePage);
         });
 
 

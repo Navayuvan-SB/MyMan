@@ -5,6 +5,7 @@ import { HaircutBookPage } from '../haircut-book/haircut-book';
 import { ProfilePage } from '../../Common/profile/profile';
 import { MyOrderPage } from '../../Common/my-order/my-order';
 import { AngularFireAuth } from 'angularfire2/auth';
+import { AngularFireDatabase } from 'angularfire2/database';
 
 @Component({
   selector: 'page-haircut-home',
@@ -23,6 +24,7 @@ export class HaircutHomePage {
   constructor(public navCtrl: NavController,
     public navParams: NavParams,
     public fbService: FirebaseServices,
+    public afDatabase: AngularFireDatabase,
     public afAuth: AngularFireAuth,
     public toastCtrl: ToastController) {
 
@@ -47,7 +49,6 @@ export class HaircutHomePage {
       .catch((error) => {
 
       });
-
 
 
   }

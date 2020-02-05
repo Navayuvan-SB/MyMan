@@ -39,6 +39,8 @@ export class HaircutConformationPage {
     // get the data to update details
     this.dataToUpdate = this.navParams.get('dataToUpdate');
 
+    console.log(this.dataToUpdate);
+
   }
 
   ionViewDidLoad() {
@@ -57,12 +59,6 @@ export class HaircutConformationPage {
 
   bookClicked() {
 
-    let loading = this.loadingCtrl.create({
-      content: 'Please wait...'
-    });
-
-    loading.present();
-
     // Update the data
     let path = 'haircut/shops/' + this.bookedDetails.shopId + '/timeSlots';
     let data = {
@@ -76,61 +72,18 @@ export class HaircutConformationPage {
         this.fbService.writeInDatabase('requests/' + this.bookedDetails.appointmentId, this.bookedDetails)
           .then((response) => {
 
-            // dismiss loading
-            loading.dismiss();
-
-            // alert message
-            var alert = this.alertCtrl.create({
-              title: 'Booked',
-              message: 'Your Appointment was booked successfully...!',
-              buttons: [
-                {
-                  text: 'Okay'
-                }
-              ]
-            });
-
-            alert.present();
-
-            this.viewCtrl.dismiss();
+            this.viewCtrl.dismiss(true);
 
           })
           .catch((error) => {
 
-            // dismiss loading
-            loading.dismiss();
-
-            // alert message
-            var alert = this.alertCtrl.create({
-              title: 'Failed',
-              message: 'Something seems to be wrong, please try again later',
-              buttons: [
-                {
-                  text: 'Okay'
-                }
-              ]
-            });
-
-            alert.present();
-
-            this.viewCtrl.dismiss();
+            this.viewCtrl.dismiss(false);
           });
 
       })
       .catch((error) => {
 
-        // alert message
-        var alert = this.alertCtrl.create({
-          title: 'Failed',
-          message: 'Something seems to be wrong, please try again later',
-          buttons: [
-            {
-              text: 'Okay'
-            }
-          ]
-        });
-
-        alert.present();
+        this.viewCtrl.dismiss(false);
 
       });
 

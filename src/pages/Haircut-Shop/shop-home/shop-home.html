@@ -62,33 +62,33 @@
 
       <h2>Orders</h2>
 
-      <ion-card class="card2">
+      <ion-card class="card2" *ngFor="let requests of latestRequests">
         <ion-item>
 
           <ion-row>
 
             <ion-col col-12>
               <h2>Customer Name</h2>
-              <p>ASDASDAS</p>
+              <p>{{ requests.userName }}</p>
             </ion-col>
 
             <ion-col col-12>
               <h2>Appointment Id</h2>
-              <p>ASDaD132131asd</p>
+              <p>{{ requests.appointmentId }}</p>
             </ion-col>
 
             <ion-col col-10>
               <h2>Phone Number</h2>
-              <p>9876543210</p>
+              <p>{{ requests.userPhoneNumber }}</p>
             </ion-col>
 
-            <ion-col col-2>
+            <ion-col col-2 (click)="makeCall(requests.userPhoneNumber)">
               <ion-icon name="call"></ion-icon>
             </ion-col>
 
             <ion-col col-12>
               <h2>Time</h2>
-              <p>11.00 AM</p>
+              <p>{{ requests.time }}</p>
             </ion-col>
 
             <ion-col col-3>
@@ -96,10 +96,10 @@
             </ion-col>
 
             <ion-col col-5>
-              <button ion-button color="secondary" round>Accept</button>
+              <button ion-button color="secondary" round (click)="acceptClicked(requests)">Accept</button>
             </ion-col>
 
-            <ion-col col-4 text-center>
+            <ion-col col-4 text-center (click)="rejectClicked(requests)">
               <h3>Reject</h3>
             </ion-col>
 

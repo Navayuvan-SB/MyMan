@@ -20,6 +20,7 @@
     "@angular/http": "5.2.11",
     "@angular/platform-browser": "5.2.11",
     "@angular/platform-browser-dynamic": "5.2.11",
+    "@ionic-native/call-number": "^4.12.0",
     "@ionic-native/core": "~4.20.0",
     "@ionic-native/geolocation": "^5.14.0",
     "@ionic-native/network": "^5.14.0",
@@ -28,8 +29,10 @@
     "@ionic/storage": "2.2.0",
     "@types/google-maps": "^3.2.1",
     "angularfire2": "^5.0.0-rc.3",
+    "call-number": "^1.0.1",
+    "cordova-android": "^8.1.0",
     "cordova-browser": "^6.0.0",
-    "firebase": "^4.6.0",
+    "firebase": "^4.8.0",
     "ionic-angular": "3.9.5",
     "ionicons": "3.0.0",
     "js-sha256": "^0.9.0",
@@ -55,10 +58,12 @@
       "cordova-plugin-device": {},
       "cordova-plugin-splashscreen": {},
       "cordova-plugin-ionic-webview": {},
-      "cordova-plugin-ionic-keyboard": {}
+      "cordova-plugin-ionic-keyboard": {},
+      "mx.ferreyra.callnumber": {}
     },
     "platforms": [
-      "browser"
+      "browser",
+      "android"
     ]
   }
 }
