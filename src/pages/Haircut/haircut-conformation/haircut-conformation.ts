@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, PopoverController, ViewController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, PopoverController, ViewController, LoadingController, AlertController } from 'ionic-angular';
 import { MyOrderPage } from '../../Common/my-order/my-order';
+import { FirebaseServices } from '../../../services/fireBaseService';
 
 
 
@@ -21,20 +22,22 @@ export class HaircutConformationPage {
 
   // No of seats
   numberOfSeats: any;
-  
+
+  // Data to update
+  dataToUpdate: any;
+
+  // Conformation checkbox
+  conformed: any = false;
+
   constructor(public navCtrl: NavController, public navParams: NavParams,
-    public viewCtrl: ViewController) {
+    public viewCtrl: ViewController, private fbService: FirebaseServices,
+    public loadingCtrl: LoadingController, private alertCtrl: AlertController) {
 
-    // // get the details from the source page
-    // this.bookedDetails = this.navParams.get('payload');
+    // get the details from the source page
+    this.bookedDetails = this.navParams.get('payload');
 
-    // // Updating the number of seats count
-    // if (this.bookedDetails.seats['first'] == 1 && this.bookedDetails.seats['second'] == 1) {
-    //   this.numberOfSeats = 2;
-    // }
-    // else {
-    //   this.numberOfSeats = 1;
-    // }
+    // get the data to update details
+    this.dataToUpdate = this.navParams.get('dataToUpdate');
 
   }
 
@@ -50,6 +53,87 @@ export class HaircutConformationPage {
   // nav to my orders
   navToMyOrders() {
     this.navCtrl.push(MyOrderPage);
+  }
+
+  bookClicked() {
+
+    let loading = this.loadingCtrl.create({
+      content: 'Please wait...'
+    });
+
+    loading.present();
+
+    // Update the data
+    let path = 'haircut/shops/' + this.bookedDetails.shopId + '/timeSlots';
+    let data = {
+      [path]: this.dataToUpdate
+    }
+
+    this.fbService.updateField(data)
+      .then((response) => {
+
+        // update in request set
+        this.fbService.writeInDatabase('requests/' + this.bookedDetails.appointmentId, this.bookedDetails)
+          .then((response) => {
+
+            // dismiss loading
+            loading.dismiss();
+
+            // alert message
+            var alert = this.alertCtrl.create({
+              title: 'Booked',
+              message: 'Your Appointment was booked successfully...!',
+              buttons: [
+                {
+                  text: 'Okay'
+                }
+              ]
+            });
+
+            alert.present();
+
+            this.viewCtrl.dismiss();
+
+          })
+          .catch((error) => {
+
+            // dismiss loading
+            loading.dismiss();
+
+            // alert message
+            var alert = this.alertCtrl.create({
+              title: 'Failed',
+              message: 'Something seems to be wrong, please try again later',
+              buttons: [
+                {
+                  text: 'Okay'
+                }
+              ]
+            });
+
+            alert.present();
+
+            this.viewCtrl.dismiss();
+          });
+
+      })
+      .catch((error) => {
+
+        // alert message
+        var alert = this.alertCtrl.create({
+          title: 'Failed',
+          message: 'Something seems to be wrong, please try again later',
+          buttons: [
+            {
+              text: 'Okay'
+            }
+          ]
+        });
+
+        alert.present();
+
+      });
+
   }
 
 }

@@ -23,6 +23,7 @@ import { ShopSettingsPage } from '../pages/Haircut-Shop/shop-settings/shop-setti
 import { AdminEditPage } from '../pages/admin/admin-edit/admin-edit';
 import { AdminHomePage } from '../pages/admin/admin-home/admin-home';
 import { AdminNewPage } from '../pages/admin/admin-new/admin-new';
+import { FirebaseServices } from '../services/fireBaseService';
 
 @Component({
   templateUrl: 'app.html'
@@ -30,7 +31,7 @@ import { AdminNewPage } from '../pages/admin/admin-new/admin-new';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any  = AdminEditPage;
+  rootPage: any;
   pages: Array<{ title: string, component: any }>;
 
   constructor(public platform: Platform,
@@ -38,7 +39,8 @@ export class MyApp {
     public splashScreen: SplashScreen,
     public angularFire: AngularFireAuth,
     public af: AngularFireModule,
-    public alertCtrl: AlertController) {
+    public alertCtrl: AlertController,
+    public fbService: FirebaseServices) {
 
     this.initialiseApp();
 
@@ -57,14 +59,37 @@ export class MyApp {
 
       // check if the user is signed in
 
-      // this.angularFire.authState.subscribe(user => {
-      //   this.rootPage = user ? HomePage : LoginPage;
-      // });
+      this.angularFire.authState.subscribe(user => {
+        if (user) {
+
+          this.fbService.readOnce('users/' + user['uid'])
+            .then((user) => {
+
+              // Redirect according the user type
+              if (user['type'] == 'user') {
+                this.rootPage = HomePage;
+              }
+              else if (user['type'] == 'shop') {
+                this.rootPage = ShopHomePage;
+              }
+              else if (user['type'] == 'admin') {
+                this.rootPage = AdminHomePage;
+              }
+
+            })
+            .catch((error) => {
+              
+            });
+
+        }
+        else { // If not logged in
+          this.rootPage = LoginPage;
+        }
+      });
 
 
     });
 
-    this.statusBar.styleBlackOpaque();
     this.splashScreen.hide();
   }
 

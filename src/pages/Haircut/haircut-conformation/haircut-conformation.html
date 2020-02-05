@@ -85,7 +85,7 @@
       <ion-col col-12>
         <ion-item no-lines>
           <ion-label text-wrap>I accept to the Terms and Conditions</ion-label>
-          <ion-checkbox color="dark" checked="false"></ion-checkbox>
+          <ion-checkbox color="dark" checked="false" [(ngModel)]="conformed"></ion-checkbox>
         </ion-item>
       </ion-col>
 
@@ -97,6 +97,6 @@
 
 <ion-footer no-border>
   <div text-center>
-    <button ion-button color="secondary" round>Book</button>
+    <button ion-button color="secondary" round [disabled]="!conformed">Book</button>
   </div>
 </ion-footer>

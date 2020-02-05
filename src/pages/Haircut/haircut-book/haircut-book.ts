@@ -9,6 +9,7 @@ import { HaircutConformationPage } from '../haircut-conformation/haircut-conform
 import { ProfilePage } from '../../Common/profile/profile';
 import { MyOrderPage } from '../../Common/my-order/my-order';
 import { load } from 'google-maps';
+import { ShopHomePage } from '../../Haircut-Shop/shop-home/shop-home';
 
 /**
  * Generated class for the HaircutBookPage page.
@@ -189,103 +190,57 @@ export class HaircutBookPage {
 
     });
 
-    // Update the data
-    let path = 'haircut/shops/' + this.selectedShop.id + '/timeSlots';
-    let data = {
-      [path]: dataToUpdate
+    var d = new Date();
+    var n = d.getMilliseconds();
+
+    let appointmentId = 'MMN' + this.selectedShop.id + 'U' + n +
+      this.afAuth.auth.currentUser.uid + dataToBook.time + this.toDate;
+
+    // Hash using sha256
+    appointmentId = sha256(appointmentId);
+
+
+    let dataToRequest = {
+      'appointmentId': appointmentId,
+      'cost': 0,
+      'date': this.toDate,
+      'userId': this.afAuth.auth.currentUser.uid,
+      'seats': {
+        'first': dataToBook.first,
+        'second': dataToBook.second
+      },
+      'service': 'Haircut',
+      'shopId': this.selectedShop.id,
+      'status': 0,
+      'time': dataToBook.time,
+      'transactionId': 0,
+      'userName': '',
+      'userPhoneNumber': '',
+      'shopName': this.selectedShop.shopName
     }
 
-    this.fbService.updateField(data)
+    // get the userName
+    this.fbService.readOnce('users/' + this.afAuth.auth.currentUser.uid)
       .then((response) => {
+        dataToRequest.userName = response['name'];
+        dataToRequest.userPhoneNumber = response['phoneNumber'];
 
-        // appointmentId
-        var d = new Date();
-        var n = d.getMilliseconds();
 
-        let appointmentId = 'MMN' + this.selectedShop.id + 'U' + n +
-          this.afAuth.auth.currentUser.uid + dataToBook.time + this.toDate;
+        let modal = this.modalCtrl.create(HaircutConformationPage, { payload: dataToRequest, dataToUpdate: dataToUpdate });
+        modal.present();
 
-        // Hash using sha256
-        appointmentId = sha256(appointmentId);
+        modal.onDidDismiss(() => {
+          loading.dismiss();
+          this.navCtrl.setRoot(ShopHomePage);
+        });
 
-        // data to update in request
-        let dataToRequest = {
-          'appointmentId': appointmentId,
-          'cost': 0,
-          'date': this.toDate,
-          'userId': this.afAuth.auth.currentUser.uid,
-          'seats': {
-            'first': dataToBook.first,
-            'second': dataToBook.second
-          },
-          'service': 'Haircut',
-          'shopId': this.selectedShop.id,
-          'status': 0,
-          'time': dataToBook.time,
-          'transactionId': 0,
-          'userName': '',
-          'shopName': this.selectedShop.shopName
-        }
 
-        // get the userName
-        this.fbService.readOnce('users/' + this.afAuth.auth.currentUser.uid)
-          .then((response) => {
-            dataToRequest.userName = response['name'];
-
-            // update in request set
-            this.fbService.writeInDatabase('requests/' + appointmentId, dataToRequest)
-              .then((response) => {
-
-                // dismiss loading
-                loading.dismiss();
-
-                let modal = this.modalCtrl.create(HaircutConformationPage, { payload: dataToRequest });
-                modal.present();
-
-              })
-              .catch((error) => {
-
-                // dismiss loading
-                loading.dismiss();
-
-                // alert message
-                var alert = this.alertCtrl.create({
-                  title: 'Failed',
-                  message: 'Something seems to be wrong, please try again later',
-                  buttons: [
-                    {
-                      text: 'Okay'
-                    }
-                  ]
-                });
-
-                alert.present();
-              });
-          })
-          .catch((error) => {
-
-            // dismiss loading
-            loading.dismiss();
-
-            // alert message
-            var alert = this.alertCtrl.create({
-              title: 'Failed',
-              message: 'Something seems to be wrong, please try again later',
-              buttons: [
-                {
-                  text: 'Okay'
-                }
-              ]
-            });
-
-            alert.present();
-          })
       })
       .catch((error) => {
 
         // dismiss loading
         loading.dismiss();
-        
+
         // alert message
         var alert = this.alertCtrl.create({
           title: 'Failed',
@@ -298,9 +253,7 @@ export class HaircutBookPage {
         });
 
         alert.present();
-
-      });
-
+      })
 
   }
 
