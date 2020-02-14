@@ -110,15 +110,14 @@
 
           <ion-row>
             <ion-col col-12>
-              <ion-row><button class="b b3 com2 adjust1 adjust2 " ion-button round>Rejected</button></ion-row>
-              <!-- <ion-row *ngIf="data.status == 0"><button class="b b1 com2 adjust1 adjust2" ion-button
+              <ion-row *ngIf="item.status == 0"><button class="b b1 com2 adjust1 adjust2" ion-button
                 round>Waiting</button>
             </ion-row>
-            <ion-row *ngIf="data.status == 1"><button class="b b2 com2 adjust1 adjust2" ion-button
+            <ion-row *ngIf="item.status == 1"><button class="b b2 com2 adjust1 adjust2" ion-button
                 round>Accepted</button>
             </ion-row>
-            <ion-row *ngIf="data.status == 3"><button class="b b3 com2 adjust1 adjust2 " ion-button
-                round>Rejected</button></ion-row> -->
+            <ion-row *ngIf="item.status == 2"><button class="b b3 com2 adjust1 adjust2 " ion-button
+                round>Rejected</button></ion-row>
             </ion-col>
           </ion-row>
 

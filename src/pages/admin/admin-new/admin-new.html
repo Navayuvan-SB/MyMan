@@ -1,5 +1,10 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar hideBackButton>
+    <ion-buttons left class="Menu">
+      <button ion-button icon-only menuToggle>
+        <ion-icon name="menu" class="resize-icon"></ion-icon>
+      </button>
+    </ion-buttons>
     <ion-title>New Shop</ion-title>
   </ion-navbar>
 </ion-header>
@@ -8,84 +13,101 @@
 
   <ion-grid>
 
-    <ion-row id="meta-info">
-      <ion-col col-5 class="image-wrapper">
-        <img src="../../../assets/imgs/image5.jpg" alt="Image">
-      </ion-col>
+    <form [formGroup]="shopForm">
 
-      <ion-col col-7>
-        <ion-item>
-          <ion-input type="text" value="" placeholder="Shop Name"></ion-input>
-        </ion-item>
-      </ion-col>
-
-    </ion-row>
-
-    <!-- Image Section -->
-    <ion-row id="image-section">
-      <ion-col col-12>
-        <ion-scroll scrollX="true" style="white-space: nowrap; height: 200px">
-
+      <ion-row id="meta-info">
+        <ion-col col-5 class="image-wrapper">
           <img src="../../../assets/imgs/image5.jpg" alt="Image">
-          <img src="../../../assets/imgs/image5.jpg" alt="Image">
-          <img src="../../../assets/imgs/image5.jpg" alt="Image">
-          <img src="../../../assets/imgs/image5.jpg" alt="Image">
-          <img src="../../../assets/imgs/image5.jpg" alt="Image">
+        </ion-col>
 
-          <!-- Add Image -->
-          <img class="add-image" src="../../../assets/imgs/add-image.png" alt="Image">
+        <ion-col col-7>
+          <ion-item>
+            <ion-input type="text" value="" placeholder="Shop Name" formControlName="shopName"></ion-input>
+          </ion-item>
+        </ion-col>
 
-        </ion-scroll>
-      </ion-col>
-    </ion-row>
+      </ion-row>
 
-    <!-- Details Section -->
-    <ion-row id="detail-section">
-      <ion-col col-12>
+      <!-- Image Section -->
+      <ion-row id="image-section">
+        <ion-col col-12>
+          <ion-scroll scrollX="true" style="white-space: nowrap; height: 200px">
 
-        <ion-item>
-          <ion-label floating>Username</ion-label>
-          <ion-input type="text"></ion-input>
-        </ion-item>
+            <div class="image-wrapper" *ngFor="let image of images">
+              <!-- <ion-icon name="add"></ion-icon> -->
+              <img src="{{ image.image }}" alt="Image">
+            </div>
 
-        <ion-item>
-          <ion-label floating>Username</ion-label>
-          <ion-input type="text"></ion-input>
-        </ion-item>
+            <!-- <div class="image-wrapper">
+              <ion-icon name="add" (click)="removeImage()"></ion-icon>
+              <img src="../../../assets/imgs/image2.png" alt="Image">
+            </div> -->
 
-        <ion-item>
-          <ion-label floating>Username</ion-label>
-          <ion-input type="text"></ion-input>
-        </ion-item>
+            <!-- Add Image -->
+            <img class="add-image" src="../../../assets/imgs/add-image.png" alt="Image" (click)="selectImage()">
 
-        <ion-item>
-          <ion-label floating>Username</ion-label>
-          <ion-input type="text"></ion-input>
-        </ion-item>
+          </ion-scroll>
+        </ion-col>
+      </ion-row>
 
-        <ion-item>
-          <ion-label floating>Username</ion-label>
-          <ion-input type="text"></ion-input>
-        </ion-item>
+      <!-- Details Section -->
+      <ion-row id="detail-section">
+        <ion-col col-12>
 
-        <ion-item>
-          <ion-label floating>Username</ion-label>
-          <ion-input type="text"></ion-input>
-        </ion-item>
+          <div>
+            <ion-item *ngFor="let detail of shopDetails">
+              <ion-label floating>{{ detail.placeholder }}</ion-label>
+              <ion-input type="{{ detail.type }}" [formControlName]="detail.controlName"></ion-input>
+            </ion-item>
+          </div>
 
-      </ion-col>
-    </ion-row>
+        </ion-col>
 
-    <!-- Add Shop Button -->
-    <ion-row id="add-button">
-      <ion-col col-12>
+        <ion-col col-12>
 
-        <div text-center>
-          <button ion-button color="secondary" round>Add Shop</button>
-        </div>
-      </ion-col>
-    </ion-row>
+          <ion-item>
+            <ion-label stacked>Gender Preference</ion-label>
+            <ion-select formControlName="gender">
+              <ion-option value="1">Male</ion-option>
+              <ion-option value="2">Female</ion-option>
+              <ion-option value="3">Unisex</ion-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
 
+        <ion-col col-12 class="payment-options">
+
+          <h2>Payment Options</h2>
+
+          <ion-item>
+            <ion-label>PayTM</ion-label>
+            <ion-checkbox formControlName="paytm"></ion-checkbox>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Google Pay</ion-label>
+            <ion-checkbox formControlName="googlepay"></ion-checkbox>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>PhonePe</ion-label>
+            <ion-checkbox formControlName="phonepe"></ion-checkbox>
+          </ion-item>
+
+        </ion-col>
+      </ion-row>
+
+      <!-- Add Shop Button -->
+      <ion-row id="add-button">
+        <ion-col col-12>
+
+          <div text-center>
+            <button ion-button color="secondary" round [disabled]="!shopForm.valid" (click)="registerShop()">Add
+              Shop</button>
+          </div>
+        </ion-col>
+      </ion-row>
+    </form>
   </ion-grid>
 
 </ion-content>

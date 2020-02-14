@@ -30,53 +30,70 @@
 
 <ion-content padding>
 
-  <!-- Search display -->
-
   <ion-grid>
+
     <ion-row row-12>
       <ion-col>
-          <!-- <ion-input placeholder="Search" (ionInput)="getItems($event)"></ion-input> -->
-          <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+        <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
       </ion-col>
     </ion-row>
-  </ion-grid>
 
-  <!-- First card display -->
+    <ion-card *ngFor="let shop of shopArray">
+      <ion-item (click)="shopSelected(shop)">
 
-  <ion-grid class="card-position" *ngFor="let shop of shopArray" (click)="shopSelected(shop)">
-
-    <!-- Card area -->
-    <ion-card class="card-area" type="button" style=" border: 1.3px solid #a9a9a9;">
-      <ion-card-content>
         <ion-row>
-          <!-- Card picture -->
 
-          <ion-col col-4>
-
-            <ion-avatar class="image" style=" border: 1px solid #a9a9a9;">
-            </ion-avatar>
+          <ion-col col-5>
+            <img src="{{ shop.coverImage }}" class="img-rect">
           </ion-col>
 
-          <!-- Card content -->
+          <ion-col col-5 class="order-detail">
 
-          <ion-col col-7>
-            <ion-label class="Ist-label-pos first-last-label"><b>{{ shop.shopName }}</b></ion-label>
-            <ion-label class="other-label-pos mid-all-label">{{ shop.street }}</ion-label>
-            <ion-label class="other-label-pos mid-all-label">{{ shop.city }}</ion-label>
-            <ion-label class="other-label-pos mid-all-label">{{ shop.state }}</ion-label>
-            <ion-label class="other-label-pos mid-all-label">Today Offer: {{ shop.offers }}%</ion-label>
+            <ion-row>
+              <ion-col col-12>
+                <h2>{{ shop.shopName }}</h2>
+              </ion-col>
+
+              <ion-col col-12>
+                <p>Street: {{ shop.street }}</p>
+              </ion-col>
+
+              <ion-col col-12>
+                <p>City: {{ shop.city }}</p>
+              </ion-col>
+
+              <ion-col col-6>
+                <p>Offer: {{ shop.offers }}%</p>
+              </ion-col>
+
+              <ion-col col-6 class="gender-icon" *ngIf="shop.gender == 3">
+                <button class="b b2 com2" ion-button
+                round>Unisex</button>
+              </ion-col>
+
+              <ion-col col-6 class="gender-icon" *ngIf="shop.gender == 1">
+                <button class="b b2 com2" ion-button
+                round>Men</button>
+              </ion-col>
+
+              <ion-col col-4 class="gender-icon" *ngIf="shop.gender == 2">
+                <button class="b b2 com2" ion-button
+                round>Female</button>
+              </ion-col>
+
+            </ion-row>
+
           </ion-col>
 
-          <!-- location pin display -->
-
-          <ion-col col-1>
-            <ion-icon name="pin" class="pin-icon"></ion-icon>
+          <ion-col col-2 class="call-icon" (click)="callNumber()">
+            <ion-icon name="navigate"></ion-icon>
           </ion-col>
 
         </ion-row>
-      </ion-card-content>
+
+      </ion-item>
     </ion-card>
+
   </ion-grid>
 
-  
 </ion-content>

@@ -1,11 +1,10 @@
-<!--
-  Generated template for the AdminHomePage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
-  <ion-navbar>
+  <ion-navbar hideBackButton>
+    <ion-buttons left class="Menu">
+      <button ion-button icon-only menuToggle>
+        <ion-icon name="menu" class="resize-icon"></ion-icon>
+      </button>
+    </ion-buttons>
     <ion-title>Home</ion-title>
   </ion-navbar>
 </ion-header>
@@ -16,31 +15,34 @@
 
     <ion-row row-12>
       <ion-col>
-        <!-- <ion-input placeholder="Search" (ionInput)="getItems($event)"></ion-input> -->
         <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
       </ion-col>
     </ion-row>
 
-    <ion-card>
-      <ion-item>
+    <ion-card *ngFor="let shop of shops">
+      <ion-item (click)="navToEdit(shop)">
 
         <ion-row>
 
           <ion-col col-5>
-            <img src="../../assets/imgs/camera1.jpg" class="img-rect">
+            <img src="{{ shop.coverImage }}" class="img-rect">
           </ion-col>
 
           <ion-col col-5 class="order-detail">
 
-            <h2>ASDASDASD</h2>
-            <p>Street: asdasdasdas</p>
-            <p>City: asdasdasdas</p>
-            <p>Offer: 10%</p>
-            <!-- <ion-row><button class="b b2 com2 adjust1 adjust2 " ion-button round>Open</button></ion-row> -->
-            <ion-row><button class="b b3 com2 adjust1 adjust2 " ion-button round>Closed</button></ion-row>
+            <h2>{{ shop.shopName }}</h2>
+            <p>Street: {{ shop.street }}</p>
+            <p>City: {{ shop.city }}</p>
+            <p>Offer: {{ shop.offers }}%</p>
+            <ion-row *ngIf="shop.status == 1">
+              <button class="b b2 com2 adjust1 adjust2 " ion-button round>Open</button>
+            </ion-row>
+            <ion-row *ngIf="shop.status == 0">
+              <button class="b b3 com2 adjust1 adjust2 " ion-button round>Closed</button>
+            </ion-row>
           </ion-col>
 
-          <ion-col col-2 class="call-icon">
+          <ion-col col-2 class="call-icon" (click)="callNumber(shop.contactNumber)">
             <ion-icon name="call"></ion-icon>
           </ion-col>
 
@@ -55,6 +57,6 @@
 
 <ion-footer text-center no-border>
 
-  <button ion-button round color="secondary">Add New</button>
+  <button ion-button round color="secondary" (click)="addShop()">Add New</button>
 
 </ion-footer>

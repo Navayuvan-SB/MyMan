@@ -6,6 +6,11 @@
 -->
 <ion-header>
   <ion-navbar>
+    <ion-buttons left class="Menu">
+      <button ion-button icon-only menuToggle>
+        <ion-icon name="menu" class="resize-icon"></ion-icon>
+      </button>
+    </ion-buttons>
     <ion-title>Settings</ion-title>
   </ion-navbar>
 </ion-header>
@@ -13,45 +18,62 @@
 <ion-content padding>
 
   <ion-grid>
-    <ion-row id="change-password">
 
-      <ion-col col-12>
-        <ion-item>
-          <ion-label floating>Old Password</ion-label>
-          <ion-input type="password"></ion-input>
-        </ion-item>
-      </ion-col>
+    <form [formGroup]="passwordForm">
+      <ion-row id="change-password">
 
-      <ion-col col-12>
-        <ion-item>
-          <ion-label floating>New Password</ion-label>
-          <ion-input type="password"></ion-input>
-        </ion-item>
-      </ion-col>
+        <ion-col col-12>
+          <ion-item>
+            <ion-label floating>Old Password</ion-label>
+            <ion-input type="password" formControlName="oldPassword"></ion-input>
+          </ion-item>
 
-      <ion-col col-12>
-        <ion-item>
-          <ion-label floating>Conform New Password</ion-label>
-          <ion-input type="password"></ion-input>
-        </ion-item>
-      </ion-col>
+          <ion-item class="warning-on-input"
+            *ngIf="!passwordForm.controls.oldPassword.valid  && (passwordForm.controls.oldPassword.dirty || submitAttempt) && !passwordForm.controls.oldPassword.valid">
+            <p>Old password is required</p>
+          </ion-item>
+        </ion-col>
+
+        <ion-col col-12>
+          <ion-item>
+            <ion-label floating>New Password</ion-label>
+            <ion-input type="password" formControlName="newPassword"></ion-input>
+          </ion-item>
+
+          <ion-item class="warning-on-input"
+            *ngIf="!passwordForm.controls.newPassword.valid  && (passwordForm.controls.newPassword.dirty || submitAttempt) && !passwordForm.controls.newPassword.valid">
+            <p>Password should contain atleast 8 characters</p>
+          </ion-item>
+        </ion-col>
+
+        <ion-col col-12>
+          <ion-item>
+            <ion-label floating>Conform New Password</ion-label>
+            <ion-input type="password" formControlName="conformNewPassword"></ion-input>
+          </ion-item>
+
+          <ion-item class="warning-on-input"
+            *ngIf="!passwordForm.controls.conformNewPassword.valid  && (passwordForm.controls.conformNewPassword.dirty || submitAttempt) && !passwordForm.controls.conformNewPassword.valid">
+            <p>Password and Conform password <br>must be same</p>
+          </ion-item>
+        </ion-col>
 
 
-      <ion-col col-12 text-center>
-        <button ion-button color="secondary" round>Change Password</button>
-      </ion-col>
+        <ion-col col-12 text-center>
+          <button ion-button color="secondary" round [disabled]="!passwordForm.valid" (click)="changePassword()">Change Password</button>
+        </ion-col>
 
-    </ion-row>
-
+      </ion-row>
+    </form>
   </ion-grid>
 
 </ion-content>
 
-<ion-footer no-border text-center>
+<!-- <ion-footer no-border text-center>
 
   <button ion-button color="danger" round icon-start>
     <ion-icon name="log-out"></ion-icon>
     Logout
   </button>
 
-</ion-footer>
+</ion-footer> -->

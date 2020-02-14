@@ -9,6 +9,7 @@ page-shop-orders {
     font-size: 23px;
     font-weight: 400;
     text-align: center;
+    margin-right: 60px;
   }
 
   .toolbar-background {
@@ -61,6 +62,30 @@ page-shop-orders {
     font-size: 16px;
     color: #ff0000;
     margin: 13px 0;
+  }
+
+  .b {
+    text-transform: none;
+  }
+
+  .b1 {
+    background-color: #F6FF00;
+  }
+
+  .b2 {
+    background-color: #35AE59;
+  }
+
+  .b3 {
+    background-color: #FF0000;
+  }
+
+  .com2 {
+    width: 100px;
+    height: 35px;
+    font-size: 12px;
+    color: white;
+    margin-left: 10px;
   }
 
 }

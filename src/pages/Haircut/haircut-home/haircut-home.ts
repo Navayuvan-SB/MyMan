@@ -38,6 +38,9 @@ export class HaircutHomePage {
         obj.forEach((shop) => {
 
           if (shop[1]['city'] == this.location) {
+
+            let coverImage = shop[1].shopImage[0].image;
+            shop[1]['coverImage'] = coverImage;
             this.loadedShopArray.push(shop[1]);
           }
 

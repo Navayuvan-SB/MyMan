@@ -76,13 +76,13 @@ export class HaircutConformationPage {
 
           })
           .catch((error) => {
-
+            console.log(error);
             this.viewCtrl.dismiss(false);
           });
 
       })
       .catch((error) => {
-
+        console.log(error);
         this.viewCtrl.dismiss(false);
 
       });

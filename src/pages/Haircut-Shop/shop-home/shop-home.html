@@ -1,6 +1,13 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+
+    <ion-title text-center>Home</ion-title>
+
+    <ion-buttons left class="Menu">
+      <button ion-button icon-only menuToggle>
+        <ion-icon name="menu" class="resize-icon"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
@@ -42,7 +49,7 @@
 
         <div class="discount-wrapper">
 
-          <ion-row>
+          <ion-row (click)="showOffer()">
             <ion-col col-10>
               <p>Discount {{ metaData.offer }}% Applied</p>
             </ion-col>
@@ -57,10 +64,10 @@
 
     </ion-row>
 
-    <!-- Orders -->
-    <ion-row id="orders">
+    <!-- Orders if present -->
+    <ion-row id="orders" *ngIf="orderFlag">
 
-      <h2>Orders</h2>
+      <h2>Appointments</h2>
 
       <ion-card class="card2" *ngFor="let requests of latestRequests">
         <ion-item>
@@ -92,7 +99,7 @@
             </ion-col>
 
             <ion-col col-3>
-              
+
             </ion-col>
 
             <ion-col col-5>
@@ -107,6 +114,18 @@
 
         </ion-item>
       </ion-card>
+
+
+
+
+    </ion-row>
+
+    <!-- Orders if absent -->
+    <ion-row id="orders" *ngIf="!orderFlag">
+
+      <h2>Appointments</h2>
+
+      <p text-center>No Appointments found for your shop</p>
 
     </ion-row>
 

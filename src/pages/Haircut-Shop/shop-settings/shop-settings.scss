@@ -13,6 +13,7 @@ page-shop-settings {
     color: #18A0A0;
     font-size: 23px;
     font-weight: 400;
+    margin-right: 60px;
     text-align: center;
   }
 
@@ -32,6 +33,12 @@ page-shop-settings {
     margin-top: 60px;
   }
 
+  .warning-on-input {
+    width: 90%;
+    margin: auto;
+    margin-top: 1%;
+  }
+
   /*=====================================
                     Logout
     ===================================*/
@@ -43,5 +50,5 @@ page-shop-settings {
   ion-footer button ion-icon {
     color: #fff;
   }
-  
+
 }

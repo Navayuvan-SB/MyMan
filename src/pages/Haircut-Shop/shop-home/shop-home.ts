@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams, AlertController } from 'ionic-angular';
+import { NavController, NavParams, AlertController, UrlSerializer, ToastController, LoadingController } from 'ionic-angular';
 import { FirebaseServices } from '../../../services/fireBaseService';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { AngularFireDatabase } from 'angularfire2/database';
 import { CallNumber } from '@ionic-native/call-number';
+import { LocalNotifications } from '@ionic-native/local-notifications';
+import { ShopOrdersPage } from '../shop-orders/shop-orders';
 
 /**
  * Generated class for the ShopHomePage page.
@@ -27,10 +29,27 @@ export class ShopHomePage {
   // latest Requests
   latestRequests: any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private fbSercive: FirebaseServices, private afAuth: AngularFireAuth, private afDatabase: AngularFireDatabase,
-    public alertCtrl: AlertController, private call: CallNumber) {
+  // orders flag
+  orderFlag: boolean = false;
+
+  constructor(public navCtrl: NavController,
+    public navParams: NavParams,
+    private fbSercive: FirebaseServices,
+    private afAuth: AngularFireAuth,
+    private afDatabase: AngularFireDatabase,
+    public alertCtrl: AlertController,
+    private call: CallNumber,
+    public toastCtrl: ToastController,
+    public loadingCtrl: LoadingController) {
 
     let user = this.afAuth.auth.currentUser;
+
+    // Loading instance
+    let loading = this.loadingCtrl.create({
+      content: 'Please wait'
+    });
+
+    loading.present();
 
     this.fbSercive.readOnce('haircut/shops/' + user.uid)
       .then((response) => {
@@ -42,13 +61,32 @@ export class ShopHomePage {
           this.metaData['status'] = "true";
         }
         this.metaData['offer'] = response['offers'];
+
+        loading.dismiss();
+
       })
       .catch((error) => {
 
+        let toast = this.toastCtrl.create({
+          message: 'Some error has occured, please try again',
+          position: 'bottom',
+          duration: 4000
+        });
+
+        toast.present();
+        loading.dismiss();
       });
+
+    // Loading instance
+    let loadingR = this.loadingCtrl.create({
+      content: 'Please wait'
+    });
+
+    loadingR.present();
 
     this.afDatabase.database.ref('requests').on('value', resp => {
 
+      this.orderFlag = false;
       // Convert it into an array
       let obj = Object.entries(resp.val());
 
@@ -62,9 +100,13 @@ export class ShopHomePage {
 
             // Add the request in an array
             this.latestRequests.push(element[1]);
+
+            this.orderFlag = true;
           }
         }
       });
+
+      loadingR.dismiss();
 
     });
 
@@ -76,6 +118,13 @@ export class ShopHomePage {
 
   // Request Accepted
   acceptClicked(request) {
+
+    // Loading instance
+    let loading = this.loadingCtrl.create({
+      content: 'Please wait'
+    });
+
+    loading.present();
 
     let conformAlert = this.alertCtrl.create({
       title: 'Conformation',
@@ -108,6 +157,7 @@ export class ShopHomePage {
                   ]
                 });
                 alert.present();
+                loading.dismiss();
               })
               .catch((error) => {
 
@@ -121,11 +171,15 @@ export class ShopHomePage {
                   ]
                 });
                 alert.present();
+                loading.dismiss();
               });
           }
         },
         {
           text: 'No',
+          handler: _ => {
+            loading.dismiss();
+          }
         }
       ]
     });
@@ -136,6 +190,14 @@ export class ShopHomePage {
 
   // Request declined
   rejectClicked(request) {
+
+
+    // Loading instance
+    let loading = this.loadingCtrl.create({
+      content: 'Please wait'
+    });
+
+    loading.present();
 
     let conformAlert = this.alertCtrl.create({
       title: 'Conformation',
@@ -168,6 +230,7 @@ export class ShopHomePage {
                   ]
                 });
                 alert.present();
+                loading.dismiss();
               })
               .catch((error) => {
 
@@ -181,11 +244,15 @@ export class ShopHomePage {
                   ]
                 });
                 alert.present();
+                loading.dismiss();
               });
           }
         },
         {
-          text: 'No'
+          text: 'No',
+          handler: _ => {
+            loading.dismiss();
+          }
         }
       ]
     });
@@ -198,6 +265,86 @@ export class ShopHomePage {
   makeCall(number) {
 
     this.call.callNumber(number, true);
+  }
+
+  // Display the offer list
+  showOffer() {
+
+    let alert = this.alertCtrl.create();
+    alert.setTitle('Choose the offer');
+
+    alert.addInput({
+      type: 'radio',
+      label: '10% Discount',
+      value: '10',
+      checked: false
+    });
+
+    alert.addInput({
+      type: 'radio',
+      label: '20% Discount',
+      value: '20',
+      checked: false
+    });
+
+    alert.addInput({
+      type: 'radio',
+      label: '30% Discount',
+      value: '30',
+      checked: false
+    });
+
+    alert.addInput({
+      type: 'radio',
+      label: '40% Discount',
+      value: '40',
+      checked: false
+    });
+
+    alert.addInput({
+      type: 'radio',
+      label: '50% Discount',
+      value: '50',
+      checked: false
+    });
+
+    alert.addButton('Cancel');
+    alert.addButton({
+      text: 'OK',
+      handler: offer => {
+
+        this.metaData.offer = offer;
+
+        let path = 'haircut/shops/' + this.afAuth.auth.currentUser.uid + '/offers';
+        let data = {
+          [path]: offer
+        };
+
+        this.fbSercive.updateField(data)
+          .then((response) => {
+
+            let toast = this.toastCtrl.create({
+              message: 'Offer Applied successfully',
+              position: 'bottom',
+              duration: 4000
+            });
+
+            toast.present();
+          })
+          .catch((error) => {
+
+            let toast = this.toastCtrl.create({
+              message: 'Some error has occured, please try again later',
+              position: 'bottom',
+              duration: 4000
+            });
+
+            toast.present();
+          });
+
+      }
+    });
+    alert.present();
   }
 
 }

@@ -11,12 +11,7 @@ import { MyOrderPage } from '../../Common/my-order/my-order';
 import { ShopHomePage } from '../../Haircut-Shop/shop-home/shop-home';
 import { HaircutHomePage } from '../haircut-home/haircut-home';
 
-/**
- * Generated class for the HaircutBookPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+
 @Component({
   selector: 'page-haircut-book',
   templateUrl: 'haircut-book.html',
@@ -61,8 +56,7 @@ export class HaircutBookPage {
     var h = today.getHours();
     var m = today.getMinutes();
     var timeNow = h + ":" + m + ":" + '00';
-
-    timeNow = "08:00:00";
+    
     // filter the slots based on current time
     this.timeSlots = this.timeSlots.map((element) => {
       if (timeNow < this.convertTime(element.time)) {
@@ -84,11 +78,10 @@ export class HaircutBookPage {
   }
 
   popup(times) {
-    const popover = this.popoverCtrl.create(HaircutPopupPage, { data: times });
+    const popover = this.popoverCtrl.create(HaircutPopupPage, { data: times, seatCapacity: this.selectedShop.seatCapacity });
 
     popover.onDidDismiss((data) => {
 
-      console.log(data);
       if (data != undefined) {
         this.bookAppointment(data);
       }
@@ -177,19 +170,39 @@ export class HaircutBookPage {
 
     loading.present();
 
-    let dataToUpdate = this.rawTimeSlots.map(element => {
+    let dataToUpdate = [];
 
-      if (element.time == dataToBook.time) {
+    if (this.selectedShop.seatCapacity == 2) {
+      dataToUpdate = this.rawTimeSlots.map(element => {
 
-        element.first = dataToBook.first;
-        element.second = dataToBook.second;
-        element.status = dataToBook.status;
+        if (element.time == dataToBook.time) {
 
-      }
+          element.first = dataToBook.first;
+          element.second = dataToBook.second;
+          element.status = dataToBook.status;
 
-      return element;
+        }
 
-    });
+        return element;
+
+      });
+    }
+    else if (this.selectedShop.seatCapacity == 1) {
+
+      dataToUpdate = this.rawTimeSlots.map(element => {
+
+        if (element.time == dataToBook.time) {
+
+          element.first = dataToBook.seat;
+          element.status = dataToBook.status;
+
+        }
+
+        return element;
+
+      });
+
+    }
 
     var d = new Date();
     var n = d.getMilliseconds();
@@ -207,8 +220,8 @@ export class HaircutBookPage {
       'date': this.toDate,
       'userId': this.afAuth.auth.currentUser.uid,
       'seats': {
-        'first': dataToBook.first,
-        'second': dataToBook.second
+        'first': 0,
+        'second': 0
       },
       'service': 'Haircut',
       'shopId': this.selectedShop.id,
@@ -217,7 +230,18 @@ export class HaircutBookPage {
       'transactionId': 0,
       'userName': '',
       'userPhoneNumber': '',
-      'shopName': this.selectedShop.shopName
+      'shopName': this.selectedShop.shopName,
+      'userNotification': 0,
+      'shopNotification': 0
+    }
+
+    if (this.selectedShop.seatCapacity == 2) {
+      dataToRequest.seats.first = dataToBook.first;
+      dataToRequest.seats.second = dataToBook.second;
+    }
+    else if (this.selectedShop.seatCapacity == 1) {
+      dataToRequest.seats.first = dataToBook.first;
+      dataToRequest.seats.second = 0;
     }
 
     // get the userName
@@ -244,7 +268,7 @@ export class HaircutBookPage {
               ]
             });
           } else {
-            
+
             alert = this.alertCtrl.create({
               title: 'Failed',
               message: 'Something seems to be wrong, please try again later',

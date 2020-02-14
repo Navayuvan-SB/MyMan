@@ -5,6 +5,7 @@ page-admin-home {
     font-size: 25px;
     font-weight: 400;
     text-align: center;
+    margin-right: 60px;
   }
 
   .toolbar-background {
@@ -119,7 +120,7 @@ page-admin-home {
     position: relative;
   }
 
-  ion-icon {
+  ion-content ion-icon {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -134,4 +135,6 @@ page-admin-home {
   ion-footer {
     height: 80px;
   }
+
+  
 }

@@ -78,15 +78,14 @@
             <p *ngIf="request.seats.first == 1 && request.seats.second == 1">Seat No: 1, 2</p>
             <p *ngIf="(request.seats.first == 0 && request.seats.second == 1)">Seat No: 2</p>
             <p *ngIf="(request.seats.first == 1 && request.seats.second == 0)">Seat No: 1</p>
-            <ion-row><button class="b b3 com2 adjust1 adjust2 " ion-button round>Rejected</button></ion-row>
-            <!-- <ion-row *ngIf="data.status == 0"><button class="b b1 com2 adjust1 adjust2" ion-button
+            <ion-row *ngIf="request.status == 0"><button class="b b1 com2 adjust1 adjust2" ion-button
                 round>Waiting</button>
             </ion-row>
-            <ion-row *ngIf="data.status == 1"><button class="b b2 com2 adjust1 adjust2" ion-button
+            <ion-row *ngIf="request.status == 1"><button class="b b2 com2 adjust1 adjust2" ion-button
                 round>Accepted</button>
             </ion-row>
-            <ion-row *ngIf="data.status == 3"><button class="b b3 com2 adjust1 adjust2 " ion-button
-                round>Rejected</button></ion-row> -->
+            <ion-row *ngIf="request.status == 2"><button class="b b3 com2 adjust1 adjust2 " ion-button
+                round>Rejected</button></ion-row>
           </ion-col>
 
           <ion-col col-2 class="call-icon">

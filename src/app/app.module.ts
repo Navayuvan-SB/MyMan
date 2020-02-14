@@ -40,8 +40,11 @@ import { firebaseConfig } from '../credentials/firebase-credential'
 import { MyManService } from '../services/myManService';
 
 import { CallNumber } from '@ionic-native/call-number'
+import { LocalNotifications } from '@ionic-native/local-notifications';
+import { ImagePicker } from '@ionic-native/image-picker';
+import { File } from '@ionic-native/file';
 
-
+import { Push, PushObject, PushOptions } from '@ionic-native/push'
 
 
 @NgModule({
@@ -103,6 +106,10 @@ import { CallNumber } from '@ionic-native/call-number'
     AngularFireDatabase,
     MyManService,
     CallNumber,
+    LocalNotifications,
+    ImagePicker,
+    File,
+    Push,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

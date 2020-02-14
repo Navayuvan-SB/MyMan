@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { Platform, Nav, AlertController } from 'ionic-angular';
+import { Platform, Nav, AlertController, ToastController } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { LoginPage } from '../pages/Common/login/login';
@@ -24,6 +24,10 @@ import { AdminEditPage } from '../pages/admin/admin-edit/admin-edit';
 import { AdminHomePage } from '../pages/admin/admin-home/admin-home';
 import { AdminNewPage } from '../pages/admin/admin-new/admin-new';
 import { FirebaseServices } from '../services/fireBaseService';
+import { AngularFireDatabase } from 'angularfire2/database';
+import { LocalNotifications } from '@ionic-native/local-notifications';
+import { MyOrderPage } from '../pages/Common/my-order/my-order';
+import { Push, PushObject, PushOptions } from '@ionic-native/push'
 
 @Component({
   templateUrl: 'app.html'
@@ -34,24 +38,26 @@ export class MyApp {
   rootPage: any;
   pages: Array<{ title: string, component: any }>;
 
+  notificationPage: any;
+
   constructor(public platform: Platform,
     public statusBar: StatusBar,
     public splashScreen: SplashScreen,
     public angularFire: AngularFireAuth,
     public af: AngularFireModule,
     public alertCtrl: AlertController,
-    public fbService: FirebaseServices) {
+    public fbService: FirebaseServices,
+    public afData: AngularFireDatabase,
+    public afAuth: AngularFireAuth,
+    public localNotifications: LocalNotifications,
+    public toastCtrl: ToastController,
+    public push: Push) {
 
     this.initialiseApp();
 
   }
 
   initialiseApp() {
-
-    this.pages = [
-      { title: '', component: '' },
-      { title: 'Home', component: LoginPage },
-    ];
 
     this.platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
@@ -63,22 +69,70 @@ export class MyApp {
         if (user) {
 
           this.fbService.readOnce('users/' + user['uid'])
-            .then((user) => {
+            .then((response) => {
+
+              // Get the refresh token to send push notifications
+              const options: PushOptions = {
+                android: {
+                  senderID: '60171985623'
+                },
+                ios: {
+                  alert: 'true',
+                  badge: true,
+                  sound: 'false'
+                }
+              }
+
+              const pushObject: PushObject = this.push.init(options);
+
+              pushObject.on('registration').subscribe((registration: any) => {
+                this.fbService.writeInDatabase('users/' + user['uid'] + '/refreshToken', registration);
+              });
+
+              // pushObject.on('error').subscribe(error => console.error('Error with Push plugin', error));
+
+
 
               // Redirect according the user type
-              if (user['type'] == 'user') {
+              if (response['type'] == 'user') {
+
+                this.pages = [
+                  { title: '', component: '' },
+                  { title: 'Home', component: LoginPage },
+                ];
+
                 this.rootPage = HomePage;
+                this.notificationPage = MyOrderPage;
+                this.afData.database.ref('requests').off();
+
               }
-              else if (user['type'] == 'shop') {
+              else if (response['type'] == 'shop') {
+
+                this.pages = [
+                  { title: '', component: '' },
+                  { title: 'Home', component: ShopHomePage },
+                  { title: 'Order Page', component: ShopOrdersPage },
+                  { title: 'Settings', component: ShopSettingsPage }
+                ];
+
                 this.rootPage = ShopHomePage;
+                this.notificationPage = ShopOrdersPage;
+                this.afData.database.ref('requests').off();
               }
-              else if (user['type'] == 'admin') {
+              else if (response['type'] == 'admin') {
+
+                this.pages = [
+                  { title: '', component: '' },
+                  { title: 'Home', component: AdminHomePage },
+                  { title: 'New Shop', component: AdminNewPage }
+                ];
+
                 this.rootPage = AdminHomePage;
               }
 
             })
             .catch((error) => {
-              
+
             });
 
         }
@@ -88,9 +142,85 @@ export class MyApp {
       });
 
 
+      if (this.platform.is('cordova')) {
+        // You are on a device, cordova plugins are accessible
+        let notificaiton = this.localNotifications.on('click');
+
+        notificaiton.subscribe((resp) => {
+
+          if (this.notificationPage == ShopHomePage) {
+
+            let element = resp.data.mydata;
+            let path = 'requests/' + element['appointmentId'];
+            element['shopNotification'] = 1;
+
+            let data = {
+              [path]: element
+            };
+
+            this.fbService.updateField(data);
+          }
+          else if (this.notificationPage == HomePage) {
+
+            let element = resp.data.mydata;
+            let path = 'requests/' + element['appointmentId'];
+            element['userNotification'] = 1;
+            let data = {
+              [path]: element
+            };
+
+            this.fbService.updateField(data);
+
+          }
+
+          this.nav.push(this.notificationPage);
+
+        });
+
+      } else {
+        // Cordova not accessible, add mock data if necessary
+      }
+
+      this.pushSetup();
+
     });
 
+
+
     this.splashScreen.hide();
+  }
+
+  pushSetup() {
+
+    const options: PushOptions = {
+      android: {
+        senderID: '60171985623'
+      },
+      ios: {
+        alert: 'true',
+        badge: true,
+        sound: 'false'
+      }
+    }
+
+    const pushObject: PushObject = this.push.init(options);
+
+
+    pushObject.on('notification').subscribe((notification: any) => {
+
+      this.localNotifications.schedule({
+        id: Date.now(),
+        title: 'New Appointment',
+        text: 'You have a new Appointment',
+        data: { mydata: notification.data.request }
+      });
+
+      console.log(notification);
+    });
+
+    pushObject.on('registration').subscribe((registration: any) => console.log('Device registered', registration));
+
+    pushObject.on('error').subscribe(error => console.error('Error with Push plugin', error));
   }
 
   openPage(page) {
@@ -98,8 +228,6 @@ export class MyApp {
     // we wouldn't want the back button to show in this scenario
     this.nav.setRoot(page.component);
   }
-
-
 
   logout() {
     // logout the user and navigate to Login page
@@ -126,4 +254,80 @@ export class MyApp {
 
     alert.present();
   }
+
+  // listenOnAppoitmentBook() {
+
+  //   let uid = this.afAuth.auth.currentUser.uid;
+
+  //   this.afData.database.ref('requests')
+  //     .on("value", resp => {
+
+  //       let obj = Object.entries(resp.val());
+
+  //       obj.forEach((element) => {
+
+  //         if (element[1]['shopId'] == uid && element[1]['shopNotification'] == 0) {
+
+  //           if (element[1]['status'] == 0) {
+
+  //             console.log(element[1]);
+
+  //             this.localNotifications.schedule({
+  //               id: Date.now(),
+  //               title: 'New Appointment',
+  //               text: 'You have a new Appointment',
+  //               data: { mydata: element[1] }
+  //             });
+
+
+  //           }
+  //         }
+  //       });
+
+  //     });
+  // }
+
+  // listenOnAcceptance() {
+
+  //   let uid = this.afAuth.auth.currentUser.uid;
+
+  //   this.afData.database.ref('requests')
+  //     .on("value", resp => {
+
+  //       let obj = Object.entries(resp.val());
+
+  //       obj.forEach((element) => {
+
+  //         if (element[1]['userId'] == uid && element[1]['userNotification'] == 0) {
+
+  //           if (element[1]['status'] == 1) {
+
+  //             console.log(element[1]);
+
+  //             this.localNotifications.schedule({
+  //               id: Date.now(),
+  //               title: 'Appointment Status',
+  //               text: 'You Appointment is accepted',
+  //               data: { mydata: element[1] }
+  //             });
+
+
+  //           }
+  //           else if (element[1]['status'] == 2) {
+
+  //             console.log(element[1]);
+
+  //             this.localNotifications.schedule({
+  //               id: Date.now(),
+  //               title: 'Appointment Status',
+  //               text: 'You Appointment is rejected',
+  //               data: { mydata: element[1] }
+  //             });
+
+  //           }
+  //         }
+  //       });
+
+  //     });
+  // }
 }

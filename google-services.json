@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "60171985623",
+    "firebase_url": "https://myman180.firebaseio.com",
+    "project_id": "myman180",
+    "storage_bucket": "myman180.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:60171985623:android:8b78f410eec01350efc692",
+        "android_client_info": {
+          "package_name": "com.cyphersource.myman"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "60171985623-qrh8iuu8tqmcharkmioe73eekvpqare0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDu0mdey8YiA8w00znHzprBX6snza6LspE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "60171985623-qrh8iuu8tqmcharkmioe73eekvpqare0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

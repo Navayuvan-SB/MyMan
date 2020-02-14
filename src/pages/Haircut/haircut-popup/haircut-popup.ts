@@ -21,30 +21,54 @@ export class HaircutPopupPage {
   // timeSlot
   timeSlot: any;
 
+  // SeatCapacity
+  seatCapacity: any;
+
   constructor(public navCtrl: NavController, public navParams: NavParams,
     public viewCtrl: ViewController) {
 
     this.timeSlot = this.navParams.get('data');
+
+    this.seatCapacity = this.navParams.get('seatCapacity');
+
     console.log(this.timeSlot);
 
-    if (this.timeSlot.first == 1) {
+    if (this.seatCapacity == 2) {
 
-      this.firstSeatFlag = 3;
-      document.documentElement.style.setProperty(`--seat-color-first`, '#adadad');
-    } else {
 
-      this.firstSeatFlag = 0;
-      document.documentElement.style.setProperty(`--seat-color-first`, '#808080');
+      if (this.timeSlot.first == 1) {
+
+        this.firstSeatFlag = 3;
+        document.documentElement.style.setProperty(`--seat-color-first`, '#adadad');
+      } else {
+
+        this.firstSeatFlag = 0;
+        document.documentElement.style.setProperty(`--seat-color-first`, '#808080');
+      }
+
+      if (this.timeSlot.second == 1) {
+
+        this.secondSeatFlag = 3;
+        document.documentElement.style.setProperty(`--seat-color-second`, '#adadad');
+      } else {
+
+        this.secondSeatFlag = 0;
+        document.documentElement.style.setProperty(`--seat-color-second`, '#808080');
+      }
+
     }
+    else if (this.seatCapacity == 1) {
 
-    if (this.timeSlot.second == 1) {
+      if (this.timeSlot.first == 1) {
 
-      this.secondSeatFlag = 3;
-      document.documentElement.style.setProperty(`--seat-color-second`, '#adadad');
-    } else {
+        this.firstSeatFlag = 3;
+        document.documentElement.style.setProperty(`--seat-color-first`, '#adadad');
+      } else {
 
-      this.secondSeatFlag = 0;
-      document.documentElement.style.setProperty(`--seat-color-second`, '#808080');
+        this.firstSeatFlag = 0;
+        document.documentElement.style.setProperty(`--seat-color-first`, '#808080');
+      }
+
     }
 
   }
@@ -119,6 +143,26 @@ export class HaircutPopupPage {
       this.viewCtrl.dismiss();
     }
 
+  }
+
+  conformedOne() {
+
+    if (this.firstSeatFlag == 1 || this.firstSeatFlag == 0) {
+      this.timeSlot.first = this.firstSeatFlag;
+    } 
+
+    if (this.firstSeatFlag == 3 || this.firstSeatFlag == 1) {
+
+      this.timeSlot.status = 1
+    }
+
+    if (this.firstSeatFlag != 0) {
+
+      this.viewCtrl.dismiss(this.timeSlot);
+    }
+    else {
+      this.viewCtrl.dismiss();
+    }
   }
 
 }

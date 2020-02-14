@@ -31,8 +31,18 @@
   <ion-grid>
 
     <!-- image -->
-    <ion-row>
-      <ion-img src="assets/imgs/camera.jpg"></ion-img>
+    <!-- Image Section -->
+    <ion-row id="image-section">
+      <ion-col col-12>
+        <ion-scroll scrollX="true" style="white-space: nowrap; height: 200px">
+
+          <div class="image-wrapper" *ngFor="let images of selectedShop.shopImage">
+            <!-- <ion-icon name="add"></ion-icon> -->
+            <img src="{{ images.image }}" alt="Image">
+          </div>
+
+        </ion-scroll>
+      </ion-col>
     </ion-row>
 
     <!-- Shop Details -->
@@ -55,15 +65,15 @@
 
         <ion-row>
 
-          <ion-col col-2>
+          <ion-col col-2 *ngIf="selectedShop.paymentOptions.googlepay">
             <img src="../../../assets/imgs/google-pay.png" alt="Google Pay">
           </ion-col>
 
-          <ion-col col-2>
+          <ion-col col-2 *ngIf="selectedShop.paymentOptions.paytm">
             <img src="../../../assets/imgs/paytm.png" alt="Paytm">
           </ion-col>
 
-          <ion-col col-2>
+          <ion-col col-2 *ngIf="selectedShop.paymentOptions.phonepe">
             <img src="../../../assets/imgs/phonepe.png" alt="PhonePe">
           </ion-col>
 
@@ -78,7 +88,7 @@
       <p class="time"><b>Time</b></p>
     </ion-row>
 
-    <ion-row>
+    <ion-row *ngIf="selectedShop.seatCapacity == 2">
 
       <ion-col col-4 *ngFor="let times of timeSlots">
         <div
@@ -107,6 +117,37 @@
               </ion-col>
               <ion-col col-5>
                 <ion-icon name="custom-gnSeat" [ngClass]="[times.second?'greyIcon':'greenIcon']"></ion-icon>
+              </ion-col>
+            </ion-row>
+          </div>
+
+        </div>
+      </ion-col>
+
+    </ion-row>
+
+    <ion-row *ngIf="selectedShop.seatCapacity == 1">
+
+      <ion-col col-4 *ngFor="let times of timeSlots">
+        <div class="roundedCorners"
+          [ngClass]="[times.status == 0?'green':'', times.status == 1?'red':'', times.state == 1?'fade-out':'']">
+
+          <!-- Clickable -->
+          <div (click)="popup(times)" *ngIf="times.state == 0">
+            <p class="textSize">{{ times.time }}</p>
+            <ion-row justify-content-center>
+              <ion-col col-5>
+                <ion-icon name="custom-gnSeat" [ngClass]="[times.first?'greyIcon':'greenIcon']"></ion-icon>
+              </ion-col>
+            </ion-row>
+          </div>
+
+          <!-- Non - Clickable -->
+          <div *ngIf="times.state == 1">
+            <p class="textSize">{{ times.time }}</p>
+            <ion-row justify-content-center>
+              <ion-col col-5>
+                <ion-icon name="custom-gnSeat" [ngClass]="[times.first?'greyIcon':'greenIcon']"></ion-icon>
               </ion-col>
             </ion-row>
           </div>

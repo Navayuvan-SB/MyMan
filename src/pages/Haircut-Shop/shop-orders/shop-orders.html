@@ -6,6 +6,11 @@
 -->
 <ion-header>
   <ion-navbar>
+    <ion-buttons left class="Menu">
+      <button ion-button icon-only menuToggle>
+        <ion-icon name="menu" class="resize-icon"></ion-icon>
+      </button>
+    </ion-buttons>
     <ion-title>Orders</ion-title>
   </ion-navbar>
 </ion-header>
@@ -14,69 +19,89 @@
 
   <ion-grid>
 
+    <!-- Date picker -->
     <ion-row>
 
       <ion-col col-12>
 
         <ion-item>
           <ion-label>Select the Date</ion-label>
-          <ion-datetime displayFormat="MMM DD YYYY" pickerFormat="MMM-DD-YYYY"></ion-datetime>
+          <ion-datetime displayFormat="MMM DD YYYY" pickerFormat="MMM-DD-YYYY" (ionChange)="dateSelected($event)">
+          </ion-datetime>
         </ion-item>
 
       </ion-col>
 
     </ion-row>
 
-    <!-- Orders -->
-    <ion-row id="orders">
+    <!-- Orders if present-->
+    <ion-row id="orders" *ngIf="orderFlag">
 
-      <h2>Orders</h2>
+      <h2>Appointments</h2>
 
-      <ion-card class="card2">
+      <ion-card class="card2" *ngFor="let request of requests">
         <ion-item>
 
           <ion-row>
 
             <ion-col col-12>
               <h2>Customer Name</h2>
-              <p>ASDASDAS</p>
+              <p>{{ request.userName }}</p>
             </ion-col>
 
             <ion-col col-12>
               <h2>Appointment Id</h2>
-              <p>ASDaD132131asd</p>
+              <p>{{ request.appointmentId }}</p>
             </ion-col>
 
             <ion-col col-10>
               <h2>Phone Number</h2>
-              <p>9876543210</p>
+              <p>{{ request.userPhoneNumber }}</p>
             </ion-col>
 
-            <ion-col col-2>
+            <ion-col col-2 (click)="makeCall(request.userPhoneNumber)">
               <ion-icon name="call"></ion-icon>
             </ion-col>
 
             <ion-col col-12>
               <h2>Time</h2>
-              <p>11.00 AM</p>
+              <p>{{ request.time }}</p>
             </ion-col>
 
             <ion-col col-3>
 
             </ion-col>
 
-            <ion-col col-5>
-              <button ion-button color="secondary" round>Accept</button>
+            <ion-col col-5 *ngIf="request.status == 0">
+              <button ion-button color="secondary" round (click)="acceptClicked(request)">Accept</button>
             </ion-col>
 
-            <ion-col col-4 text-center>
+            <ion-col col-4 text-center *ngIf="request.status == 0" (click)="rejectClicked(request)">
               <h3>Reject</h3>
+            </ion-col>
+
+
+            <ion-col col-12 *ngIf="request.status == 1" text-center>
+              <button class="b b2 com2 adjust1 adjust2 " ion-button round>Accepted</button>
+            </ion-col>
+
+            <ion-col col-12 *ngIf="request.status == 2" text-center>
+              <button class="b b3 com2 adjust1 adjust2 " ion-button round>Rejected</button>
             </ion-col>
 
           </ion-row>
 
         </ion-item>
       </ion-card>
+
+    </ion-row>
+
+    <!-- Orders if absent-->
+    <ion-row id="orders" *ngIf="!orderFlag">
+
+      <h2>Appointments</h2>
+
+      <p>Sorry, No Appointments found on this date</p>
 
     </ion-row>
 
