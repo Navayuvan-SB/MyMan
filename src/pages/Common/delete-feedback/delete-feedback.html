@@ -1,0 +1,64 @@
+<!--
+  Generated template for the DeleteFeedbackPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Feedback</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-grid>
+
+    <ion-row>
+
+      <!-- Delete text -->
+      <ion-col col-12 id="delete-text">
+        <h2>Why are you deleting your account?</h2>
+      </ion-col>
+
+      <!-- Feedback options -->
+      <ion-col col-12 id="feedback-options">
+
+        <ion-list radio-group [(ngModel)]="reason">
+          <ion-item>
+            <ion-label>I'm not satisfied with the service</ion-label>
+            <ion-radio value="I'm not satisfied with the service" checked></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label>I'm no longer using this account</ion-label>
+            <ion-radio value="I'm no longer using this account"></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label>I prefer offline service instead of online service</ion-label>
+            <ion-radio value="I prefer offline service instead of online service"></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label>Others</ion-label>
+            <ion-radio value="others"></ion-radio>
+          </ion-item>
+        </ion-list>
+
+      </ion-col>
+
+      <ion-col col-12 *ngIf="reason == 'others'" id="text-area">
+
+        <textarea #myInput id="myInput" rows="1" maxLength="500" (keyup)="resize()" [(ngModel)]="myStuff" placeholder="Enter your reason"></textarea>
+
+      </ion-col>
+
+      <ion-col col-12 text-center>
+
+        <button ion-button color="danger" round [disabled]="reason == ''" (click)="deleteAccount()">Delete Account</button>
+
+      </ion-col>
+
+    </ion-row>
+
+  </ion-grid>
+
+</ion-content>

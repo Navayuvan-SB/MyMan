@@ -59,6 +59,12 @@ export class HaircutConformationPage {
 
   bookClicked() {
 
+    let loading = this.loadingCtrl.create({
+      content: 'Please wait...'
+    });
+
+    loading.present();
+
     // Update the data
     let path = 'haircut/shops/' + this.bookedDetails.shopId + '/timeSlots';
     let data = {
@@ -71,18 +77,20 @@ export class HaircutConformationPage {
         // update in request set
         this.fbService.writeInDatabase('requests/' + this.bookedDetails.appointmentId, this.bookedDetails)
           .then((response) => {
-
+            loading.dismiss();
             this.viewCtrl.dismiss(true);
 
           })
           .catch((error) => {
             console.log(error);
+            loading.dismiss();
             this.viewCtrl.dismiss(false);
           });
 
       })
       .catch((error) => {
         console.log(error);
+        loading.dismiss();
         this.viewCtrl.dismiss(false);
 
       });

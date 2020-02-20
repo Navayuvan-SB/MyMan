@@ -51,7 +51,8 @@ export class SignupPage {
                                         Validators.compose([
                                           Validators.required,
                                           Validators.minLength(4)
-                                        ])]
+                                        ])],
+                  gender            : ['', Validators.required]
                 },{
 
                   validator : MustMatch('password', 'confirmPassword')
@@ -77,6 +78,7 @@ export class SignupPage {
     let password    = this.credentialForm.controls['password'].value
     let phoneNumber = this.credentialForm.controls['phoneNumber'].value
     let name        = this.credentialForm.controls['name'].value
+    let gender        = this.credentialForm.controls['gender'].value
 
     // loading instance
     let loading = this.loadingCtrl.create({
@@ -111,7 +113,8 @@ export class SignupPage {
               'email'         : email,
               'phoneNumber'   : phoneNumber,
               'name'          : name,
-              'type'          : 'user'
+              'type'          : 'user',
+              'gender'        : gender
            }
 
           this.fbService.writeInDatabase('users/' + uid, node)

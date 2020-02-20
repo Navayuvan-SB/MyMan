@@ -23,6 +23,8 @@ import { ShopSettingsPage } from '../pages/Haircut-Shop/shop-settings/shop-setti
 import { AdminEditPage } from '../pages/admin/admin-edit/admin-edit';
 import { AdminHomePage } from '../pages/admin/admin-home/admin-home';
 import { AdminNewPage } from '../pages/admin/admin-new/admin-new';
+import { ForgetPasswordPage } from '../pages/Common/forget-password/forget-password';
+import { DeleteFeedbackPage } from '../pages/Common/delete-feedback/delete-feedback';
 
 // Firebase Services
 import { FirebaseServices } from '../services/fireBaseService';
@@ -47,6 +49,7 @@ import { File } from '@ionic-native/file';
 import { Push, PushObject, PushOptions } from '@ionic-native/push'
 
 
+
 @NgModule({
   declarations: [
     MyApp,
@@ -68,7 +71,9 @@ import { Push, PushObject, PushOptions } from '@ionic-native/push'
     ShopSettingsPage,
     AdminEditPage,
     AdminHomePage,
-    AdminNewPage
+    AdminNewPage,
+    ForgetPasswordPage,
+    DeleteFeedbackPage
   ],
   imports: [
     BrowserModule,
@@ -96,7 +101,9 @@ import { Push, PushObject, PushOptions } from '@ionic-native/push'
     ShopSettingsPage,
     AdminEditPage,
     AdminHomePage,
-    AdminNewPage
+    AdminNewPage,
+    ForgetPasswordPage,
+    DeleteFeedbackPage
   ],
   providers: [
     StatusBar,

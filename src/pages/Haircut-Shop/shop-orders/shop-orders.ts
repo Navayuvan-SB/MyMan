@@ -79,10 +79,19 @@ export class ShopOrdersPage {
         obj.forEach((element) => {
 
           this.orderFlag = true;
+
+          element[1]['timeCompare'] = this.formatISO(element[1]['time'].split(':'));
           arr.push(element[1]);
         });
 
-        this.requests = arr;
+        this.sortoNTime(arr)
+          .then((response) => {
+
+            this.requests = response;
+
+          });
+
+        console.log(arr);
         loading.dismiss();
       })
       .catch((error) => {
@@ -307,5 +316,42 @@ export class ShopOrdersPage {
     this.call.callNumber(number, true);
   }
 
+  // Sort based on time
+  sortoNTime(arr) {
 
+    return new Promise((resolve) => {
+
+      function compare(a, b) {
+
+
+        if (Number(a.timeCompare) < Number(b.timeCompare)) {
+          return -1;
+        }
+        if (Number(a.timeCompare) > Number(b.timeCompare)) {
+          return 1;
+        }
+        return 0;
+      }
+
+      arr.sort(compare);
+
+      resolve(arr);
+
+    })
+
+  }
+
+  // Change time to whole numbers
+  formatISO(time) {
+
+    var hours = time[0];
+    var noon = time[1].split(' ');
+
+    if (noon[1] == 'PM') {
+      hours = Number(hours) + 12;
+    }
+
+    var strTime = hours + noon[0];
+    return strTime;
+  }
 }

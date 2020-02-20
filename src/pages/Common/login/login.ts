@@ -6,6 +6,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { FirebaseServices } from '../../../services/fireBaseService';
 import { ShopHomePage } from '../../Haircut-Shop/shop-home/shop-home';
 import { AdminHomePage } from '../../admin/admin-home/admin-home';
+import { ForgetPasswordPage } from '../forget-password/forget-password';
 
 /**
  * Generated class for the LoginPage page.
@@ -109,6 +110,11 @@ export class LoginPage {
         toast.setMessage("Oops...! Phone number not found, Please signin to continue");
         toast.present();
       })
+  }
+
+  forgetPassword() {
+
+    this.navCtrl.setRoot(ForgetPasswordPage);
   }
 
 }

@@ -16,8 +16,13 @@ page-my-order {
     text-align: center;
   }
 
+  ion-icon.resize-icon {
+    height: 60% !important;
+    widows: 60% !important;
+  }
+
   .toolbar-background {
-    background-color: White !important;
+    background-color: #ffffff;
   }
 
   .paddingleft {
@@ -25,7 +30,7 @@ page-my-order {
   }
 
   .paddingright {
-    padding-right: 13px;
+    padding-right: 30px;
   }
 
   ion-icon {
@@ -127,6 +132,7 @@ page-my-order {
 
   .b1 {
     background-color: #F6FF00;
+    color: #000080 !important;
   }
 
   .b2 {

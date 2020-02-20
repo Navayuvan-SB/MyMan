@@ -4,6 +4,7 @@ import { Orderbooked2Page } from '../orderbooked2/orderbooked2';
 import { ProfilePage } from '../profile/profile';
 import { FirebaseServices } from '../../../services/fireBaseService';
 import { AngularFireAuth } from 'angularfire2/auth';
+import { CallNumber } from '@ionic-native/call-number';
 
 
 @Component({
@@ -17,8 +18,8 @@ export class MyOrderPage {
   haircutOrders: any = [];
 
   // flags for user display
-  haircutFlag : Boolean = false;
-  photographyFlag : Boolean = false;
+  haircutFlag: Boolean = false;
+  photographyFlag: Boolean = false;
 
   // Raw Requests
   rawPhotographyOrders: any = [];
@@ -34,7 +35,8 @@ export class MyOrderPage {
     public fbService: FirebaseServices,
     public afAuth: AngularFireAuth,
     public loadingCtrl: LoadingController,
-    public toastCtrl: ToastController) {
+    public toastCtrl: ToastController,
+    public call: CallNumber) {
 
     let user = this.afAuth.auth.currentUser;
 
@@ -61,31 +63,44 @@ export class MyOrderPage {
 
           // Check the service
           if (element[1]['service'] == 'Haircut') {
-            haircut.push(element[1]);
+            // element[1] = this.updateShopContact(element[1]);
+            let uid = element[1]['shopId'];
+
+            this.fbService.readOnce('users/' + uid)
+              .then((response) => {
+
+                element[1]['shopContactNumber'] = response['phoneNumber'];
+                haircut.push(element[1]);
+
+              })
+
           }
           else if (element[1]['service'] == 'Photography') {
             photography.push(element[1]);
           }
 
         });
-        
-        // Presence of haircut orders
-        if (haircut.length == 0) {
-          this.haircutFlag = true;
-        }
-        else {
-          this.rawHaircutOrders = haircut;
-        }
 
-        // Presence if photography orders
-        if (photography.length == 0) {
-          this.photographyFlag = true;
-        }
-        else {
-          this.rawPhotographyOrders = photography;
-        }
+        setTimeout(() => {
 
-        this.limitRequests();
+          // Presence of haircut orders
+          if (haircut.length == 0) {
+            this.haircutFlag = true;
+          }
+          else {
+            this.rawHaircutOrders = haircut;
+          }
+
+          // Presence if photography orders
+          if (photography.length == 0) {
+            this.photographyFlag = true;
+          }
+          else {
+            this.rawPhotographyOrders = photography;
+          }
+
+          this.limitRequests();
+        }, 1500);
 
       });
 
@@ -168,4 +183,30 @@ export class MyOrderPage {
     }
   }
 
+  // append contact number of shop
+  updateShopContact(request) {
+
+    return new Promise((resolve, reject) => {
+
+      let uid = request['shopId'];
+
+      this.fbService.readOnce('users/' + uid)
+        .then((response) => {
+
+          request['shopContactNumber'] = response['phoneNumber'];
+          resolve(request);
+
+        })
+        .catch((error) => {
+          reject(error);
+        });
+
+    });
+
+  }
+
+  // Call Shop
+  callShop(number) {
+    this.call.callNumber(number, true);
+  }
 }

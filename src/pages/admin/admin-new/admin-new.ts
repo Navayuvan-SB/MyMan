@@ -34,16 +34,6 @@ export class AdminNewPage {
 
     this.shopDetails = [
       {
-        placeholder: 'Closing time',
-        controlName: 'closingTime',
-        type: 'text'
-      },
-      {
-        placeholder: 'Opening time',
-        controlName: 'openingTime',
-        type: 'text'
-      },
-      {
         placeholder: 'City',
         controlName: 'city',
         type: 'text'
@@ -69,11 +59,6 @@ export class AdminNewPage {
         type: 'text'
       },
       {
-        placeholder: 'Seat Capacity',
-        controlName: 'seatCapacity',
-        type: 'number'
-      },
-      {
         placeholder: 'State',
         controlName: 'state',
         type: 'text'
@@ -89,18 +74,27 @@ export class AdminNewPage {
       closingTime: ['', Validators.required],
       openingTime: ['', Validators.required],
       city: ['', Validators.required],
-      email: ['', Validators.required],
+      email: ['', Validators.compose([
+        Validators.pattern('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9]+.[a-zA-Z0-9]+$'),
+        Validators.required
+      ])],
       ownerName: ['', Validators.required],
       pincode: ['', Validators.required],
       seatCapacity: ['', Validators.required],
       state: ['', Validators.required],
       street: ['', Validators.required],
-      contactNumber: ['', Validators.required],
+      contactNumber: ['', Validators.compose([
+        Validators.pattern('^[0-9]+$'),
+        Validators.required,
+        Validators.minLength(10),
+        Validators.maxLength(10)
+      ])],
       shopName: ['', Validators.required],
       googlepay: ['false'],
       phonepe: ['false'],
       paytm: ['false'],
-      gender: ['',Validators.required]
+      cash: ['false'],
+      gender: ['', Validators.required]
     });
 
   }
@@ -119,7 +113,7 @@ export class AdminNewPage {
     loading.present();
 
     var options: ImagePickerOptions = {
-      maximumImagesCount: 5,
+      maximumImagesCount: 3,
       width: 1920,
       height: 1080
     };
@@ -176,10 +170,16 @@ export class AdminNewPage {
 
     loading.present();
 
+    let closingTime = this.shopForm.controls['closingTime'].value.split(':');
+    let closingTimeFormated = this.formatAMPM(closingTime);
+
+    let openingTime = this.shopForm.controls['openingTime'].value.split(':');
+    let openingTimeFormated = this.formatAMPM(openingTime);
+
     let shopDetails = {
       "availablity": [{
-        "close": this.shopForm.controls['closingTime'].value,
-        "open": this.shopForm.controls['openingTime'].value
+        "close": closingTimeFormated,
+        "open": openingTimeFormated
       }],
       "city": this.shopForm.controls['city'].value,
       "contactNumber": this.shopForm.controls['contactNumber'].value,
@@ -198,11 +198,12 @@ export class AdminNewPage {
       "paymentOptions": {
         "googlepay": this.shopForm.controls['googlepay'].value,
         "paytm": this.shopForm.controls['paytm'].value,
-        "phonepe": this.shopForm.controls['phonepe'].value
+        "phonepe": this.shopForm.controls['phonepe'].value,
+        "cash": this.shopForm.controls['cash'].value
       },
       "timeSlots": this.generateTimeSlots(this.shopForm.controls['seatCapacity'].value)
     }
-    
+
     this.checkIfUserExist(shopDetails.contactNumber)
       .then((response) => {
 
@@ -245,7 +246,8 @@ export class AdminNewPage {
                           let data = {
                             email: shopDetails.email,
                             phoneNumber: shopDetails.contactNumber,
-                            type: 'shop'
+                            type: 'shop',
+                            name: shopDetails.ownerName
                           };
 
                           shopDetails.id = String(uid);
@@ -650,6 +652,32 @@ export class AdminNewPage {
 
       return timeSlots;
     }
+  }
+
+  // Convert 24hr to 12hr
+  formatAMPM(date) {
+    var hours = date[0];
+    var minutes = date[1];
+    var ampm = hours >= 12 ? 'PM' : 'AM';
+    hours = hours % 12;
+    hours = hours ? hours : 12;
+    minutes = minutes < 10 ? '0' + minutes : minutes;
+    var strTime = hours + ':' + minutes + ' ' + ampm;
+    return strTime;
+  }
+
+  formatISO(date) {
+
+    var hours = date[0];
+    var minutes = date[1];
+    var noon = date[2];
+
+    if (noon == 'PM') {
+      hours = hours + 12;
+    }
+    
+    var strTime = hours + ":" + minutes;
+    return strTime;
   }
 
 }

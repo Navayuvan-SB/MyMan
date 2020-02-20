@@ -3,7 +3,7 @@
     <ion-title class="toolbar-title.toolbar-title-md">My Order</ion-title>
     <ion-buttons right class="paddingright">
       <button ion-button icon-only (click)="clicked()">
-        <ion-icon name="person" class="ion-md-person"></ion-icon>
+        <ion-icon name="person" class="ion-md-person" class="resize-icon"></ion-icon>
       </button>
     </ion-buttons>
   </ion-navbar>
@@ -75,7 +75,7 @@
             <h2>{{ request.shopName }}</h2>
             <p>Date : {{ request.date }}</p>
             <p>Time : {{ request.time }}</p>
-            <p *ngIf="request.seats.first == 1 && request.seats.second == 1">Seat No: 1, 2</p>
+            <p *ngIf="(request.seats.first == 1 && request.seats.second == 1)">Seat No: 1, 2</p>
             <p *ngIf="(request.seats.first == 0 && request.seats.second == 1)">Seat No: 2</p>
             <p *ngIf="(request.seats.first == 1 && request.seats.second == 0)">Seat No: 1</p>
             <ion-row *ngIf="request.status == 0"><button class="b b1 com2 adjust1 adjust2" ion-button
@@ -88,7 +88,7 @@
                 round>Rejected</button></ion-row>
           </ion-col>
 
-          <ion-col col-2 class="call-icon">
+          <ion-col col-2 class="call-icon" (click)="callShop(request.shopContactNumber)">
             <ion-icon name="call"></ion-icon>
           </ion-col>
 

@@ -27,7 +27,8 @@ import { FirebaseServices } from '../services/fireBaseService';
 import { AngularFireDatabase } from 'angularfire2/database';
 import { LocalNotifications } from '@ionic-native/local-notifications';
 import { MyOrderPage } from '../pages/Common/my-order/my-order';
-import { Push, PushObject, PushOptions } from '@ionic-native/push'
+import { Push, PushObject, PushOptions } from '@ionic-native/push';
+
 
 @Component({
   templateUrl: 'app.html'
@@ -36,7 +37,9 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   rootPage: any;
-  pages: Array<{ title: string, component: any }>;
+  pages: Array<{ title: string, component: any, icon: String }>;
+
+  userName: any = '';
 
   notificationPage: any;
 
@@ -91,14 +94,14 @@ export class MyApp {
 
               // pushObject.on('error').subscribe(error => console.error('Error with Push plugin', error));
 
-
+              this.userName = response['name'];
 
               // Redirect according the user type
               if (response['type'] == 'user') {
 
                 this.pages = [
-                  { title: '', component: '' },
-                  { title: 'Home', component: LoginPage },
+                  { title: '', component: '', icon: '' },
+                  { title: 'Home', component: LoginPage, icon: 'home' },
                 ];
 
                 this.rootPage = HomePage;
@@ -109,10 +112,10 @@ export class MyApp {
               else if (response['type'] == 'shop') {
 
                 this.pages = [
-                  { title: '', component: '' },
-                  { title: 'Home', component: ShopHomePage },
-                  { title: 'Order Page', component: ShopOrdersPage },
-                  { title: 'Settings', component: ShopSettingsPage }
+                  { title: '', component: '', icon: '' },
+                  { title: 'Home', component: ShopHomePage, icon: 'home' },
+                  { title: 'Order Page', component: ShopOrdersPage, icon: 'cart' },
+                  { title: 'Settings', component: ShopSettingsPage, icon: 'settings' }
                 ];
 
                 this.rootPage = ShopHomePage;
@@ -122,9 +125,9 @@ export class MyApp {
               else if (response['type'] == 'admin') {
 
                 this.pages = [
-                  { title: '', component: '' },
-                  { title: 'Home', component: AdminHomePage },
-                  { title: 'New Shop', component: AdminNewPage }
+                  { title: '', component: '', icon: '' },
+                  { title: 'Home', component: AdminHomePage, icon: 'home' },
+                  { title: 'New Shop', component: AdminNewPage, icon: 'person-add' }
                 ];
 
                 this.rootPage = AdminHomePage;

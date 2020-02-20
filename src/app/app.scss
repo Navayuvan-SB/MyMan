@@ -58,6 +58,15 @@ ion-icon {
       &[class*="custom-gnSeat"] {
         mask-image: url(../assets/icon/greenSeat.svg);
       }
+      &[class*="custom-man"] {
+        mask-image: url(../assets/icon/man.svg);
+      }
+      &[class*="custom-woman"] {
+        mask-image: url(../assets/icon/woman.svg);
+      }
+      &[class*="custom-unisex"] {
+        mask-image: url(../assets/icon/unisex.svg);
+      }
       
   }
 
@@ -73,4 +82,42 @@ ion-icon {
   --seat-color-first: #808080;
   --seat-color-second: #808080;
 
+}
+
+ion-icon.nav-icons {
+  color: var(--teal);
+}
+
+ion-list#nav-list {
+  margin-top: 200px;
+}
+
+#nav-header img{
+  width: 100px;
+  height: 120px;
+  margin-top: 10px;
+}
+
+#nav-header p {
+  font-size: 16px;
+}
+
+#nav-header h3 {
+  font-size: 16px;
+  margin-top: -7px;
+}
+
+// Haircut Booked Conform popup
+.bold-text .alert-message {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ff0000;
+  margin-top: -10px;
+}
+
+.bold-text .alert-sub-title {
+  font-size: 18px;
+  font-weight: 400;
+  color: grey;
+  margin-top: 30px;
 }

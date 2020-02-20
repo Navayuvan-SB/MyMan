@@ -112,7 +112,7 @@ export class AdminHomePage {
     // if the value is an empty string don't filter the items
     if (val && val.trim() != '') {
       this.shops = this.shops.filter((item) => {
-        return (item.shopName.toLowerCase().indexOf(val.toLowerCase()) > -1);
+        return (item.city.toLowerCase().indexOf(val.toLowerCase()) > -1);
       });
     }
 

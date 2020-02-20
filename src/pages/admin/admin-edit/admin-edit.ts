@@ -27,6 +27,9 @@ export class AdminEditPage {
   // coverImage
   coverImage: any;
 
+  // availablity
+  availablity: any;
+
   constructor(public navCtrl: NavController,
     public navParams: NavParams,
     public formBuilder: FormBuilder,
@@ -44,35 +47,53 @@ export class AdminEditPage {
     this.images = shop.shopImage;
     this.coverImage = shop.shopImage[0].image;
 
+    this.availablity = {}
+
+    var dateClose = [];
+    dateClose.push(shop.availablity[0].close.split(':')[0]);
+    dateClose.push(shop.availablity[0].close.split(':')[1].split(' ')[0])
+    dateClose.push(shop.availablity[0].close.split(':')[1].split(' ')[1])
+
+    this.availablity['close'] = this.formatISO(dateClose);
+
+    var dateOpen = [];
+    dateOpen.push(shop.availablity[0].open.split(':')[0]);
+    dateOpen.push(shop.availablity[0].open.split(':')[1].split(' ')[0])
+    dateOpen.push(shop.availablity[0].open.split(':')[1].split(' ')[1])
+
+    this.availablity['open'] = this.formatISO(dateOpen);
+
+    console.log(this.formatISO(dateOpen));
+
+
     this.shopForm = this.formBuilder.group({
-      closingTime: [shop.availablity[0].close, Validators.required],
-      openingTime: [shop.availablity[0].open, Validators.required],
+      closingTime: [, Validators.required],
+      openingTime: [, Validators.required],
       city: [shop.city, Validators.required],
-      email: [shop.email, Validators.required],
+      email: [shop.email, Validators.compose([
+        Validators.pattern('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9]+.[a-zA-Z0-9]+$'),
+        Validators.required
+      ])],
       ownerName: [shop.ownerName, Validators.required],
       pincode: [shop.pincode, Validators.required],
       seatCapacity: [shop.seatCapacity, Validators.required],
       state: [shop.state, Validators.required],
       street: [shop.street, Validators.required],
-      contactNumber: [shop.contactNumber, Validators.required],
+      contactNumber: [shop.contactNumber, Validators.compose([
+        Validators.pattern('^[0-9]+$'),
+        Validators.required,
+        Validators.minLength(10),
+        Validators.maxLength(10)
+      ])],
       shopName: [shop.shopName, Validators.required],
       googlepay: [shop.paymentOptions.googlepay],
       phonepe: [shop.paymentOptions.phonepe],
       paytm: [shop.paymentOptions.paytm],
-      gender: [shop.gender, Validators.required]
+      gender: [shop.gender, Validators.required],
+      cash: [shop.paymentOptions.cash]
     });
 
     this.shopDetails = [
-      {
-        placeholder: 'Closing time',
-        controlName: 'closingTime',
-        type: 'text'
-      },
-      {
-        placeholder: 'Opening time',
-        controlName: 'openingTime',
-        type: 'text'
-      },
       {
         placeholder: 'City',
         controlName: 'city',
@@ -86,11 +107,6 @@ export class AdminEditPage {
       {
         placeholder: 'Pincode',
         controlName: 'pincode',
-        type: 'number'
-      },
-      {
-        placeholder: 'Seat Capacity',
-        controlName: 'seatCapacity',
         type: 'number'
       },
       {
@@ -121,9 +137,9 @@ export class AdminEditPage {
     loading.present();
 
     var options: ImagePickerOptions = {
-      maximumImagesCount: 5,
-      width: 100,
-      height: 100
+      maximumImagesCount: 3,
+      width: 1920,
+      height: 1080
     };
 
     this.imagePicker.getPictures(options)
@@ -178,10 +194,16 @@ export class AdminEditPage {
 
     loading.present();
 
+    let closingTime = this.shopForm.controls['closingTime'].value.split(':');
+    let closingTimeFormated = this.formatAMPM(closingTime);
+
+    let openingTime = this.shopForm.controls['openingTime'].value.split(':');
+    let openingTimeFormated = this.formatAMPM(openingTime);
+
     let shopDetails = {
       "availablity": [{
-        "close": this.shopForm.controls['closingTime'].value,
-        "open": this.shopForm.controls['openingTime'].value
+        "close": closingTimeFormated,
+        "open": openingTimeFormated
       }],
       "city": this.shopForm.controls['city'].value,
       "contactNumber": this.navParams.get('shop').contactNumber,
@@ -201,7 +223,8 @@ export class AdminEditPage {
       "paymentOptions": {
         "googlepay": this.shopForm.controls['googlepay'].value,
         "paytm": this.shopForm.controls['paytm'].value,
-        "phonepe": this.shopForm.controls['phonepe'].value
+        "phonepe": this.shopForm.controls['phonepe'].value,
+        "cash": this.shopForm.controls['cash'].value
       }
     };
 
@@ -233,6 +256,40 @@ export class AdminEditPage {
         toast.present();
         loading.dismiss();
       });
+  }
+
+  // Convert 24hr to 12hr
+  formatAMPM(date) {
+    var hours = date[0];
+    var minutes = date[1];
+    var ampm = hours >= 12 ? 'PM' : 'AM';
+    hours = hours % 12;
+    hours = hours ? hours : 12;
+    minutes = minutes < 10 ? '0' + minutes : minutes;
+    var strTime = hours + ':' + minutes + ' ' + ampm;
+    return strTime;
+  }
+
+  // convert 12hr to 24hr 
+  formatISO(date) {
+
+    var hours = date[0];
+    var minutes = date[1];
+    var noon = date[2];
+
+    if (noon == 'PM') {
+      hours = Number(hours) + 12;
+    }
+    else if (noon == 'AM') {
+      
+      if (Number(hours) < 10) {
+        hours = 0 + hours;
+      }
+
+    }
+
+    var strTime = hours + ":" + minutes;
+    return strTime;
   }
 
 }

@@ -10,6 +10,7 @@ import { ProfilePage } from '../../Common/profile/profile';
 import { MyOrderPage } from '../../Common/my-order/my-order';
 import { ShopHomePage } from '../../Haircut-Shop/shop-home/shop-home';
 import { HaircutHomePage } from '../haircut-home/haircut-home';
+import { HomePage } from '../../Common/home/home';
 
 
 @Component({
@@ -28,6 +29,9 @@ export class HaircutBookPage {
   // timeSlots;
   timeSlots: any;
   rawTimeSlots: any;
+
+  // Appointment count
+  appointmentCount: any;
 
   constructor(public navCtrl: NavController,
     public navParams: NavParams,
@@ -56,6 +60,8 @@ export class HaircutBookPage {
     var h = today.getHours();
     var m = today.getMinutes();
     var timeNow = h + ":" + m + ":" + '00';
+
+    timeNow = "12:00:00";
     
     // filter the slots based on current time
     this.timeSlots = this.timeSlots.map((element) => {
@@ -70,6 +76,15 @@ export class HaircutBookPage {
     });
 
     console.log(this.timeSlots);
+
+    this.appointmentCount = 0;
+
+    this.timeSlots.forEach(element => {
+      
+      if (element['status'] != 0) {
+        this.appointmentCount ++;
+      }
+    });
 
   }
 
@@ -193,7 +208,7 @@ export class HaircutBookPage {
 
         if (element.time == dataToBook.time) {
 
-          element.first = dataToBook.seat;
+          element.first = dataToBook.first;
           element.status = dataToBook.status;
 
         }
@@ -260,10 +275,15 @@ export class HaircutBookPage {
           if (status) {
             alert = this.alertCtrl.create({
               title: 'Booked',
-              message: 'Your Appointment was booked successfully...!',
+              subTitle: 'Your Appointment was booked successfully...!',
+              message: 'Waiting for Shop Approval',
+              cssClass: 'bold-text',
               buttons: [
                 {
-                  text: 'Okay'
+                  text: 'Okay',
+                  handler: () => {
+                    this.navCtrl.pop();
+                  }
                 }
               ]
             });
@@ -283,7 +303,6 @@ export class HaircutBookPage {
 
           alert.present();
           loading.dismiss();
-          this.navCtrl.setRoot(HaircutHomePage);
         });
 
 

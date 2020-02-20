@@ -48,13 +48,13 @@
 
         <ion-col col-12>
           <ion-item>
-            <ion-label floating>Conform New Password</ion-label>
+            <ion-label floating>Confirm New Password</ion-label>
             <ion-input type="password" formControlName="conformNewPassword"></ion-input>
           </ion-item>
 
           <ion-item class="warning-on-input"
             *ngIf="!passwordForm.controls.conformNewPassword.valid  && (passwordForm.controls.conformNewPassword.dirty || submitAttempt) && !passwordForm.controls.conformNewPassword.valid">
-            <p>Password and Conform password <br>must be same</p>
+            <p>Password and Confirm password <br>must be same</p>
           </ion-item>
         </ion-col>
 

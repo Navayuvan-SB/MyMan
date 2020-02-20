@@ -50,10 +50,52 @@
         <ion-col col-12>
 
           <div>
+
+            <ion-item>
+              <ion-label floating>Opening Time</ion-label>
+              <ion-datetime displayFormat="h:mm A" formControlName="openingTime" 
+              pickerFormat="h mm A" [(ngModel)]="availablity.open"></ion-datetime>
+            </ion-item>
+
+            <ion-item>
+              <ion-label floating>Closing Time</ion-label>
+              <ion-datetime displayFormat="h:mm A" formControlName="closingTime"
+               pickerFormat="h mm A" [(ngModel)]="availablity.close"></ion-datetime>
+            </ion-item>
+
+            <ion-item>
+              <ion-label floating>Email Id</ion-label>
+              <ion-input type="text" formControlName="email"></ion-input>
+            </ion-item>
+
+            <ion-item class="warning-on-input"
+              *ngIf="!shopForm.controls.email.valid  && (shopForm.controls.email.dirty || submitAttempt)">
+              <p>Enter a valid Email Id</p>
+            </ion-item>
+
+            <ion-item>
+              <ion-label floating>Contact Number</ion-label>
+              <ion-input type="number" formControlName="contactNumber"></ion-input>
+            </ion-item>
+
+            <ion-item class="warning-on-input"
+              *ngIf="!shopForm.controls.contactNumber.valid  && (shopForm.controls.contactNumber.dirty || submitAttempt)">
+              <p>Enter a valid Phone Number</p>
+            </ion-item>
+
             <ion-item *ngFor="let detail of shopDetails">
               <ion-label floating>{{ detail.placeholder }}</ion-label>
               <ion-input type="{{ detail.type }}" [formControlName]="detail.controlName"></ion-input>
             </ion-item>
+
+            <ion-item>
+              <ion-label floating>Seat Capacity</ion-label>
+              <ion-select formControlName="seatCapacity" interface="popover">
+                <ion-option value="1">1</ion-option>
+                <ion-option value="2">2</ion-option>
+              </ion-select>
+            </ion-item>
+
           </div>
 
         </ion-col>
@@ -87,6 +129,11 @@
           <ion-item>
             <ion-label>PhonePe</ion-label>
             <ion-checkbox formControlName="phonepe"></ion-checkbox>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Cash</ion-label>
+            <ion-checkbox formControlName="cash"></ion-checkbox>
           </ion-item>
 
         </ion-col>

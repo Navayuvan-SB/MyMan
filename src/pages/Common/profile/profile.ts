@@ -1,11 +1,12 @@
 import { Component, ViewChild } from '@angular/core';
-import { NavController, Navbar, NavParams, AlertController, ToastController, Toast } from 'ionic-angular';
+import { NavController, Navbar, NavParams, AlertController, ToastController, Toast, LoadingController } from 'ionic-angular';
 import { MyOrderPage } from '../my-order/my-order';
 import { Orderbooked2Page } from '../orderbooked2/orderbooked2';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { FirebaseServices } from '../../../services/fireBaseService';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { AngularFireModule } from 'angularfire2';
+import { DeleteFeedbackPage } from '../delete-feedback/delete-feedback';
 
 
 @Component({
@@ -36,7 +37,8 @@ export class ProfilePage {
     public formBuilder: FormBuilder,
     public toastCtrl: ToastController,
     public alertCtrl: AlertController,
-    public afApp: AngularFireModule) {
+    public afApp: AngularFireModule,
+    public loadingCtrl: LoadingController) {
 
 
     this.editForm = this.formBuilder.group({
@@ -305,7 +307,8 @@ export class ProfilePage {
       inputs: [
         {
           name: 'password',
-          placeholder: 'placeholder'
+          placeholder: 'password',
+          type: 'password'
         }
       ],
       buttons: [
@@ -313,33 +316,20 @@ export class ProfilePage {
           text: 'Delete',
           handler: data => {
 
+            let loading = this.loadingCtrl.create({
+              content: 'Please wait...'
+            });
+
+            loading.present();
+
             // check the user password
             this.fbService.login(user['email'], data.password)
               .then((response) => {
 
-                // delete the user 
-                user.delete()
-                  .then((response) => {
-
-                    // display alert message
-                    let resultAlert = this.alertCtrl.create({
-                      title: 'Account deleted',
-                      message: 'Your account has been deleted successfully..! We miss you..!'
-                    });
-                    resultAlert.present();
-                    // logout from the app
-                    this.afAuth.auth.signOut();
-
-                  })
-                  .catch((error) => {
-
-                    // display alert message
-                    let resultAlert = this.alertCtrl.create({
-                      title: 'Error',
-                      message: 'Something is wrong, please try again later'
-                    });
-                    resultAlert.present();
-                  });
+                // display alert message
+                loading.present();
+                this.navCtrl.push(DeleteFeedbackPage);
+                
               })
               .catch((error) => {
 
@@ -349,6 +339,7 @@ export class ProfilePage {
                   message: 'Enter the correct password'
                 });
                 resultAlert.present();
+                loading.present();
 
               });
           }

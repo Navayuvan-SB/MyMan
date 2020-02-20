@@ -1,7 +1,7 @@
 <ion-header>
-    <ion-navbar class="toolbar-background" hideBackButton>
-        <p class="toolbar-title">Login</p>
-    </ion-navbar>
+  <ion-navbar class="toolbar-background" hideBackButton>
+    <p class="toolbar-title">Login</p>
+  </ion-navbar>
 </ion-header>
 
 <ion-content padding>
@@ -9,35 +9,28 @@
   <form [formGroup]="credentialForm">
     <ion-item no-line class="l1">
       <!-- <ion-label stacked>Phone Number</ion-label> -->
-      <ion-input type="Number" 
-                  placeholder="Phone Number"
-                  formControlName="phoneNumber"></ion-input>
+      <ion-input type="Number" placeholder="Phone Number" formControlName="phoneNumber"></ion-input>
     </ion-item>
 
-    <ion-item 
-      class="warning-on-input"
+    <ion-item class="warning-on-input"
       *ngIf="!credentialForm.controls.phoneNumber.valid && (credentialForm.controls.phoneNumber.dirty || submitAttempt)">
-        <p>Enter valid Phone number</p>
-    </ion-item>
-    
-    <ion-item class="l2">
-        <!-- <ion-label stacked>Password</ion-label> -->
-        <ion-input type="password" 
-                    placeholder="Password"
-                    formControlName="password"></ion-input>
+      <p>Enter valid Phone number</p>
     </ion-item>
 
-    <ion-item
-      class="warning-on-input"
-      *ngIf="!credentialForm.controls.password.valid && (credentialForm.controls.password.dirty || submitAttempt)">
-        <p>Password length should be 8 characters long</p>
+    <ion-item class="l2">
+      <!-- <ion-label stacked>Password</ion-label> -->
+      <ion-input type="password" placeholder="Password" formControlName="password"></ion-input>
     </ion-item>
-      
-    <button  ion-button  round full 
-          class="button" 
-          (click)="signIn()"
-          [disabled]="!credentialForm.valid">SIGN IN</button>
-      
-    <p text-center class="navSignUp">  New user?  <a (click)="navToSignUp()"> Signup</a></p>
-  </form> 
+
+    <p class="forget-password" (click)="forgetPassword()"> <a> forget password? </a></p>
+
+    <ion-item class="warning-on-input"
+      *ngIf="!credentialForm.controls.password.valid && (credentialForm.controls.password.dirty || submitAttempt)">
+      <p>Password length should be 8 characters long</p>
+    </ion-item>
+
+    <button ion-button round full class="button" (click)="signIn()" [disabled]="!credentialForm.valid">SIGN IN</button>
+
+    <p text-center class="navSignUp"> New user? <a (click)="navToSignUp()"> Signup</a></p>
+  </form>
 </ion-content>

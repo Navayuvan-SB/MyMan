@@ -32,6 +32,9 @@ export class ShopHomePage {
   // orders flag
   orderFlag: boolean = false;
 
+  // Shop user
+  user: any;
+
   constructor(public navCtrl: NavController,
     public navParams: NavParams,
     private fbSercive: FirebaseServices,
@@ -42,7 +45,7 @@ export class ShopHomePage {
     public toastCtrl: ToastController,
     public loadingCtrl: LoadingController) {
 
-    let user = this.afAuth.auth.currentUser;
+    this.user = this.afAuth.auth.currentUser;
 
     // Loading instance
     let loading = this.loadingCtrl.create({
@@ -51,7 +54,7 @@ export class ShopHomePage {
 
     loading.present();
 
-    this.fbSercive.readOnce('haircut/shops/' + user.uid)
+    this.fbSercive.readOnce('haircut/shops/' + this.user.uid)
       .then((response) => {
 
         if (response['status'] == 0) {
@@ -61,6 +64,32 @@ export class ShopHomePage {
           this.metaData['status'] = "true";
         }
         this.metaData['offer'] = response['offers'];
+
+
+        this.afDatabase.database.ref('requests').on('value', resp => {
+
+          this.orderFlag = false;
+          // Convert it into an array
+          let obj = Object.entries(resp.val());
+
+          this.latestRequests = [];
+
+          obj.forEach(element => {
+
+            if (element[1]['shopId'] == this.user.uid) {
+
+              if (element[1]['status'] == 0) {
+
+                // Add the request in an array
+                this.latestRequests.push(element[1]);
+
+                this.orderFlag = true;
+              }
+            }
+          });
+
+
+        });
 
         loading.dismiss();
 
@@ -77,38 +106,6 @@ export class ShopHomePage {
         loading.dismiss();
       });
 
-    // Loading instance
-    let loadingR = this.loadingCtrl.create({
-      content: 'Please wait'
-    });
-
-    loadingR.present();
-
-    this.afDatabase.database.ref('requests').on('value', resp => {
-
-      this.orderFlag = false;
-      // Convert it into an array
-      let obj = Object.entries(resp.val());
-
-      this.latestRequests = [];
-
-      obj.forEach(element => {
-
-        if (element[1]['shopId'] == user.uid) {
-
-          if (element[1]['status'] == 0) {
-
-            // Add the request in an array
-            this.latestRequests.push(element[1]);
-
-            this.orderFlag = true;
-          }
-        }
-      });
-
-      loadingR.dismiss();
-
-    });
 
   }
 
@@ -275,8 +272,30 @@ export class ShopHomePage {
 
     alert.addInput({
       type: 'radio',
+      label: 'Null',
+      value: '0',
+      checked: false
+    });
+
+
+    alert.addInput({
+      type: 'radio',
+      label: '5% Discount',
+      value: '5',
+      checked: false
+    });
+
+    alert.addInput({
+      type: 'radio',
       label: '10% Discount',
       value: '10',
+      checked: false
+    });
+
+    alert.addInput({
+      type: 'radio',
+      label: '15% Discount',
+      value: '15',
       checked: false
     });
 
@@ -289,8 +308,22 @@ export class ShopHomePage {
 
     alert.addInput({
       type: 'radio',
+      label: '25% Discount',
+      value: '25',
+      checked: false
+    });
+
+    alert.addInput({
+      type: 'radio',
       label: '30% Discount',
       value: '30',
+      checked: false
+    });
+
+    alert.addInput({
+      type: 'radio',
+      label: '35% Discount',
+      value: '35',
       checked: false
     });
 
@@ -303,11 +336,19 @@ export class ShopHomePage {
 
     alert.addInput({
       type: 'radio',
+      label: '45% Discount',
+      value: '45',
+      checked: false
+    });
+
+    alert.addInput({
+      type: 'radio',
       label: '50% Discount',
       value: '50',
       checked: false
     });
 
+    
     alert.addButton('Cancel');
     alert.addButton({
       text: 'OK',
@@ -345,6 +386,85 @@ export class ShopHomePage {
       }
     });
     alert.present();
+  }
+
+  // Shop Status Changed
+  shopStatusChanged(event) {
+
+    setTimeout(_ => {
+
+      if (event.value == false && this.metaData.status !== event.value) {
+
+        let path = 'haircut/shops/' + this.user.uid + '/status';
+
+        let data = {
+          [path]: 0
+        };
+
+        this.fbSercive.updateField(data)
+          .then((response) => {
+
+            let toast = this.toastCtrl.create({
+              message: 'Shop Status Updated successfully',
+              position: 'bottom',
+              duration: 4000
+            });
+
+            toast.present();
+          })
+          .catch((error) => {
+
+            let toast = this.toastCtrl.create({
+              message: 'Shop Status Updated Failed, Please try again',
+              position: 'bottom',
+              duration: 4000
+            });
+
+            toast.present();
+
+          });
+
+        this.metaData.status = false;
+
+      }
+
+      else if (event.value == true && this.metaData.status !== event.value) {
+
+        let path = 'haircut/shops/' + this.user.uid + '/status';
+
+        let data = {
+          [path]: 1
+        };
+
+        this.fbSercive.updateField(data)
+          .then((response) => {
+
+            let toast = this.toastCtrl.create({
+              message: 'Shop Status Updated successfully',
+              position: 'bottom',
+              duration: 4000
+            });
+
+            toast.present();
+          })
+          .catch((error) => {
+
+            let toast = this.toastCtrl.create({
+              message: 'Shop Status Updated Failed, Please try again',
+              position: 'bottom',
+              duration: 4000
+            });
+
+            toast.present();
+
+          });
+
+        this.metaData.status = true;
+
+      }
+
+    }, 200);
+
   }
 
 }

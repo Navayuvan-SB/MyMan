@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ToastController, LoadingController } from 'ionic-angular';
 import { FirebaseServices } from '../../../services/fireBaseService';
 import { HaircutBookPage } from '../haircut-book/haircut-book';
 import { ProfilePage } from '../../Common/profile/profile';
@@ -26,42 +26,48 @@ export class HaircutHomePage {
     public fbService: FirebaseServices,
     public afDatabase: AngularFireDatabase,
     public afAuth: AngularFireAuth,
-    public toastCtrl: ToastController) {
+    public toastCtrl: ToastController,
+    public loadingCtrl: LoadingController) {
+
+    let loading = this.loadingCtrl.create({
+      content: 'Please wait'
+    });
+
+    loading.present();
 
     // read the shops list from db
-    this.fbService.readOnce('haircut/shops')
-      .then((response) => {
+    this.afDatabase.database.ref('haircut/shops')
+      .once("value", (response) => {
 
-        let obj = Object.entries(response);
+        let obj = Object.entries(response.val());
         this.loadedShopArray = [];
 
         obj.forEach((shop) => {
 
-          if (shop[1]['city'] == this.location) {
-
-            let coverImage = shop[1].shopImage[0].image;
-            shop[1]['coverImage'] = coverImage;
-            this.loadedShopArray.push(shop[1]);
-          }
+          let coverImage = shop[1]['shopImage'][0].image;
+          shop[1]['coverImage'] = coverImage;
+          this.loadedShopArray.push(shop[1]);
 
         });
 
+        setTimeout(_ => {
+          this.sortShop(this.loadedShopArray)
+            .then((response) => {
+              this.loadedShopArray = response;
+            })
+        }, 200)
+
+
         this.initializeItems();
+        loading.dismiss();
 
       })
-      .catch((error) => {
-
-      });
 
 
   }
 
   initializeItems() {
     this.shopArray = this.loadedShopArray;
-  }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad HaircutHomePage');
   }
 
   // filtering the shops based on shop name
@@ -76,7 +82,7 @@ export class HaircutHomePage {
     // if the value is an empty string don't filter the items
     if (val && val.trim() != '') {
       this.shopArray = this.shopArray.filter((item) => {
-        return (item.shopName.toLowerCase().indexOf(val.toLowerCase()) > -1);
+        return (item.city.toLowerCase().indexOf(val.toLowerCase()) > -1);
       });
     }
 
@@ -128,6 +134,31 @@ export class HaircutHomePage {
   // nav to my order page
   navToMyOrders() {
     this.navCtrl.push(MyOrderPage);
+  }
+
+  // Sort based on time
+  sortShop(arr) {
+
+    return new Promise((resolve) => {
+
+      function compare(a, b) {
+
+
+        if (Number(a.status) < Number(b.status)) {
+          return 1;
+        }
+        if (Number(a.status) > Number(b.status)) {
+          return -1;
+        }
+        return 0;
+      }
+
+      arr.sort(compare);
+
+      resolve(arr);
+
+    })
+
   }
 
 }

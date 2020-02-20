@@ -6,86 +6,78 @@
 
 
 <ion-content padding>
-  
-    <ion-avatar  style=" border: 1px solid black;">
-        <!--image-->
-    </ion-avatar>
 
-<form [formGroup]="credentialForm"> 
+  <ion-avatar style=" border: 1px solid black;">
+    <!--image-->
+  </ion-avatar>
+
+  <form [formGroup]="credentialForm">
 
 
-  <ion-item class="l4">
-    <!-- <ion-label   position="floating"> Confirm Password</ion-label> -->
-    <ion-input type="text" 
-                placeholder="Name"
-                formControlName="name"></ion-input>
-  </ion-item>
+    <ion-item class="l4">
+      <!-- <ion-label   position="floating"> Confirm Password</ion-label> -->
+      <ion-input type="text" placeholder="Name" formControlName="name"></ion-input>
+    </ion-item>
 
-  <ion-item 
-      class="warning-on-input"
+    <ion-item class="warning-on-input"
       *ngIf="!credentialForm.controls.name.valid  && (credentialForm.controls.name.dirty || submitAttempt) && !credentialForm.controls.name.valid">
-    <p>Enter your name</p>
-  </ion-item>
+      <p>Enter your name</p>
+    </ion-item>
 
-  <ion-item class="l1">
-    <!-- <ion-label  position="floating">Phone Number</ion-label> -->
-    <ion-input type="Number" 
-                placeholder="Phone Number"
-                formControlName="phoneNumber"></ion-input>
-  </ion-item>
+    <ion-item class="l1">
+      <!-- <ion-label  position="floating">Phone Number</ion-label> -->
+      <ion-input type="Number" placeholder="Phone Number" formControlName="phoneNumber"></ion-input>
+    </ion-item>
 
-  <ion-item 
-      class="warning-on-input"
+    <ion-item class="warning-on-input"
       *ngIf="!credentialForm.controls.phoneNumber.valid  && (credentialForm.controls.phoneNumber.dirty || submitAttempt)">
-    <p>Please enter a valid Phone Number</p>
-  </ion-item>
+      <p>Please enter a valid Phone Number</p>
+    </ion-item>
 
-  <ion-item class="l2">
-    <!-- <ion-label    position="floating">Mail</ion-label> -->
-    <ion-input type="email" 
-                placeholder="Email"
-                formControlName="email"></ion-input>
-  </ion-item>
+    <ion-item class="l2">
+      <!-- <ion-label    position="floating">Mail</ion-label> -->
+      <ion-input type="email" placeholder="Email" formControlName="email"></ion-input>
+    </ion-item>
 
-  <ion-item 
-      class="warning-on-input"
+    <ion-item class="warning-on-input"
       *ngIf="!credentialForm.controls.email.valid  && (credentialForm.controls.email.dirty || submitAttempt)">
-    <p>Please enter a valid Email</p>
-  </ion-item>
+      <p>Please enter a valid Email</p>
+    </ion-item>
 
-  <ion-item class="l3">
-    <!-- <ion-label  position="floating">Password</ion-label> -->
-    <ion-input type="password" 
-                placeholder="Password"
-                formControlName="password"></ion-input>
-  </ion-item>
+    <ion-item class="l3">
+      <!-- <ion-label  position="floating">Password</ion-label> -->
+      <ion-input type="password" placeholder="Password" formControlName="password"></ion-input>
+    </ion-item>
 
-  <ion-item 
-      class="warning-on-input"
+    <ion-item class="warning-on-input"
       *ngIf="!credentialForm.controls.password.valid  && (credentialForm.controls.password.dirty || submitAttempt)">
-    <p>Password should be greater than 6 characters</p>
-  </ion-item>
+      <p>Password should be greater than 6 characters</p>
+    </ion-item>
 
-  <ion-item class="l4">
-    <!-- <ion-label   position="floating"> Confirm Password</ion-label> -->
-    <ion-input type="password" 
-                placeholder="Confirm Password"
-                formControlName="confirmPassword"></ion-input>
-  </ion-item>
+    <ion-item class="l4">
+      <!-- <ion-label   position="floating"> Confirm Password</ion-label> -->
+      <ion-input type="password" placeholder="Confirm Password" formControlName="confirmPassword"></ion-input>
+    </ion-item>
 
-  <ion-item 
-      class="warning-on-input"
+    <ion-item class="warning-on-input"
       *ngIf="!credentialForm.controls.confirmPassword.valid  && (credentialForm.controls.password.dirty || submitAttempt) && !credentialForm.controls.confirmPassword.valid">
-    <p>Password and Conform password must be same</p>
-  </ion-item>
-  
-  <ion-buttons type="submit">
-  <button  ion-button  round full class="button" 
-            (click)="signUp()"
-            [disabled]="!credentialForm.valid">SIGNUP</button>
-  </ion-buttons>
-    
-    <p text-center class="navLogin">  Already an user?  <a (click)="navToLogin()"> Login</a>
+      <p>Password and Confirm password must be same</p>
+    </ion-item>
+
+    <ion-item class="l4">
+      <ion-select formControlName="gender" interface="popover" placeholder="Gender">
+        <ion-option value="male">Male</ion-option>
+        <ion-option value="female">Female</ion-option>
+        <ion-option value="unspecified">Unspecified</ion-option>
+      </ion-select>
+    </ion-item>
+
+
+    <ion-buttons type="submit">
+      <button ion-button round full class="button" (click)="signUp()" [disabled]="!credentialForm.valid">SIGNUP</button>
+    </ion-buttons>
+
+    <p text-center class="navLogin"> Already an user? <a (click)="navToLogin()"> Login</a>
     </p>
   </form>
 </ion-content>

@@ -25,8 +25,8 @@
             <h2>Shop Status</h2>
           </ion-col>
           <ion-col col-12>
-            <p *ngIf="metaData.status == 'true'">open</p>
-            <p *ngIf="metaData.status == 'false'">Close</p>
+            <p *ngIf="metaData.status">Open</p>
+            <p *ngIf="!metaData.status">Close</p>
           </ion-col>
 
         </ion-row>
@@ -34,7 +34,7 @@
 
       <!-- Toggle -->
       <ion-col col-3 class="toggle">
-        <ion-toggle [checked]="metaData.status" color="secondary"></ion-toggle>
+        <ion-toggle [checked]="metaData.status" color="secondary" (ionChange)="shopStatusChanged($event)"></ion-toggle>
       </ion-col>
 
     </ion-row>
@@ -125,7 +125,7 @@
 
       <h2>Appointments</h2>
 
-      <p text-center>No Appointments found for your shop</p>
+      <p>No Waiting Appointments found for your shop</p>
 
     </ion-row>
 

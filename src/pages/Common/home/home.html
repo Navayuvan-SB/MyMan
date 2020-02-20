@@ -1,17 +1,20 @@
 <ion-header>
-  <ion-navbar hideBackButton >
+  <ion-navbar hideBackButton>
     <ion-title class="toolbar-title.toolbar-title-md">MyMan</ion-title>
     <ion-buttons left class="Menu">
-        <button ion-button icon-only menuToggle>
-            <ion-icon name="menu" class="resize-icon"></ion-icon></button>
+      <button ion-button icon-only menuToggle>
+        <ion-icon name="menu" class="resize-icon"></ion-icon>
+      </button>
     </ion-buttons>
     <ion-buttons right class="hammer">
-        <button ion-button icon-only (click)="order()">
-          <ion-icon name="custom-hammer" class="resize-icon"></ion-icon></button>
+      <button ion-button icon-only (click)="order()">
+        <ion-icon name="custom-hammer" class="resize-icon"></ion-icon>
+      </button>
     </ion-buttons>
     <ion-buttons right class="Union">
-        <button ion-button icon-only (click)="clicked()" >
-          <ion-icon name="custom-Union" class="resize-icon"></ion-icon></button>
+      <button ion-button icon-only (click)="clicked()">
+        <ion-icon name="custom-Union" class="resize-icon"></ion-icon>
+      </button>
     </ion-buttons>
   </ion-navbar>
 </ion-header>
@@ -21,39 +24,43 @@
     <ion-row>
 
       <!-- Photography -->
-      <ion-col col-sm-2 (click)="photography()">
+      <ion-col col-sm-2>
         <ion-avatar class="p1" style=" border: 1px solid black;">
           <!--image-->
-        </ion-avatar>
-      <h1 text-center>Photography</h1>
-      <p text-center>Sample text</p>
-    </ion-col>
+          <div>
 
-    <!-- Haircut -->
+          </div>
+        </ion-avatar>
+        <h1 text-center>Photography</h1>
+        <p text-center>Comming soon...</p>
+      </ion-col>
+
+      <!-- Haircut -->
       <ion-col col-sm-2 (click)="navToHaircut()">
-          <ion-avatar class="h" style=" border: 1px solid black;">
-            <!--image-->
-      </ion-avatar>
-      <h1 text-center>Haircut</h1>
-      <p text-center>Sample text</p>
-            </ion-col>
-      </ion-row>
-      <ion-row>
+        <ion-avatar class="h" style=" border: 1px solid black;">
+          <!--image-->
+        </ion-avatar>
+        <h1 text-center>Haircut</h1>
+        <p text-center>Sample text</p>
+      </ion-col>
+    </ion-row>
+
+    <!-- <ion-row>
         <ion-col col-sm-2>
-          <ion-avatar class="g" style=" border: 1px solid black;">
-            <!--image-->
-          </ion-avatar>
+          <ion-avatar class="g" style=" border: 1px solid black;"> -->
+    <!--image-->
+    <!-- </ion-avatar>
           <h1 text-center>Grocery</h1>
           <p text-center>Sample text</p>
         </ion-col>
-        <ion-col col-sm-2>
-          <!-- <ion-avatar class="g" style=" border: 1px solid black;">
+        <ion-col col-sm-2> -->
+    <!-- <ion-avatar class="g" style=" border: 1px solid black;">
             
           </ion-avatar>
           <h1 text-center>Grocery</h1>
           <p text-center>Sample text</p> -->
-        </ion-col>
-      </ion-row>
-    </ion-grid>      
-      
+    <!-- </ion-col>
+      </ion-row> -->
+  </ion-grid>
+
 </ion-content>
