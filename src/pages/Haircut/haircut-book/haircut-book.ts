@@ -60,18 +60,14 @@ export class HaircutBookPage {
     var h = today.getHours();
     var m = today.getMinutes();
     var timeNow = h + ":" + m + ":" + '00';
-
-    timeNow = "12:00:00";
     
     // filter the slots based on current time
-    this.timeSlots = this.timeSlots.map((element) => {
+    this.timeSlots = this.timeSlots.filter((element) => {
       if (timeNow < this.convertTime(element.time)) {
-        element.state = 0
-        return element;
+        return true;
       }
       else {
-        element.state = 1
-        return element;
+        return false;
       }
     });
 
@@ -81,9 +77,15 @@ export class HaircutBookPage {
 
     this.timeSlots.forEach(element => {
       
-      if (element['status'] != 0) {
+      if (element['status'] == 1) {
         this.appointmentCount ++;
       }
+
+      else if (element['status'] == 2) {
+        this.appointmentCount ++;
+        this.appointmentCount ++;
+      }
+
     });
 
   }

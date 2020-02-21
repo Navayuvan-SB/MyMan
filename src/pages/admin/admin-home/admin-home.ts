@@ -52,8 +52,6 @@ export class AdminHomePage {
 
         obj.forEach(element => {
 
-          let coverImage = element[1].shopImage[0].image;
-          element[1]['coverImage'] = coverImage;
           this.shops.push(element[1]);
           this.rawShops.push(element[1]);
 

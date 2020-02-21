@@ -19,6 +19,8 @@ export class AdminNewPage {
 
   images: any;
 
+  coverImage: any;
+
   constructor(public navCtrl: NavController,
     public navParams: NavParams,
     public formBuilder: FormBuilder,
@@ -31,21 +33,12 @@ export class AdminNewPage {
     public afAuth: AngularFireAuth) {
 
     this.images = [];
+    this.coverImage = '../../../assets/imgs/add-image.png';
 
     this.shopDetails = [
       {
         placeholder: 'City',
         controlName: 'city',
-        type: 'text'
-      },
-      {
-        placeholder: 'Contact Number',
-        controlName: 'contactNumber',
-        type: 'number'
-      },
-      {
-        placeholder: 'Email',
-        controlName: 'email',
         type: 'text'
       },
       {
@@ -201,7 +194,8 @@ export class AdminNewPage {
         "phonepe": this.shopForm.controls['phonepe'].value,
         "cash": this.shopForm.controls['cash'].value
       },
-      "timeSlots": this.generateTimeSlots(this.shopForm.controls['seatCapacity'].value)
+      "timeSlots": this.generateTimeSlots(this.shopForm.controls['seatCapacity'].value),
+      "coverImage": this.coverImage
     }
 
     this.checkIfUserExist(shopDetails.contactNumber)
@@ -675,9 +669,66 @@ export class AdminNewPage {
     if (noon == 'PM') {
       hours = hours + 12;
     }
-    
+
     var strTime = hours + ":" + minutes;
     return strTime;
+  }
+
+  // Select the shop cover image
+  selectCoverImage() {
+
+    var loading = this.loadingCtrl.create({
+      content: 'Please wait...'
+    });
+
+    loading.present();
+
+    var options: ImagePickerOptions = {
+      maximumImagesCount: 1,
+      width: 1920,
+      height: 1080
+    };
+
+    this.imagePicker.getPictures(options)
+      .then((result) => {
+
+        for (var interval = 0; interval < result.length; interval++) {
+
+          let filename = result[interval].substring(result[interval].lastIndexOf('/') + 1);
+          let path = result[interval].substring(0, result[interval].lastIndexOf('/') + 1);
+          this.file.readAsDataURL(path, filename)
+            .then((response) => {
+              this.coverImage = response;
+            })
+            .catch((error) => {
+
+              loading.dismiss();
+              let toast = this.toastCtrl.create({
+                message: error,
+                position: 'bottom',
+                duration: 4000
+              });
+
+              toast.present();
+
+            });
+
+        }
+
+        loading.dismiss();
+
+      })
+      .catch((error) => {
+
+        let toast = this.toastCtrl.create({
+          message: error,
+          position: 'bottom',
+          duration: 4000
+        });
+        loading.dismiss();
+        toast.present();
+
+      });
   }
 
 }

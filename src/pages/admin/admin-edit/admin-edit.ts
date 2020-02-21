@@ -45,7 +45,7 @@ export class AdminEditPage {
     let shop = this.navParams.get('shop');
 
     this.images = shop.shopImage;
-    this.coverImage = shop.shopImage[0].image;
+    this.coverImage = shop.coverImage;
 
     this.availablity = {}
 
@@ -225,7 +225,8 @@ export class AdminEditPage {
         "paytm": this.shopForm.controls['paytm'].value,
         "phonepe": this.shopForm.controls['phonepe'].value,
         "cash": this.shopForm.controls['cash'].value
-      }
+      },
+      "coverImage": this.coverImage
     };
 
     let path = "haircut/shops/" + this.navParams.get('shop').id
@@ -281,7 +282,7 @@ export class AdminEditPage {
       hours = Number(hours) + 12;
     }
     else if (noon == 'AM') {
-      
+
       if (Number(hours) < 10) {
         hours = 0 + hours;
       }
@@ -290,6 +291,63 @@ export class AdminEditPage {
 
     var strTime = hours + ":" + minutes;
     return strTime;
+  }
+
+  // Select the shop cover image
+  selectCoverImage() {
+
+    var loading = this.loadingCtrl.create({
+      content: 'Please wait...'
+    });
+
+    loading.present();
+
+    var options: ImagePickerOptions = {
+      maximumImagesCount: 1,
+      width: 1920,
+      height: 1080
+    };
+
+    this.imagePicker.getPictures(options)
+      .then((result) => {
+
+        for (var interval = 0; interval < result.length; interval++) {
+
+          let filename = result[interval].substring(result[interval].lastIndexOf('/') + 1);
+          let path = result[interval].substring(0, result[interval].lastIndexOf('/') + 1);
+          this.file.readAsDataURL(path, filename)
+            .then((response) => {
+              this.coverImage = response;
+            })
+            .catch((error) => {
+
+              loading.dismiss();
+              let toast = this.toastCtrl.create({
+                message: error,
+                position: 'bottom',
+                duration: 4000
+              });
+
+              toast.present();
+
+            });
+
+        }
+
+        loading.dismiss();
+
+      })
+      .catch((error) => {
+
+        let toast = this.toastCtrl.create({
+          message: error,
+          position: 'bottom',
+          duration: 4000
+        });
+        loading.dismiss();
+        toast.present();
+
+      });
   }
 
 }

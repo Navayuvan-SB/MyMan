@@ -16,8 +16,10 @@
     <form [formGroup]="shopForm">
 
       <ion-row id="meta-info">
-        <ion-col col-5 class="image-wrapper">
-          <img src="../../../assets/imgs/image5.jpg" alt="Image">
+        <ion-col col-5>
+          <div class="image-wrapper" (click)="selectCoverImage()">
+            <img src="{{ coverImage }}" alt="Image">
+          </div>
         </ion-col>
 
         <ion-col col-7>

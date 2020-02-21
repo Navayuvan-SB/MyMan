@@ -107,12 +107,12 @@
     <ion-row *ngIf="selectedShop.seatCapacity == 2">
 
       <ion-col col-4 *ngFor="let times of timeSlots">
-        <div *ngIf="times.state != 1"
+        <div
           [ngClass]="[times.status == 0?'green':'', times.status == 1?'yellow':'', times.status == 2?'red':'']"
           class="roundedCorners">
 
           <!-- Clickable -->
-          <div *ngIf="times.state == 0" (click)="popup(times)">
+          <div (click)="popup(times)">
             <p class="textSize">{{ times.time }}</p>
             <ion-row justify-content-center>
               <ion-col col-5>
@@ -143,13 +143,14 @@
     </ion-row>
 
     <ion-row *ngIf="selectedShop.seatCapacity == 1">
+      
 
       <ion-col col-4 *ngFor="let times of timeSlots">
         <div class="roundedCorners"
-          [ngClass]="[times.status == 0?'green':'', times.status == 1?'red':'', times.state == 1?'fade-out':'']">
+          [ngClass]="[times.status == 0?'green':'', times.status == 1?'red':'']">
 
           <!-- Clickable -->
-          <div (click)="popup(times)" *ngIf="times.state == 0">
+          <div (click)="popup(times)">
             <p class="textSize">{{ times.time }}</p>
             <ion-row justify-content-center>
               <ion-col col-5>
@@ -158,7 +159,7 @@
             </ion-row>
           </div>
 
-          <!-- Non - Clickable -->
+          <!-- Non - Clickable
           <div *ngIf="times.state == 1">
             <p class="textSize">{{ times.time }}</p>
             <ion-row justify-content-center>
@@ -166,7 +167,7 @@
                 <ion-icon name="custom-gnSeat" [ngClass]="[times.first?'greyIcon':'greenIcon']"></ion-icon>
               </ion-col>
             </ion-row>
-          </div>
+          </div> -->
 
         </div>
       </ion-col>

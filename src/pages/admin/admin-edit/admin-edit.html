@@ -11,8 +11,10 @@
     <form [formGroup]="shopForm">
 
       <ion-row id="meta-info">
-        <ion-col col-5 class="image-wrapper">
-          <img src="{{ coverImage }}" alt="Image">
+        <ion-col col-5 (click)="selectCoverImage()">
+          <div class="image-wrapper">
+            <img src="{{ coverImage }}" alt="Image">
+          </div>
         </ion-col>
 
         <ion-col col-7>
@@ -53,14 +55,14 @@
 
             <ion-item>
               <ion-label floating>Opening Time</ion-label>
-              <ion-datetime displayFormat="h:mm A" formControlName="openingTime" 
-              pickerFormat="h mm A" [(ngModel)]="availablity.open"></ion-datetime>
+              <ion-datetime displayFormat="h:mm A" formControlName="openingTime" pickerFormat="h mm A"
+                [(ngModel)]="availablity.open"></ion-datetime>
             </ion-item>
 
             <ion-item>
               <ion-label floating>Closing Time</ion-label>
-              <ion-datetime displayFormat="h:mm A" formControlName="closingTime"
-               pickerFormat="h mm A" [(ngModel)]="availablity.close"></ion-datetime>
+              <ion-datetime displayFormat="h:mm A" formControlName="closingTime" pickerFormat="h mm A"
+                [(ngModel)]="availablity.close"></ion-datetime>
             </ion-item>
 
             <ion-item>

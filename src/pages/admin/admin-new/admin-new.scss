@@ -29,16 +29,36 @@ page-admin-new {
     margin-bottom: 30px;
   }
 
+  #meta-info .image-wrapper {
+    border: 1px solid grey;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    height: 120px;
+    width: 120px;
+    position: relative;
+}
+
   #meta-info img {
-    width: 130px;
-    height: 130px;
-    border-radius: 12px;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    -ms-border-radius: 12px;
-    -o-border-radius: 12px;
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
     object-fit: cover;
-  }
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+}
 
   #meta-info input {
     margin-top: 50px;

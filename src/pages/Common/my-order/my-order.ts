@@ -29,6 +29,10 @@ export class MyOrderPage {
   haircutExpanded: Boolean = false;
   photographyExpanded: Boolean = false;
 
+  // temp storage
+  haircut: any = [];
+  photography: any = [];
+
 
   constructor(public navCtrl: NavController,
     public navParams: NavParams,
@@ -45,6 +49,10 @@ export class MyOrderPage {
     });
 
     loading.present();
+
+    this.haircut = [];
+    this.photography = [];
+    
     this.fbService.filterData(this.fbService.equalTo,
       'requests',
       null,
@@ -56,8 +64,6 @@ export class MyOrderPage {
         let obj = Object.entries(response);
 
         // arrays for seperated services
-        let haircut = Array();
-        let photography = Array();
 
         obj.forEach(element => {
 
@@ -66,41 +72,44 @@ export class MyOrderPage {
             // element[1] = this.updateShopContact(element[1]);
             let uid = element[1]['shopId'];
 
-            this.fbService.readOnce('users/' + uid)
+            this.fbService.readOnce('haircut/shops/' + uid)
               .then((response) => {
 
-                element[1]['shopContactNumber'] = response['phoneNumber'];
-                haircut.push(element[1]);
+                element[1]['shopContactNumber'] = response['contactNumber'];
+                element[1]['coverImage'] = response['coverImage'];
+                this.haircut.push(element[1]);
 
-              })
+              });
 
           }
           else if (element[1]['service'] == 'Photography') {
-            photography.push(element[1]);
+            this.photography.push(element[1]);
           }
 
         });
 
         setTimeout(() => {
 
-          // Presence of haircut orders
-          if (haircut.length == 0) {
+          console.log(this.haircut);
+
+          if (this.haircut.length == 0) {
             this.haircutFlag = true;
           }
           else {
-            this.rawHaircutOrders = haircut;
+            this.rawHaircutOrders = this.haircut;
           }
 
           // Presence if photography orders
-          if (photography.length == 0) {
+          if (this.photography.length == 0) {
             this.photographyFlag = true;
           }
           else {
-            this.rawPhotographyOrders = photography;
+            this.rawPhotographyOrders = this.photography;
           }
 
           this.limitRequests();
-        }, 1500);
+
+        }, 1500)
 
       });
 
