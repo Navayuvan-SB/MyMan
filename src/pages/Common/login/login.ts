@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, ViewChild } from '@angular/core';
 import { NavController, NavParams, ToastController, LoadingController } from 'ionic-angular';
 import { SignupPage } from '../signup/signup';
 import { HomePage } from '../home/home';
@@ -19,6 +19,8 @@ import { ForgetPasswordPage } from '../forget-password/forget-password';
   templateUrl: 'login.html',
 })
 export class LoginPage {
+  @ViewChild('phoneNumber') myInput;
+  @ViewChild('password') password;
 
   credentialForm: FormGroup
 
@@ -41,10 +43,26 @@ export class LoginPage {
         Validators.minLength(8)
       ])]
     });
+    // this.myInput.setFocus();
+
   }
 
-  ionViewDidLoad() {
+  ionViewDidEnter() {
+    this.setFocusPhoneNumber();
     console.log('ionViewDidLoad LoginPage');
+  }
+
+  setFocusPhoneNumber() {
+    setTimeout(() => {
+      this.myInput.setFocus();
+    }, 150)
+    
+  }
+
+  setFocusPassword() {
+    setTimeout(() => {
+      this.password.setFocus();
+    }, 150)
   }
 
   navToSignUp() {

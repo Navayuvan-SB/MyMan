@@ -24,6 +24,9 @@ export class HaircutPopupPage {
   // SeatCapacity
   seatCapacity: any;
 
+  RawfirstSeatFlag = 0;
+  RawsecondSeatFlag = 0;
+
   constructor(public navCtrl: NavController, public navParams: NavParams,
     public viewCtrl: ViewController) {
 
@@ -39,20 +42,24 @@ export class HaircutPopupPage {
       if (this.timeSlot.first == 1) {
 
         this.firstSeatFlag = 3;
+        this.RawfirstSeatFlag = 3;
         document.documentElement.style.setProperty(`--seat-color-first`, '#adadad');
       } else {
 
         this.firstSeatFlag = 0;
+        this.RawfirstSeatFlag = 0;
         document.documentElement.style.setProperty(`--seat-color-first`, '#808080');
       }
 
       if (this.timeSlot.second == 1) {
 
         this.secondSeatFlag = 3;
+        this.RawsecondSeatFlag = 3;
         document.documentElement.style.setProperty(`--seat-color-second`, '#adadad');
       } else {
 
         this.secondSeatFlag = 0;
+        this.RawsecondSeatFlag = 0;
         document.documentElement.style.setProperty(`--seat-color-second`, '#808080');
       }
 
@@ -62,10 +69,12 @@ export class HaircutPopupPage {
       if (this.timeSlot.first == 1) {
 
         this.firstSeatFlag = 3;
+        this.RawfirstSeatFlag = 3;
         document.documentElement.style.setProperty(`--seat-color-first`, '#adadad');
       } else {
 
         this.firstSeatFlag = 0;
+        this.RawfirstSeatFlag = 0;
         document.documentElement.style.setProperty(`--seat-color-first`, '#808080');
       }
 
@@ -137,7 +146,11 @@ export class HaircutPopupPage {
 
     if (this.firstSeatFlag != 0 || this.secondSeatFlag != 0) {
 
-      this.viewCtrl.dismiss(this.timeSlot);
+      console.log(!(this.RawfirstSeatFlag == this.firstSeatFlag && this.RawsecondSeatFlag == this.secondSeatFlag));
+      if (!(this.RawfirstSeatFlag == this.firstSeatFlag && this.RawsecondSeatFlag == this.secondSeatFlag)) {
+        this.viewCtrl.dismiss(this.timeSlot);
+      }
+      
     }
     else {
       this.viewCtrl.dismiss();
@@ -156,7 +169,7 @@ export class HaircutPopupPage {
       this.timeSlot.status = 1
     }
 
-    if (this.firstSeatFlag != 0) {
+    if (this.firstSeatFlag != 0 && !(this.firstSeatFlag == this.RawfirstSeatFlag)) {
 
       this.viewCtrl.dismiss(this.timeSlot);
     }

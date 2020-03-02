@@ -58,14 +58,38 @@
 
       <!-- Heading -->
       <ion-col col-12 text-left>
-        <b>Available Payment Options</b>
+        <b>Available Payment Methods</b>
       </ion-col>
 
       <ion-col col-12 class="payment-icons">
 
         <ion-row>
 
-          <ion-col col-2 *ngIf="selectedShop.paymentOptions.googlepay">
+          <ion-col col-12>
+
+            <ul>
+              <li>
+                <img src="../../../assets/imgs/google-pay.png" alt="Google Pay">
+              </li>
+
+
+              <li>
+                <img src="../../../assets/imgs/paytm.png" alt="Paytm">
+              </li>
+
+              <li>
+                <img src="../../../assets/imgs/phonepe.png" alt="PhonePe">
+              </li>
+
+              <li>
+                <img src="../../../assets/icon/cash.png" alt="Cash">
+              </li>
+
+            </ul>
+
+          </ion-col>
+
+          <!-- <ion-col col-2 *ngIf="selectedShop.paymentOptions.googlepay">
             <img src="../../../assets/imgs/google-pay.png" alt="Google Pay">
           </ion-col>
 
@@ -79,7 +103,7 @@
 
           <ion-col col-2 *ngIf="selectedShop.paymentOptions.cash">
             <img src="../../../assets/imgs/cash.png" alt="Cash">
-          </ion-col>
+          </ion-col> -->
 
         </ion-row>
 
@@ -90,7 +114,7 @@
     <ion-row id="appointment-count">
 
       <ion-col col-12>
-        <h2>Users have booked <span>{{ appointmentCount }}</span> appointments today in this shop </h2>
+        <h2>Number of bookings today <span>{{ appointmentCount }}</span></h2>
       </ion-col>
 
       <ion-col col-12>
@@ -107,8 +131,7 @@
     <ion-row *ngIf="selectedShop.seatCapacity == 2">
 
       <ion-col col-4 *ngFor="let times of timeSlots">
-        <div
-          [ngClass]="[times.status == 0?'green':'', times.status == 1?'yellow':'', times.status == 2?'red':'']"
+        <div [ngClass]="[times.status == 0?'green':'', times.status == 1?'yellow':'', times.status == 2?'red':'']"
           class="roundedCorners">
 
           <!-- Clickable -->
@@ -143,11 +166,10 @@
     </ion-row>
 
     <ion-row *ngIf="selectedShop.seatCapacity == 1">
-      
+
 
       <ion-col col-4 *ngFor="let times of timeSlots">
-        <div class="roundedCorners"
-          [ngClass]="[times.status == 0?'green':'', times.status == 1?'red':'']">
+        <div class="roundedCorners" [ngClass]="[times.status == 0?'green':'', times.status == 1?'red':'']">
 
           <!-- Clickable -->
           <div (click)="popup(times)">

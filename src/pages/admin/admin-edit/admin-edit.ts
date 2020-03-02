@@ -195,7 +195,9 @@ export class AdminEditPage {
     loading.present();
 
     let closingTime = this.shopForm.controls['closingTime'].value.split(':');
+    console.log(closingTime);
     let closingTimeFormated = this.formatAMPM(closingTime);
+    console.log(closingTimeFormated);
 
     let openingTime = this.shopForm.controls['openingTime'].value.split(':');
     let openingTimeFormated = this.formatAMPM(openingTime);
@@ -263,10 +265,10 @@ export class AdminEditPage {
   formatAMPM(date) {
     var hours = date[0];
     var minutes = date[1];
-    var ampm = hours >= 12 ? 'PM' : 'AM';
-    hours = hours % 12;
+    var ampm = Number(hours) >= 12 ? 'PM' : 'AM';
+    hours = Number(hours) % 12;
     hours = hours ? hours : 12;
-    minutes = minutes < 10 ? '0' + minutes : minutes;
+    minutes = Number(minutes) < 10 && minutes != '00' ? '0' + minutes : minutes;
     var strTime = hours + ':' + minutes + ' ' + ampm;
     return strTime;
   }
@@ -290,6 +292,7 @@ export class AdminEditPage {
     }
 
     var strTime = hours + ":" + minutes;
+    console.log(strTime);
     return strTime;
   }
 

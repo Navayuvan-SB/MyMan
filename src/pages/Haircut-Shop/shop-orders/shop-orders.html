@@ -26,7 +26,7 @@
 
         <ion-item>
           <ion-label>Select the Date</ion-label>
-          <ion-datetime displayFormat="MMM DD YYYY" pickerFormat="MMM-DD-YYYY" (ionChange)="dateSelected($event)">
+          <ion-datetime displayFormat="MMM DD YYYY" pickerFormat="MMM-DD-YYYY" (ionChange)="dateSelected($event)" [(ngModel)]="currentDate">
           </ion-datetime>
         </ion-item>
 
@@ -50,8 +50,8 @@
             </ion-col>
 
             <ion-col col-12>
-              <h2>Appointment Id</h2>
-              <p>{{ request.appointmentId }}</p>
+              <h2>Date</h2>
+              <p>{{ request.date }}</p>
             </ion-col>
 
             <ion-col col-10>

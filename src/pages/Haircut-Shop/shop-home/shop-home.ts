@@ -87,10 +87,10 @@ export class ShopHomePage {
               }
             }
           });
-
-
+          this.sortUsingDate();
         });
 
+       
         loading.dismiss();
 
       })
@@ -270,85 +270,51 @@ export class ShopHomePage {
     let alert = this.alertCtrl.create();
     alert.setTitle('Choose the offer');
 
-    alert.addInput({
-      type: 'radio',
-      label: 'Null',
-      value: '0',
-      checked: false
-    });
+    for (var i = 0; i <= 50; i = i + 5) {
+
+      if (this.metaData.offer == i) {
+
+        if (i == 0) {
+          alert.addInput({
+            type: 'radio',
+            label: 'Null',
+            value: '0',
+            checked: true
+          });
+        }
+        else {
+          alert.addInput({
+            type: 'radio',
+            label: i + '% Discount',
+            value: '0',
+            checked: true
+          });
+        }
+
+      }
+      else {
+
+        if (i == 0) {
+          alert.addInput({
+            type: 'radio',
+            label: 'Null',
+            value: '0',
+            checked: false
+          });
+        }
+        else {
+          alert.addInput({
+            type: 'radio',
+            label: i + '% Discount',
+            value: '0',
+            checked: false
+          });
+        }
+
+      }
+    }
 
 
-    alert.addInput({
-      type: 'radio',
-      label: '5% Discount',
-      value: '5',
-      checked: false
-    });
-
-    alert.addInput({
-      type: 'radio',
-      label: '10% Discount',
-      value: '10',
-      checked: false
-    });
-
-    alert.addInput({
-      type: 'radio',
-      label: '15% Discount',
-      value: '15',
-      checked: false
-    });
-
-    alert.addInput({
-      type: 'radio',
-      label: '20% Discount',
-      value: '20',
-      checked: false
-    });
-
-    alert.addInput({
-      type: 'radio',
-      label: '25% Discount',
-      value: '25',
-      checked: false
-    });
-
-    alert.addInput({
-      type: 'radio',
-      label: '30% Discount',
-      value: '30',
-      checked: false
-    });
-
-    alert.addInput({
-      type: 'radio',
-      label: '35% Discount',
-      value: '35',
-      checked: false
-    });
-
-    alert.addInput({
-      type: 'radio',
-      label: '40% Discount',
-      value: '40',
-      checked: false
-    });
-
-    alert.addInput({
-      type: 'radio',
-      label: '45% Discount',
-      value: '45',
-      checked: false
-    });
-
-    alert.addInput({
-      type: 'radio',
-      label: '50% Discount',
-      value: '50',
-      checked: false
-    });
-
-    
     alert.addButton('Cancel');
     alert.addButton({
       text: 'OK',
@@ -464,6 +430,26 @@ export class ShopHomePage {
       }
 
     }, 200);
+
+  }
+
+  // Sort the requests by latest
+  sortUsingDate() {
+
+
+    this.latestRequests.sort((a, b) => {
+
+      var rawADate = a.date.split('-');
+      var aTime = a.time.split(' ');
+      var aDate = new Date(rawADate[1] + ' ' + rawADate[0] + ' ' + rawADate[2] + ' ' + aTime[0] + ':00 ' + aTime[1]);
+
+      var rawBDate = b.date.split('-');
+      var bTime = b.time.split(' ');
+      var bDate = new Date(rawBDate[1] + ' ' + rawBDate[0] + ' ' + rawBDate[2] + ' ' + bTime[0] + ':00 ' + bTime[1]); -1
+
+      return (aDate > bDate ? -1 : 1);
+
+    });
 
   }
 

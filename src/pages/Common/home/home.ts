@@ -33,18 +33,8 @@ export class HomePage {
     let user = this.afAuth.auth.currentUser;
     this.fbService.readOnce('users/' + user.uid)
                               .then((response) => {
-                                let details = Object.entries(response);
-                                let emailId = details[0][1];
-                                let phone = details[2][1];
-                                let fullName = details[1][1];
 
-                                let payload = {
-                                  email         : emailId,
-                                  phoneNumber   : phone,
-                                  name          : fullName
-                                }
-
-                                this.navCtrl.push(ProfilePage, {'payload' : payload});
+                                this.navCtrl.push(ProfilePage, {'payload' : response});
 
                               })
                               .catch((error) => {

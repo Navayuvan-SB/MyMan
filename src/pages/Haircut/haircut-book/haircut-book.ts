@@ -33,6 +33,9 @@ export class HaircutBookPage {
   // Appointment count
   appointmentCount: any;
 
+  // backup time slots
+  backUpTimeSlots: any;
+
   constructor(public navCtrl: NavController,
     public navParams: NavParams,
     public popoverCtrl: PopoverController,
@@ -42,6 +45,29 @@ export class HaircutBookPage {
     public modalCtrl: ModalController,
     public toastCtrl: ToastController,
     public loadingCtrl: LoadingController) {
+
+
+    this.getData();
+
+    this.appointmentCount = 0;
+
+    this.timeSlots.forEach(element => {
+
+      if (element['status'] == 1) {
+        this.appointmentCount++;
+      }
+
+      else if (element['status'] == 2) {
+        this.appointmentCount++;
+        this.appointmentCount++;
+      }
+
+    });
+
+  }
+
+  // get the data from the previous page
+  getData() {
 
     this.selectedShop = this.navParams.get('data');
     this.timeSlots = this.navParams.get('data')['timeSlots'];
@@ -60,7 +86,8 @@ export class HaircutBookPage {
     var h = today.getHours();
     var m = today.getMinutes();
     var timeNow = h + ":" + m + ":" + '00';
-    
+
+    timeNow = "08:00:00";
     // filter the slots based on current time
     this.timeSlots = this.timeSlots.filter((element) => {
       if (timeNow < this.convertTime(element.time)) {
@@ -69,23 +96,6 @@ export class HaircutBookPage {
       else {
         return false;
       }
-    });
-
-    console.log(this.timeSlots);
-
-    this.appointmentCount = 0;
-
-    this.timeSlots.forEach(element => {
-      
-      if (element['status'] == 1) {
-        this.appointmentCount ++;
-      }
-
-      else if (element['status'] == 2) {
-        this.appointmentCount ++;
-        this.appointmentCount ++;
-      }
-
     });
 
   }
@@ -99,6 +109,7 @@ export class HaircutBookPage {
 
     popover.onDidDismiss((data) => {
 
+      console.log(data);
       if (data != undefined) {
         this.bookAppointment(data);
       }
@@ -293,10 +304,17 @@ export class HaircutBookPage {
 
             alert = this.alertCtrl.create({
               title: 'Failed',
-              message: 'Something seems to be wrong, please try again later',
+              message: 'You have cancelled the Appointment Booking, please book again',
               buttons: [
                 {
-                  text: 'Okay'
+                  text: 'Okay',
+                  handler: _ => {
+                    const startIndex = this.navCtrl.getActive().index - 1;
+                    this.navCtrl.remove(startIndex, 2)
+                      .then((resp) => {
+                        this.navCtrl.push(HaircutHomePage);
+                      });
+                  }
                 }
               ]
             });
@@ -305,6 +323,8 @@ export class HaircutBookPage {
 
           alert.present();
           loading.dismiss();
+
+
         });
 
 
@@ -314,13 +334,22 @@ export class HaircutBookPage {
         // dismiss loading
         loading.dismiss();
 
+        this.getData();
+
         // alert message
         var alert = this.alertCtrl.create({
           title: 'Failed',
           message: 'Something seems to be wrong, please try again later',
           buttons: [
             {
-              text: 'Okay'
+              text: 'Okay',
+              handler: _ => {
+                const startIndex = this.navCtrl.getActive().index - 1;
+                this.navCtrl.remove(startIndex, 2)
+                  .then((resp) => {
+                    this.navCtrl.push(HaircutHomePage);
+                  });
+              }
             }
           ]
         });

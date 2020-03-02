@@ -38,60 +38,68 @@
       </ion-col>
     </ion-row>
 
-    <ion-card *ngFor="let shop of shopArray">
-      <ion-item (click)="shop.status == 1?shopSelected(shop) : null">
-        <div [ngClass]="[shop.status == 1? '': 'fade-out']">
+    <div *ngIf="shopFlag">
+      <ion-card *ngFor="let shop of shopArray">
+        <ion-item (click)="shop.status == 1?shopSelected(shop) : null">
+          <div [ngClass]="[shop.status == 1? '': 'fade-out']">
 
-        </div>
-        <ion-row>
+          </div>
+          <ion-row>
 
-          <ion-col col-5 class="remove-padding">
-            <img src="{{ shop.coverImage }}" class="img-rect">
-          </ion-col>
+            <ion-col col-5 class="remove-padding">
+              <img src="{{ shop.coverImage }}" class="img-rect">
+            </ion-col>
 
-          <ion-col col-5 class="order-detail">
+            <ion-col col-5 class="order-detail">
 
-            <ion-row>
-              <ion-col col-12>
-                <h2 class="shop-name">{{ shop.shopName }}</h2>
-              </ion-col>
+              <ion-row>
+                <ion-col col-12>
+                  <h2 class="shop-name">{{ shop.shopName }}</h2>
+                </ion-col>
 
-              <ion-col col-12>
-                <p>Street: {{ shop.street }}</p>
-              </ion-col>
+                <ion-col col-12>
+                  <h2>Offer: {{ shop.offers }}%</h2>
+                </ion-col>
 
-              <ion-col col-12>
-                <p>City: {{ shop.city }}</p>
-              </ion-col>
+                <ion-col col-12>
+                  <p>Street: {{ shop.street }}</p>
+                </ion-col>
 
-              <ion-col col-6>
-                <p>Offer: {{ shop.offers }}%</p>
-              </ion-col>
+                <ion-col col-6>
+                  <p>City: {{ shop.city }}</p>
+                </ion-col>
 
-              <ion-col col-6 class="gender-icon" *ngIf="shop.gender == 3">
-                <ion-icon name="custom-unisex"></ion-icon>
-              </ion-col>
+                <ion-col col-6 class="gender-icon" *ngIf="shop.gender == 3">
+                  <ion-icon name="custom-unisex"></ion-icon>
+                </ion-col>
 
-              <ion-col col-6 class="gender-icon" *ngIf="shop.gender == 1">
-                <ion-icon name="custom-man"></ion-icon>
-              </ion-col>
+                <ion-col col-6 class="gender-icon" *ngIf="shop.gender == 1">
+                  <ion-icon name="custom-man"></ion-icon>
+                </ion-col>
 
-              <ion-col col-6 class="gender-icon" *ngIf="shop.gender == 2">
-                <ion-icon name="custom-woman"></ion-icon>
-              </ion-col>
+                <ion-col col-6 class="gender-icon" *ngIf="shop.gender == 2">
+                  <ion-icon name="custom-woman"></ion-icon>
+                </ion-col>
 
-            </ion-row>
+              </ion-row>
 
-          </ion-col>
+            </ion-col>
 
-          <!-- <ion-col col-2 class="call-icon" (click)="callNumber()">
+            <!-- <ion-col col-2 class="call-icon" (click)="callNumber()">
             <i class="material-icons" style="font-size:30px; color:#18A0A0">subdirectory_arrow_right</i>
           </ion-col> -->
 
-        </ion-row>
+          </ion-row>
 
-      </ion-item>
-    </ion-card>
+        </ion-item>
+      </ion-card>
+    </div>
+
+    <div *ngIf="!shopFlag" text-center id="null-shops">
+
+      <h2> Sorry, No Shops Found </h2>
+
+    </div>
 
   </ion-grid>
 

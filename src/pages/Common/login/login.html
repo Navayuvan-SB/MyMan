@@ -7,9 +7,9 @@
 <ion-content padding>
 
   <form [formGroup]="credentialForm">
-    <ion-item no-line class="l1">
+    <ion-item no-line class="l1" (click)="setFocusPhoneNumber()">
       <!-- <ion-label stacked>Phone Number</ion-label> -->
-      <ion-input type="Number" placeholder="Phone Number" formControlName="phoneNumber"></ion-input>
+      <ion-input type="tel" placeholder="Phone Number" formControlName="phoneNumber" #phoneNumber [attr.maxlength]="10"></ion-input>
     </ion-item>
 
     <ion-item class="warning-on-input"
@@ -17,12 +17,12 @@
       <p>Enter valid Phone number</p>
     </ion-item>
 
-    <ion-item class="l2">
+    <ion-item class="l2" (click)="setFocusPassword()">
       <!-- <ion-label stacked>Password</ion-label> -->
-      <ion-input type="password" placeholder="Password" formControlName="password"></ion-input>
+      <ion-input type="password" placeholder="Password" formControlName="password" #password></ion-input>
     </ion-item>
 
-    <p class="forget-password" (click)="forgetPassword()"> <a> forget password? </a></p>
+    <p class="forget-password" (click)="forgetPassword()"> <a> forgot password? </a></p>
 
     <ion-item class="warning-on-input"
       *ngIf="!credentialForm.controls.password.valid && (credentialForm.controls.password.dirty || submitAttempt)">

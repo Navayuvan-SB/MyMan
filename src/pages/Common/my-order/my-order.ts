@@ -5,6 +5,7 @@ import { ProfilePage } from '../profile/profile';
 import { FirebaseServices } from '../../../services/fireBaseService';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { CallNumber } from '@ionic-native/call-number';
+import { load } from 'google-maps';
 
 
 @Component({
@@ -33,6 +34,8 @@ export class MyOrderPage {
   haircut: any = [];
   photography: any = [];
 
+  loading: any;
+
 
   constructor(public navCtrl: NavController,
     public navParams: NavParams,
@@ -44,15 +47,15 @@ export class MyOrderPage {
 
     let user = this.afAuth.auth.currentUser;
 
-    let loading = this.loadingCtrl.create({
+    this.loading = this.loadingCtrl.create({
       content: 'please wait'
     });
 
-    loading.present();
+    this.loading.present();
 
     this.haircut = [];
     this.photography = [];
-    
+
     this.fbService.filterData(this.fbService.equalTo,
       'requests',
       null,
@@ -60,7 +63,6 @@ export class MyOrderPage {
       'userId',
       user.uid)
       .then((response) => {
-        loading.dismiss();
         let obj = Object.entries(response);
 
         // arrays for seperated services
@@ -72,14 +74,16 @@ export class MyOrderPage {
             // element[1] = this.updateShopContact(element[1]);
             let uid = element[1]['shopId'];
 
+
             this.fbService.readOnce('haircut/shops/' + uid)
               .then((response) => {
 
                 element[1]['shopContactNumber'] = response['contactNumber'];
                 element[1]['coverImage'] = response['coverImage'];
-                this.haircut.push(element[1]);
+
 
               });
+            this.haircut.push(element[1]);
 
           }
           else if (element[1]['service'] == 'Photography') {
@@ -88,28 +92,23 @@ export class MyOrderPage {
 
         });
 
-        setTimeout(() => {
+        if (this.haircut.length == 0) {
+          this.haircutFlag = true;
+        }
+        else {
+          this.rawHaircutOrders = this.haircut;
+        }
 
-          console.log(this.haircut);
+        // Presence if photography orders
+        if (this.photography.length == 0) {
+          this.photographyFlag = true;
+        }
+        else {
+          this.rawPhotographyOrders = this.photography;
+        }
 
-          if (this.haircut.length == 0) {
-            this.haircutFlag = true;
-          }
-          else {
-            this.rawHaircutOrders = this.haircut;
-          }
-
-          // Presence if photography orders
-          if (this.photography.length == 0) {
-            this.photographyFlag = true;
-          }
-          else {
-            this.rawPhotographyOrders = this.photography;
-          }
-
-          this.limitRequests();
-
-        }, 1500)
+        this.sortUsingDate();
+        this.limitRequests();
 
       });
 
@@ -131,17 +130,8 @@ export class MyOrderPage {
     let user = this.afAuth.auth.currentUser;
     this.fbService.readOnce('users/' + user.uid)
       .then((response) => {
-        let details = Object.entries(response);
-        let emailId = details[0][1];
-        let phone = details[2][1];
-        let fullName = details[1][1];
 
-        let payload = {
-          email: emailId,
-          phoneNumber: phone,
-          name: fullName
-        }
-        this.navCtrl.push(ProfilePage, { 'payload': payload });
+        this.navCtrl.push(ProfilePage, { 'payload': response });
 
       })
       .catch((error) => {
@@ -169,6 +159,28 @@ export class MyOrderPage {
     }
 
     this.limitRequests();
+
+  }
+
+  // Sort the requests by latest
+  sortUsingDate() {
+
+
+    this.rawHaircutOrders.sort((a, b) => {
+
+      var rawADate = a.date.split('-');
+      var aTime = a.time.split(' ');
+      var aDate = new Date(rawADate[1] + ' ' + rawADate[0] + ' ' + rawADate[2] + ' ' + aTime[0] + ':00 ' + aTime[1]);
+
+      var rawBDate = b.date.split('-');
+      var bTime = b.time.split(' ');
+      var bDate = new Date(rawBDate[1] + ' ' + rawBDate[0] + ' ' + rawBDate[2] + ' ' + bTime[0] + ':00 ' + bTime[1]); -1
+
+      return (aDate > bDate ? -1 : 1);
+
+    });
+
+    this.loading.dismiss();
 
   }
 

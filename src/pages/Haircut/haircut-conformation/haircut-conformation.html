@@ -37,17 +37,25 @@
             <ion-row class="l1">
 
               <ion-col col-12>
-                <b>Shop Name</b>
+                <b>{{ bookedDetails.shopName }}</b>
               </ion-col>
               <ion-col col-12>
-                <b>Date : </b> 00.00.00
+                <b>Date : </b> {{ bookedDetails.date }}
               </ion-col>
               <ion-col col-12>
-                <b>Time : </b> 11.00 PM
+                <b>Time : </b> {{ bookedDetails.time }}
               </ion-col>
 
-              <ion-col col-12>
+              <ion-col col-12 *ngIf="bookedDetails.seats.first == 1 && bookedDetails.seats.second == 0">
+                <b>Seat No. : </b> 1
+              </ion-col>
+
+              <ion-col col-12 *ngIf="bookedDetails.seats.first == 0 && bookedDetails.seats.second == 1">
                 <b>Seat No. : </b> 2
+              </ion-col>
+
+              <ion-col col-12 *ngIf="bookedDetails.seats.first == 1 && bookedDetails.seats.second == 1">
+                <b>Seat No. : </b> 1, 2
               </ion-col>
 
             </ion-row>
@@ -73,6 +81,7 @@
           <li>Cancellation is not allowed</li>
           <li>You should report before 10 minutes of the booked time slot to the shop</li>
           <li>Booking charges may apply*</li>
+          <li>Shop's Terms and Conditions may also apply*</li>
         </ul>
 
       </ion-col>

@@ -115,9 +115,28 @@ page-haircut-book {
 
   // Payment Icons
   .payment-icons img {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
+    max-width: 50px;
+    max-height: 50px;
+  }
+
+  .payment-icons {
+    text-align: left;
+  }
+
+  .payment-icons ion-row {
+    display: inline-block;
+
+  }
+
+  .payment-icons ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .payment-icons ul li {
+    display: inline-block;
+    margin: 0 5px;
   }
 
   /*=====================================
@@ -168,7 +187,7 @@ page-haircut-book {
 
   #appointment-count h2 span{
     font-weight: 600;
-    color: #00ff00;
+    color: #00008b;
   }
 
 }

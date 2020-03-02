@@ -101,13 +101,13 @@ export class MyApp {
 
                 this.pages = [
                   { title: '', component: '', icon: '' },
-                  { title: 'Home', component: LoginPage, icon: 'home' },
+                  { title: 'Home', component: HomePage, icon: 'home' },
                 ];
 
                 this.rootPage = HomePage;
                 this.notificationPage = MyOrderPage;
                 this.afData.database.ref('requests').off();
-
+                this.splashScreen.hide();
               }
               else if (response['type'] == 'shop') {
 
@@ -121,6 +121,7 @@ export class MyApp {
                 this.rootPage = ShopHomePage;
                 this.notificationPage = ShopOrdersPage;
                 this.afData.database.ref('requests').off();
+                this.splashScreen.hide();
               }
               else if (response['type'] == 'admin') {
 
@@ -131,6 +132,7 @@ export class MyApp {
                 ];
 
                 this.rootPage = AdminHomePage;
+                this.splashScreen.hide();
               }
 
             })
@@ -141,8 +143,10 @@ export class MyApp {
         }
         else { // If not logged in
           this.rootPage = LoginPage;
+          this.splashScreen.hide();
         }
-      });
+      })
+      
 
 
       if (this.platform.is('cordova')) {
@@ -188,9 +192,6 @@ export class MyApp {
 
     });
 
-
-
-    this.splashScreen.hide();
   }
 
   pushSetup() {
@@ -258,79 +259,4 @@ export class MyApp {
     alert.present();
   }
 
-  // listenOnAppoitmentBook() {
-
-  //   let uid = this.afAuth.auth.currentUser.uid;
-
-  //   this.afData.database.ref('requests')
-  //     .on("value", resp => {
-
-  //       let obj = Object.entries(resp.val());
-
-  //       obj.forEach((element) => {
-
-  //         if (element[1]['shopId'] == uid && element[1]['shopNotification'] == 0) {
-
-  //           if (element[1]['status'] == 0) {
-
-  //             console.log(element[1]);
-
-  //             this.localNotifications.schedule({
-  //               id: Date.now(),
-  //               title: 'New Appointment',
-  //               text: 'You have a new Appointment',
-  //               data: { mydata: element[1] }
-  //             });
-
-
-  //           }
-  //         }
-  //       });
-
-  //     });
-  // }
-
-  // listenOnAcceptance() {
-
-  //   let uid = this.afAuth.auth.currentUser.uid;
-
-  //   this.afData.database.ref('requests')
-  //     .on("value", resp => {
-
-  //       let obj = Object.entries(resp.val());
-
-  //       obj.forEach((element) => {
-
-  //         if (element[1]['userId'] == uid && element[1]['userNotification'] == 0) {
-
-  //           if (element[1]['status'] == 1) {
-
-  //             console.log(element[1]);
-
-  //             this.localNotifications.schedule({
-  //               id: Date.now(),
-  //               title: 'Appointment Status',
-  //               text: 'You Appointment is accepted',
-  //               data: { mydata: element[1] }
-  //             });
-
-
-  //           }
-  //           else if (element[1]['status'] == 2) {
-
-  //             console.log(element[1]);
-
-  //             this.localNotifications.schedule({
-  //               id: Date.now(),
-  //               title: 'Appointment Status',
-  //               text: 'You Appointment is rejected',
-  //               data: { mydata: element[1] }
-  //             });
-
-  //           }
-  //         }
-  //       });
-
-  //     });
-  // }
 }

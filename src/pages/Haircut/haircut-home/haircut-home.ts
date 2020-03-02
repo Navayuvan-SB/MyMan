@@ -21,6 +21,9 @@ export class HaircutHomePage {
   // location for filtering the shops
   location: any = "Dindigul";
 
+  // shop flag
+  shopFlag: any;
+
   constructor(public navCtrl: NavController,
     public navParams: NavParams,
     public fbService: FirebaseServices,
@@ -28,6 +31,8 @@ export class HaircutHomePage {
     public afAuth: AngularFireAuth,
     public toastCtrl: ToastController,
     public loadingCtrl: LoadingController) {
+
+    this.shopFlag = false;
 
     let loading = this.loadingCtrl.create({
       content: 'Please wait'
@@ -45,6 +50,7 @@ export class HaircutHomePage {
         obj.forEach((shop) => {
 
           this.loadedShopArray.push(shop[1]);
+          this.shopFlag = true;
 
         });
 
@@ -82,6 +88,21 @@ export class HaircutHomePage {
       this.shopArray = this.shopArray.filter((item) => {
         return (item.city.toLowerCase().indexOf(val.toLowerCase()) > -1);
       });
+
+      if (this.shopArray.length != 0) {
+        this.shopFlag = true;
+      }
+      else {
+        this.shopFlag = false;
+      }
+
+    }
+
+    if (this.shopArray.length != 0) {
+      this.shopFlag = true;
+    }
+    else {
+      this.shopFlag = false;
     }
 
   }
@@ -109,18 +130,8 @@ export class HaircutHomePage {
     let user = this.afAuth.auth.currentUser;
     this.fbService.readOnce('users/' + user.uid)
       .then((response) => {
-        let details = Object.entries(response);
-        let emailId = details[0][1];
-        let phone = details[2][1];
-        let fullName = details[1][1];
 
-        let payload = {
-          email: emailId,
-          phoneNumber: phone,
-          name: fullName
-        }
-
-        this.navCtrl.push(ProfilePage, { 'payload': payload });
+        this.navCtrl.push(ProfilePage, { 'payload': response });
 
       })
       .catch((error) => {

@@ -22,6 +22,9 @@ export class ShopOrdersPage {
   // order Flag
   orderFlag: boolean = false;
 
+  // Current date 
+  currentDate: any;
+
   constructor(public navCtrl: NavController,
     public navParams: NavParams,
     public toastCtrl: ToastController,
@@ -37,6 +40,7 @@ export class ShopOrdersPage {
     var mm = String(today.getMonth() + 1).padStart(2, '0');
     var yyyy = today.getFullYear();
 
+    this.currentDate = today.toISOString();
     let toDate = {
       day: dd,
       month: mm,
@@ -354,4 +358,25 @@ export class ShopOrdersPage {
     var strTime = hours + noon[0];
     return strTime;
   }
+
+  // Sort the requests by latest
+  sortUsingDate() {
+
+
+    this.requests.sort((a, b) => {
+
+      var rawADate = a.date.split('-');
+      var aTime = a.time.split(' ');
+      var aDate = new Date(rawADate[1] + ' ' + rawADate[0] + ' ' + rawADate[2] + ' ' + aTime[0] + ':00 ' + aTime[1]);
+
+      var rawBDate = b.date.split('-');
+      var bTime = b.time.split(' ');
+      var bDate = new Date(rawBDate[1] + ' ' + rawBDate[0] + ' ' + rawBDate[2] + ' ' + bTime[0] + ':00 ' + bTime[1]); -1
+
+      return (aDate > bDate ? -1 : 1);
+
+    });
+
+  }
+
 }
