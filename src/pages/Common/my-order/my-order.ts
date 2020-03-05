@@ -5,7 +5,6 @@ import { ProfilePage } from '../profile/profile';
 import { FirebaseServices } from '../../../services/fireBaseService';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { CallNumber } from '@ionic-native/call-number';
-import { load } from 'google-maps';
 
 
 @Component({

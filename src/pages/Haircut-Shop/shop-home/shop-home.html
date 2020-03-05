@@ -98,6 +98,14 @@
               <p>{{ requests.time }}</p>
             </ion-col>
 
+            <ion-col col-12>
+              <h2>Seat No</h2>
+              <p *ngIf="requests.seats.first == 1 && requests.seats.second == 1">1, 2</p>
+              <p *ngIf="requests.seats.first == 1 && requests.seats.second == 0">1</p>
+              <p *ngIf="requests.seats.first == 0 && requests.seats.second == 1">2</p>
+            </ion-col>
+
+
             <ion-col col-3>
 
             </ion-col>

@@ -29,6 +29,8 @@ import { LocalNotifications } from '@ionic-native/local-notifications';
 import { MyOrderPage } from '../pages/Common/my-order/my-order';
 import { Push, PushObject, PushOptions } from '@ionic-native/push';
 
+import { timer } from 'rxjs/observable/timer';
+
 
 @Component({
   templateUrl: 'app.html'
@@ -42,6 +44,8 @@ export class MyApp {
   userName: any = '';
 
   notificationPage: any;
+
+  showSplash = true;
 
   constructor(public platform: Platform,
     public statusBar: StatusBar,
@@ -107,7 +111,7 @@ export class MyApp {
                 this.rootPage = HomePage;
                 this.notificationPage = MyOrderPage;
                 this.afData.database.ref('requests').off();
-                this.splashScreen.hide();
+                timer(3000).subscribe(() => { this.showSplash = false });
               }
               else if (response['type'] == 'shop') {
 
@@ -121,7 +125,7 @@ export class MyApp {
                 this.rootPage = ShopHomePage;
                 this.notificationPage = ShopOrdersPage;
                 this.afData.database.ref('requests').off();
-                this.splashScreen.hide();
+                timer(3000).subscribe(() => { this.showSplash = false });
               }
               else if (response['type'] == 'admin') {
 
@@ -132,21 +136,21 @@ export class MyApp {
                 ];
 
                 this.rootPage = AdminHomePage;
-                this.splashScreen.hide();
+                timer(3000).subscribe(() => { this.showSplash = false });
               }
 
             })
             .catch((error) => {
-
+              timer(3000).subscribe(() => { this.showSplash = false });
             });
 
         }
         else { // If not logged in
           this.rootPage = LoginPage;
-          this.splashScreen.hide();
+          timer(3000).subscribe(() => { this.showSplash = false });
         }
       })
-      
+
 
 
       if (this.platform.is('cordova')) {
@@ -188,6 +192,7 @@ export class MyApp {
         // Cordova not accessible, add mock data if necessary
       }
 
+      this.splashScreen.hide();
       this.pushSetup();
 
     });

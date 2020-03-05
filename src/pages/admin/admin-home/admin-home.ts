@@ -4,6 +4,7 @@ import { FirebaseServices } from '../../../services/fireBaseService';
 import { CallNumber } from '@ionic-native/call-number';
 import { AdminEditPage } from '../admin-edit/admin-edit';
 import { AdminNewPage } from '../admin-new/admin-new';
+import * as $ from "jquery";
 
 /**
  * Generated class for the AdminHomePage page.
@@ -31,6 +32,10 @@ export class AdminHomePage {
 
     // Load the data 
     this.loadData();
+  }
+
+  ionViewDidLoad() {
+    $('input.searchbar-input').attr('placeholder', 'Search Your City');
   }
 
   // load the data from the database

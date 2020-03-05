@@ -36,25 +36,25 @@
           <ion-col col-10>
             <ion-row class="l1">
 
-              <ion-col col-12>
+              <ion-col col-12 size-sm>
                 <b>{{ bookedDetails.shopName }}</b>
               </ion-col>
-              <ion-col col-12>
+              <ion-col col-12 size-sm>
                 <b>Date : </b> {{ bookedDetails.date }}
               </ion-col>
-              <ion-col col-12>
+              <ion-col col-12 size-sm>
                 <b>Time : </b> {{ bookedDetails.time }}
               </ion-col>
 
-              <ion-col col-12 *ngIf="bookedDetails.seats.first == 1 && bookedDetails.seats.second == 0">
+              <ion-col col-12 size-sm *ngIf="bookedDetails.seats.first == 1 && bookedDetails.seats.second == 0">
                 <b>Seat No. : </b> 1
               </ion-col>
 
-              <ion-col col-12 *ngIf="bookedDetails.seats.first == 0 && bookedDetails.seats.second == 1">
+              <ion-col col-12 size-sm *ngIf="bookedDetails.seats.first == 0 && bookedDetails.seats.second == 1">
                 <b>Seat No. : </b> 2
               </ion-col>
 
-              <ion-col col-12 *ngIf="bookedDetails.seats.first == 1 && bookedDetails.seats.second == 1">
+              <ion-col col-12 size-sm *ngIf="bookedDetails.seats.first == 1 && bookedDetails.seats.second == 1">
                 <b>Seat No. : </b> 1, 2
               </ion-col>
 

@@ -6,6 +6,7 @@ import { ProfilePage } from '../../Common/profile/profile';
 import { MyOrderPage } from '../../Common/my-order/my-order';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { AngularFireDatabase } from 'angularfire2/database';
+import * as $ from "jquery";
 
 @Component({
   selector: 'page-haircut-home',
@@ -31,6 +32,8 @@ export class HaircutHomePage {
     public afAuth: AngularFireAuth,
     public toastCtrl: ToastController,
     public loadingCtrl: LoadingController) {
+
+    $('input.searchbar-input').attr('placeholder', 'Search Your City');
 
     this.shopFlag = false;
 
@@ -68,6 +71,10 @@ export class HaircutHomePage {
       })
 
 
+  }
+
+  ionViewDidLoad() {
+    $('input.searchbar-input').attr('placeholder', 'Search Your City');
   }
 
   initializeItems() {

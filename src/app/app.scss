@@ -16,66 +16,80 @@
 // automatically applied to the <body> element in the app.
 
 ion-icon {
-    &[class*="custom-"] {
-      mask-size: contain;
-      mask-position: 50% 50%;
-      mask-repeat: no-repeat;
-      background: currentColor;
-      width: 1em;
-      height: 1em;
-    }
-  
-    &[class*="custom-Menu"] {
-      mask-image: url(../assets/icon/Menu.svg);
-    }
-    &[class*="custom-hammer"] {
-      mask-image: url(../assets/icon/hammer.svg);
-    }
-    &[class*="custom-Union"] {
-      mask-image: url(../assets/icon/Union.svg);
-    }
-    &[class*="custom-backarrow"] {
-      mask-image: url(../assets/icon/Backwardarrow.svg);
-    }
-    &[class*="custom-calendar"] {
-      mask-image: url(../assets/icon/Calendar.svg);
-    }
-    &[class*="custom-hammer"] {
-      mask-image: url(../assets/icon/Hammer.svg);
-    }
-    &[class*="custom-places"] {
-        mask-image: url(../assets/icon/Places.svg);
-      }
-      &[class*="custom-union"] {
-        mask-image: url(../assets/icon/Union42.svg);
-      }
-      &[class*="custom-Downarrow"] {
-        mask-image: url(../assets/icon/Dowwnarrow.svg);
-      }
-      &[class*="custom-gySeat"] {
-        mask-image: url(../assets/icon/greySeat.svg);
-      }
-      &[class*="custom-gnSeat"] {
-        mask-image: url(../assets/icon/greenSeat.svg);
-      }
-      &[class*="custom-man"] {
-        mask-image: url(../assets/icon/man.svg);
-      }
-      &[class*="custom-woman"] {
-        mask-image: url(../assets/icon/woman.svg);
-      }
-      &[class*="custom-unisex"] {
-        mask-image: url(../assets/icon/unisex.svg);
-      }
-      
+  &[class*="custom-"] {
+    mask-size: contain;
+    mask-position: 50% 50%;
+    mask-repeat: no-repeat;
+    background: currentColor;
+    width: 1em;
+    height: 1em;
   }
 
-.button-logout{
+  &[class*="custom-Menu"] {
+    mask-image: url(../assets/icon/Menu.svg);
+  }
+
+  &[class*="custom-hammer"] {
+    mask-image: url(../assets/icon/hammer.svg);
+  }
+
+  &[class*="custom-Union"] {
+    mask-image: url(../assets/icon/Union.svg);
+  }
+
+  &[class*="custom-backarrow"] {
+    mask-image: url(../assets/icon/Backwardarrow.svg);
+  }
+
+  &[class*="custom-calendar"] {
+    mask-image: url(../assets/icon/Calendar.svg);
+  }
+
+  &[class*="custom-hammer"] {
+    mask-image: url(../assets/icon/Hammer.svg);
+  }
+
+  &[class*="custom-places"] {
+    mask-image: url(../assets/icon/Places.svg);
+  }
+
+  &[class*="custom-union"] {
+    mask-image: url(../assets/icon/Union42.svg);
+  }
+
+  &[class*="custom-Downarrow"] {
+    mask-image: url(../assets/icon/Dowwnarrow.svg);
+  }
+
+  &[class*="custom-gySeat"] {
+    mask-image: url(../assets/icon/greySeat.svg);
+  }
+
+  &[class*="custom-gnSeat"] {
+    mask-image: url(../assets/icon/greenSeat.svg);
+  }
+
+  &[class*="custom-man"] {
+    mask-image: url(../assets/icon/man.svg);
+  }
+
+  &[class*="custom-woman"] {
+    mask-image: url(../assets/icon/woman.svg);
+  }
+
+  &[class*="custom-unisex"] {
+    mask-image: url(../assets/icon/unisex.svg);
+  }
+
+}
+
+.button-logout {
   background: #18A0A0;
   width: 90%;
   margin: auto;
   margin-top: 25%;
 }
+
 :root {
   --teal: #18A0A0;
   --header-profile: 20%;
@@ -92,8 +106,8 @@ ion-list#nav-list {
   margin-top: 200px;
 }
 
-#nav-header img{
-  width: 100px;
+#nav-header img {
+  width: 120px;
   height: 120px;
   margin-top: 10px;
 }
@@ -120,4 +134,127 @@ ion-list#nav-list {
   font-weight: 400;
   color: grey;
   margin-top: 30px;
+}
+
+#splash {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #18A0A0;
+}
+
+.sk-folding-cube {
+  margin: 20px auto;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  -webkit-transform: rotateZ(45deg);
+  transform: rotateZ(45deg);
+}
+
+.sk-folding-cube .sk-cube {
+  float: left;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.sk-folding-cube .sk-cube:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
+  animation: sk-foldCubeAngle 2.4s infinite linear both;
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+.sk-folding-cube .sk-cube2 {
+  -webkit-transform: scale(1.1) rotateZ(90deg);
+  transform: scale(1.1) rotateZ(90deg);
+}
+
+.sk-folding-cube .sk-cube3 {
+  -webkit-transform: scale(1.1) rotateZ(180deg);
+  transform: scale(1.1) rotateZ(180deg);
+}
+
+.sk-folding-cube .sk-cube4 {
+  -webkit-transform: scale(1.1) rotateZ(270deg);
+  transform: scale(1.1) rotateZ(270deg);
+}
+
+.sk-folding-cube .sk-cube2:before {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.sk-folding-cube .sk-cube3:before {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.sk-folding-cube .sk-cube4:before {
+  -webkit-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+}
+
+@-webkit-keyframes sk-foldCubeAngle {
+
+  0%,
+  10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+    transform: perspective(140px) rotateX(-180deg);
+    opacity: 0;
+  }
+
+  25%,
+  75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+    transform: perspective(140px) rotateX(0deg);
+    opacity: 1;
+  }
+
+  90%,
+  100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+    transform: perspective(140px) rotateY(180deg);
+    opacity: 0;
+  }
+}
+
+@keyframes sk-foldCubeAngle {
+
+  0%,
+  10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+    transform: perspective(140px) rotateX(-180deg);
+    opacity: 0;
+  }
+
+  25%,
+  75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+    transform: perspective(140px) rotateX(0deg);
+    opacity: 1;
+  }
+
+  90%,
+  100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+    transform: perspective(140px) rotateY(180deg);
+    opacity: 0;
+  }
 }
