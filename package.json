@@ -25,6 +25,7 @@
     "@ionic-native/file": "^4.20.0",
     "@ionic-native/geolocation": "^5.14.0",
     "@ionic-native/image-picker": "^4.20.0",
+    "@ionic-native/in-app-browser": "^4.20.0",
     "@ionic-native/local-notifications": "^4.12.0",
     "@ionic-native/network": "^5.14.0",
     "@ionic-native/push": "^4.20.0",
@@ -40,6 +41,7 @@
     "cordova-browser": "^6.0.0",
     "cordova-plugin-badge": "^0.8.8",
     "cordova-plugin-file": "^6.0.2",
+    "cordova-plugin-inappbrowser": "^3.2.0",
     "cordova-plugin-local-notification": "^0.9.0-beta.2",
     "cordova-plugin-telerik-imagepicker": "git+https://github.com/Telerik-Verified-Plugins/ImagePicker.git",
     "cordova-res": "^0.9.0",
@@ -85,7 +87,8 @@
       "cordova-plugin-telerik-imagepicker": {
         "PHOTO_LIBRARY_USAGE_DESCRIPTION": "shop image",
         "ANDROID_SUPPORT_V7_VERSION": "27.+"
-      }
+      },
+      "cordova-plugin-inappbrowser": {}
     },
     "platforms": [
       "browser",

@@ -47,7 +47,7 @@ import { ImagePicker } from '@ionic-native/image-picker';
 import { File } from '@ionic-native/file';
 
 import { Push, PushObject, PushOptions } from '@ionic-native/push'
-
+import { InAppBrowser } from '@ionic-native/in-app-browser';
 
 
 @NgModule({
@@ -117,6 +117,7 @@ import { Push, PushObject, PushOptions } from '@ionic-native/push'
     ImagePicker,
     File,
     Push,
+    InAppBrowser,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

@@ -51,7 +51,7 @@ export class HaircutBookPage {
 
     this.appointmentCount = 0;
 
-    this.timeSlots.forEach(element => {
+    this.rawTimeSlots.forEach(element => {
 
       if (element['status'] == 1) {
         this.appointmentCount++;
@@ -84,12 +84,14 @@ export class HaircutBookPage {
     // get the current time
     var today = new Date();
     var h = today.getHours();
+
+    Number(h) < 10 ? '0' + h : h;
     var m = today.getMinutes();
     var timeNow = h + ":" + m + ":" + '00';
-
-    timeNow = "08:00:00";
     // filter the slots based on current time
     this.timeSlots = this.timeSlots.filter((element) => {
+
+      console.log(this.convertTime(element.time));
       if (timeNow < this.convertTime(element.time)) {
         return true;
       }
@@ -122,51 +124,51 @@ export class HaircutBookPage {
   // convert the month to it's key word
   convertMonth(mm) {
 
-    if (mm == 1) {
+    if (mm == 1 || mm == '01') {
       return 'Jan'
     }
 
-    else if (mm = 2) {
+    else if (mm == 2 || mm == '02') {
       return 'Feb'
     }
 
-    else if (mm = 3) {
+    else if (mm == 3 || mm == '03') {
       return 'Mar'
     }
 
-    else if (mm = 4) {
+    else if (mm == 4 || mm == '04') {
       return 'Apr'
     }
 
-    else if (mm = 5) {
+    else if (mm == 5 || mm == '05') {
       return 'May'
     }
 
-    else if (mm = 6) {
+    else if (mm == 6 || mm == '06') {
       return 'Jun'
     }
 
-    else if (mm = 7) {
+    else if (mm == 7 || mm == '07') {
       return 'July'
     }
 
-    else if (mm = 8) {
+    else if (mm == 8 || mm == '08') {
       return 'Aug'
     }
 
-    else if (mm = 9) {
+    else if (mm == 9 || mm == '09') {
       return 'Sept'
     }
 
-    else if (mm = 10) {
+    else if (mm == 10) {
       return 'Oct'
     }
 
-    else if (mm = 11) {
+    else if (mm == 11) {
       return 'Nov'
     }
 
-    else if (mm = 12) {
+    else if (mm == 12) {
       return 'Dec'
     }
   }

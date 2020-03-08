@@ -30,6 +30,7 @@ import { MyOrderPage } from '../pages/Common/my-order/my-order';
 import { Push, PushObject, PushOptions } from '@ionic-native/push';
 
 import { timer } from 'rxjs/observable/timer';
+import { InAppBrowser } from '@ionic-native/in-app-browser';
 
 
 @Component({
@@ -58,7 +59,8 @@ export class MyApp {
     public afAuth: AngularFireAuth,
     public localNotifications: LocalNotifications,
     public toastCtrl: ToastController,
-    public push: Push) {
+    public push: Push,
+    public inAppBrowser: InAppBrowser) {
 
     this.initialiseApp();
 
@@ -106,6 +108,7 @@ export class MyApp {
                 this.pages = [
                   { title: '', component: '', icon: '' },
                   { title: 'Home', component: HomePage, icon: 'home' },
+                  { title: 'Privacy Policy', component: 'Privacy Policy', icon: 'lock' }
                 ];
 
                 this.rootPage = HomePage;
@@ -119,7 +122,8 @@ export class MyApp {
                   { title: '', component: '', icon: '' },
                   { title: 'Home', component: ShopHomePage, icon: 'home' },
                   { title: 'Order Page', component: ShopOrdersPage, icon: 'cart' },
-                  { title: 'Settings', component: ShopSettingsPage, icon: 'settings' }
+                  { title: 'Settings', component: ShopSettingsPage, icon: 'settings' },
+                  { title: 'Privacy Policy', component: 'Privacy Policy', icon: 'lock' }
                 ];
 
                 this.rootPage = ShopHomePage;
@@ -132,7 +136,8 @@ export class MyApp {
                 this.pages = [
                   { title: '', component: '', icon: '' },
                   { title: 'Home', component: AdminHomePage, icon: 'home' },
-                  { title: 'New Shop', component: AdminNewPage, icon: 'person-add' }
+                  { title: 'New Shop', component: AdminNewPage, icon: 'person-add' },
+                  { title: 'Privacy Policy', component: 'Privacy Policy', icon: 'lock' }
                 ];
 
                 this.rootPage = AdminHomePage;
@@ -235,7 +240,14 @@ export class MyApp {
   openPage(page) {
     // Reset the content nav to have just this page
     // we wouldn't want the back button to show in this scenario
-    this.nav.setRoot(page.component);
+
+    if (page.component == 'Privacy Policy') {
+      let ref = this.inAppBrowser.create('https://sites.google.com/view/myman-app/privacy-policy', '_self', { location: 'no' });
+    }
+    else  {
+      this.nav.setRoot(page.component);
+    }
+    
   }
 
   logout() {
