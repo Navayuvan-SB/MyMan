@@ -30,6 +30,9 @@ export class HaircutBookPage {
   timeSlots: any;
   rawTimeSlots: any;
 
+  // flag for timeslots presence
+  timeSlotFlag: any = true;
+
   // Appointment count
   appointmentCount: any;
 
@@ -99,6 +102,8 @@ export class HaircutBookPage {
         return false;
       }
     });
+
+    this.timeSlotFlag = Object.keys(this.timeSlots).length > 0 ? true : false;
 
   }
 
