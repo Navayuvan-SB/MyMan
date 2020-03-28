@@ -170,9 +170,12 @@ page-haircut-home {
   }
 
   .gender-icon ion-icon {
-    margin-left: 40px;
-    margin-top: -10px;
+    margin-left: 45px;
     zoom: 1.8;
+  }
+
+  p.address {
+    margin-top: -5px !important;
   }
 
   // Shop Fade Out
@@ -191,8 +194,6 @@ page-haircut-home {
   }
 
   h2.shop-name {
-    word-wrap: break-word;
-    white-space: normal;
     margin-top: 10px !important;
     height: 20px;
     line-height: 18px !important;

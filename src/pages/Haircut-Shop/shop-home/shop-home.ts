@@ -87,6 +87,7 @@ export class ShopHomePage {
               }
             }
           });
+          
           this.sortUsingDate();
         });
 

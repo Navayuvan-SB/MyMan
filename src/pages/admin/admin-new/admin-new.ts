@@ -169,6 +169,12 @@ export class AdminNewPage {
     let openingTime = this.shopForm.controls['openingTime'].value.split(':');
     let openingTimeFormated = this.formatAMPM(openingTime);
 
+    var today = new Date();
+    var dd = String(today.getDate()).padStart(2, '0');
+    var mm = String(today.getMonth() + 1).padStart(2, '0');
+    var yyyy = today.getFullYear();
+    var toDate = dd + '-' + this.convertMonth(mm) + '-' + yyyy;
+
     let shopDetails = {
       "availablity": [{
         "close": closingTimeFormated,
@@ -195,7 +201,8 @@ export class AdminNewPage {
         "cash": this.shopForm.controls['cash'].value
       },
       "timeSlots": this.generateTimeSlots(this.shopForm.controls['seatCapacity'].value),
-      "coverImage": this.coverImage
+      "coverImage": this.coverImage,
+      "dateAdded": toDate
     }
 
     this.checkIfUserExist(shopDetails.contactNumber)
@@ -729,6 +736,58 @@ export class AdminNewPage {
         toast.present();
 
       });
+  }
+
+  // convert the month to it's key word
+  convertMonth(mm) {
+
+    if (mm == '1' || mm == '01') {
+      return 'Jan'
+    }
+
+    else if (mm == '2' || mm == '02') {
+      return 'Feb'
+    }
+
+    else if (mm == '3' || mm == '03') {
+      return 'Mar'
+    }
+
+    else if (mm == '4' || mm == '04') {
+      return 'Apr'
+    }
+
+    else if (mm == '5' || mm == '05') {
+      return 'May'
+    }
+
+    else if (mm == '6' || mm == '06') {
+      return 'Jun'
+    }
+
+    else if (mm == '7' || mm == '07') {
+      return 'July'
+    }
+
+    else if (mm == '8' || mm == '08') {
+      return 'Aug'
+    }
+
+    else if (mm == '9' || mm == '09') {
+      return 'Sept'
+    }
+
+    else if (mm == '10') {
+      return 'Oct'
+    }
+
+    else if (mm == '11') {
+      return 'Nov'
+    }
+
+    else if (mm == '12') {
+      return 'Dec'
+    }
   }
 
 }

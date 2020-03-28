@@ -30,6 +30,9 @@ export class HaircutBookPage {
   timeSlots: any;
   rawTimeSlots: any;
 
+  // flag for timeslots presence
+  timeSlotFlag: any = true;
+
   // Appointment count
   appointmentCount: any;
 
@@ -84,14 +87,27 @@ export class HaircutBookPage {
     // get the current time
     var today = new Date();
     var h = today.getHours();
-
-    Number(h) < 10 ? '0' + h : h;
+    // let alteredH = '0' + h;
+    let hA = h < 10 ? '0' + String(h) : h;
     var m = today.getMinutes();
-    var timeNow = h + ":" + m + ":" + '00';
+
+    var advanceM = Number(m) + 15;
+    if (advanceM >= 60) {
+      advanceM = advanceM % 60;
+
+      var mm = advanceM < 10 ? '0' + advanceM : String(advanceM);
+
+      m = Number(mm);
+      hA = Number(hA) + 1;
+    }else {
+      m = advanceM;
+    }
+
+    var timeNow = hA + ":" + m + ":" + '00';
+    console.log(timeNow);
     // filter the slots based on current time
     this.timeSlots = this.timeSlots.filter((element) => {
 
-      console.log(this.convertTime(element.time));
       if (timeNow < this.convertTime(element.time)) {
         return true;
       }
@@ -99,6 +115,8 @@ export class HaircutBookPage {
         return false;
       }
     });
+
+    this.timeSlotFlag = Object.keys(this.timeSlots).length > 0 ? true : false;
 
   }
 
