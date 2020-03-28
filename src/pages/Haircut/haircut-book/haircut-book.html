@@ -68,20 +68,22 @@
           <ion-col col-12>
 
             <ul>
-              <li>
+              <li *ngIf="selectedShop.paymentOptions.googlepay == true || selectedShop.paymentOptions.googlepay == 'true'">
                 <img src="../../../assets/imgs/google-pay.png" alt="Google Pay">
               </li>
 
 
-              <li>
+              <li *ngIf="selectedShop.paymentOptions.paytm == true || selectedShop.paymentOptions.paytm == 'true'">
                 <img src="../../../assets/imgs/paytm.png" alt="Paytm">
               </li>
 
-              <li>
+
+              <li  *ngIf="selectedShop.paymentOptions.phonepe == true || selectedShop.paymentOptions.phonepe == 'true'">
                 <img src="../../../assets/imgs/phonepe.png" alt="PhonePe">
               </li>
 
-              <li>
+
+              <li  *ngIf="selectedShop.paymentOptions.cash == true || selectedShop.paymentOptions.cash == 'true'">
                 <img src="../../../assets/icon/cash.png" alt="Cash">
               </li>
 
