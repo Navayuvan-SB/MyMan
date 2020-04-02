@@ -86,25 +86,15 @@ export class HaircutBookPage {
 
     // get the current time
     var today = new Date();
+
+    today.setMinutes(today.getMinutes() + 15);
     var h = today.getHours();
     // let alteredH = '0' + h;
     let hA = h < 10 ? '0' + String(h) : h;
     var m = today.getMinutes();
 
-    var advanceM = Number(m) + 15;
-    if (advanceM >= 60) {
-      advanceM = advanceM % 60;
-
-      var mm = advanceM < 10 ? '0' + advanceM : String(advanceM);
-
-      m = Number(mm);
-      hA = Number(hA) + 1;
-    }else {
-      m = advanceM;
-    }
-
     var timeNow = hA + ":" + m + ":" + '00';
-    console.log(timeNow);
+    
     // filter the slots based on current time
     this.timeSlots = this.timeSlots.filter((element) => {
 
