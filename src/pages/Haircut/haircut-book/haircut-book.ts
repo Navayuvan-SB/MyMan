@@ -93,7 +93,6 @@ export class HaircutBookPage {
     var m = today.getMinutes();
 
     var timeNow = hA + ":" + m + ":" + "00";
-    console.log(timeNow);
 
     // filter the slots based on current time
     this.timeSlots = this.timeSlots.filter(element => {
