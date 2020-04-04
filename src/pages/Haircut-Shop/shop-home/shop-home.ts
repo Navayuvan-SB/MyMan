@@ -287,7 +287,7 @@ export class ShopHomePage {
           alert.addInput({
             type: 'radio',
             label: i + '% Discount',
-            value: '0',
+            value: String(i),
             checked: true
           });
         }
@@ -307,7 +307,7 @@ export class ShopHomePage {
           alert.addInput({
             type: 'radio',
             label: i + '% Discount',
-            value: '0',
+            value: String(i),
             checked: false
           });
         }
@@ -358,7 +358,7 @@ export class ShopHomePage {
   // Shop Status Changed
   shopStatusChanged(event) {
 
-    setTimeout(_ => {
+    setTimeout(() => {
 
       if (event.value == false && this.metaData.status !== event.value) {
 

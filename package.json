@@ -1,6 +1,6 @@
 {
   "name": "MyMan",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": "Ionic Framework",
   "homepage": "http://ionicframework.com/",
   "private": true,
@@ -34,7 +34,6 @@
     "@ionic/storage": "2.2.0",
     "@types/google-maps": "^3.2.1",
     "@types/googlemaps": "^3.38.0",
-    "@types/node": "^12.12.6",
     "angularfire2": "5.0.0-rc.3",
     "call-number": "^1.0.1",
     "cordova-android": "^8.1.0",
